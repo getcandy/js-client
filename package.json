@@ -4,9 +4,10 @@
   "description": "GetCandy Javascript client",
   "license": "MIT",
   "main": "src/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
-    "build": "babel src -d dist",
-    "prepack": "npm run build",
     "test": "mocha --require @babel/register --recursive"
   },
   "browser": {
