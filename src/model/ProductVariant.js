@@ -132,6 +132,9 @@ class ProductVariant {
             if (data.hasOwnProperty('tiers')) {
                 obj['tiers'] = ProductTierPriceCollection.constructFromObject(data['tiers']);
             }
+            if (data.hasOwnProperty('options')) {
+                obj['options'] = ApiClient.convertToType(data['options'], Object);
+            }
         }
         return obj;
     }
@@ -268,6 +271,11 @@ ProductVariant.prototype['tax'] = undefined;
  * @member {module:model/ProductTierPriceCollection} tiers
  */
 ProductVariant.prototype['tiers'] = undefined;
+
+/**
+ * @member {Object} options
+ */
+ProductVariant.prototype['options'] = undefined;
 
 
 
