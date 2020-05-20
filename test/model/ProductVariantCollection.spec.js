@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductVariantCollection();
+    instance = new GetcandyJs.ProductVariantCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ProductVariantCollection', function() {
     it('should create an instance of ProductVariantCollection', function() {
       // uncomment below and update the code to test ProductVariantCollection
-      //var instane = new @GetcandyJsClient.ProductVariantCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductVariantCollection);
+      //var instane = new GetcandyJs.ProductVariantCollection();
+      //expect(instance).to.be.a(GetcandyJs.ProductVariantCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.ProductVariantCollection();
+      //var instane = new GetcandyJs.ProductVariantCollection();
       //expect(instance).to.be();
     });
 

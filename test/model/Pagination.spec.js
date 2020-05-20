@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Pagination();
+    instance = new GetcandyJs.Pagination();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('Pagination', function() {
     it('should create an instance of Pagination', function() {
       // uncomment below and update the code to test Pagination
-      //var instane = new @GetcandyJsClient.Pagination();
-      //expect(instance).to.be.a(@GetcandyJsClient.Pagination);
+      //var instane = new GetcandyJs.Pagination();
+      //expect(instance).to.be.a(GetcandyJs.Pagination);
     });
 
     it('should have the property currentPage (base name: "current_page")', function() {
       // uncomment below and update the code to test the property currentPage
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property from (base name: "from")', function() {
       // uncomment below and update the code to test the property from
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property lastPage (base name: "last_page")', function() {
       // uncomment below and update the code to test the property lastPage
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property perPage (base name: "per_page")', function() {
       // uncomment below and update the code to test the property perPage
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property to (base name: "to")', function() {
       // uncomment below and update the code to test the property to
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instane = new @GetcandyJsClient.Pagination();
+      //var instane = new GetcandyJs.Pagination();
       //expect(instance).to.be();
     });
 

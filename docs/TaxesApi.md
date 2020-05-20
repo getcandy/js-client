@@ -1,4 +1,4 @@
-# @GetcandyJsClient.TaxesApi
+# GetcandyJs.TaxesApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -23,13 +23,13 @@ Delete a tax record by it&#39;s ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TaxesApi();
+let apiInstance = new GetcandyJs.TaxesApi();
 let taxId = "taxId_example"; // String | 
 apiInstance.deleteTaxesTaxId(taxId).then(() => {
   console.log('API called successfully.');
@@ -71,13 +71,13 @@ Get a paginated list of taxes
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TaxesApi();
+let apiInstance = new GetcandyJs.TaxesApi();
 apiInstance.getTaxes().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -115,13 +115,13 @@ Get a tax record by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TaxesApi();
+let apiInstance = new GetcandyJs.TaxesApi();
 let taxId = "taxId_example"; // String | 
 apiInstance.getTaxesTaxId(taxId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -163,15 +163,15 @@ Create a new tax resource.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TaxesApi();
+let apiInstance = new GetcandyJs.TaxesApi();
 let opts = {
-  'inlineObject38': new @GetcandyJsClient.InlineObject38() // InlineObject38 | 
+  'inlineObject38': new GetcandyJs.InlineObject38() // InlineObject38 | 
 };
 apiInstance.postTaxes(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -213,16 +213,16 @@ Update a tax record by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TaxesApi();
+let apiInstance = new GetcandyJs.TaxesApi();
 let taxId = "taxId_example"; // String | 
 let opts = {
-  'inlineObject39': new @GetcandyJsClient.InlineObject39() // InlineObject39 | 
+  'inlineObject39': new GetcandyJs.InlineObject39() // InlineObject39 | 
 };
 apiInstance.putTaxesTaxId(taxId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

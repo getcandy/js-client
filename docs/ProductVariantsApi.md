@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductVariantsApi
+# GetcandyJs.ProductVariantsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -21,13 +21,13 @@ Get a paginated list of all product variants in the system
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductVariantsApi();
+let apiInstance = new GetcandyJs.ProductVariantsApi();
 let opts = {
   'include': "include_example" // String | 
 };
@@ -71,13 +71,13 @@ Get a product variant by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductVariantsApi();
+let apiInstance = new GetcandyJs.ProductVariantsApi();
 let productVariantId = "productVariantId_example"; // String | 
 apiInstance.getProductsVariantsProductVariantId(productVariantId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -119,16 +119,16 @@ Request to update a product variants inventory.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductVariantsApi();
+let apiInstance = new GetcandyJs.ProductVariantsApi();
 let productVariantId = "productVariantId_example"; // String | 
 let opts = {
-  'inlineObject17': new @GetcandyJsClient.InlineObject17() // InlineObject17 | 
+  'inlineObject17': new GetcandyJs.InlineObject17() // InlineObject17 | 
 };
 apiInstance.putProductsVariantsProductVariantIdInventory(productVariantId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

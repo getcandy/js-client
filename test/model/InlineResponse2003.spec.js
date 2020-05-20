@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse2003();
+    instance = new GetcandyJs.InlineResponse2003();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InlineResponse2003', function() {
     it('should create an instance of InlineResponse2003', function() {
       // uncomment below and update the code to test InlineResponse2003
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse2003);
+      //var instane = new GetcandyJs.InlineResponse2003();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse2003);
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
+      //var instane = new GetcandyJs.InlineResponse2003();
       //expect(instance).to.be();
     });
 
     it('should have the property subTotal (base name: "sub_total")', function() {
       // uncomment below and update the code to test the property subTotal
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
+      //var instane = new GetcandyJs.InlineResponse2003();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveryTotal (base name: "delivery_total")', function() {
       // uncomment below and update the code to test the property deliveryTotal
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
+      //var instane = new GetcandyJs.InlineResponse2003();
       //expect(instance).to.be();
     });
 
     it('should have the property taxTotal (base name: "tax_total")', function() {
       // uncomment below and update the code to test the property taxTotal
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
+      //var instane = new GetcandyJs.InlineResponse2003();
       //expect(instance).to.be();
     });
 
     it('should have the property orderTotal (base name: "order_total")', function() {
       // uncomment below and update the code to test the property orderTotal
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
+      //var instane = new GetcandyJs.InlineResponse2003();
       //expect(instance).to.be();
     });
 
     it('should have the property discountTotal (base name: "discount_total")', function() {
       // uncomment below and update the code to test the property discountTotal
-      //var instane = new @GetcandyJsClient.InlineResponse2003();
+      //var instane = new GetcandyJs.InlineResponse2003();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# @GetcandyJsClient.OrdersProcessMeta
+# GetcandyJs.OrdersProcessMeta
 
 ## Properties
 

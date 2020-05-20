@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Links();
+    instance = new GetcandyJs.Links();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Links', function() {
     it('should create an instance of Links', function() {
       // uncomment below and update the code to test Links
-      //var instane = new @GetcandyJsClient.Links();
-      //expect(instance).to.be.a(@GetcandyJsClient.Links);
+      //var instane = new GetcandyJs.Links();
+      //expect(instance).to.be.a(GetcandyJs.Links);
     });
 
     it('should have the property first (base name: "first")', function() {
       // uncomment below and update the code to test the property first
-      //var instane = new @GetcandyJsClient.Links();
+      //var instane = new GetcandyJs.Links();
       //expect(instance).to.be();
     });
 
     it('should have the property last (base name: "last")', function() {
       // uncomment below and update the code to test the property last
-      //var instane = new @GetcandyJsClient.Links();
+      //var instane = new GetcandyJs.Links();
       //expect(instance).to.be();
     });
 
     it('should have the property prev (base name: "prev")', function() {
       // uncomment below and update the code to test the property prev
-      //var instane = new @GetcandyJsClient.Links();
+      //var instane = new GetcandyJs.Links();
       //expect(instance).to.be();
     });
 
     it('should have the property next (base name: "next")', function() {
       // uncomment below and update the code to test the property next
-      //var instane = new @GetcandyJsClient.Links();
+      //var instane = new GetcandyJs.Links();
       //expect(instance).to.be();
     });
 

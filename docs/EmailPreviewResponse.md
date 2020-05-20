@@ -1,4 +1,4 @@
-# @GetcandyJsClient.EmailPreviewResponse
+# GetcandyJs.EmailPreviewResponse
 
 ## Properties
 

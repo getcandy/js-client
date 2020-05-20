@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AssetTransform();
+    instance = new GetcandyJs.AssetTransform();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AssetTransform', function() {
     it('should create an instance of AssetTransform', function() {
       // uncomment below and update the code to test AssetTransform
-      //var instane = new @GetcandyJsClient.AssetTransform();
-      //expect(instance).to.be.a(@GetcandyJsClient.AssetTransform);
+      //var instane = new GetcandyJs.AssetTransform();
+      //expect(instance).to.be.a(GetcandyJs.AssetTransform);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.AssetTransform();
+      //var instane = new GetcandyJs.AssetTransform();
       //expect(instance).to.be();
     });
 
     it('should have the property handle (base name: "handle")', function() {
       // uncomment below and update the code to test the property handle
-      //var instane = new @GetcandyJsClient.AssetTransform();
+      //var instane = new GetcandyJs.AssetTransform();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new @GetcandyJsClient.AssetTransform();
+      //var instane = new GetcandyJs.AssetTransform();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups();
+    instance = new GetcandyJs.AttachCategoryCustomerGroupsBodyGroups();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AttachCategoryCustomerGroupsBodyGroups', function() {
     it('should create an instance of AttachCategoryCustomerGroupsBodyGroups', function() {
       // uncomment below and update the code to test AttachCategoryCustomerGroupsBodyGroups
-      //var instane = new @GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups);
+      //var instane = new GetcandyJs.AttachCategoryCustomerGroupsBodyGroups();
+      //expect(instance).to.be.a(GetcandyJs.AttachCategoryCustomerGroupsBodyGroups);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups();
+      //var instane = new GetcandyJs.AttachCategoryCustomerGroupsBodyGroups();
       //expect(instance).to.be();
     });
 
     it('should have the property visible (base name: "visible")', function() {
       // uncomment below and update the code to test the property visible
-      //var instane = new @GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups();
+      //var instane = new GetcandyJs.AttachCategoryCustomerGroupsBodyGroups();
       //expect(instance).to.be();
     });
 
     it('should have the property purchasable (base name: "purchasable")', function() {
       // uncomment below and update the code to test the property purchasable
-      //var instane = new @GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups();
+      //var instane = new GetcandyJs.AttachCategoryCustomerGroupsBodyGroups();
       //expect(instance).to.be();
     });
 

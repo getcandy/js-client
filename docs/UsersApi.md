@@ -1,4 +1,4 @@
-# @GetcandyJsClient.UsersApi
+# GetcandyJs.UsersApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -25,9 +25,9 @@ Delete a user by their given ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
+import GetcandyJs from 'getcandy-js';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 let userId = "userId_example"; // String | 
 apiInstance.deleteUsersUserId(userId).then(() => {
   console.log('API called successfully.');
@@ -69,13 +69,13 @@ Get a paginated list of users.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 apiInstance.getUsers().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -113,13 +113,13 @@ Returns the user associated to the access token.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 apiInstance.getUsersCurrent().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -157,13 +157,13 @@ Get a user by their given ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 let userId = "userId_example"; // String | 
 apiInstance.getUsersUserId(userId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -205,15 +205,15 @@ Allows the current user to update their password.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 let opts = {
-  'accountPasswordResetBody': new @GetcandyJsClient.AccountPasswordResetBody() // AccountPasswordResetBody | 
+  'accountPasswordResetBody': new GetcandyJs.AccountPasswordResetBody() // AccountPasswordResetBody | 
 };
 apiInstance.postAccountPassword(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -255,15 +255,15 @@ Create a new user in the system
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 let opts = {
-  'inlineObject40': new @GetcandyJsClient.InlineObject40() // InlineObject40 | 
+  'inlineObject40': new GetcandyJs.InlineObject40() // InlineObject40 | 
 };
 apiInstance.postUsers(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -305,12 +305,12 @@ Updates a user record from their ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
+import GetcandyJs from 'getcandy-js';
 
-let apiInstance = new @GetcandyJsClient.UsersApi();
+let apiInstance = new GetcandyJs.UsersApi();
 let userId = "userId_example"; // String | 
 let opts = {
-  'inlineObject41': new @GetcandyJsClient.InlineObject41() // InlineObject41 | 
+  'inlineObject41': new GetcandyJs.InlineObject41() // InlineObject41 | 
 };
 apiInstance.putUsersUserId(userId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

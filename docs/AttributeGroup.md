@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AttributeGroup
+# GetcandyJs.AttributeGroup
 
 ## Properties
 

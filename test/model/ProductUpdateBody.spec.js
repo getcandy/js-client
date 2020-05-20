@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductUpdateBody();
+    instance = new GetcandyJs.ProductUpdateBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductUpdateBody', function() {
     it('should create an instance of ProductUpdateBody', function() {
       // uncomment below and update the code to test ProductUpdateBody
-      //var instane = new @GetcandyJsClient.ProductUpdateBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductUpdateBody);
+      //var instane = new GetcandyJs.ProductUpdateBody();
+      //expect(instance).to.be.a(GetcandyJs.ProductUpdateBody);
     });
 
     it('should have the property attributeData (base name: "attribute_data")', function() {
       // uncomment below and update the code to test the property attributeData
-      //var instane = new @GetcandyJsClient.ProductUpdateBody();
+      //var instane = new GetcandyJs.ProductUpdateBody();
       //expect(instance).to.be();
     });
 
     it('should have the property familyId (base name: "family_id")', function() {
       // uncomment below and update the code to test the property familyId
-      //var instane = new @GetcandyJsClient.ProductUpdateBody();
+      //var instane = new GetcandyJs.ProductUpdateBody();
       //expect(instance).to.be();
     });
 

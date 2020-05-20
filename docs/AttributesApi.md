@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AttributesApi
+# GetcandyJs.AttributesApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -30,13 +30,13 @@ Deletes an attribute group
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let attributeGroupId = "attributeGroupId_example"; // String | 
 apiInstance.deleteAttributeGroupsAttributeGroupId(attributeGroupId).then(() => {
   console.log('API called successfully.');
@@ -78,13 +78,13 @@ Delete an attribute.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let attributeId = "attributeId_example"; // String | 
 apiInstance.deleteAttributesAttributeId(attributeId).then(() => {
   console.log('API called successfully.');
@@ -126,13 +126,13 @@ Returns a paginated list of available attribute groups
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let opts = {
   'allRecords': false, // Boolean | Will skip pagination and return all records
   'include': "include_example" // String | 
@@ -178,13 +178,13 @@ Gets a single attribute group
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let attributeGroupId = "attributeGroupId_example"; // String | 
 let opts = {
   'include': 56 // Number | 
@@ -230,13 +230,13 @@ Return a paged array of attributes
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 apiInstance.getAttributes().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -274,13 +274,13 @@ Returns an attribute from a given ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let attributeId = "attributeId_example"; // String | 
 let opts = {
   'include': "include_example" // String | 
@@ -324,15 +324,15 @@ Create an Attribute Group
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let opts = {
-  'name': new @GetcandyJsClient.CreateAttributeGroupBodyName() // CreateAttributeGroupBodyName | 
+  'name': new GetcandyJs.CreateAttributeGroupBodyName() // CreateAttributeGroupBodyName | 
 };
 apiInstance.postAttributeGroups(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -374,15 +374,15 @@ Create a new attribute
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let opts = {
-  'inlineObject3': new @GetcandyJsClient.InlineObject3() // InlineObject3 | 
+  'inlineObject3': new GetcandyJs.InlineObject3() // InlineObject3 | 
 };
 apiInstance.postAttributes(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -424,16 +424,16 @@ Updates an attribute group.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let attributeGroupId = "attributeGroupId_example"; // String | 
 let opts = {
-  'attributeGroup': new @GetcandyJsClient.AttributeGroup() // AttributeGroup | 
+  'attributeGroup': new GetcandyJs.AttributeGroup() // AttributeGroup | 
 };
 apiInstance.putAttributeGroupsAttributeGroupId(attributeGroupId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -476,13 +476,13 @@ Sends a request to reorder the attribute groups in the system
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let opts = {
   'attributesReorderBody': {"groups":{"vokq5kmj":1,"mqkj8wyj":2}} // AttributesReorderBody | 
 };
@@ -526,16 +526,16 @@ Updates an attribute from a given ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let attributeId = "attributeId_example"; // String | 
 let opts = {
-  'attribute': new @GetcandyJsClient.Attribute() // Attribute | 
+  'attribute': new GetcandyJs.Attribute() // Attribute | 
 };
 apiInstance.putAttributesAttributeId(attributeId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -578,15 +578,15 @@ Allows you to reorder a target category in relation to another.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.AttributesApi();
+let apiInstance = new GetcandyJs.AttributesApi();
 let opts = {
-  'attributesReorderBody': new @GetcandyJsClient.AttributesReorderBody() // AttributesReorderBody | 
+  'attributesReorderBody': new GetcandyJs.AttributesReorderBody() // AttributesReorderBody | 
 };
 apiInstance.putAttributesOrder(opts).then(() => {
   console.log('API called successfully.');

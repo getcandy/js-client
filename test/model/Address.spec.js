@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Address();
+    instance = new GetcandyJs.Address();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,79 +50,79 @@
   describe('Address', function() {
     it('should create an instance of Address', function() {
       // uncomment below and update the code to test Address
-      //var instane = new @GetcandyJsClient.Address();
-      //expect(instance).to.be.a(@GetcandyJsClient.Address);
+      //var instane = new GetcandyJs.Address();
+      //expect(instance).to.be.a(GetcandyJs.Address);
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property firstname (base name: "firstname")', function() {
       // uncomment below and update the code to test the property firstname
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property lastname (base name: "lastname")', function() {
       // uncomment below and update the code to test the property lastname
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property addressTwo (base name: "address_two")', function() {
       // uncomment below and update the code to test the property addressTwo
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property addressThree (base name: "address_three")', function() {
       // uncomment below and update the code to test the property addressThree
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property county (base name: "county")', function() {
       // uncomment below and update the code to test the property county
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 
     it('should have the property zip (base name: "zip")', function() {
       // uncomment below and update the code to test the property zip
-      //var instane = new @GetcandyJsClient.Address();
+      //var instane = new GetcandyJs.Address();
       //expect(instance).to.be();
     });
 

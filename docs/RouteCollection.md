@@ -1,4 +1,4 @@
-# @GetcandyJsClient.RouteCollection
+# GetcandyJs.RouteCollection
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ChannelCollectionAllOf
+# GetcandyJs.ChannelCollectionAllOf
 
 ## Properties
 

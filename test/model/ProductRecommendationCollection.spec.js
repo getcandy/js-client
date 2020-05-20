@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductRecommendationCollection();
+    instance = new GetcandyJs.ProductRecommendationCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ProductRecommendationCollection', function() {
     it('should create an instance of ProductRecommendationCollection', function() {
       // uncomment below and update the code to test ProductRecommendationCollection
-      //var instane = new @GetcandyJsClient.ProductRecommendationCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductRecommendationCollection);
+      //var instane = new GetcandyJs.ProductRecommendationCollection();
+      //expect(instance).to.be.a(GetcandyJs.ProductRecommendationCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.ProductRecommendationCollection();
+      //var instane = new GetcandyJs.ProductRecommendationCollection();
       //expect(instance).to.be();
     });
 

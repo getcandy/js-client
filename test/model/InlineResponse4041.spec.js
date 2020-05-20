@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse4041();
+    instance = new GetcandyJs.InlineResponse4041();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InlineResponse4041', function() {
     it('should create an instance of InlineResponse4041', function() {
       // uncomment below and update the code to test InlineResponse4041
-      //var instane = new @GetcandyJsClient.InlineResponse4041();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse4041);
+      //var instane = new GetcandyJs.InlineResponse4041();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse4041);
     });
 
     it('should have the property  (base name: "")', function() {
       // uncomment below and update the code to test the property 
-      //var instane = new @GetcandyJsClient.InlineResponse4041();
+      //var instane = new GetcandyJs.InlineResponse4041();
       //expect(instance).to.be();
     });
 

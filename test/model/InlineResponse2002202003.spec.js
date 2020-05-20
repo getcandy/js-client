@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse2002202003();
+    instance = new GetcandyJs.InlineResponse2002202003();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InlineResponse2002202003', function() {
     it('should create an instance of InlineResponse2002202003', function() {
       // uncomment below and update the code to test InlineResponse2002202003
-      //var instane = new @GetcandyJsClient.InlineResponse2002202003();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse2002202003);
+      //var instane = new GetcandyJs.InlineResponse2002202003();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse2002202003);
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instane = new @GetcandyJsClient.InlineResponse2002202003();
+      //var instane = new GetcandyJs.InlineResponse2002202003();
       //expect(instance).to.be();
     });
 
     it('should have the property _new (base name: "new")', function() {
       // uncomment below and update the code to test the property _new
-      //var instane = new @GetcandyJsClient.InlineResponse2002202003();
+      //var instane = new GetcandyJs.InlineResponse2002202003();
       //expect(instance).to.be();
     });
 
     it('should have the property returning (base name: "returning")', function() {
       // uncomment below and update the code to test the property returning
-      //var instane = new @GetcandyJsClient.InlineResponse2002202003();
+      //var instane = new GetcandyJs.InlineResponse2002202003();
       //expect(instance).to.be();
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instane = new @GetcandyJsClient.InlineResponse2002202003();
+      //var instane = new GetcandyJs.InlineResponse2002202003();
       //expect(instance).to.be();
     });
 

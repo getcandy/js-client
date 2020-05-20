@@ -1,4 +1,4 @@
-# @GetcandyJsClient.RoutesApi
+# GetcandyJs.RoutesApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -20,13 +20,13 @@ Returns paginated list of routes.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.RoutesApi();
+let apiInstance = new GetcandyJs.RoutesApi();
 apiInstance.getRoutes().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -64,13 +64,13 @@ Retrieve a route by it&#39;s slug.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.RoutesApi();
+let apiInstance = new GetcandyJs.RoutesApi();
 let slug = "slug_example"; // String | 
 let opts = {
   'include': "include_example" // String | 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject2();
+    instance = new GetcandyJs.InlineObject2();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('InlineObject2', function() {
     it('should create an instance of InlineObject2', function() {
       // uncomment below and update the code to test InlineObject2
-      //var instane = new @GetcandyJsClient.InlineObject2();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject2);
+      //var instane = new GetcandyJs.InlineObject2();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject2);
     });
 
     it('should have the property paymentTypeId (base name: "payment_type_id")', function() {
       // uncomment below and update the code to test the property paymentTypeId
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentType (base name: "payment_type")', function() {
       // uncomment below and update the code to test the property paymentType
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property orderId (base name: "order_id")', function() {
       // uncomment below and update the code to test the property orderId
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentToken (base name: "payment_token")', function() {
       // uncomment below and update the code to test the property paymentToken
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property customerReference (base name: "customer_reference")', function() {
       // uncomment below and update the code to test the property customerReference
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property meta (base name: "meta")', function() {
       // uncomment below and update the code to test the property meta
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property notes (base name: "notes")', function() {
       // uncomment below and update the code to test the property notes
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property companyName (base name: "company_name")', function() {
       // uncomment below and update the code to test the property companyName
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.InlineObject2();
+      //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 

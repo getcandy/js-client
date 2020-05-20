@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.DiscountsDiscountIdSetsData();
+    instance = new GetcandyJs.DiscountsDiscountIdSetsData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('DiscountsDiscountIdSetsData', function() {
     it('should create an instance of DiscountsDiscountIdSetsData', function() {
       // uncomment below and update the code to test DiscountsDiscountIdSetsData
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsData();
-      //expect(instance).to.be.a(@GetcandyJsClient.DiscountsDiscountIdSetsData);
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsData();
+      //expect(instance).to.be.a(GetcandyJs.DiscountsDiscountIdSetsData);
     });
 
     it('should have the property scope (base name: "scope")', function() {
       // uncomment below and update the code to test the property scope
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsData();
       //expect(instance).to.be();
     });
 
     it('should have the property outcome (base name: "outcome")', function() {
       // uncomment below and update the code to test the property outcome
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsData();
       //expect(instance).to.be();
     });
 
     it('should have the property items (base name: "items")', function() {
       // uncomment below and update the code to test the property items
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsData();
       //expect(instance).to.be();
     });
 

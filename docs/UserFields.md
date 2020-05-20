@@ -1,4 +1,4 @@
-# @GetcandyJsClient.UserFields
+# GetcandyJs.UserFields
 
 ## Properties
 

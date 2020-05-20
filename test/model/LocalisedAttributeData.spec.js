@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.LocalisedAttributeData();
+    instance = new GetcandyJs.LocalisedAttributeData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('LocalisedAttributeData', function() {
     it('should create an instance of LocalisedAttributeData', function() {
       // uncomment below and update the code to test LocalisedAttributeData
-      //var instane = new @GetcandyJsClient.LocalisedAttributeData();
-      //expect(instance).to.be.a(@GetcandyJsClient.LocalisedAttributeData);
+      //var instane = new GetcandyJs.LocalisedAttributeData();
+      //expect(instance).to.be.a(GetcandyJs.LocalisedAttributeData);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.LocalisedAttributeData();
+      //var instane = new GetcandyJs.LocalisedAttributeData();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @GetcandyJsClient.LocalisedAttributeData();
+      //var instane = new GetcandyJs.LocalisedAttributeData();
       //expect(instance).to.be();
     });
 

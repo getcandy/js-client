@@ -1,4 +1,4 @@
-# @GetcandyJsClient.VersionCollection
+# GetcandyJs.VersionCollection
 
 ## Properties
 

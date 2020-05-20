@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttachCategoryCustomerGroupsBody();
+    instance = new GetcandyJs.AttachCategoryCustomerGroupsBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AttachCategoryCustomerGroupsBody', function() {
     it('should create an instance of AttachCategoryCustomerGroupsBody', function() {
       // uncomment below and update the code to test AttachCategoryCustomerGroupsBody
-      //var instane = new @GetcandyJsClient.AttachCategoryCustomerGroupsBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttachCategoryCustomerGroupsBody);
+      //var instane = new GetcandyJs.AttachCategoryCustomerGroupsBody();
+      //expect(instance).to.be.a(GetcandyJs.AttachCategoryCustomerGroupsBody);
     });
 
     it('should have the property groups (base name: "groups")', function() {
       // uncomment below and update the code to test the property groups
-      //var instane = new @GetcandyJsClient.AttachCategoryCustomerGroupsBody();
+      //var instane = new GetcandyJs.AttachCategoryCustomerGroupsBody();
       //expect(instance).to.be();
     });
 

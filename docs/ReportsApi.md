@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ReportsApi
+# GetcandyJs.ReportsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -24,13 +24,13 @@ Gets best selling products grouped by month.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ReportsApi();
+let apiInstance = new GetcandyJs.ReportsApi();
 let opts = {
   'from': "from_example", // String | The from date
   'to': "to_example" // String | The to date
@@ -76,13 +76,13 @@ Returns metric (KPI) data for either sales or orders.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ReportsApi();
+let apiInstance = new GetcandyJs.ReportsApi();
 let subject = "subject_example"; // String | 
 apiInstance.getReportsMetricsSubject(subject).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -124,13 +124,13 @@ Returns a report for orders between a given date range
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ReportsApi();
+let apiInstance = new GetcandyJs.ReportsApi();
 let opts = {
   'from': "from_example", // String | The from date
   'to': "to_example" // String | The to date
@@ -176,13 +176,13 @@ Returns an array of order averages between a given date range.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ReportsApi();
+let apiInstance = new GetcandyJs.ReportsApi();
 let opts = {
   'from': "from_example", // String | The from date
   'to': "to_example", // String | The to date
@@ -230,13 +230,13 @@ Returns a monthly grouped list of new/returning and total customers.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ReportsApi();
+let apiInstance = new GetcandyJs.ReportsApi();
 let opts = {
   'from': "from_example", // String | The from date
   'to': "to_example" // String | The to date
@@ -282,13 +282,13 @@ This endpoints returns sales report figures.  &gt; Currently this provides data 
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ReportsApi();
+let apiInstance = new GetcandyJs.ReportsApi();
 let from = "from_example"; // String | The from date
 let opts = {
   'to': "to_example", // String | The to date

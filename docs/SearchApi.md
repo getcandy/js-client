@@ -1,4 +1,4 @@
-# @GetcandyJsClient.SearchApi
+# GetcandyJs.SearchApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -21,9 +21,9 @@ Delete a saved search entry by ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
+import GetcandyJs from 'getcandy-js';
 
-let apiInstance = new @GetcandyJsClient.SearchApi();
+let apiInstance = new GetcandyJs.SearchApi();
 let savedSearchId = "savedSearchId_example"; // String | 
 apiInstance.deleteSavedSearchesSavedSearchId(savedSearchId).then(() => {
   console.log('API called successfully.');
@@ -65,13 +65,13 @@ Returns a list of current saved searches for products
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.SearchApi();
+let apiInstance = new GetcandyJs.SearchApi();
 apiInstance.getSavedSearches().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -109,13 +109,13 @@ Search across products or categories
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.SearchApi();
+let apiInstance = new GetcandyJs.SearchApi();
 let opts = {
   'channel': "channel_example", // String | 
   'category': "category_example", // String | 

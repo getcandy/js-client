@@ -1,4 +1,4 @@
-# @GetcandyJsClient.Message
+# GetcandyJs.Message
 
 ## Properties
 

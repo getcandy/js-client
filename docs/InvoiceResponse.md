@@ -1,4 +1,4 @@
-# @GetcandyJsClient.InvoiceResponse
+# GetcandyJs.InvoiceResponse
 
 ## Properties
 

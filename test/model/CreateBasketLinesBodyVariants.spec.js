@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.CreateBasketLinesBodyVariants();
+    instance = new GetcandyJs.CreateBasketLinesBodyVariants();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('CreateBasketLinesBodyVariants', function() {
     it('should create an instance of CreateBasketLinesBodyVariants', function() {
       // uncomment below and update the code to test CreateBasketLinesBodyVariants
-      //var instane = new @GetcandyJsClient.CreateBasketLinesBodyVariants();
-      //expect(instance).to.be.a(@GetcandyJsClient.CreateBasketLinesBodyVariants);
+      //var instane = new GetcandyJs.CreateBasketLinesBodyVariants();
+      //expect(instance).to.be.a(GetcandyJs.CreateBasketLinesBodyVariants);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.CreateBasketLinesBodyVariants();
+      //var instane = new GetcandyJs.CreateBasketLinesBodyVariants();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instane = new @GetcandyJsClient.CreateBasketLinesBodyVariants();
+      //var instane = new GetcandyJs.CreateBasketLinesBodyVariants();
       //expect(instance).to.be();
     });
 
     it('should have the property meta (base name: "meta")', function() {
       // uncomment below and update the code to test the property meta
-      //var instane = new @GetcandyJsClient.CreateBasketLinesBodyVariants();
+      //var instane = new GetcandyJs.CreateBasketLinesBodyVariants();
       //expect(instance).to.be();
     });
 

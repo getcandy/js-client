@@ -1,4 +1,4 @@
-# @GetcandyJsClient.OrderContactDetails
+# GetcandyJs.OrderContactDetails
 
 ## Properties
 

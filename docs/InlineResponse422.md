@@ -1,4 +1,4 @@
-# @GetcandyJsClient.InlineResponse422
+# GetcandyJs.InlineResponse422
 
 ## Properties
 

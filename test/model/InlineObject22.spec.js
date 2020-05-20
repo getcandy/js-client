@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject22();
+    instance = new GetcandyJs.InlineObject22();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InlineObject22', function() {
     it('should create an instance of InlineObject22', function() {
       // uncomment below and update the code to test InlineObject22
-      //var instane = new @GetcandyJsClient.InlineObject22();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject22);
+      //var instane = new GetcandyJs.InlineObject22();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject22);
     });
 
     it('should have the property collections (base name: "collections")', function() {
       // uncomment below and update the code to test the property collections
-      //var instane = new @GetcandyJsClient.InlineObject22();
+      //var instane = new GetcandyJs.InlineObject22();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AddBasketMetaBody();
+    instance = new GetcandyJs.AddBasketMetaBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('AddBasketMetaBody', function() {
     it('should create an instance of AddBasketMetaBody', function() {
       // uncomment below and update the code to test AddBasketMetaBody
-      //var instane = new @GetcandyJsClient.AddBasketMetaBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.AddBasketMetaBody);
+      //var instane = new GetcandyJs.AddBasketMetaBody();
+      //expect(instance).to.be.a(GetcandyJs.AddBasketMetaBody);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instane = new @GetcandyJsClient.AddBasketMetaBody();
+      //var instane = new GetcandyJs.AddBasketMetaBody();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instane = new @GetcandyJsClient.AddBasketMetaBody();
+      //var instane = new GetcandyJs.AddBasketMetaBody();
       //expect(instance).to.be();
     });
 

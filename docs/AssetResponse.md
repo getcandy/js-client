@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AssetResponse
+# GetcandyJs.AssetResponse
 
 ## Properties
 

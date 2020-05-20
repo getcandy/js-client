@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.SearchMetaAggregation();
+    instance = new GetcandyJs.SearchMetaAggregation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('SearchMetaAggregation', function() {
     it('should create an instance of SearchMetaAggregation', function() {
       // uncomment below and update the code to test SearchMetaAggregation
-      //var instane = new @GetcandyJsClient.SearchMetaAggregation();
-      //expect(instance).to.be.a(@GetcandyJsClient.SearchMetaAggregation);
+      //var instane = new GetcandyJs.SearchMetaAggregation();
+      //expect(instance).to.be.a(GetcandyJs.SearchMetaAggregation);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.SearchMetaAggregation();
+      //var instane = new GetcandyJs.SearchMetaAggregation();
       //expect(instance).to.be();
     });
 

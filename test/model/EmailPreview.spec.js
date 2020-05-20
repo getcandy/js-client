@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.EmailPreview();
+    instance = new GetcandyJs.EmailPreview();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('EmailPreview', function() {
     it('should create an instance of EmailPreview', function() {
       // uncomment below and update the code to test EmailPreview
-      //var instane = new @GetcandyJsClient.EmailPreview();
-      //expect(instance).to.be.a(@GetcandyJsClient.EmailPreview);
+      //var instane = new GetcandyJs.EmailPreview();
+      //expect(instance).to.be.a(GetcandyJs.EmailPreview);
     });
 
     it('should have the property subject (base name: "subject")', function() {
       // uncomment below and update the code to test the property subject
-      //var instane = new @GetcandyJsClient.EmailPreview();
+      //var instane = new GetcandyJs.EmailPreview();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instane = new @GetcandyJsClient.EmailPreview();
+      //var instane = new GetcandyJs.EmailPreview();
       //expect(instance).to.be();
     });
 

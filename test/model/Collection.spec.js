@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Collection();
+    instance = new GetcandyJs.Collection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('Collection', function() {
     it('should create an instance of Collection', function() {
       // uncomment below and update the code to test Collection
-      //var instane = new @GetcandyJsClient.Collection();
-      //expect(instance).to.be.a(@GetcandyJsClient.Collection);
+      //var instane = new GetcandyJs.Collection();
+      //expect(instance).to.be.a(GetcandyJs.Collection);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeData (base name: "attribute_data")', function() {
       // uncomment below and update the code to test the property attributeData
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property routes (base name: "routes")', function() {
       // uncomment below and update the code to test the property routes
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property layout (base name: "layout")', function() {
       // uncomment below and update the code to test the property layout
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property assets (base name: "assets")', function() {
       // uncomment below and update the code to test the property assets
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property attributes (base name: "attributes")', function() {
       // uncomment below and update the code to test the property attributes
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property products (base name: "products")', function() {
       // uncomment below and update the code to test the property products
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property customerGroups (base name: "customer_groups")', function() {
       // uncomment below and update the code to test the property customerGroups
-      //var instane = new @GetcandyJsClient.Collection();
+      //var instane = new GetcandyJs.Collection();
       //expect(instance).to.be();
     });
 

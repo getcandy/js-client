@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Transaction();
+    instance = new GetcandyJs.Transaction();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,109 +50,109 @@
   describe('Transaction', function() {
     it('should create an instance of Transaction', function() {
       // uncomment below and update the code to test Transaction
-      //var instane = new @GetcandyJsClient.Transaction();
-      //expect(instance).to.be.a(@GetcandyJsClient.Transaction);
+      //var instane = new GetcandyJs.Transaction();
+      //expect(instance).to.be.a(GetcandyJs.Transaction);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionId (base name: "transaction_id")', function() {
       // uncomment below and update the code to test the property transactionId
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property merchant (base name: "merchant")', function() {
       // uncomment below and update the code to test the property merchant
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property cardType (base name: "card_type")', function() {
       // uncomment below and update the code to test the property cardType
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property lastFour (base name: "last_four")', function() {
       // uncomment below and update the code to test the property lastFour
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property provider (base name: "provider")', function() {
       // uncomment below and update the code to test the property provider
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property driver (base name: "driver")', function() {
       // uncomment below and update the code to test the property driver
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property success (base name: "success")', function() {
       // uncomment below and update the code to test the property success
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property refund (base name: "refund")', function() {
       // uncomment below and update the code to test the property refund
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property addressMatched (base name: "address_matched")', function() {
       // uncomment below and update the code to test the property addressMatched
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property cvcMatched (base name: "cvc_matched")', function() {
       // uncomment below and update the code to test the property cvcMatched
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property threedSecure (base name: "threed_secure")', function() {
       // uncomment below and update the code to test the property threedSecure
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property postcodeMatched (base name: "postcode_matched")', function() {
       // uncomment below and update the code to test the property postcodeMatched
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property notes (base name: "notes")', function() {
       // uncomment below and update the code to test the property notes
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "created_at")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instane = new @GetcandyJsClient.Transaction();
+      //var instane = new GetcandyJs.Transaction();
       //expect(instance).to.be();
     });
 

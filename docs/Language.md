@@ -1,4 +1,4 @@
-# @GetcandyJsClient.Language
+# GetcandyJs.Language
 
 ## Properties
 

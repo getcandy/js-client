@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.PermissionCollection();
+    instance = new GetcandyJs.PermissionCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('PermissionCollection', function() {
     it('should create an instance of PermissionCollection', function() {
       // uncomment below and update the code to test PermissionCollection
-      //var instane = new @GetcandyJsClient.PermissionCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.PermissionCollection);
+      //var instane = new GetcandyJs.PermissionCollection();
+      //expect(instance).to.be.a(GetcandyJs.PermissionCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.PermissionCollection();
+      //var instane = new GetcandyJs.PermissionCollection();
       //expect(instance).to.be();
     });
 

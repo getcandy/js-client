@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ActivityLogResponse();
+    instance = new GetcandyJs.ActivityLogResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ActivityLogResponse', function() {
     it('should create an instance of ActivityLogResponse', function() {
       // uncomment below and update the code to test ActivityLogResponse
-      //var instane = new @GetcandyJsClient.ActivityLogResponse();
-      //expect(instance).to.be.a(@GetcandyJsClient.ActivityLogResponse);
+      //var instane = new GetcandyJs.ActivityLogResponse();
+      //expect(instance).to.be.a(GetcandyJs.ActivityLogResponse);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.ActivityLogResponse();
+      //var instane = new GetcandyJs.ActivityLogResponse();
       //expect(instance).to.be();
     });
 

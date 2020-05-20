@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttributeData();
+    instance = new GetcandyJs.AttributeData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AttributeData', function() {
     it('should create an instance of AttributeData', function() {
       // uncomment below and update the code to test AttributeData
-      //var instane = new @GetcandyJsClient.AttributeData();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttributeData);
+      //var instane = new GetcandyJs.AttributeData();
+      //expect(instance).to.be.a(GetcandyJs.AttributeData);
     });
 
     it('should have the property attributeData (base name: "attribute_data")', function() {
       // uncomment below and update the code to test the property attributeData
-      //var instane = new @GetcandyJsClient.AttributeData();
+      //var instane = new GetcandyJs.AttributeData();
       //expect(instance).to.be();
     });
 

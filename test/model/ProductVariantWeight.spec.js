@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductVariantWeight();
+    instance = new GetcandyJs.ProductVariantWeight();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductVariantWeight', function() {
     it('should create an instance of ProductVariantWeight', function() {
       // uncomment below and update the code to test ProductVariantWeight
-      //var instane = new @GetcandyJsClient.ProductVariantWeight();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductVariantWeight);
+      //var instane = new GetcandyJs.ProductVariantWeight();
+      //expect(instance).to.be.a(GetcandyJs.ProductVariantWeight);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instane = new @GetcandyJsClient.ProductVariantWeight();
+      //var instane = new GetcandyJs.ProductVariantWeight();
       //expect(instance).to.be();
     });
 
     it('should have the property unit (base name: "unit")', function() {
       // uncomment below and update the code to test the property unit
-      //var instane = new @GetcandyJsClient.ProductVariantWeight();
+      //var instane = new GetcandyJs.ProductVariantWeight();
       //expect(instance).to.be();
     });
 

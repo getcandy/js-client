@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse200Datasets();
+    instance = new GetcandyJs.InlineResponse200Datasets();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InlineResponse200Datasets', function() {
     it('should create an instance of InlineResponse200Datasets', function() {
       // uncomment below and update the code to test InlineResponse200Datasets
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse200Datasets);
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse200Datasets);
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
       //expect(instance).to.be();
     });
 
     it('should have the property backgroundColor (base name: "backgroundColor")', function() {
       // uncomment below and update the code to test the property backgroundColor
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
       //expect(instance).to.be();
     });
 
     it('should have the property yAxisId (base name: "yAxisId")', function() {
       // uncomment below and update the code to test the property yAxisId
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
       //expect(instance).to.be();
     });
 
     it('should have the property borderColor (base name: "borderColor")', function() {
       // uncomment below and update the code to test the property borderColor
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
       //expect(instance).to.be();
     });
 
     it('should have the property fill (base name: "fill")', function() {
       // uncomment below and update the code to test the property fill
-      //var instane = new @GetcandyJsClient.InlineResponse200Datasets();
+      //var instane = new GetcandyJs.InlineResponse200Datasets();
       //expect(instance).to.be();
     });
 

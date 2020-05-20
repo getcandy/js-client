@@ -1,4 +1,4 @@
-# @GetcandyJsClient.CategoriesApi
+# GetcandyJs.CategoriesApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -29,13 +29,13 @@ Returns a paginated resource of categories
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let opts = {
   'fullResponse': true, // Boolean | 
   'include': "include_example", // String | 
@@ -83,13 +83,13 @@ Returns a single category from a given ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
   'includes': "includes_example" // String | 
@@ -135,13 +135,13 @@ Returns categories by a given parent ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let parentId = "parentId_example"; // String | If omitted will return top level catgories
 let opts = {
   'include': "include_example" // String | 
@@ -187,15 +187,15 @@ Creates a new category and returns it&#39;s resource.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let opts = {
-  'createCategoryBody': new @GetcandyJsClient.CreateCategoryBody() // CreateCategoryBody | 
+  'createCategoryBody': new GetcandyJs.CreateCategoryBody() // CreateCategoryBody | 
 };
 apiInstance.postCategories(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -237,16 +237,16 @@ Attaches channels to a catagory
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
-  'attachCategoryChannelsBody': new @GetcandyJsClient.AttachCategoryChannelsBody() // AttachCategoryChannelsBody | 
+  'attachCategoryChannelsBody': new GetcandyJs.AttachCategoryChannelsBody() // AttachCategoryChannelsBody | 
 };
 apiInstance.postCategoriesCategoryIdChannels(categoryId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -289,16 +289,16 @@ Attaches customer groups to a category resource.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
-  'attachCategoryCustomerGroupsBody': new @GetcandyJsClient.AttachCategoryCustomerGroupsBody() // AttachCategoryCustomerGroupsBody | 
+  'attachCategoryCustomerGroupsBody': new GetcandyJs.AttachCategoryCustomerGroupsBody() // AttachCategoryCustomerGroupsBody | 
 };
 apiInstance.postCategoriesCategoryIdCustomerGroups(categoryId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -341,16 +341,16 @@ Attaches layouts to a category resource
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
-  'categoryAttachLayoutBody': new @GetcandyJsClient.CategoryAttachLayoutBody() // CategoryAttachLayoutBody | 
+  'categoryAttachLayoutBody': new GetcandyJs.CategoryAttachLayoutBody() // CategoryAttachLayoutBody | 
 };
 apiInstance.postCategoriesCategoryLayouts(categoryId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -393,16 +393,16 @@ Attaches routes to a category resource.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
-  'attachCategoryRoutesBody': new @GetcandyJsClient.AttachCategoryRoutesBody() // AttachCategoryRoutesBody | 
+  'attachCategoryRoutesBody': new GetcandyJs.AttachCategoryRoutesBody() // AttachCategoryRoutesBody | 
 };
 apiInstance.postCategoriesCategoryRoutes(categoryId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -443,15 +443,15 @@ Reorder a category
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let opts = {
-  'reorderCategoryBody': new @GetcandyJsClient.ReorderCategoryBody() // ReorderCategoryBody | 
+  'reorderCategoryBody': new GetcandyJs.ReorderCategoryBody() // ReorderCategoryBody | 
 };
 apiInstance.postCategoriesReorder(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -493,16 +493,16 @@ Update a category using a given ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
-  'updateAttributesBody': new @GetcandyJsClient.UpdateAttributesBody() // UpdateAttributesBody | 
+  'updateAttributesBody': new GetcandyJs.UpdateAttributesBody() // UpdateAttributesBody | 
 };
 apiInstance.putCategoriesCategoryId(categoryId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -545,16 +545,16 @@ Attaches products to a category resource.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.CategoriesApi();
+let apiInstance = new GetcandyJs.CategoriesApi();
 let categoryId = "categoryId_example"; // String | 
 let opts = {
-  'attachCategoryProductsBody': new @GetcandyJsClient.AttachCategoryProductsBody() // AttachCategoryProductsBody | When using \"custom\" sort type, sorting will be based on the position.
+  'attachCategoryProductsBody': new GetcandyJs.AttachCategoryProductsBody() // AttachCategoryProductsBody | When using \"custom\" sort type, sorting will be based on the position.
 };
 apiInstance.putCategoriesCategoryIdProducts(categoryId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

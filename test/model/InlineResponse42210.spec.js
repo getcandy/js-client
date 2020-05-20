@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse42210();
+    instance = new GetcandyJs.InlineResponse42210();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InlineResponse42210', function() {
     it('should create an instance of InlineResponse42210', function() {
       // uncomment below and update the code to test InlineResponse42210
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse42210);
+      //var instane = new GetcandyJs.InlineResponse42210();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse42210);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
+      //var instane = new GetcandyJs.InlineResponse42210();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
+      //var instane = new GetcandyJs.InlineResponse42210();
       //expect(instance).to.be();
     });
 
     it('should have the property stock (base name: "stock")', function() {
       // uncomment below and update the code to test the property stock
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
+      //var instane = new GetcandyJs.InlineResponse42210();
       //expect(instance).to.be();
     });
 
     it('should have the property familyId (base name: "family_id")', function() {
       // uncomment below and update the code to test the property familyId
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
+      //var instane = new GetcandyJs.InlineResponse42210();
       //expect(instance).to.be();
     });
 
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
+      //var instane = new GetcandyJs.InlineResponse42210();
       //expect(instance).to.be();
     });
 
     it('should have the property sku (base name: "sku")', function() {
       // uncomment below and update the code to test the property sku
-      //var instane = new @GetcandyJsClient.InlineResponse42210();
+      //var instane = new GetcandyJs.InlineResponse42210();
       //expect(instance).to.be();
     });
 

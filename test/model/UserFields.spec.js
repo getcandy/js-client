@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.UserFields();
+    instance = new GetcandyJs.UserFields();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('UserFields', function() {
     it('should create an instance of UserFields', function() {
       // uncomment below and update the code to test UserFields
-      //var instane = new @GetcandyJsClient.UserFields();
-      //expect(instance).to.be.a(@GetcandyJsClient.UserFields);
+      //var instane = new GetcandyJs.UserFields();
+      //expect(instance).to.be.a(GetcandyJs.UserFields);
     });
 
     it('should have the property fields (base name: "fields")', function() {
       // uncomment below and update the code to test the property fields
-      //var instane = new @GetcandyJsClient.UserFields();
+      //var instane = new GetcandyJs.UserFields();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject9();
+    instance = new GetcandyJs.InlineObject9();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InlineObject9', function() {
     it('should create an instance of InlineObject9', function() {
       // uncomment below and update the code to test InlineObject9
-      //var instane = new @GetcandyJsClient.InlineObject9();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject9);
+      //var instane = new GetcandyJs.InlineObject9();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject9);
     });
 
     it('should have the property startAt (base name: "start_at")', function() {
       // uncomment below and update the code to test the property startAt
-      //var instane = new @GetcandyJsClient.InlineObject9();
+      //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 
     it('should have the property endAt (base name: "end_at")', function() {
       // uncomment below and update the code to test the property endAt
-      //var instane = new @GetcandyJsClient.InlineObject9();
+      //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.InlineObject9();
+      //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 
     it('should have the property uses (base name: "uses")', function() {
       // uncomment below and update the code to test the property uses
-      //var instane = new @GetcandyJsClient.InlineObject9();
+      //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new @GetcandyJsClient.InlineObject9();
+      //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
-      //var instane = new @GetcandyJsClient.InlineObject9();
+      //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 

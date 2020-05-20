@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject5();
+    instance = new GetcandyJs.InlineObject5();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InlineObject5', function() {
     it('should create an instance of InlineObject5', function() {
       // uncomment below and update the code to test InlineObject5
-      //var instane = new @GetcandyJsClient.InlineObject5();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject5);
+      //var instane = new GetcandyJs.InlineObject5();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject5);
     });
 
     it('should have the property redirect (base name: "redirect")', function() {
       // uncomment below and update the code to test the property redirect
-      //var instane = new @GetcandyJsClient.InlineObject5();
+      //var instane = new GetcandyJs.InlineObject5();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @GetcandyJsClient.InlineObject5();
+      //var instane = new GetcandyJs.InlineObject5();
       //expect(instance).to.be();
     });
 
     it('should have the property slug (base name: "slug")', function() {
       // uncomment below and update the code to test the property slug
-      //var instane = new @GetcandyJsClient.InlineObject5();
+      //var instane = new GetcandyJs.InlineObject5();
       //expect(instance).to.be();
     });
 
     it('should have the property locale (base name: "locale")', function() {
       // uncomment below and update the code to test the property locale
-      //var instane = new @GetcandyJsClient.InlineObject5();
+      //var instane = new GetcandyJs.InlineObject5();
       //expect(instance).to.be();
     });
 

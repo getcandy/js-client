@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ChannelsApi
+# GetcandyJs.ChannelsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -21,13 +21,13 @@ Delete the channel resource
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ChannelsApi();
+let apiInstance = new GetcandyJs.ChannelsApi();
 let channelId = "channelId_example"; // String | 
 apiInstance.deleteChannelsChannelId(channelId).then(() => {
   console.log('API called successfully.');
@@ -69,13 +69,13 @@ Gets a paginated list of all channel
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ChannelsApi();
+let apiInstance = new GetcandyJs.ChannelsApi();
 let opts = {
   'includes': "includes_example", // String | Comma separated includes for the resource
   'perPage': 3.4 // Number | How many results per page
@@ -119,13 +119,13 @@ Get the channel resource
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ChannelsApi();
+let apiInstance = new GetcandyJs.ChannelsApi();
 let channelId = "channelId_example"; // String | 
 let opts = {
   'includes': "includes_example" // String | 
@@ -171,13 +171,13 @@ Create a new channel resource
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ChannelsApi();
+let apiInstance = new GetcandyJs.ChannelsApi();
 let opts = {
   'handle': "handle_example", // String | 
   'name': "name_example" // String | 
@@ -221,13 +221,13 @@ Update the channel resource
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ChannelsApi();
+let apiInstance = new GetcandyJs.ChannelsApi();
 let channelId = "channelId_example"; // String | 
 apiInstance.putChannelsChannelId(channelId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

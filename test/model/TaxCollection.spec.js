@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.TaxCollection();
+    instance = new GetcandyJs.TaxCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('TaxCollection', function() {
     it('should create an instance of TaxCollection', function() {
       // uncomment below and update the code to test TaxCollection
-      //var instane = new @GetcandyJsClient.TaxCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.TaxCollection);
+      //var instane = new GetcandyJs.TaxCollection();
+      //expect(instance).to.be.a(GetcandyJs.TaxCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.TaxCollection();
+      //var instane = new GetcandyJs.TaxCollection();
       //expect(instance).to.be();
     });
 

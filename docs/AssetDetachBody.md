@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AssetDetachBody
+# GetcandyJs.AssetDetachBody
 
 ## Properties
 

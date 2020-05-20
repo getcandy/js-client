@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttributesLookups();
+    instance = new GetcandyJs.AttributesLookups();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('AttributesLookups', function() {
     it('should create an instance of AttributesLookups', function() {
       // uncomment below and update the code to test AttributesLookups
-      //var instane = new @GetcandyJsClient.AttributesLookups();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttributesLookups);
+      //var instane = new GetcandyJs.AttributesLookups();
+      //expect(instance).to.be.a(GetcandyJs.AttributesLookups);
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instane = new @GetcandyJsClient.AttributesLookups();
+      //var instane = new GetcandyJs.AttributesLookups();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instane = new @GetcandyJsClient.AttributesLookups();
+      //var instane = new GetcandyJs.AttributesLookups();
       //expect(instance).to.be();
     });
 

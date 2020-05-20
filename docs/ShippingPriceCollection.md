@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ShippingPriceCollection
+# GetcandyJs.ShippingPriceCollection
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.OrderExport();
+    instance = new GetcandyJs.OrderExport();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderExport', function() {
     it('should create an instance of OrderExport', function() {
       // uncomment below and update the code to test OrderExport
-      //var instane = new @GetcandyJsClient.OrderExport();
-      //expect(instance).to.be.a(@GetcandyJsClient.OrderExport);
+      //var instane = new GetcandyJs.OrderExport();
+      //expect(instance).to.be.a(GetcandyJs.OrderExport);
     });
 
     it('should have the property format (base name: "format")', function() {
       // uncomment below and update the code to test the property format
-      //var instane = new @GetcandyJsClient.OrderExport();
+      //var instane = new GetcandyJs.OrderExport();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instane = new @GetcandyJsClient.OrderExport();
+      //var instane = new GetcandyJs.OrderExport();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# @GetcandyJsClient.PaginatedResponse
+# GetcandyJs.PaginatedResponse
 
 ## Properties
 

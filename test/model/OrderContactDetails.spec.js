@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.OrderContactDetails();
+    instance = new GetcandyJs.OrderContactDetails();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderContactDetails', function() {
     it('should create an instance of OrderContactDetails', function() {
       // uncomment below and update the code to test OrderContactDetails
-      //var instane = new @GetcandyJsClient.OrderContactDetails();
-      //expect(instance).to.be.a(@GetcandyJsClient.OrderContactDetails);
+      //var instane = new GetcandyJs.OrderContactDetails();
+      //expect(instance).to.be.a(GetcandyJs.OrderContactDetails);
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instane = new @GetcandyJsClient.OrderContactDetails();
+      //var instane = new GetcandyJs.OrderContactDetails();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new @GetcandyJsClient.OrderContactDetails();
+      //var instane = new GetcandyJs.OrderContactDetails();
       //expect(instance).to.be();
     });
 

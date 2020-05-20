@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Error();
+    instance = new GetcandyJs.Error();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('Error', function() {
     it('should create an instance of Error', function() {
       // uncomment below and update the code to test Error
-      //var instane = new @GetcandyJsClient.Error();
-      //expect(instance).to.be.a(@GetcandyJsClient.Error);
+      //var instane = new GetcandyJs.Error();
+      //expect(instance).to.be.a(GetcandyJs.Error);
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instane = new @GetcandyJsClient.Error();
+      //var instane = new GetcandyJs.Error();
       //expect(instance).to.be();
     });
 

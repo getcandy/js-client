@@ -1,4 +1,4 @@
-# @GetcandyJsClient.CustomerGroupResponse
+# GetcandyJs.CustomerGroupResponse
 
 ## Properties
 

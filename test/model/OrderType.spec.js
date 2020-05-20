@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.OrderType();
+    instance = new GetcandyJs.OrderType();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('OrderType', function() {
     it('should create an instance of OrderType', function() {
       // uncomment below and update the code to test OrderType
-      //var instane = new @GetcandyJsClient.OrderType();
-      //expect(instance).to.be.a(@GetcandyJsClient.OrderType);
+      //var instane = new GetcandyJs.OrderType();
+      //expect(instance).to.be.a(GetcandyJs.OrderType);
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instane = new @GetcandyJsClient.OrderType();
+      //var instane = new GetcandyJs.OrderType();
       //expect(instance).to.be();
     });
 

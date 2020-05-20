@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AttachCategoryCustomerGroupsBodyGroups
+# GetcandyJs.AttachCategoryCustomerGroupsBodyGroups
 
 ## Properties
 

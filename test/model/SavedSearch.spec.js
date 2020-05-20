@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.SavedSearch();
+    instance = new GetcandyJs.SavedSearch();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('SavedSearch', function() {
     it('should create an instance of SavedSearch', function() {
       // uncomment below and update the code to test SavedSearch
-      //var instane = new @GetcandyJsClient.SavedSearch();
-      //expect(instance).to.be.a(@GetcandyJsClient.SavedSearch);
+      //var instane = new GetcandyJs.SavedSearch();
+      //expect(instance).to.be.a(GetcandyJs.SavedSearch);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.SavedSearch();
+      //var instane = new GetcandyJs.SavedSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.SavedSearch();
+      //var instane = new GetcandyJs.SavedSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property payload (base name: "payload")', function() {
       // uncomment below and update the code to test the property payload
-      //var instane = new @GetcandyJsClient.SavedSearch();
+      //var instane = new GetcandyJs.SavedSearch();
       //expect(instance).to.be();
     });
 

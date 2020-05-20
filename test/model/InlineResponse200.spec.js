@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse200();
+    instance = new GetcandyJs.InlineResponse200();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('InlineResponse200', function() {
     it('should create an instance of InlineResponse200', function() {
       // uncomment below and update the code to test InlineResponse200
-      //var instane = new @GetcandyJsClient.InlineResponse200();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse200);
+      //var instane = new GetcandyJs.InlineResponse200();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse200);
     });
 
     it('should have the property labels (base name: "labels")', function() {
       // uncomment below and update the code to test the property labels
-      //var instane = new @GetcandyJsClient.InlineResponse200();
+      //var instane = new GetcandyJs.InlineResponse200();
       //expect(instance).to.be();
     });
 
     it('should have the property datasets (base name: "datasets")', function() {
       // uncomment below and update the code to test the property datasets
-      //var instane = new @GetcandyJsClient.InlineResponse200();
+      //var instane = new GetcandyJs.InlineResponse200();
       //expect(instance).to.be();
     });
 

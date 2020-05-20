@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.RoleCollection();
+    instance = new GetcandyJs.RoleCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('RoleCollection', function() {
     it('should create an instance of RoleCollection', function() {
       // uncomment below and update the code to test RoleCollection
-      //var instane = new @GetcandyJsClient.RoleCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.RoleCollection);
+      //var instane = new GetcandyJs.RoleCollection();
+      //expect(instance).to.be.a(GetcandyJs.RoleCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.RoleCollection();
+      //var instane = new GetcandyJs.RoleCollection();
       //expect(instance).to.be();
     });
 

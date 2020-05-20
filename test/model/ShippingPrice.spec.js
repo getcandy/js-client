@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ShippingPrice();
+    instance = new GetcandyJs.ShippingPrice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,103 +50,103 @@
   describe('ShippingPrice', function() {
     it('should create an instance of ShippingPrice', function() {
       // uncomment below and update the code to test ShippingPrice
-      //var instane = new @GetcandyJsClient.ShippingPrice();
-      //expect(instance).to.be.a(@GetcandyJsClient.ShippingPrice);
+      //var instane = new GetcandyJs.ShippingPrice();
+      //expect(instance).to.be.a(GetcandyJs.ShippingPrice);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property rate (base name: "rate")', function() {
       // uncomment below and update the code to test the property rate
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property tax (base name: "tax")', function() {
       // uncomment below and update the code to test the property tax
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property fixed (base name: "fixed")', function() {
       // uncomment below and update the code to test the property fixed
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minBasket (base name: "min_basket")', function() {
       // uncomment below and update the code to test the property minBasket
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minBasketTax (base name: "min_basket_tax")', function() {
       // uncomment below and update the code to test the property minBasketTax
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minWeight (base name: "min_weight")', function() {
       // uncomment below and update the code to test the property minWeight
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property weightUnit (base name: "weight_unit")', function() {
       // uncomment below and update the code to test the property weightUnit
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minHeight (base name: "min_height")', function() {
       // uncomment below and update the code to test the property minHeight
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property heightUnit (base name: "height_unit")', function() {
       // uncomment below and update the code to test the property heightUnit
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minWidth (base name: "min_width")', function() {
       // uncomment below and update the code to test the property minWidth
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property widthUnit (base name: "width_unit")', function() {
       // uncomment below and update the code to test the property widthUnit
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minDepth (base name: "min_depth")', function() {
       // uncomment below and update the code to test the property minDepth
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property depthUnit (base name: "depth_unit")', function() {
       // uncomment below and update the code to test the property depthUnit
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property minVolume (base name: "min_volume")', function() {
       // uncomment below and update the code to test the property minVolume
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property volumeUnit (base name: "volume_unit")', function() {
       // uncomment below and update the code to test the property volumeUnit
-      //var instane = new @GetcandyJsClient.ShippingPrice();
+      //var instane = new GetcandyJs.ShippingPrice();
       //expect(instance).to.be();
     });
 

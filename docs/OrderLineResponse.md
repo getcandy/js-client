@@ -1,4 +1,4 @@
-# @GetcandyJsClient.OrderLineResponse
+# GetcandyJs.OrderLineResponse
 
 ## Properties
 

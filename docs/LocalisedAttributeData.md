@@ -1,4 +1,4 @@
-# @GetcandyJsClient.LocalisedAttributeData
+# GetcandyJs.LocalisedAttributeData
 
 ## Properties
 

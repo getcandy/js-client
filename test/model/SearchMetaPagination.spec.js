@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.SearchMetaPagination();
+    instance = new GetcandyJs.SearchMetaPagination();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('SearchMetaPagination', function() {
     it('should create an instance of SearchMetaPagination', function() {
       // uncomment below and update the code to test SearchMetaPagination
-      //var instane = new @GetcandyJsClient.SearchMetaPagination();
-      //expect(instance).to.be.a(@GetcandyJsClient.SearchMetaPagination);
+      //var instane = new GetcandyJs.SearchMetaPagination();
+      //expect(instance).to.be.a(GetcandyJs.SearchMetaPagination);
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instane = new @GetcandyJsClient.SearchMetaPagination();
+      //var instane = new GetcandyJs.SearchMetaPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instane = new @GetcandyJsClient.SearchMetaPagination();
+      //var instane = new GetcandyJs.SearchMetaPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property perPage (base name: "per_page")', function() {
       // uncomment below and update the code to test the property perPage
-      //var instane = new @GetcandyJsClient.SearchMetaPagination();
+      //var instane = new GetcandyJs.SearchMetaPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property currentPage (base name: "current_page")', function() {
       // uncomment below and update the code to test the property currentPage
-      //var instane = new @GetcandyJsClient.SearchMetaPagination();
+      //var instane = new GetcandyJs.SearchMetaPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property totalPages (base name: "total_pages")', function() {
       // uncomment below and update the code to test the property totalPages
-      //var instane = new @GetcandyJsClient.SearchMetaPagination();
+      //var instane = new GetcandyJs.SearchMetaPagination();
       //expect(instance).to.be();
     });
 

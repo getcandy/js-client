@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ResolveBasketBody();
+    instance = new GetcandyJs.ResolveBasketBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ResolveBasketBody', function() {
     it('should create an instance of ResolveBasketBody', function() {
       // uncomment below and update the code to test ResolveBasketBody
-      //var instane = new @GetcandyJsClient.ResolveBasketBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.ResolveBasketBody);
+      //var instane = new GetcandyJs.ResolveBasketBody();
+      //expect(instance).to.be.a(GetcandyJs.ResolveBasketBody);
     });
 
     it('should have the property merge (base name: "merge")', function() {
       // uncomment below and update the code to test the property merge
-      //var instane = new @GetcandyJsClient.ResolveBasketBody();
+      //var instane = new GetcandyJs.ResolveBasketBody();
       //expect(instance).to.be();
     });
 
     it('should have the property basketId (base name: "basket_id")', function() {
       // uncomment below and update the code to test the property basketId
-      //var instane = new @GetcandyJsClient.ResolveBasketBody();
+      //var instane = new GetcandyJs.ResolveBasketBody();
       //expect(instance).to.be();
     });
 

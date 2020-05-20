@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.RecycleBin();
+    instance = new GetcandyJs.RecycleBin();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('RecycleBin', function() {
     it('should create an instance of RecycleBin', function() {
       // uncomment below and update the code to test RecycleBin
-      //var instane = new @GetcandyJsClient.RecycleBin();
-      //expect(instance).to.be.a(@GetcandyJsClient.RecycleBin);
+      //var instane = new GetcandyJs.RecycleBin();
+      //expect(instance).to.be.a(GetcandyJs.RecycleBin);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.RecycleBin();
+      //var instane = new GetcandyJs.RecycleBin();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @GetcandyJsClient.RecycleBin();
+      //var instane = new GetcandyJs.RecycleBin();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.RecycleBin();
+      //var instane = new GetcandyJs.RecycleBin();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbnail (base name: "thumbnail")', function() {
       // uncomment below and update the code to test the property thumbnail
-      //var instane = new @GetcandyJsClient.RecycleBin();
+      //var instane = new GetcandyJs.RecycleBin();
       //expect(instance).to.be();
     });
 
     it('should have the property deletedAt (base name: "deleted_at")', function() {
       // uncomment below and update the code to test the property deletedAt
-      //var instane = new @GetcandyJsClient.RecycleBin();
+      //var instane = new GetcandyJs.RecycleBin();
       //expect(instance).to.be();
     });
 
     it('should have the property recyclable (base name: "recyclable")', function() {
       // uncomment below and update the code to test the property recyclable
-      //var instane = new @GetcandyJsClient.RecycleBin();
+      //var instane = new GetcandyJs.RecycleBin();
       //expect(instance).to.be();
     });
 

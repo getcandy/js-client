@@ -1,4 +1,4 @@
-# @GetcandyJsClient.SearchMetaAggregation
+# GetcandyJs.SearchMetaAggregation
 
 ## Properties
 

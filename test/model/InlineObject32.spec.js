@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject32();
+    instance = new GetcandyJs.InlineObject32();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InlineObject32', function() {
     it('should create an instance of InlineObject32', function() {
       // uncomment below and update the code to test InlineObject32
-      //var instane = new @GetcandyJsClient.InlineObject32();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject32);
+      //var instane = new GetcandyJs.InlineObject32();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject32);
     });
 
     it('should have the property zones (base name: "zones")', function() {
       // uncomment below and update the code to test the property zones
-      //var instane = new @GetcandyJsClient.InlineObject32();
+      //var instane = new GetcandyJs.InlineObject32();
       //expect(instance).to.be();
     });
 

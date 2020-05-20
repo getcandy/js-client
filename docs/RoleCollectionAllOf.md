@@ -1,4 +1,4 @@
-# @GetcandyJsClient.RoleCollectionAllOf
+# GetcandyJs.RoleCollectionAllOf
 
 ## Properties
 

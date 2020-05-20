@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject10();
+    instance = new GetcandyJs.InlineObject10();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('InlineObject10', function() {
     it('should create an instance of InlineObject10', function() {
       // uncomment below and update the code to test InlineObject10
-      //var instane = new @GetcandyJsClient.InlineObject10();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject10);
+      //var instane = new GetcandyJs.InlineObject10();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject10);
     });
 
     it('should have the property startAt (base name: "start_at")', function() {
       // uncomment below and update the code to test the property startAt
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property endAt (base name: "end_at")', function() {
       // uncomment below and update the code to test the property endAt
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property priority (base name: "priority")', function() {
       // uncomment below and update the code to test the property priority
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property stopRules (base name: "stop_rules")', function() {
       // uncomment below and update the code to test the property stopRules
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property rewards (base name: "rewards")', function() {
       // uncomment below and update the code to test the property rewards
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
     it('should have the property sets (base name: "sets")', function() {
       // uncomment below and update the code to test the property sets
-      //var instane = new @GetcandyJsClient.InlineObject10();
+      //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 

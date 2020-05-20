@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductFamiliesApi
+# GetcandyJs.ProductFamiliesApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -23,13 +23,13 @@ Sends a request to delete a product family
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductFamiliesApi();
+let apiInstance = new GetcandyJs.ProductFamiliesApi();
 let productFamilyId = "productFamilyId_example"; // String | 
 apiInstance.deleteProductFamiliesProductFamilyId(productFamilyId).then(() => {
   console.log('API called successfully.');
@@ -71,13 +71,13 @@ Returns a paginated list of all product families.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductFamiliesApi();
+let apiInstance = new GetcandyJs.ProductFamiliesApi();
 let opts = {
   'includes': "includes_example" // String | Define included relationships
 };
@@ -121,13 +121,13 @@ Returns a single product family based on ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductFamiliesApi();
+let apiInstance = new GetcandyJs.ProductFamiliesApi();
 let productFamilyId = "productFamilyId_example"; // String | 
 let opts = {
   'includes': "includes_example" // String | 
@@ -173,13 +173,13 @@ Create a new product family.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductFamiliesApi();
+let apiInstance = new GetcandyJs.ProductFamiliesApi();
 apiInstance.postProductFamilies().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -217,16 +217,16 @@ Update a product family
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.ProductFamiliesApi();
+let apiInstance = new GetcandyJs.ProductFamiliesApi();
 let productFamilyId = "productFamilyId_example"; // String | 
 let opts = {
-  'inlineObject28': new @GetcandyJsClient.InlineObject28() // InlineObject28 | 
+  'inlineObject28': new GetcandyJs.InlineObject28() // InlineObject28 | 
 };
 apiInstance.putProductFamiliesProductFamilyId(productFamilyId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

@@ -1,4 +1,4 @@
-# @GetcandyJsClient.BasketsApi
+# GetcandyJs.BasketsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -38,13 +38,13 @@ Removes basket lines from a basket
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 apiInstance.deleteBasketLines().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -82,13 +82,13 @@ Deletes a basket
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.deleteBasketsBasketId(basketId).then(() => {
   console.log('API called successfully.');
@@ -130,13 +130,13 @@ Allows a user/guest to remove a basket from their basket. Useful if you can only
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.deleteBasketsBasketIdDiscounts(basketId).then(() => {
   console.log('API called successfully.');
@@ -178,13 +178,13 @@ Removes a user from a basket and turns it into a guest basket  &gt; This endpoin
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.deleteBasketsBasketIdUser(basketId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -226,13 +226,13 @@ Get a paginated list of baskets
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 apiInstance.getBaskets().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -270,13 +270,13 @@ Get a basket by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.getBasketsBasketId(basketId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -318,13 +318,13 @@ This request will get the current active basket for a user
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 apiInstance.getBasketsCurrent().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -362,13 +362,13 @@ Returns an authenticatd users saved baskets.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 apiInstance.getBasketsSaved().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -406,13 +406,13 @@ Add lines to a basket
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let opts = {
   'createBasketLinesBody': {"basket_id":"15rf2395etf34t","variants":[{"id":"534ed23ewdas","quantity":1,"meta":{"giftwrapped":true}}]} // CreateBasketLinesBody | 
 };
@@ -454,15 +454,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let opts = {
-  'createBasketBody': new @GetcandyJsClient.CreateBasketBody() // CreateBasketBody | 
+  'createBasketBody': new GetcandyJs.CreateBasketBody() // CreateBasketBody | 
 };
 apiInstance.postBaskets(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -504,13 +504,13 @@ A user is able to \&quot;claim\&quot; a guest basket.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.postBasketsBasketIdClaim(basketId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -552,16 +552,16 @@ Allows you to add custom meta information to a basket.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 let opts = {
-  'addBasketMetaBody': new @GetcandyJsClient.AddBasketMetaBody() // AddBasketMetaBody | 
+  'addBasketMetaBody': new GetcandyJs.AddBasketMetaBody() // AddBasketMetaBody | 
 };
 apiInstance.postBasketsBasketIdMeta(basketId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -604,16 +604,16 @@ Saves a basket to a users account.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 let opts = {
-  'saveBasketBody': new @GetcandyJsClient.SaveBasketBody() // SaveBasketBody | 
+  'saveBasketBody': new GetcandyJs.SaveBasketBody() // SaveBasketBody | 
 };
 apiInstance.postBasketsBasketIdSave(basketId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -656,15 +656,15 @@ This endpoint is for when you want to either merge a users basket with a guest b
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let opts = {
-  'resolveBasketBody': new @GetcandyJsClient.ResolveBasketBody() // ResolveBasketBody | 
+  'resolveBasketBody': new GetcandyJs.ResolveBasketBody() // ResolveBasketBody | 
 };
 apiInstance.postBasketsResolve(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -706,16 +706,16 @@ Update a basket line based on it&#39;s ID.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketLineId = "basketLineId_example"; // String | 
 let opts = {
-  'basketLineUpdateBody': new @GetcandyJsClient.BasketLineUpdateBody() // BasketLineUpdateBody | 
+  'basketLineUpdateBody': new GetcandyJs.BasketLineUpdateBody() // BasketLineUpdateBody | 
 };
 apiInstance.putBasketLinesBasketLineId(basketLineId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -758,16 +758,16 @@ Update basket line quantity
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketLineId = "basketLineId_example"; // String | 
 let opts = {
-  'basketLineUpdateBody': new @GetcandyJsClient.BasketLineUpdateBody() // BasketLineUpdateBody | 
+  'basketLineUpdateBody': new GetcandyJs.BasketLineUpdateBody() // BasketLineUpdateBody | 
 };
 apiInstance.putBasketLinesBasketLineIdAdd(basketLineId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -810,16 +810,16 @@ Removes quantity from a basket line
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketLineId = "basketLineId_example"; // String | 
 let opts = {
-  'basketLineUpdateBody': new @GetcandyJsClient.BasketLineUpdateBody() // BasketLineUpdateBody | 
+  'basketLineUpdateBody': new GetcandyJs.BasketLineUpdateBody() // BasketLineUpdateBody | 
 };
 apiInstance.putBasketLinesBasketLineIdRemove(basketLineId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -862,13 +862,13 @@ Updates a basket
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.putBasketsBasketId(basketId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -910,13 +910,13 @@ Attach a user to a basket.  &gt; This endpoint will be deprecated in version 0.3
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.putBasketsBasketIdUser(basketId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -958,16 +958,16 @@ Updates a saved basket on the API
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.BasketsApi();
+let apiInstance = new GetcandyJs.BasketsApi();
 let basketId = "basketId_example"; // String | 
 let opts = {
-  'saveBasketBody': new @GetcandyJsClient.SaveBasketBody() // SaveBasketBody | 
+  'saveBasketBody': new GetcandyJs.SaveBasketBody() // SaveBasketBody | 
 };
 apiInstance.putBasketsSavedBasketId(basketId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

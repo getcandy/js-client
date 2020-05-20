@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductUpdateBody
+# GetcandyJs.ProductUpdateBody
 
 ## Properties
 

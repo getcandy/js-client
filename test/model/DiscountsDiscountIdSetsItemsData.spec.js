@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.DiscountsDiscountIdSetsItemsData();
+    instance = new GetcandyJs.DiscountsDiscountIdSetsItemsData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('DiscountsDiscountIdSetsItemsData', function() {
     it('should create an instance of DiscountsDiscountIdSetsItemsData', function() {
       // uncomment below and update the code to test DiscountsDiscountIdSetsItemsData
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsItemsData();
-      //expect(instance).to.be.a(@GetcandyJsClient.DiscountsDiscountIdSetsItemsData);
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsItemsData();
+      //expect(instance).to.be.a(GetcandyJs.DiscountsDiscountIdSetsItemsData);
     });
 
     it('should have the property eligibles (base name: "eligibles")', function() {
       // uncomment below and update the code to test the property eligibles
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsItemsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsItemsData();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdSetsItemsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdSetsItemsData();
       //expect(instance).to.be();
     });
 

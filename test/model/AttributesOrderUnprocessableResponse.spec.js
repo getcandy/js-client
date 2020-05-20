@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttributesOrderUnprocessableResponse();
+    instance = new GetcandyJs.AttributesOrderUnprocessableResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AttributesOrderUnprocessableResponse', function() {
     it('should create an instance of AttributesOrderUnprocessableResponse', function() {
       // uncomment below and update the code to test AttributesOrderUnprocessableResponse
-      //var instane = new @GetcandyJsClient.AttributesOrderUnprocessableResponse();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttributesOrderUnprocessableResponse);
+      //var instane = new GetcandyJs.AttributesOrderUnprocessableResponse();
+      //expect(instance).to.be.a(GetcandyJs.AttributesOrderUnprocessableResponse);
     });
 
     it('should have the property attributes (base name: "attributes")', function() {
       // uncomment below and update the code to test the property attributes
-      //var instane = new @GetcandyJsClient.AttributesOrderUnprocessableResponse();
+      //var instane = new GetcandyJs.AttributesOrderUnprocessableResponse();
       //expect(instance).to.be();
     });
 

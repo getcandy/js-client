@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AttributesLookups
+# GetcandyJs.AttributesLookups
 
 ## Properties
 

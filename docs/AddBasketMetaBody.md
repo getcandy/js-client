@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AddBasketMetaBody
+# GetcandyJs.AddBasketMetaBody
 
 ## Properties
 

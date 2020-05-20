@@ -1,4 +1,4 @@
-# @GetcandyJsClient.Unauthenticated
+# GetcandyJs.Unauthenticated
 
 ## Properties
 

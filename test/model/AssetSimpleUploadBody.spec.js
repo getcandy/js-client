@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AssetSimpleUploadBody();
+    instance = new GetcandyJs.AssetSimpleUploadBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AssetSimpleUploadBody', function() {
     it('should create an instance of AssetSimpleUploadBody', function() {
       // uncomment below and update the code to test AssetSimpleUploadBody
-      //var instane = new @GetcandyJsClient.AssetSimpleUploadBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.AssetSimpleUploadBody);
+      //var instane = new GetcandyJs.AssetSimpleUploadBody();
+      //expect(instance).to.be.a(GetcandyJs.AssetSimpleUploadBody);
     });
 
     it('should have the property file (base name: "file")', function() {
       // uncomment below and update the code to test the property file
-      //var instane = new @GetcandyJsClient.AssetSimpleUploadBody();
+      //var instane = new GetcandyJs.AssetSimpleUploadBody();
       //expect(instance).to.be();
     });
 

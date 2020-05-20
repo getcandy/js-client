@@ -1,4 +1,4 @@
-# @GetcandyJsClient.TransactionResponse
+# GetcandyJs.TransactionResponse
 
 ## Properties
 

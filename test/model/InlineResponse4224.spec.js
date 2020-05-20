@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse4224();
+    instance = new GetcandyJs.InlineResponse4224();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InlineResponse4224', function() {
     it('should create an instance of InlineResponse4224', function() {
       // uncomment below and update the code to test InlineResponse4224
-      //var instane = new @GetcandyJsClient.InlineResponse4224();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse4224);
+      //var instane = new GetcandyJs.InlineResponse4224();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse4224);
     });
 
     it('should have the property orders (base name: "orders")', function() {
       // uncomment below and update the code to test the property orders
-      //var instane = new @GetcandyJsClient.InlineResponse4224();
+      //var instane = new GetcandyJs.InlineResponse4224();
       //expect(instance).to.be();
     });
 
     it('should have the property field (base name: "field")', function() {
       // uncomment below and update the code to test the property field
-      //var instane = new @GetcandyJsClient.InlineResponse4224();
+      //var instane = new GetcandyJs.InlineResponse4224();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instane = new @GetcandyJsClient.InlineResponse4224();
+      //var instane = new GetcandyJs.InlineResponse4224();
       //expect(instance).to.be();
     });
 

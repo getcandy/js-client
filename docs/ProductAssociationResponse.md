@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductAssociationResponse
+# GetcandyJs.ProductAssociationResponse
 
 ## Properties
 

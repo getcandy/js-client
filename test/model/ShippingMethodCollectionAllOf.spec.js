@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ShippingMethodCollectionAllOf();
+    instance = new GetcandyJs.ShippingMethodCollectionAllOf();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ShippingMethodCollectionAllOf', function() {
     it('should create an instance of ShippingMethodCollectionAllOf', function() {
       // uncomment below and update the code to test ShippingMethodCollectionAllOf
-      //var instane = new @GetcandyJsClient.ShippingMethodCollectionAllOf();
-      //expect(instance).to.be.a(@GetcandyJsClient.ShippingMethodCollectionAllOf);
+      //var instane = new GetcandyJs.ShippingMethodCollectionAllOf();
+      //expect(instance).to.be.a(GetcandyJs.ShippingMethodCollectionAllOf);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.ShippingMethodCollectionAllOf();
+      //var instane = new GetcandyJs.ShippingMethodCollectionAllOf();
       //expect(instance).to.be();
     });
 

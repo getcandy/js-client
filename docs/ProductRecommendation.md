@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductRecommendation
+# GetcandyJs.ProductRecommendation
 
 ## Properties
 

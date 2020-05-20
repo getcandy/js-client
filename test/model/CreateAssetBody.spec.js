@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.CreateAssetBody();
+    instance = new GetcandyJs.CreateAssetBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('CreateAssetBody', function() {
     it('should create an instance of CreateAssetBody', function() {
       // uncomment below and update the code to test CreateAssetBody
-      //var instane = new @GetcandyJsClient.CreateAssetBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.CreateAssetBody);
+      //var instane = new GetcandyJs.CreateAssetBody();
+      //expect(instance).to.be.a(GetcandyJs.CreateAssetBody);
     });
 
     it('should have the property mimeType (base name: "mime_type")', function() {
       // uncomment below and update the code to test the property mimeType
-      //var instane = new @GetcandyJsClient.CreateAssetBody();
+      //var instane = new GetcandyJs.CreateAssetBody();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new @GetcandyJsClient.CreateAssetBody();
+      //var instane = new GetcandyJs.CreateAssetBody();
       //expect(instance).to.be();
     });
 
     it('should have the property file (base name: "file")', function() {
       // uncomment below and update the code to test the property file
-      //var instane = new @GetcandyJsClient.CreateAssetBody();
+      //var instane = new GetcandyJs.CreateAssetBody();
       //expect(instance).to.be();
     });
 

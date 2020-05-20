@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Tax();
+    instance = new GetcandyJs.Tax();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Tax', function() {
     it('should create an instance of Tax', function() {
       // uncomment below and update the code to test Tax
-      //var instane = new @GetcandyJsClient.Tax();
-      //expect(instance).to.be.a(@GetcandyJsClient.Tax);
+      //var instane = new GetcandyJs.Tax();
+      //expect(instance).to.be.a(GetcandyJs.Tax);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Tax();
+      //var instane = new GetcandyJs.Tax();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.Tax();
+      //var instane = new GetcandyJs.Tax();
       //expect(instance).to.be();
     });
 
     it('should have the property percentage (base name: "percentage")', function() {
       // uncomment below and update the code to test the property percentage
-      //var instane = new @GetcandyJsClient.Tax();
+      //var instane = new GetcandyJs.Tax();
       //expect(instance).to.be();
     });
 
     it('should have the property _default (base name: "default")', function() {
       // uncomment below and update the code to test the property _default
-      //var instane = new @GetcandyJsClient.Tax();
+      //var instane = new GetcandyJs.Tax();
       //expect(instance).to.be();
     });
 

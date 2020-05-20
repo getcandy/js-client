@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AssetSimple();
+    instance = new GetcandyJs.AssetSimple();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('AssetSimple', function() {
     it('should create an instance of AssetSimple', function() {
       // uncomment below and update the code to test AssetSimple
-      //var instane = new @GetcandyJsClient.AssetSimple();
-      //expect(instance).to.be.a(@GetcandyJsClient.AssetSimple);
+      //var instane = new GetcandyJs.AssetSimple();
+      //expect(instance).to.be.a(GetcandyJs.AssetSimple);
     });
 
     it('should have the property thumbnailUrl (base name: "thumbnail_url")', function() {
       // uncomment below and update the code to test the property thumbnailUrl
-      //var instane = new @GetcandyJsClient.AssetSimple();
+      //var instane = new GetcandyJs.AssetSimple();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbnail (base name: "thumbnail")', function() {
       // uncomment below and update the code to test the property thumbnail
-      //var instane = new @GetcandyJsClient.AssetSimple();
+      //var instane = new GetcandyJs.AssetSimple();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new @GetcandyJsClient.AssetSimple();
+      //var instane = new GetcandyJs.AssetSimple();
       //expect(instance).to.be();
     });
 
     it('should have the property filename (base name: "filename")', function() {
       // uncomment below and update the code to test the property filename
-      //var instane = new @GetcandyJsClient.AssetSimple();
+      //var instane = new GetcandyJs.AssetSimple();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instane = new @GetcandyJsClient.AssetSimple();
+      //var instane = new GetcandyJs.AssetSimple();
       //expect(instance).to.be();
     });
 

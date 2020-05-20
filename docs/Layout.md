@@ -1,4 +1,4 @@
-# @GetcandyJsClient.Layout
+# GetcandyJs.Layout
 
 ## Properties
 

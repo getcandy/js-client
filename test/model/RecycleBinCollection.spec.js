@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.RecycleBinCollection();
+    instance = new GetcandyJs.RecycleBinCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('RecycleBinCollection', function() {
     it('should create an instance of RecycleBinCollection', function() {
       // uncomment below and update the code to test RecycleBinCollection
-      //var instane = new @GetcandyJsClient.RecycleBinCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.RecycleBinCollection);
+      //var instane = new GetcandyJs.RecycleBinCollection();
+      //expect(instance).to.be.a(GetcandyJs.RecycleBinCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.RecycleBinCollection();
+      //var instane = new GetcandyJs.RecycleBinCollection();
       //expect(instance).to.be();
     });
 

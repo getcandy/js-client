@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Invoice();
+    instance = new GetcandyJs.Invoice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('Invoice', function() {
     it('should create an instance of Invoice', function() {
       // uncomment below and update the code to test Invoice
-      //var instane = new @GetcandyJsClient.Invoice();
-      //expect(instance).to.be.a(@GetcandyJsClient.Invoice);
+      //var instane = new GetcandyJs.Invoice();
+      //expect(instance).to.be.a(GetcandyJs.Invoice);
     });
 
     it('should have the property encoding (base name: "encoding")', function() {
       // uncomment below and update the code to test the property encoding
-      //var instane = new @GetcandyJsClient.Invoice();
+      //var instane = new GetcandyJs.Invoice();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instane = new @GetcandyJsClient.Invoice();
+      //var instane = new GetcandyJs.Invoice();
       //expect(instance).to.be();
     });
 

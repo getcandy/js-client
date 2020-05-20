@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.CreateAttributeGroupBodyName();
+    instance = new GetcandyJs.CreateAttributeGroupBodyName();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('CreateAttributeGroupBodyName', function() {
     it('should create an instance of CreateAttributeGroupBodyName', function() {
       // uncomment below and update the code to test CreateAttributeGroupBodyName
-      //var instane = new @GetcandyJsClient.CreateAttributeGroupBodyName();
-      //expect(instance).to.be.a(@GetcandyJsClient.CreateAttributeGroupBodyName);
+      //var instane = new GetcandyJs.CreateAttributeGroupBodyName();
+      //expect(instance).to.be.a(GetcandyJs.CreateAttributeGroupBodyName);
     });
 
     it('should have the property en (base name: "en")', function() {
       // uncomment below and update the code to test the property en
-      //var instane = new @GetcandyJsClient.CreateAttributeGroupBodyName();
+      //var instane = new GetcandyJs.CreateAttributeGroupBodyName();
       //expect(instance).to.be();
     });
 

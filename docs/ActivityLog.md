@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ActivityLog
+# GetcandyJs.ActivityLog
 
 ## Properties
 

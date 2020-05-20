@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductAssociation();
+    instance = new GetcandyJs.ProductAssociation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ProductAssociation', function() {
     it('should create an instance of ProductAssociation', function() {
       // uncomment below and update the code to test ProductAssociation
-      //var instane = new @GetcandyJsClient.ProductAssociation();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductAssociation);
+      //var instane = new GetcandyJs.ProductAssociation();
+      //expect(instance).to.be.a(GetcandyJs.ProductAssociation);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ProductAssociation();
+      //var instane = new GetcandyJs.ProductAssociation();
       //expect(instance).to.be();
     });
 
     it('should have the property association (base name: "association")', function() {
       // uncomment below and update the code to test the property association
-      //var instane = new @GetcandyJsClient.ProductAssociation();
+      //var instane = new GetcandyJs.ProductAssociation();
       //expect(instance).to.be();
     });
 
     it('should have the property group (base name: "group")', function() {
       // uncomment below and update the code to test the property group
-      //var instane = new @GetcandyJsClient.ProductAssociation();
+      //var instane = new GetcandyJs.ProductAssociation();
       //expect(instance).to.be();
     });
 

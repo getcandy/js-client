@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ShippingZone();
+    instance = new GetcandyJs.ShippingZone();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ShippingZone', function() {
     it('should create an instance of ShippingZone', function() {
       // uncomment below and update the code to test ShippingZone
-      //var instane = new @GetcandyJsClient.ShippingZone();
-      //expect(instance).to.be.a(@GetcandyJsClient.ShippingZone);
+      //var instane = new GetcandyJs.ShippingZone();
+      //expect(instance).to.be.a(GetcandyJs.ShippingZone);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ShippingZone();
+      //var instane = new GetcandyJs.ShippingZone();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.ShippingZone();
+      //var instane = new GetcandyJs.ShippingZone();
       //expect(instance).to.be();
     });
 

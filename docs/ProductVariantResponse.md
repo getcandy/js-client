@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductVariantResponse
+# GetcandyJs.ProductVariantResponse
 
 ## Properties
 

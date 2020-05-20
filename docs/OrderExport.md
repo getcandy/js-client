@@ -1,4 +1,4 @@
-# @GetcandyJsClient.OrderExport
+# GetcandyJs.OrderExport
 
 ## Properties
 

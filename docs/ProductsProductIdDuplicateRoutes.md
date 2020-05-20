@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ProductsProductIdDuplicateRoutes
+# GetcandyJs.ProductsProductIdDuplicateRoutes
 
 ## Properties
 

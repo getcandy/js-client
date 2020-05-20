@@ -1,4 +1,4 @@
-# @GetcandyJsClient.InlineResponse2004Date
+# GetcandyJs.InlineResponse2004Date
 
 ## Properties
 

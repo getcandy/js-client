@@ -1,4 +1,4 @@
-# @GetcandyJsClient.UserResponse
+# GetcandyJs.UserResponse
 
 ## Properties
 

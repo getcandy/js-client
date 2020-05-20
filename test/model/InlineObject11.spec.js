@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject11();
+    instance = new GetcandyJs.InlineObject11();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InlineObject11', function() {
     it('should create an instance of InlineObject11', function() {
       // uncomment below and update the code to test InlineObject11
-      //var instane = new @GetcandyJsClient.InlineObject11();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject11);
+      //var instane = new GetcandyJs.InlineObject11();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject11);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.InlineObject11();
+      //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
     it('should have the property lang (base name: "lang")', function() {
       // uncomment below and update the code to test the property lang
-      //var instane = new @GetcandyJsClient.InlineObject11();
+      //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
     it('should have the property iso (base name: "iso")', function() {
       // uncomment below and update the code to test the property iso
-      //var instane = new @GetcandyJsClient.InlineObject11();
+      //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instane = new @GetcandyJsClient.InlineObject11();
+      //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
     it('should have the property _default (base name: "default")', function() {
       // uncomment below and update the code to test the property _default
-      //var instane = new @GetcandyJsClient.InlineObject11();
+      //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
     it('should have the property current (base name: "current")', function() {
       // uncomment below and update the code to test the property current
-      //var instane = new @GetcandyJsClient.InlineObject11();
+      //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 

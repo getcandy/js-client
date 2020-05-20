@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttributesReorderBodyGroups();
+    instance = new GetcandyJs.AttributesReorderBodyGroups();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AttributesReorderBodyGroups', function() {
     it('should create an instance of AttributesReorderBodyGroups', function() {
       // uncomment below and update the code to test AttributesReorderBodyGroups
-      //var instane = new @GetcandyJsClient.AttributesReorderBodyGroups();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttributesReorderBodyGroups);
+      //var instane = new GetcandyJs.AttributesReorderBodyGroups();
+      //expect(instance).to.be.a(GetcandyJs.AttributesReorderBodyGroups);
     });
 
     it('should have the property groupId (base name: "groupId")', function() {
       // uncomment below and update the code to test the property groupId
-      //var instane = new @GetcandyJsClient.AttributesReorderBodyGroups();
+      //var instane = new GetcandyJs.AttributesReorderBodyGroups();
       //expect(instance).to.be();
     });
 

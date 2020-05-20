@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Search();
+    instance = new GetcandyJs.Search();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Search', function() {
     it('should create an instance of Search', function() {
       // uncomment below and update the code to test Search
-      //var instane = new @GetcandyJsClient.Search();
-      //expect(instance).to.be.a(@GetcandyJsClient.Search);
+      //var instane = new GetcandyJs.Search();
+      //expect(instance).to.be.a(GetcandyJs.Search);
     });
 
     it('should have the property suggestions (base name: "suggestions")', function() {
       // uncomment below and update the code to test the property suggestions
-      //var instane = new @GetcandyJsClient.Search();
+      //var instane = new GetcandyJs.Search();
       //expect(instance).to.be();
     });
 
     it('should have the property meta (base name: "meta")', function() {
       // uncomment below and update the code to test the property meta
-      //var instane = new @GetcandyJsClient.Search();
+      //var instane = new GetcandyJs.Search();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.Search();
+      //var instane = new GetcandyJs.Search();
       //expect(instance).to.be();
     });
 

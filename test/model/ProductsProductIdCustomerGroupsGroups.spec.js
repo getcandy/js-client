@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductsProductIdCustomerGroupsGroups();
+    instance = new GetcandyJs.ProductsProductIdCustomerGroupsGroups();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductsProductIdCustomerGroupsGroups', function() {
     it('should create an instance of ProductsProductIdCustomerGroupsGroups', function() {
       // uncomment below and update the code to test ProductsProductIdCustomerGroupsGroups
-      //var instane = new @GetcandyJsClient.ProductsProductIdCustomerGroupsGroups();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductsProductIdCustomerGroupsGroups);
+      //var instane = new GetcandyJs.ProductsProductIdCustomerGroupsGroups();
+      //expect(instance).to.be.a(GetcandyJs.ProductsProductIdCustomerGroupsGroups);
     });
 
     it('should have the property visible (base name: "visible")', function() {
       // uncomment below and update the code to test the property visible
-      //var instane = new @GetcandyJsClient.ProductsProductIdCustomerGroupsGroups();
+      //var instane = new GetcandyJs.ProductsProductIdCustomerGroupsGroups();
       //expect(instance).to.be();
     });
 
     it('should have the property purchasable (base name: "purchasable")', function() {
       // uncomment below and update the code to test the property purchasable
-      //var instane = new @GetcandyJsClient.ProductsProductIdCustomerGroupsGroups();
+      //var instane = new GetcandyJs.ProductsProductIdCustomerGroupsGroups();
       //expect(instance).to.be();
     });
 

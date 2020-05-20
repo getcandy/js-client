@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AttributesOrderUnprocessableResponse
+# GetcandyJs.AttributesOrderUnprocessableResponse
 
 ## Properties
 

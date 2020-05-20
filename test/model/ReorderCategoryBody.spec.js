@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ReorderCategoryBody();
+    instance = new GetcandyJs.ReorderCategoryBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ReorderCategoryBody', function() {
     it('should create an instance of ReorderCategoryBody', function() {
       // uncomment below and update the code to test ReorderCategoryBody
-      //var instane = new @GetcandyJsClient.ReorderCategoryBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.ReorderCategoryBody);
+      //var instane = new GetcandyJs.ReorderCategoryBody();
+      //expect(instance).to.be.a(GetcandyJs.ReorderCategoryBody);
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instane = new @GetcandyJsClient.ReorderCategoryBody();
+      //var instane = new GetcandyJs.ReorderCategoryBody();
       //expect(instance).to.be();
     });
 
     it('should have the property movedNode (base name: "moved_node")', function() {
       // uncomment below and update the code to test the property movedNode
-      //var instane = new @GetcandyJsClient.ReorderCategoryBody();
+      //var instane = new GetcandyJs.ReorderCategoryBody();
       //expect(instance).to.be();
     });
 
     it('should have the property node (base name: "node")', function() {
       // uncomment below and update the code to test the property node
-      //var instane = new @GetcandyJsClient.ReorderCategoryBody();
+      //var instane = new GetcandyJs.ReorderCategoryBody();
       //expect(instance).to.be();
     });
 

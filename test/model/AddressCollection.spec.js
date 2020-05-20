@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AddressCollection();
+    instance = new GetcandyJs.AddressCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AddressCollection', function() {
     it('should create an instance of AddressCollection', function() {
       // uncomment below and update the code to test AddressCollection
-      //var instane = new @GetcandyJsClient.AddressCollection();
-      //expect(instance).to.be.a(@GetcandyJsClient.AddressCollection);
+      //var instane = new GetcandyJs.AddressCollection();
+      //expect(instance).to.be.a(GetcandyJs.AddressCollection);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.AddressCollection();
+      //var instane = new GetcandyJs.AddressCollection();
       //expect(instance).to.be();
     });
 

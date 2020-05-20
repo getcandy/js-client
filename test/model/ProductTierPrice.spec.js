@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductTierPrice();
+    instance = new GetcandyJs.ProductTierPrice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('ProductTierPrice', function() {
     it('should create an instance of ProductTierPrice', function() {
       // uncomment below and update the code to test ProductTierPrice
-      //var instane = new @GetcandyJsClient.ProductTierPrice();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductTierPrice);
+      //var instane = new GetcandyJs.ProductTierPrice();
+      //expect(instance).to.be.a(GetcandyJs.ProductTierPrice);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ProductTierPrice();
+      //var instane = new GetcandyJs.ProductTierPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property lowerLimit (base name: "lower_limit")', function() {
       // uncomment below and update the code to test the property lowerLimit
-      //var instane = new @GetcandyJsClient.ProductTierPrice();
+      //var instane = new GetcandyJs.ProductTierPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
-      //var instane = new @GetcandyJsClient.ProductTierPrice();
+      //var instane = new GetcandyJs.ProductTierPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property tax (base name: "tax")', function() {
       // uncomment below and update the code to test the property tax
-      //var instane = new @GetcandyJsClient.ProductTierPrice();
+      //var instane = new GetcandyJs.ProductTierPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property group (base name: "group")', function() {
       // uncomment below and update the code to test the property group
-      //var instane = new @GetcandyJsClient.ProductTierPrice();
+      //var instane = new GetcandyJs.ProductTierPrice();
       //expect(instance).to.be();
     });
 

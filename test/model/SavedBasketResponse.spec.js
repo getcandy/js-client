@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.SavedBasketResponse();
+    instance = new GetcandyJs.SavedBasketResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('SavedBasketResponse', function() {
     it('should create an instance of SavedBasketResponse', function() {
       // uncomment below and update the code to test SavedBasketResponse
-      //var instane = new @GetcandyJsClient.SavedBasketResponse();
-      //expect(instance).to.be.a(@GetcandyJsClient.SavedBasketResponse);
+      //var instane = new GetcandyJs.SavedBasketResponse();
+      //expect(instance).to.be.a(GetcandyJs.SavedBasketResponse);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.SavedBasketResponse();
+      //var instane = new GetcandyJs.SavedBasketResponse();
       //expect(instance).to.be();
     });
 

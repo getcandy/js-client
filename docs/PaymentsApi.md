@@ -1,4 +1,4 @@
-# @GetcandyJsClient.PaymentsApi
+# GetcandyJs.PaymentsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -23,13 +23,13 @@ Removes a users reusable payment method. This can be invoked by any admin user a
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.PaymentsApi();
+let apiInstance = new GetcandyJs.PaymentsApi();
 let id = "id_example"; // String | 
 apiInstance.deleteUsersPaymentsId(id).then(() => {
   console.log('API called successfully.');
@@ -71,13 +71,13 @@ Gets the default, configured payment provider.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.PaymentsApi();
+let apiInstance = new GetcandyJs.PaymentsApi();
 apiInstance.getPaymentsProvider().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -115,15 +115,15 @@ Validate a ThreeD secure request and process the transaaction, if your payment p
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.PaymentsApi();
+let apiInstance = new GetcandyJs.PaymentsApi();
 let opts = {
-  'inlineObject16': new @GetcandyJsClient.InlineObject16() // InlineObject16 | 
+  'inlineObject16': new GetcandyJs.InlineObject16() // InlineObject16 | 
 };
 apiInstance.postPayments3dSecure(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -165,13 +165,13 @@ Refund a transaction
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.PaymentsApi();
+let apiInstance = new GetcandyJs.PaymentsApi();
 let transactionId = "transactionId_example"; // String | 
 let opts = {
   'amount': 56, // Number | If left blank, the full amount will be refunded
@@ -219,13 +219,13 @@ Voids a payment in the system.
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.PaymentsApi();
+let apiInstance = new GetcandyJs.PaymentsApi();
 let transactionId = "transactionId_example"; // String | 
 apiInstance.postPaymentsTransactionIdVoid(transactionId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

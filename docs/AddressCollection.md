@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AddressCollection
+# GetcandyJs.AddressCollection
 
 ## Properties
 

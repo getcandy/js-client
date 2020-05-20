@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.SearchMeta();
+    instance = new GetcandyJs.SearchMeta();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('SearchMeta', function() {
     it('should create an instance of SearchMeta', function() {
       // uncomment below and update the code to test SearchMeta
-      //var instane = new @GetcandyJsClient.SearchMeta();
-      //expect(instance).to.be.a(@GetcandyJsClient.SearchMeta);
+      //var instane = new GetcandyJs.SearchMeta();
+      //expect(instance).to.be.a(GetcandyJs.SearchMeta);
     });
 
     it('should have the property sort (base name: "sort")', function() {
       // uncomment below and update the code to test the property sort
-      //var instane = new @GetcandyJsClient.SearchMeta();
+      //var instane = new GetcandyJs.SearchMeta();
       //expect(instance).to.be();
     });
 
     it('should have the property categoryPage (base name: "category_page")', function() {
       // uncomment below and update the code to test the property categoryPage
-      //var instane = new @GetcandyJsClient.SearchMeta();
+      //var instane = new GetcandyJs.SearchMeta();
       //expect(instance).to.be();
     });
 
     it('should have the property pagination (base name: "pagination")', function() {
       // uncomment below and update the code to test the property pagination
-      //var instane = new @GetcandyJsClient.SearchMeta();
+      //var instane = new GetcandyJs.SearchMeta();
       //expect(instance).to.be();
     });
 
     it('should have the property aggregation (base name: "aggregation")', function() {
       // uncomment below and update the code to test the property aggregation
-      //var instane = new @GetcandyJsClient.SearchMeta();
+      //var instane = new GetcandyJs.SearchMeta();
       //expect(instance).to.be();
     });
 

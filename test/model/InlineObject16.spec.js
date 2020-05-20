@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject16();
+    instance = new GetcandyJs.InlineObject16();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InlineObject16', function() {
     it('should create an instance of InlineObject16', function() {
       // uncomment below and update the code to test InlineObject16
-      //var instane = new @GetcandyJsClient.InlineObject16();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject16);
+      //var instane = new GetcandyJs.InlineObject16();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject16);
     });
 
     it('should have the property paRes (base name: "paRes")', function() {
       // uncomment below and update the code to test the property paRes
-      //var instane = new @GetcandyJsClient.InlineObject16();
+      //var instane = new GetcandyJs.InlineObject16();
       //expect(instance).to.be();
     });
 
     it('should have the property transaction (base name: "transaction")', function() {
       // uncomment below and update the code to test the property transaction
-      //var instane = new @GetcandyJsClient.InlineObject16();
+      //var instane = new GetcandyJs.InlineObject16();
       //expect(instance).to.be();
     });
 
     it('should have the property orderId (base name: "order_id")', function() {
       // uncomment below and update the code to test the property orderId
-      //var instane = new @GetcandyJsClient.InlineObject16();
+      //var instane = new GetcandyJs.InlineObject16();
       //expect(instance).to.be();
     });
 

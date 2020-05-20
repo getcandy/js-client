@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.CreateChannelBody();
+    instance = new GetcandyJs.CreateChannelBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('CreateChannelBody', function() {
     it('should create an instance of CreateChannelBody', function() {
       // uncomment below and update the code to test CreateChannelBody
-      //var instane = new @GetcandyJsClient.CreateChannelBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.CreateChannelBody);
+      //var instane = new GetcandyJs.CreateChannelBody();
+      //expect(instance).to.be.a(GetcandyJs.CreateChannelBody);
     });
 
     it('should have the property handle (base name: "handle")', function() {
       // uncomment below and update the code to test the property handle
-      //var instane = new @GetcandyJsClient.CreateChannelBody();
+      //var instane = new GetcandyJs.CreateChannelBody();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.CreateChannelBody();
+      //var instane = new GetcandyJs.CreateChannelBody();
       //expect(instance).to.be();
     });
 

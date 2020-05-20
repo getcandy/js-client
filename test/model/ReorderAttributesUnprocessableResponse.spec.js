@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ReorderAttributesUnprocessableResponse();
+    instance = new GetcandyJs.ReorderAttributesUnprocessableResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ReorderAttributesUnprocessableResponse', function() {
     it('should create an instance of ReorderAttributesUnprocessableResponse', function() {
       // uncomment below and update the code to test ReorderAttributesUnprocessableResponse
-      //var instane = new @GetcandyJsClient.ReorderAttributesUnprocessableResponse();
-      //expect(instance).to.be.a(@GetcandyJsClient.ReorderAttributesUnprocessableResponse);
+      //var instane = new GetcandyJs.ReorderAttributesUnprocessableResponse();
+      //expect(instance).to.be.a(GetcandyJs.ReorderAttributesUnprocessableResponse);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ReorderAttributesUnprocessableResponse();
+      //var instane = new GetcandyJs.ReorderAttributesUnprocessableResponse();
       //expect(instance).to.be();
     });
 

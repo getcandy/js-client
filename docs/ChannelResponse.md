@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ChannelResponse
+# GetcandyJs.ChannelResponse
 
 ## Properties
 

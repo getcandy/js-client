@@ -1,4 +1,4 @@
-# @GetcandyJsClient.LayoutsApi
+# GetcandyJs.LayoutsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -19,13 +19,13 @@ Get a paginated list of Layouts
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.LayoutsApi();
+let apiInstance = new GetcandyJs.LayoutsApi();
 apiInstance.getLayouts().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

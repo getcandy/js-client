@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject7();
+    instance = new GetcandyJs.InlineObject7();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('InlineObject7', function() {
     it('should create an instance of InlineObject7', function() {
       // uncomment below and update the code to test InlineObject7
-      //var instane = new @GetcandyJsClient.InlineObject7();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject7);
+      //var instane = new GetcandyJs.InlineObject7();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject7);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.InlineObject7();
+      //var instane = new GetcandyJs.InlineObject7();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new @GetcandyJsClient.InlineObject7();
+      //var instane = new GetcandyJs.InlineObject7();
       //expect(instance).to.be();
     });
 

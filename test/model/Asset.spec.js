@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Asset();
+    instance = new GetcandyJs.Asset();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,109 +50,109 @@
   describe('Asset', function() {
     it('should create an instance of Asset', function() {
       // uncomment below and update the code to test Asset
-      //var instane = new @GetcandyJsClient.Asset();
-      //expect(instance).to.be.a(@GetcandyJsClient.Asset);
+      //var instane = new GetcandyJs.Asset();
+      //expect(instance).to.be.a(GetcandyJs.Asset);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property caption (base name: "caption")', function() {
       // uncomment below and update the code to test the property caption
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property kind (base name: "kind")', function() {
       // uncomment below and update the code to test the property kind
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property external (base name: "external")', function() {
       // uncomment below and update the code to test the property external
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property position (base name: "position")', function() {
       // uncomment below and update the code to test the property position
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property primary (base name: "primary")', function() {
       // uncomment below and update the code to test the property primary
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property subKind (base name: "sub_kind")', function() {
       // uncomment below and update the code to test the property subKind
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property extension (base name: "extension")', function() {
       // uncomment below and update the code to test the property extension
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property originalFilename (base name: "original_filename")', function() {
       // uncomment below and update the code to test the property originalFilename
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property transforms (base name: "transforms")', function() {
       // uncomment below and update the code to test the property transforms
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instane = new @GetcandyJsClient.Asset();
+      //var instane = new GetcandyJs.Asset();
       //expect(instance).to.be();
     });
 

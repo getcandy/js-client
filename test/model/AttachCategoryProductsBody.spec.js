@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttachCategoryProductsBody();
+    instance = new GetcandyJs.AttachCategoryProductsBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('AttachCategoryProductsBody', function() {
     it('should create an instance of AttachCategoryProductsBody', function() {
       // uncomment below and update the code to test AttachCategoryProductsBody
-      //var instane = new @GetcandyJsClient.AttachCategoryProductsBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttachCategoryProductsBody);
+      //var instane = new GetcandyJs.AttachCategoryProductsBody();
+      //expect(instance).to.be.a(GetcandyJs.AttachCategoryProductsBody);
     });
 
     it('should have the property products (base name: "products")', function() {
       // uncomment below and update the code to test the property products
-      //var instane = new @GetcandyJsClient.AttachCategoryProductsBody();
+      //var instane = new GetcandyJs.AttachCategoryProductsBody();
       //expect(instance).to.be();
     });
 
     it('should have the property sortType (base name: "sort_type")', function() {
       // uncomment below and update the code to test the property sortType
-      //var instane = new @GetcandyJsClient.AttachCategoryProductsBody();
+      //var instane = new GetcandyJs.AttachCategoryProductsBody();
       //expect(instance).to.be();
     });
 

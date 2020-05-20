@@ -1,4 +1,4 @@
-# @GetcandyJsClient.RoleResponse
+# GetcandyJs.RoleResponse
 
 ## Properties
 

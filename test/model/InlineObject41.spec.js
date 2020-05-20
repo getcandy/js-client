@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject41();
+    instance = new GetcandyJs.InlineObject41();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InlineObject41', function() {
     it('should create an instance of InlineObject41', function() {
       // uncomment below and update the code to test InlineObject41
-      //var instane = new @GetcandyJsClient.InlineObject41();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject41);
+      //var instane = new GetcandyJs.InlineObject41();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject41);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new @GetcandyJsClient.InlineObject41();
+      //var instane = new GetcandyJs.InlineObject41();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instane = new @GetcandyJsClient.InlineObject41();
+      //var instane = new GetcandyJs.InlineObject41();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordConfirmation (base name: "password_confirmation")', function() {
       // uncomment below and update the code to test the property passwordConfirmation
-      //var instane = new @GetcandyJsClient.InlineObject41();
+      //var instane = new GetcandyJs.InlineObject41();
       //expect(instance).to.be();
     });
 

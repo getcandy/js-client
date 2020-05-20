@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Unauthenticated();
+    instance = new GetcandyJs.Unauthenticated();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('Unauthenticated', function() {
     it('should create an instance of Unauthenticated', function() {
       // uncomment below and update the code to test Unauthenticated
-      //var instane = new @GetcandyJsClient.Unauthenticated();
-      //expect(instance).to.be.a(@GetcandyJsClient.Unauthenticated);
+      //var instane = new GetcandyJs.Unauthenticated();
+      //expect(instance).to.be.a(GetcandyJs.Unauthenticated);
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instane = new @GetcandyJsClient.Unauthenticated();
+      //var instane = new GetcandyJs.Unauthenticated();
       //expect(instance).to.be();
     });
 

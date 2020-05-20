@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttachCategoryChannelsBody();
+    instance = new GetcandyJs.AttachCategoryChannelsBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AttachCategoryChannelsBody', function() {
     it('should create an instance of AttachCategoryChannelsBody', function() {
       // uncomment below and update the code to test AttachCategoryChannelsBody
-      //var instane = new @GetcandyJsClient.AttachCategoryChannelsBody();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttachCategoryChannelsBody);
+      //var instane = new GetcandyJs.AttachCategoryChannelsBody();
+      //expect(instance).to.be.a(GetcandyJs.AttachCategoryChannelsBody);
     });
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
-      //var instane = new @GetcandyJsClient.AttachCategoryChannelsBody();
+      //var instane = new GetcandyJs.AttachCategoryChannelsBody();
       //expect(instance).to.be();
     });
 

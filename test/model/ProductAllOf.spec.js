@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductAllOf();
+    instance = new GetcandyJs.ProductAllOf();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,139 +50,139 @@
   describe('ProductAllOf', function() {
     it('should create an instance of ProductAllOf', function() {
       // uncomment below and update the code to test ProductAllOf
-      //var instane = new @GetcandyJsClient.ProductAllOf();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductAllOf);
+      //var instane = new GetcandyJs.ProductAllOf();
+      //expect(instance).to.be.a(GetcandyJs.ProductAllOf);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property draftedAt (base name: "drafted_at")', function() {
       // uncomment below and update the code to test the property draftedAt
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property optionData (base name: "option_data")', function() {
       // uncomment below and update the code to test the property optionData
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "created_at")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedAt (base name: "updated_at")', function() {
       // uncomment below and update the code to test the property updatedAt
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property family (base name: "family")', function() {
       // uncomment below and update the code to test the property family
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property draft (base name: "draft")', function() {
       // uncomment below and update the code to test the property draft
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property publishedParent (base name: "published_parent")', function() {
       // uncomment below and update the code to test the property publishedParent
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property assets (base name: "assets")', function() {
       // uncomment below and update the code to test the property assets
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property routes (base name: "routes")', function() {
       // uncomment below and update the code to test the property routes
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property firstVariant (base name: "first_variant")', function() {
       // uncomment below and update the code to test the property firstVariant
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property primaryAsset (base name: "primary_asset")', function() {
       // uncomment below and update the code to test the property primaryAsset
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property categories (base name: "categories")', function() {
       // uncomment below and update the code to test the property categories
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property variants (base name: "variants")', function() {
       // uncomment below and update the code to test the property variants
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property discounts (base name: "discounts")', function() {
       // uncomment below and update the code to test the property discounts
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property collections (base name: "collections")', function() {
       // uncomment below and update the code to test the property collections
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property associations (base name: "associations")', function() {
       // uncomment below and update the code to test the property associations
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property versions (base name: "versions")', function() {
       // uncomment below and update the code to test the property versions
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property customerGroups (base name: "customer_groups")', function() {
       // uncomment below and update the code to test the property customerGroups
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property attributes (base name: "attributes")', function() {
       // uncomment below and update the code to test the property attributes
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 
     it('should have the property layout (base name: "layout")', function() {
       // uncomment below and update the code to test the property layout
-      //var instane = new @GetcandyJsClient.ProductAllOf();
+      //var instane = new GetcandyJs.ProductAllOf();
       //expect(instance).to.be();
     });
 

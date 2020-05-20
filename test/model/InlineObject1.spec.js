@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject1();
+    instance = new GetcandyJs.InlineObject1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InlineObject1', function() {
     it('should create an instance of InlineObject1', function() {
       // uncomment below and update the code to test InlineObject1
-      //var instane = new @GetcandyJsClient.InlineObject1();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject1);
+      //var instane = new GetcandyJs.InlineObject1();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject1);
     });
 
     it('should have the property trackingNo (base name: "tracking_no")', function() {
       // uncomment below and update the code to test the property trackingNo
-      //var instane = new @GetcandyJsClient.InlineObject1();
+      //var instane = new GetcandyJs.InlineObject1();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new @GetcandyJsClient.InlineObject1();
+      //var instane = new GetcandyJs.InlineObject1();
       //expect(instance).to.be();
     });
 
     it('should have the property sendEmails (base name: "send_emails")', function() {
       // uncomment below and update the code to test the property sendEmails
-      //var instane = new @GetcandyJsClient.InlineObject1();
+      //var instane = new GetcandyJs.InlineObject1();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductFamilyCollectionAllOf();
+    instance = new GetcandyJs.ProductFamilyCollectionAllOf();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ProductFamilyCollectionAllOf', function() {
     it('should create an instance of ProductFamilyCollectionAllOf', function() {
       // uncomment below and update the code to test ProductFamilyCollectionAllOf
-      //var instane = new @GetcandyJsClient.ProductFamilyCollectionAllOf();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductFamilyCollectionAllOf);
+      //var instane = new GetcandyJs.ProductFamilyCollectionAllOf();
+      //expect(instance).to.be.a(GetcandyJs.ProductFamilyCollectionAllOf);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new @GetcandyJsClient.ProductFamilyCollectionAllOf();
+      //var instane = new GetcandyJs.ProductFamilyCollectionAllOf();
       //expect(instance).to.be();
     });
 

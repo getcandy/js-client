@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.OrdersProcessMeta();
+    instance = new GetcandyJs.OrdersProcessMeta();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('OrdersProcessMeta', function() {
     it('should create an instance of OrdersProcessMeta', function() {
       // uncomment below and update the code to test OrdersProcessMeta
-      //var instane = new @GetcandyJsClient.OrdersProcessMeta();
-      //expect(instance).to.be.a(@GetcandyJsClient.OrdersProcessMeta);
+      //var instane = new GetcandyJs.OrdersProcessMeta();
+      //expect(instance).to.be.a(GetcandyJs.OrdersProcessMeta);
     });
 
     it('should have the property  (base name: "")', function() {
       // uncomment below and update the code to test the property 
-      //var instane = new @GetcandyJsClient.OrdersProcessMeta();
+      //var instane = new GetcandyJs.OrdersProcessMeta();
       //expect(instance).to.be();
     });
 

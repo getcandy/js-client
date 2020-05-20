@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject31();
+    instance = new GetcandyJs.InlineObject31();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InlineObject31', function() {
     it('should create an instance of InlineObject31', function() {
       // uncomment below and update the code to test InlineObject31
-      //var instane = new @GetcandyJsClient.InlineObject31();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject31);
+      //var instane = new GetcandyJs.InlineObject31();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject31);
     });
 
     it('should have the property rate (base name: "rate")', function() {
       // uncomment below and update the code to test the property rate
-      //var instane = new @GetcandyJsClient.InlineObject31();
+      //var instane = new GetcandyJs.InlineObject31();
       //expect(instance).to.be();
     });
 
     it('should have the property zoneId (base name: "zone_id")', function() {
       // uncomment below and update the code to test the property zoneId
-      //var instane = new @GetcandyJsClient.InlineObject31();
+      //var instane = new GetcandyJs.InlineObject31();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyId (base name: "currency_id")', function() {
       // uncomment below and update the code to test the property currencyId
-      //var instane = new @GetcandyJsClient.InlineObject31();
+      //var instane = new GetcandyJs.InlineObject31();
       //expect(instance).to.be();
     });
 

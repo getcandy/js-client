@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.PaginatedResponse();
+    instance = new GetcandyJs.PaginatedResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('PaginatedResponse', function() {
     it('should create an instance of PaginatedResponse', function() {
       // uncomment below and update the code to test PaginatedResponse
-      //var instane = new @GetcandyJsClient.PaginatedResponse();
-      //expect(instance).to.be.a(@GetcandyJsClient.PaginatedResponse);
+      //var instane = new GetcandyJs.PaginatedResponse();
+      //expect(instance).to.be.a(GetcandyJs.PaginatedResponse);
     });
 
     it('should have the property meta (base name: "meta")', function() {
       // uncomment below and update the code to test the property meta
-      //var instane = new @GetcandyJsClient.PaginatedResponse();
+      //var instane = new GetcandyJs.PaginatedResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instane = new @GetcandyJsClient.PaginatedResponse();
+      //var instane = new GetcandyJs.PaginatedResponse();
       //expect(instance).to.be();
     });
 

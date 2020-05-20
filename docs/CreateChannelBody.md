@@ -1,4 +1,4 @@
-# @GetcandyJsClient.CreateChannelBody
+# GetcandyJs.CreateChannelBody
 
 ## Properties
 

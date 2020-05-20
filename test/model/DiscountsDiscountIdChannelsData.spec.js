@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.DiscountsDiscountIdChannelsData();
+    instance = new GetcandyJs.DiscountsDiscountIdChannelsData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('DiscountsDiscountIdChannelsData', function() {
     it('should create an instance of DiscountsDiscountIdChannelsData', function() {
       // uncomment below and update the code to test DiscountsDiscountIdChannelsData
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdChannelsData();
-      //expect(instance).to.be.a(@GetcandyJsClient.DiscountsDiscountIdChannelsData);
+      //var instane = new GetcandyJs.DiscountsDiscountIdChannelsData();
+      //expect(instance).to.be.a(GetcandyJs.DiscountsDiscountIdChannelsData);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdChannelsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdChannelsData();
       //expect(instance).to.be();
     });
 
     it('should have the property publishedAt (base name: "published_at")', function() {
       // uncomment below and update the code to test the property publishedAt
-      //var instane = new @GetcandyJsClient.DiscountsDiscountIdChannelsData();
+      //var instane = new GetcandyJs.DiscountsDiscountIdChannelsData();
       //expect(instance).to.be();
     });
 

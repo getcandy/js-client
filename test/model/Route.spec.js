@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Route();
+    instance = new GetcandyJs.Route();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('Route', function() {
     it('should create an instance of Route', function() {
       // uncomment below and update the code to test Route
-      //var instane = new @GetcandyJsClient.Route();
-      //expect(instance).to.be.a(@GetcandyJsClient.Route);
+      //var instane = new GetcandyJs.Route();
+      //expect(instance).to.be.a(GetcandyJs.Route);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property _default (base name: "default")', function() {
       // uncomment below and update the code to test the property _default
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property redirect (base name: "redirect")', function() {
       // uncomment below and update the code to test the property redirect
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property locale (base name: "locale")', function() {
       // uncomment below and update the code to test the property locale
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property slug (base name: "slug")', function() {
       // uncomment below and update the code to test the property slug
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @GetcandyJsClient.Route();
+      //var instane = new GetcandyJs.Route();
       //expect(instance).to.be();
     });
 

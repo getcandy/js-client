@@ -1,4 +1,4 @@
-# @GetcandyJsClient.CategoryResponse
+# GetcandyJs.CategoryResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AssetSimpleUploadBody
+# GetcandyJs.AssetSimpleUploadBody
 
 ## Properties
 

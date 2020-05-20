@@ -1,4 +1,4 @@
-# @GetcandyJsClient.VersioningApi
+# GetcandyJs.VersioningApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -19,13 +19,13 @@ Restores a model version
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.VersioningApi();
+let apiInstance = new GetcandyJs.VersioningApi();
 let modelId = "modelId_example"; // String | 
 apiInstance.postVersionsModelIdRestore(modelId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

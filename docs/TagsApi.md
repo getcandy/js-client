@@ -1,4 +1,4 @@
-# @GetcandyJsClient.TagsApi
+# GetcandyJs.TagsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -23,13 +23,13 @@ Deletes a tag by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TagsApi();
+let apiInstance = new GetcandyJs.TagsApi();
 let tagId = "tagId_example"; // String | 
 apiInstance.deleteTagsTagId(tagId).then(() => {
   console.log('API called successfully.');
@@ -71,13 +71,13 @@ Get paginated list of tags
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TagsApi();
+let apiInstance = new GetcandyJs.TagsApi();
 apiInstance.getTags().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -115,13 +115,13 @@ Gets a tag by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TagsApi();
+let apiInstance = new GetcandyJs.TagsApi();
 let tagId = "tagId_example"; // String | 
 apiInstance.getTagsTagId(tagId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -163,11 +163,11 @@ Create a new tag
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
+import GetcandyJs from 'getcandy-js';
 
-let apiInstance = new @GetcandyJsClient.TagsApi();
+let apiInstance = new GetcandyJs.TagsApi();
 let opts = {
-  'inlineObject36': new @GetcandyJsClient.InlineObject36() // InlineObject36 | 
+  'inlineObject36': new GetcandyJs.InlineObject36() // InlineObject36 | 
 };
 apiInstance.postTags(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -209,16 +209,16 @@ Updates a tag by it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.TagsApi();
+let apiInstance = new GetcandyJs.TagsApi();
 let tagId = "tagId_example"; // String | 
 let opts = {
-  'inlineObject37': new @GetcandyJsClient.InlineObject37() // InlineObject37 | 
+  'inlineObject37': new GetcandyJs.InlineObject37() // InlineObject37 | 
 };
 apiInstance.putTagsTagId(tagId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

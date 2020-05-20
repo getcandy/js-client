@@ -1,4 +1,4 @@
-# @GetcandyJsClient.Links
+# GetcandyJs.Links
 
 ## Properties
 

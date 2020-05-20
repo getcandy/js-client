@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.BasketLine();
+    instance = new GetcandyJs.BasketLine();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('BasketLine', function() {
     it('should create an instance of BasketLine', function() {
       // uncomment below and update the code to test BasketLine
-      //var instane = new @GetcandyJsClient.BasketLine();
-      //expect(instance).to.be.a(@GetcandyJsClient.BasketLine);
+      //var instane = new GetcandyJs.BasketLine();
+      //expect(instance).to.be.a(GetcandyJs.BasketLine);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property lineTotal (base name: "line_total")', function() {
       // uncomment below and update the code to test the property lineTotal
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property unitPrice (base name: "unit_price")', function() {
       // uncomment below and update the code to test the property unitPrice
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property unitTax (base name: "unit_tax")', function() {
       // uncomment below and update the code to test the property unitTax
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property lineDiscount (base name: "line_discount")', function() {
       // uncomment below and update the code to test the property lineDiscount
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property tax (base name: "tax")', function() {
       // uncomment below and update the code to test the property tax
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property meta (base name: "meta")', function() {
       // uncomment below and update the code to test the property meta
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 
     it('should have the property variant (base name: "variant")', function() {
       // uncomment below and update the code to test the property variant
-      //var instane = new @GetcandyJsClient.BasketLine();
+      //var instane = new GetcandyJs.BasketLine();
       //expect(instance).to.be();
     });
 

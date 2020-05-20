@@ -1,4 +1,4 @@
-# @GetcandyJsClient.CreateCategoryBody
+# GetcandyJs.CreateCategoryBody
 
 ## Properties
 

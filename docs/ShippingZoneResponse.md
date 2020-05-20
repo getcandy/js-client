@@ -1,4 +1,4 @@
-# @GetcandyJsClient.ShippingZoneResponse
+# GetcandyJs.ShippingZoneResponse
 
 ## Properties
 

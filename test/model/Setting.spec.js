@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Setting();
+    instance = new GetcandyJs.Setting();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Setting', function() {
     it('should create an instance of Setting', function() {
       // uncomment below and update the code to test Setting
-      //var instane = new @GetcandyJsClient.Setting();
-      //expect(instance).to.be.a(@GetcandyJsClient.Setting);
+      //var instane = new GetcandyJs.Setting();
+      //expect(instance).to.be.a(GetcandyJs.Setting);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Setting();
+      //var instane = new GetcandyJs.Setting();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.Setting();
+      //var instane = new GetcandyJs.Setting();
       //expect(instance).to.be();
     });
 
     it('should have the property handle (base name: "handle")', function() {
       // uncomment below and update the code to test the property handle
-      //var instane = new @GetcandyJsClient.Setting();
+      //var instane = new GetcandyJs.Setting();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instane = new @GetcandyJsClient.Setting();
+      //var instane = new GetcandyJs.Setting();
       //expect(instance).to.be();
     });
 

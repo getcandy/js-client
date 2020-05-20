@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse2005();
+    instance = new GetcandyJs.InlineResponse2005();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InlineResponse2005', function() {
     it('should create an instance of InlineResponse2005', function() {
       // uncomment below and update the code to test InlineResponse2005
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse2005);
+      //var instane = new GetcandyJs.InlineResponse2005();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse2005);
     });
 
     it('should have the property currentMonth (base name: "current_month")', function() {
       // uncomment below and update the code to test the property currentMonth
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
+      //var instane = new GetcandyJs.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property previousMonth (base name: "previous_month")', function() {
       // uncomment below and update the code to test the property previousMonth
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
+      //var instane = new GetcandyJs.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property today (base name: "today")', function() {
       // uncomment below and update the code to test the property today
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
+      //var instane = new GetcandyJs.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property yesterday (base name: "yesterday")', function() {
       // uncomment below and update the code to test the property yesterday
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
+      //var instane = new GetcandyJs.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property currentWeek (base name: "current_week")', function() {
       // uncomment below and update the code to test the property currentWeek
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
+      //var instane = new GetcandyJs.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property previousWeek (base name: "previous_week")', function() {
       // uncomment below and update the code to test the property previousWeek
-      //var instane = new @GetcandyJsClient.InlineResponse2005();
+      //var instane = new GetcandyJs.InlineResponse2005();
       //expect(instance).to.be();
     });
 

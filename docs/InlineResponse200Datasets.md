@@ -1,4 +1,4 @@
-# @GetcandyJsClient.InlineResponse200Datasets
+# GetcandyJs.InlineResponse200Datasets
 
 ## Properties
 

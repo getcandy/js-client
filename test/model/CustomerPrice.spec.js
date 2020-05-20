@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.CustomerPrice();
+    instance = new GetcandyJs.CustomerPrice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('CustomerPrice', function() {
     it('should create an instance of CustomerPrice', function() {
       // uncomment below and update the code to test CustomerPrice
-      //var instane = new @GetcandyJsClient.CustomerPrice();
-      //expect(instance).to.be.a(@GetcandyJsClient.CustomerPrice);
+      //var instane = new GetcandyJs.CustomerPrice();
+      //expect(instance).to.be.a(GetcandyJs.CustomerPrice);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.CustomerPrice();
+      //var instane = new GetcandyJs.CustomerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
-      //var instane = new @GetcandyJsClient.CustomerPrice();
+      //var instane = new GetcandyJs.CustomerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property tax (base name: "tax")', function() {
       // uncomment below and update the code to test the property tax
-      //var instane = new @GetcandyJsClient.CustomerPrice();
+      //var instane = new GetcandyJs.CustomerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property group (base name: "group")', function() {
       // uncomment below and update the code to test the property group
-      //var instane = new @GetcandyJsClient.CustomerPrice();
+      //var instane = new GetcandyJs.CustomerPrice();
       //expect(instance).to.be();
     });
 

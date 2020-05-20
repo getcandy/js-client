@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ActivityLog();
+    instance = new GetcandyJs.ActivityLog();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('ActivityLog', function() {
     it('should create an instance of ActivityLog', function() {
       // uncomment below and update the code to test ActivityLog
-      //var instane = new @GetcandyJsClient.ActivityLog();
-      //expect(instance).to.be.a(@GetcandyJsClient.ActivityLog);
+      //var instane = new GetcandyJs.ActivityLog();
+      //expect(instance).to.be.a(GetcandyJs.ActivityLog);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.ActivityLog();
+      //var instane = new GetcandyJs.ActivityLog();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @GetcandyJsClient.ActivityLog();
+      //var instane = new GetcandyJs.ActivityLog();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @GetcandyJsClient.ActivityLog();
+      //var instane = new GetcandyJs.ActivityLog();
       //expect(instance).to.be();
     });
 
     it('should have the property properties (base name: "properties")', function() {
       // uncomment below and update the code to test the property properties
-      //var instane = new @GetcandyJsClient.ActivityLog();
+      //var instane = new GetcandyJs.ActivityLog();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "created_at")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instane = new @GetcandyJsClient.ActivityLog();
+      //var instane = new GetcandyJs.ActivityLog();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instane = new @GetcandyJsClient.ActivityLog();
+      //var instane = new GetcandyJs.ActivityLog();
       //expect(instance).to.be();
     });
 

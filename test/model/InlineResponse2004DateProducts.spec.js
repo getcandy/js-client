@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineResponse2004DateProducts();
+    instance = new GetcandyJs.InlineResponse2004DateProducts();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InlineResponse2004DateProducts', function() {
     it('should create an instance of InlineResponse2004DateProducts', function() {
       // uncomment below and update the code to test InlineResponse2004DateProducts
-      //var instane = new @GetcandyJsClient.InlineResponse2004DateProducts();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineResponse2004DateProducts);
+      //var instane = new GetcandyJs.InlineResponse2004DateProducts();
+      //expect(instance).to.be.a(GetcandyJs.InlineResponse2004DateProducts);
     });
 
     it('should have the property productCount (base name: "product_count")', function() {
       // uncomment below and update the code to test the property productCount
-      //var instane = new @GetcandyJsClient.InlineResponse2004DateProducts();
+      //var instane = new GetcandyJs.InlineResponse2004DateProducts();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @GetcandyJsClient.InlineResponse2004DateProducts();
+      //var instane = new GetcandyJs.InlineResponse2004DateProducts();
       //expect(instance).to.be();
     });
 
     it('should have the property sku (base name: "sku")', function() {
       // uncomment below and update the code to test the property sku
-      //var instane = new @GetcandyJsClient.InlineResponse2004DateProducts();
+      //var instane = new GetcandyJs.InlineResponse2004DateProducts();
       //expect(instance).to.be();
     });
 
     it('should have the property month (base name: "month")', function() {
       // uncomment below and update the code to test the property month
-      //var instane = new @GetcandyJsClient.InlineResponse2004DateProducts();
+      //var instane = new GetcandyJs.InlineResponse2004DateProducts();
       //expect(instance).to.be();
     });
 

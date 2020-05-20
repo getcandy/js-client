@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.ProductsProductIdDuplicateRoutes();
+    instance = new GetcandyJs.ProductsProductIdDuplicateRoutes();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductsProductIdDuplicateRoutes', function() {
     it('should create an instance of ProductsProductIdDuplicateRoutes', function() {
       // uncomment below and update the code to test ProductsProductIdDuplicateRoutes
-      //var instane = new @GetcandyJsClient.ProductsProductIdDuplicateRoutes();
-      //expect(instance).to.be.a(@GetcandyJsClient.ProductsProductIdDuplicateRoutes);
+      //var instane = new GetcandyJs.ProductsProductIdDuplicateRoutes();
+      //expect(instance).to.be.a(GetcandyJs.ProductsProductIdDuplicateRoutes);
     });
 
     it('should have the property old (base name: "old")', function() {
       // uncomment below and update the code to test the property old
-      //var instane = new @GetcandyJsClient.ProductsProductIdDuplicateRoutes();
+      //var instane = new GetcandyJs.ProductsProductIdDuplicateRoutes();
       //expect(instance).to.be();
     });
 
     it('should have the property _new (base name: "new")', function() {
       // uncomment below and update the code to test the property _new
-      //var instane = new @GetcandyJsClient.ProductsProductIdDuplicateRoutes();
+      //var instane = new GetcandyJs.ProductsProductIdDuplicateRoutes();
       //expect(instance).to.be();
     });
 

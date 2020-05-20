@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AttachCategoryChannelsBodyChannels
+# GetcandyJs.AttachCategoryChannelsBodyChannels
 
 ## Properties
 

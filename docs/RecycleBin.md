@@ -1,4 +1,4 @@
-# @GetcandyJsClient.RecycleBin
+# GetcandyJs.RecycleBin
 
 ## Properties
 

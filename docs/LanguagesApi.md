@@ -1,4 +1,4 @@
-# @GetcandyJsClient.LanguagesApi
+# GetcandyJs.LanguagesApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -23,13 +23,13 @@ Delete a Language by its ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.LanguagesApi();
+let apiInstance = new GetcandyJs.LanguagesApi();
 let languageId = "languageId_example"; // String | 
 apiInstance.deleteLanguagesLanguageId(languageId).then(() => {
   console.log('API called successfully.');
@@ -71,13 +71,13 @@ Returns a paginated list of Languages
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.LanguagesApi();
+let apiInstance = new GetcandyJs.LanguagesApi();
 apiInstance.getLanguages().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -115,13 +115,13 @@ Get a Language by ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.LanguagesApi();
+let apiInstance = new GetcandyJs.LanguagesApi();
 let languageId = "languageId_example"; // String | 
 apiInstance.getLanguagesLanguageId(languageId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -163,15 +163,15 @@ Create a new language
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.LanguagesApi();
+let apiInstance = new GetcandyJs.LanguagesApi();
 let opts = {
-  'inlineObject11': new @GetcandyJsClient.InlineObject11() // InlineObject11 | 
+  'inlineObject11': new GetcandyJs.InlineObject11() // InlineObject11 | 
 };
 apiInstance.postLanguages(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -213,16 +213,16 @@ Update a Language using it&#39;s ID
 ### Example
 
 ```javascript
-import @GetcandyJsClient from '@getcandy/js-client';
-let defaultClient = @GetcandyJsClient.ApiClient.instance;
+import GetcandyJs from 'getcandy-js';
+let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new @GetcandyJsClient.LanguagesApi();
+let apiInstance = new GetcandyJs.LanguagesApi();
 let languageId = "languageId_example"; // String | 
 let opts = {
-  'language': new @GetcandyJsClient.Language() // Language | 
+  'language': new GetcandyJs.Language() // Language | 
 };
 apiInstance.putLanguagesLanguageId(languageId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

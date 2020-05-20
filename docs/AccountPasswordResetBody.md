@@ -1,4 +1,4 @@
-# @GetcandyJsClient.AccountPasswordResetBody
+# GetcandyJs.AccountPasswordResetBody
 
 ## Properties
 

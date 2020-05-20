@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.Role();
+    instance = new GetcandyJs.Role();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Role', function() {
     it('should create an instance of Role', function() {
       // uncomment below and update the code to test Role
-      //var instane = new @GetcandyJsClient.Role();
-      //expect(instance).to.be.a(@GetcandyJsClient.Role);
+      //var instane = new GetcandyJs.Role();
+      //expect(instance).to.be.a(GetcandyJs.Role);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @GetcandyJsClient.Role();
+      //var instane = new GetcandyJs.Role();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @GetcandyJsClient.Role();
+      //var instane = new GetcandyJs.Role();
       //expect(instance).to.be();
     });
 
     it('should have the property guardName (base name: "guard_name")', function() {
       // uncomment below and update the code to test the property guardName
-      //var instane = new @GetcandyJsClient.Role();
+      //var instane = new GetcandyJs.Role();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instane = new @GetcandyJsClient.Role();
+      //var instane = new GetcandyJs.Role();
       //expect(instance).to.be();
     });
 

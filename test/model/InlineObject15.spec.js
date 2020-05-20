@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.InlineObject15();
+    instance = new GetcandyJs.InlineObject15();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,67 +50,67 @@
   describe('InlineObject15', function() {
     it('should create an instance of InlineObject15', function() {
       // uncomment below and update the code to test InlineObject15
-      //var instane = new @GetcandyJsClient.InlineObject15();
-      //expect(instance).to.be.a(@GetcandyJsClient.InlineObject15);
+      //var instane = new GetcandyJs.InlineObject15();
+      //expect(instance).to.be.a(GetcandyJs.InlineObject15);
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property lineTotal (base name: "line_total")', function() {
       // uncomment below and update the code to test the property lineTotal
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property unitPrice (base name: "unit_price")', function() {
       // uncomment below and update the code to test the property unitPrice
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property taxRate (base name: "tax_rate")', function() {
       // uncomment below and update the code to test the property taxRate
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property isManual (base name: "is_manual")', function() {
       // uncomment below and update the code to test the property isManual
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property isShipping (base name: "is_shipping")', function() {
       // uncomment below and update the code to test the property isShipping
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property option (base name: "option")', function() {
       // uncomment below and update the code to test the property option
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property sku (base name: "sku")', function() {
       // uncomment below and update the code to test the property sku
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 
     it('should have the property discountTotal (base name: "discount_total")', function() {
       // uncomment below and update the code to test the property discountTotal
-      //var instane = new @GetcandyJsClient.InlineObject15();
+      //var instane = new GetcandyJs.InlineObject15();
       //expect(instance).to.be();
     });
 

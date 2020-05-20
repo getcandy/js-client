@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@GetcandyJsClient);
+    factory(root.expect, root.GetcandyJs);
   }
-}(this, function(expect, @GetcandyJsClient) {
+}(this, function(expect, GetcandyJs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @GetcandyJsClient.AttributesName();
+    instance = new GetcandyJs.AttributesName();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('AttributesName', function() {
     it('should create an instance of AttributesName', function() {
       // uncomment below and update the code to test AttributesName
-      //var instane = new @GetcandyJsClient.AttributesName();
-      //expect(instance).to.be.a(@GetcandyJsClient.AttributesName);
+      //var instane = new GetcandyJs.AttributesName();
+      //expect(instance).to.be.a(GetcandyJs.AttributesName);
     });
 
     it('should have the property locale (base name: "locale")', function() {
       // uncomment below and update the code to test the property locale
-      //var instane = new @GetcandyJsClient.AttributesName();
+      //var instane = new GetcandyJs.AttributesName();
       //expect(instance).to.be();
     });
 
