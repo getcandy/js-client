@@ -1,4 +1,4 @@
-# GetcandyJs.CategoryAttachLayoutBody
+# @GetcandyJsClient.CategoryAttachLayoutBody
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# GetcandyJs.ErrorError
+# @GetcandyJsClient.ErrorError
 
 ## Properties
 

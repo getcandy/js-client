@@ -1,4 +1,4 @@
-# GetcandyJs.SearchMeta
+# @GetcandyJsClient.SearchMeta
 
 ## Properties
 

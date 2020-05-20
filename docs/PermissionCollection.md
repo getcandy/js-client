@@ -1,4 +1,4 @@
-# GetcandyJs.PermissionCollection
+# @GetcandyJsClient.PermissionCollection
 
 ## Properties
 

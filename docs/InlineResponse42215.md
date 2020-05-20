@@ -1,10 +1,10 @@
-# GetcandyJs.InlineResponse42215
+# @GetcandyJsClient.InlineResponse42215
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **[String]** |  | [optional] 
-**type** | **[String]** |  | [optional] 
+**percentage** | **[String]** |  | [optional] 
 
 

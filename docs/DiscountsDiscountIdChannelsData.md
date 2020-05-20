@@ -1,4 +1,4 @@
-# GetcandyJs.DiscountsDiscountIdChannelsData
+# @GetcandyJsClient.DiscountsDiscountIdChannelsData
 
 ## Properties
 

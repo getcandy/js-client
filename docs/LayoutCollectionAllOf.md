@@ -1,4 +1,4 @@
-# GetcandyJs.LayoutCollectionAllOf
+# @GetcandyJsClient.LayoutCollectionAllOf
 
 ## Properties
 

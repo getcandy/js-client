@@ -1,4 +1,4 @@
-# GetcandyJs.SettingCollection
+# @GetcandyJsClient.SettingCollection
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# GetcandyJs.AssetsApi
+# @GetcandyJsClient.AssetsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -22,13 +22,13 @@ Upload an asset to a model
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.AssetsApi();
+let apiInstance = new @GetcandyJsClient.AssetsApi();
 let opts = {
   'mimeType': "mimeType_example", // String | Required when passing url
   'url': "url_example", // String | External URL to file to upload, required without file
@@ -76,17 +76,17 @@ Detaches any assets from a given model. Useful if you want to remove certain ass
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.AssetsApi();
+let apiInstance = new @GetcandyJsClient.AssetsApi();
 let assetId = "assetId_example"; // String | The hashed asset id
 let ownerId = "ownerId_example"; // String | The hashed owner id
 let opts = {
-  'assetDetachBody': new GetcandyJs.AssetDetachBody() // AssetDetachBody | 
+  'assetDetachBody': new @GetcandyJsClient.AssetDetachBody() // AssetDetachBody | 
 };
 apiInstance.postAssetsAssetIdDetachOwnerId(assetId, ownerId, opts).then(() => {
   console.log('API called successfully.');
@@ -130,13 +130,13 @@ This endpoint allows you to upload an asset without having to attach it to a mod
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.AssetsApi();
+let apiInstance = new @GetcandyJsClient.AssetsApi();
 let file = null; // Object | 
 apiInstance.postAssetsSimple(file).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -178,15 +178,15 @@ Update all assets in the given array of ids.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.AssetsApi();
+let apiInstance = new @GetcandyJsClient.AssetsApi();
 let opts = {
-  'updateAssetBody': new GetcandyJs.UpdateAssetBody() // UpdateAssetBody | 
+  'updateAssetBody': new @GetcandyJsClient.UpdateAssetBody() // UpdateAssetBody | 
 };
 apiInstance.putAssets(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

@@ -1,4 +1,4 @@
-# GetcandyJs.Root
+# @GetcandyJsClient.Root
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# GetcandyJs.AssociationGroup
+# @GetcandyJsClient.AssociationGroup
 
 ## Properties
 

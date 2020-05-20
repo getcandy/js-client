@@ -1,4 +1,4 @@
-# GetcandyJs.PaymentProvider
+# @GetcandyJsClient.PaymentProvider
 
 ## Properties
 

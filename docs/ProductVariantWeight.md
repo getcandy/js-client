@@ -1,4 +1,4 @@
-# GetcandyJs.ProductVariantWeight
+# @GetcandyJsClient.ProductVariantWeight
 
 ## Properties
 

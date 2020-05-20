@@ -1,4 +1,4 @@
-# GetcandyJs.AttachCategoryProductsBodyProducts
+# @GetcandyJsClient.AttachCategoryProductsBodyProducts
 
 ## Properties
 

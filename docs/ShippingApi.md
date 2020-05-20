@@ -1,4 +1,4 @@
-# GetcandyJs.ShippingApi
+# @GetcandyJsClient.ShippingApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -30,13 +30,13 @@ Deletes a shipping method.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 apiInstance.deleteShippingShippingMethodId(shippingMethodId).then(() => {
   console.log('API called successfully.');
@@ -78,13 +78,13 @@ Returns a paginated list of shipping methods
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let opts = {
   'perPage': 56, // Number | 
   'include': "include_example" // String | 
@@ -130,13 +130,13 @@ Returns a shipping method by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
   'include': "include_example" // String | 
@@ -182,13 +182,13 @@ Returns a paginated list of shipping zones.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let opts = {
   'include': "include_example" // String | 
 };
@@ -232,13 +232,13 @@ Get a shipping zone by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingZoneId = "shippingZoneId_example"; // String | 
 apiInstance.getShippingZonesShippingZoneId(shippingZoneId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -280,15 +280,15 @@ Create a new shipping method.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let opts = {
-  'inlineObject35': new GetcandyJs.InlineObject35() // InlineObject35 | 
+  'inlineObject34': new @GetcandyJsClient.InlineObject34() // InlineObject34 | 
 };
 apiInstance.postShipping(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -303,7 +303,7 @@ apiInstance.postShipping(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject35** | [**InlineObject35**](InlineObject35.md)|  | [optional] 
+ **inlineObject34** | [**InlineObject34**](InlineObject34.md)|  | [optional] 
 
 ### Return type
 
@@ -330,16 +330,16 @@ Add a price to a shipping method.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
-  'inlineObject31': new GetcandyJs.InlineObject31() // InlineObject31 | 
+  'inlineObject30': new @GetcandyJsClient.InlineObject30() // InlineObject30 | 
 };
 apiInstance.postShippingIdPrices(shippingMethodId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -355,7 +355,7 @@ apiInstance.postShippingIdPrices(shippingMethodId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingMethodId** | **String**|  | 
- **inlineObject31** | [**InlineObject31**](InlineObject31.md)|  | [optional] 
+ **inlineObject30** | [**InlineObject30**](InlineObject30.md)|  | [optional] 
 
 ### Return type
 
@@ -382,15 +382,15 @@ Create a new shipping zone
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let opts = {
-  'inlineObject30': new GetcandyJs.InlineObject30() // InlineObject30 | 
+  'inlineObject29': new @GetcandyJsClient.InlineObject29() // InlineObject29 | 
 };
 apiInstance.postShippingZones(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -405,7 +405,7 @@ apiInstance.postShippingZones(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject30** | [**InlineObject30**](InlineObject30.md)|  | [optional] 
+ **inlineObject29** | [**InlineObject29**](InlineObject29.md)|  | [optional] 
 
 ### Return type
 
@@ -432,16 +432,16 @@ Update shipping method users
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let id = "id_example"; // String | 
 let opts = {
-  'inlineObject34': new GetcandyJs.InlineObject34() // InlineObject34 | 
+  'inlineObject33': new @GetcandyJsClient.InlineObject33() // InlineObject33 | 
 };
 apiInstance.putShippingIdUsers(id, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -457,7 +457,7 @@ apiInstance.putShippingIdUsers(id, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
- **inlineObject34** | [**InlineObject34**](InlineObject34.md)|  | [optional] 
+ **inlineObject33** | [**InlineObject33**](InlineObject33.md)|  | [optional] 
 
 ### Return type
 
@@ -484,16 +484,16 @@ Update a shipping price
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingPriceId = "shippingPriceId_example"; // String | 
 let opts = {
-  'inlineObject32': new GetcandyJs.InlineObject32() // InlineObject32 | 
+  'inlineObject31': new @GetcandyJsClient.InlineObject31() // InlineObject31 | 
 };
 apiInstance.putShippingPricesShippingPriceId(shippingPriceId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -509,7 +509,7 @@ apiInstance.putShippingPricesShippingPriceId(shippingPriceId, opts).then((data) 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingPriceId** | **String**|  | 
- **inlineObject32** | [**InlineObject32**](InlineObject32.md)|  | [optional] 
+ **inlineObject31** | [**InlineObject31**](InlineObject31.md)|  | [optional] 
 
 ### Return type
 
@@ -536,16 +536,16 @@ Update shipping method by it&#39;s ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
-  'inlineObject36': new GetcandyJs.InlineObject36() // InlineObject36 | 
+  'inlineObject35': new @GetcandyJsClient.InlineObject35() // InlineObject35 | 
 };
 apiInstance.putShippingShippingMethodId(shippingMethodId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -561,7 +561,7 @@ apiInstance.putShippingShippingMethodId(shippingMethodId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingMethodId** | **String**|  | 
- **inlineObject36** | [**InlineObject36**](InlineObject36.md)|  | [optional] 
+ **inlineObject35** | [**InlineObject35**](InlineObject35.md)|  | [optional] 
 
 ### Return type
 
@@ -588,16 +588,16 @@ Update a shipping method&#39;s zones.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ShippingApi();
+let apiInstance = new @GetcandyJsClient.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
-  'inlineObject33': new GetcandyJs.InlineObject33() // InlineObject33 | 
+  'inlineObject32': new @GetcandyJsClient.InlineObject32() // InlineObject32 | 
 };
 apiInstance.putShippingShippingMethodIdZones(shippingMethodId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -613,7 +613,7 @@ apiInstance.putShippingShippingMethodIdZones(shippingMethodId, opts).then((data)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingMethodId** | **String**|  | 
- **inlineObject33** | [**InlineObject33**](InlineObject33.md)|  | [optional] 
+ **inlineObject32** | [**InlineObject32**](InlineObject32.md)|  | [optional] 
 
 ### Return type
 

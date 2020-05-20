@@ -1,9 +1,9 @@
-# GetcandyJs.InlineResponse4222
+# @GetcandyJsClient.InlineResponse4222
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**url** | **Array** |  | [optional] 
+**id** | **[String]** |  | [optional] 
 
 

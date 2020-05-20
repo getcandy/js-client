@@ -1,9 +1,9 @@
-# GetcandyJs.InlineObject24
+# @GetcandyJsClient.InlineObject24
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**categories** | **[String]** | Array of category ID&#39;s | 
+**channels** | **[String]** | Array of channel ID&#39;s | 
 
 

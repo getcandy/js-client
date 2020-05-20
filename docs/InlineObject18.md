@@ -1,9 +1,10 @@
-# GetcandyJs.InlineObject18
+# @GetcandyJsClient.InlineObject18
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inventory** | **Number** |  | [optional] 
+**routes** | [**[ProductsProductIdDuplicateRoutes]**](ProductsProductIdDuplicateRoutes.md) |  | 
+**skus** | [**[ProductsProductIdDuplicateRoutes]**](ProductsProductIdDuplicateRoutes.md) |  | 
 
 

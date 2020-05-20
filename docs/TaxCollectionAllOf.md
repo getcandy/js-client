@@ -1,4 +1,4 @@
-# GetcandyJs.TaxCollectionAllOf
+# @GetcandyJsClient.TaxCollectionAllOf
 
 ## Properties
 

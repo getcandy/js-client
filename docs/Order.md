@@ -1,4 +1,4 @@
-# GetcandyJs.Order
+# @GetcandyJsClient.Order
 
 ## Properties
 
@@ -29,6 +29,13 @@ Name | Type | Description | Notes
 **createdAt** | **String** |  | [optional] 
 **updatedAt** | **String** |  | [optional] 
 **notes** | **String** |  | [optional] 
-**meta** | **Array** |  | [optional] 
+**meta** | **[Object]** |  | [optional] 
+**basket** | [**BasketResponse**](BasketResponse.md) |  | [optional] 
+**discounts** | **String** |  | [optional] 
+**transactions** | [**TransactionCollection**](TransactionCollection.md) |  | [optional] 
+**lines** | [**OrderLineCollection**](OrderLineCollection.md) |  | [optional] 
+**shipping** | [**OrderLineResponse**](OrderLineResponse.md) |  | [optional] 
+**logs** | [**ActivityLogCollection**](ActivityLogCollection.md) |  | [optional] 
+**user** | [**UserResponse**](UserResponse.md) |  | [optional] 
 
 

@@ -1,4 +1,4 @@
-# GetcandyJs.ShippingMethodCollectionAllOf
+# @GetcandyJsClient.ShippingMethodCollectionAllOf
 
 ## Properties
 

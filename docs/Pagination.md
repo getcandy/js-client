@@ -1,4 +1,4 @@
-# GetcandyJs.Pagination
+# @GetcandyJsClient.Pagination
 
 ## Properties
 

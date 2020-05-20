@@ -1,4 +1,4 @@
-# GetcandyJs.ReorderAttributesUnprocessableResponse
+# @GetcandyJsClient.ReorderAttributesUnprocessableResponse
 
 ## Properties
 

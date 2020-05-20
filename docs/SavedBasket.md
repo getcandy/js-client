@@ -1,4 +1,4 @@
-# GetcandyJs.SavedBasket
+# @GetcandyJsClient.SavedBasket
 
 ## Properties
 
@@ -6,5 +6,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
+**basket** | [**BasketResponse**](BasketResponse.md) |  | [optional] 
 
 

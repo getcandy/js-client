@@ -1,4 +1,4 @@
-# GetcandyJs.UpdateAttributeBody
+# @GetcandyJsClient.UpdateAttributeBody
 
 ## Properties
 

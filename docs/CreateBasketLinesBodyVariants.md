@@ -1,4 +1,4 @@
-# GetcandyJs.CreateBasketLinesBodyVariants
+# @GetcandyJsClient.CreateBasketLinesBodyVariants
 
 ## Properties
 

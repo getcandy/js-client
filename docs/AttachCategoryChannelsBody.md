@@ -1,9 +1,9 @@
-# GetcandyJs.AttachCategoryChannelsBody
+# @GetcandyJsClient.AttachCategoryChannelsBody
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | [**[AttachCategoryChannelsBodyChannels]**](AttachCategoryChannelsBodyChannels.md) |  | [optional] 
+**channels** | [**[AttachCategoryChannelsBodyChannels]**](AttachCategoryChannelsBodyChannels.md) |  | 
 
 

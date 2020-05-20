@@ -1,9 +1,11 @@
-# GetcandyJs.InlineObject30
+# @GetcandyJsClient.InlineObject30
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
+**rate** | **Number** |  | 
+**zoneId** | **String** |  | 
+**currencyId** | **String** |  | 
 
 

@@ -1,4 +1,4 @@
-# GetcandyJs.Asset
+# @GetcandyJsClient.Asset
 
 ## Properties
 
@@ -19,5 +19,7 @@ Name | Type | Description | Notes
 **size** | **String** |  | [optional] 
 **width** | **String** |  | [optional] 
 **height** | **String** |  | [optional] 
+**transforms** | [**AssetTransformCollection**](AssetTransformCollection.md) |  | [optional] 
+**tags** | [**TagCollection**](TagCollection.md) |  | [optional] 
 
 

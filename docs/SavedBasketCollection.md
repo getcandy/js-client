@@ -1,4 +1,4 @@
-# GetcandyJs.SavedBasketCollection
+# @GetcandyJsClient.SavedBasketCollection
 
 ## Properties
 

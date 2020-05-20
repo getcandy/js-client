@@ -1,4 +1,4 @@
-# GetcandyJs.AssociationsApi
+# @GetcandyJsClient.AssociationsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -19,13 +19,13 @@ Returns a paginated response of association groups available in the system
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.AssociationsApi();
+let apiInstance = new @GetcandyJsClient.AssociationsApi();
 apiInstance.getAssociationsGroups().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

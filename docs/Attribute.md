@@ -1,11 +1,11 @@
-# GetcandyJs.Attribute
+# @GetcandyJsClient.Attribute
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
-**name** | [**AttributeName**](AttributeName.md) |  | [optional] 
+**name** | [**Object**](.md) |  | [optional] 
 **handle** | **String** |  | [optional] 
 **position** | **Number** |  | [optional] 
 **filterable** | **Boolean** |  | [optional] 
@@ -16,7 +16,8 @@ Name | Type | Description | Notes
 **localised** | **Boolean** |  | [optional] 
 **type** | **String** |  | [optional] 
 **required** | **Boolean** |  | [optional] 
-**lookups** | [**[AttributesLookups]**](AttributesLookups.md) |  | [optional] 
+**lookups** | **[Object]** |  | [optional] 
 **system** | **Boolean** |  | [optional] 
+**group** | [**AttributeGroupResponse**](AttributeGroupResponse.md) |  | [optional] 
 
 

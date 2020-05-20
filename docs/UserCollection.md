@@ -1,9 +1,9 @@
-# GetcandyJs.UserCollection
+# @GetcandyJsClient.UserCollection
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[User]**](User.md) |  | [optional] 
+**data** | **[Object]** |  | [optional] 
 
 

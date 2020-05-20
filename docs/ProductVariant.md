@@ -1,4 +1,4 @@
-# GetcandyJs.ProductVariant
+# @GetcandyJsClient.ProductVariant
 
 ## Properties
 
@@ -25,5 +25,11 @@ Name | Type | Description | Notes
 **width** | [**ProductVariantWeight**](ProductVariantWeight.md) |  | [optional] 
 **depth** | [**ProductVariantWeight**](ProductVariantWeight.md) |  | [optional] 
 **volume** | [**ProductVariantWeight**](ProductVariantWeight.md) |  | [optional] 
+**product** | [**ProductResponse**](ProductResponse.md) |  | [optional] 
+**image** | [**AssetResponse**](AssetResponse.md) |  | [optional] 
+**customerPricing** | [**CustomerPriceCollection**](CustomerPriceCollection.md) |  | [optional] 
+**tax** | [**TaxResponse**](TaxResponse.md) |  | [optional] 
+**tiers** | [**ProductTierPriceCollection**](ProductTierPriceCollection.md) |  | [optional] 
+**options** | [**Object**](.md) |  | [optional] 
 
 

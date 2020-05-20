@@ -1,4 +1,4 @@
-# GetcandyJs.InlineObject7
+# @GetcandyJsClient.InlineObject7
 
 ## Properties
 

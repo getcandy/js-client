@@ -1,4 +1,4 @@
-# GetcandyJs.CreateAttributeGroupBodyName
+# @GetcandyJsClient.CreateAttributeGroupBodyName
 
 ## Properties
 

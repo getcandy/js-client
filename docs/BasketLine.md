@@ -1,4 +1,4 @@
-# GetcandyJs.BasketLine
+# @GetcandyJsClient.BasketLine
 
 ## Properties
 
@@ -12,5 +12,6 @@ Name | Type | Description | Notes
 **lineDiscount** | **Number** |  | [optional] 
 **tax** | **Number** |  | [optional] 
 **meta** | [**Object**](.md) |  | [optional] 
+**variant** | [**ProductVariantResponse**](ProductVariantResponse.md) |  | [optional] 
 
 

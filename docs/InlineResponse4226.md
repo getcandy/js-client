@@ -1,9 +1,13 @@
-# GetcandyJs.InlineResponse4226
+# @GetcandyJsClient.InlineResponse4226
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**priceId** | **[String]** |  | [optional] 
+**quantity** | **[String]** |  | [optional] 
+**lineTotal** | **[String]** |  | [optional] 
+**unitPrice** | **[String]** |  | [optional] 
+**taxRate** | **[String]** |  | [optional] 
+**description** | **[String]** |  | [optional] 
 
 

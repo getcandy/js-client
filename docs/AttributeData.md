@@ -1,9 +1,9 @@
-# GetcandyJs.AttributeData
+# @GetcandyJsClient.AttributeData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**attributeData** | [**AttributeDataAttributeData**](AttributeDataAttributeData.md) |  | [optional] 
+**attributeData** | [**Object**](.md) |  | [optional] 
 
 

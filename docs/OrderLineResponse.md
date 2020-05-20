@@ -1,9 +1,9 @@
-# GetcandyJs.AttributeName
+# @GetcandyJsClient.OrderLineResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**en** | **String** |  | [optional] 
+**data** | [**OrderLine**](OrderLine.md) |  | [optional] 
 
 

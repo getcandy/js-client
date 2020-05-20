@@ -1,10 +1,14 @@
-# GetcandyJs.InlineResponse42210
+# @GetcandyJsClient.InlineResponse42210
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**message** | **String** |  | [optional] 
-**errors** | [**[InlineResponse42210Errors]**](InlineResponse42210Errors.md) |  | [optional] 
+**name** | **[String]** |  | [optional] 
+**url** | **[String]** |  | [optional] 
+**stock** | **[String]** |  | [optional] 
+**familyId** | **[String]** |  | [optional] 
+**price** | **[String]** |  | [optional] 
+**sku** | **[String]** |  | [optional] 
 
 

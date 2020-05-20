@@ -1,4 +1,4 @@
-# GetcandyJs.AttributesReorderBodyGroups
+# @GetcandyJsClient.AttributesReorderBodyGroups
 
 ## Properties
 

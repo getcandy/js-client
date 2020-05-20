@@ -1,9 +1,9 @@
-# GetcandyJs.AttributeGroupName
+# @GetcandyJsClient.ActivityLogResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | [**CollectionsName**](CollectionsName.md) |  | [optional] 
+**data** | [**ActivityLog**](ActivityLog.md) |  | [optional] 
 
 

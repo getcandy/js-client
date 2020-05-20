@@ -1,4 +1,4 @@
-# GetcandyJs.RecycleBinApi
+# @GetcandyJsClient.RecycleBinApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -21,13 +21,13 @@ Remove a recycle bin item  &gt; This will also hard delete the model associated 
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.RecycleBinApi();
+let apiInstance = new @GetcandyJsClient.RecycleBinApi();
 let itemId = "itemId_example"; // String | 
 apiInstance.deleteRecycleBinItemId(itemId).then(() => {
   console.log('API called successfully.');
@@ -69,13 +69,13 @@ Returns a paginated list of all recycle bin items.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.RecycleBinApi();
+let apiInstance = new @GetcandyJsClient.RecycleBinApi();
 apiInstance.getRecycleBin().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -113,13 +113,13 @@ Retrieves a recycle bin item.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.RecycleBinApi();
+let apiInstance = new @GetcandyJsClient.RecycleBinApi();
 let itemId = "itemId_example"; // String | 
 apiInstance.getRecycleBinItemId(itemId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

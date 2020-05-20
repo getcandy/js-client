@@ -1,4 +1,4 @@
-# GetcandyJs.OrdersApi
+# @GetcandyJsClient.OrdersApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -36,13 +36,13 @@ Deletes an order line from an order
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderLineId = "orderLineId_example"; // String | 
 apiInstance.deleteOrdersLinesOrderId(orderLineId).then(() => {
   console.log('API called successfully.');
@@ -84,13 +84,13 @@ If you&#39;re an admin user you will be able to see all orders, otherwise only t
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let opts = {
   'include': "include_example" // String | 
 };
@@ -134,13 +134,13 @@ Export orders into a base64 encoded string
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orders = "orders_example"; // String | Colon seperated order IDs
 let format = "format_example"; // String | The export format, must be present in config
 apiInstance.getOrdersBulk(orders, format).then((data) => {
@@ -184,13 +184,13 @@ This endpoint will get a HTML email preview for an order status, this is useful 
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let status = "status_example"; // String | 
 let id = "id_example"; // String | An order id to use for the template
 apiInstance.getOrdersEmailPreviewStatus(status, id).then((data) => {
@@ -234,13 +234,13 @@ Get an orders invoice
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 apiInstance.getOrdersIdInvoice(orderId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -282,13 +282,13 @@ This will return a list of all ShippingMethod&#39;s that are available for this 
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 apiInstance.getOrdersIdShippingMethods(orderId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -330,13 +330,13 @@ Get an Order by it&#39;s ID.  You must be an admin or owner to retrieve the orde
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 apiInstance.getOrdersOrderId(orderId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -378,13 +378,13 @@ Returns all order types currently in the system
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 apiInstance.getOrdersTypes().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -422,15 +422,15 @@ Create an Order from a Basket instance
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let opts = {
-  'inlineObject': new GetcandyJs.InlineObject() // InlineObject | 
+  'inlineObject': new @GetcandyJsClient.InlineObject() // InlineObject | 
 };
 apiInstance.postOrders(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -472,15 +472,15 @@ Allows you to bulk update a field across multiple Orders.  You must have the cor
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let opts = {
-  'inlineObject12': new GetcandyJs.InlineObject12() // InlineObject12 | 
+  'inlineObject12': new @GetcandyJsClient.InlineObject12() // InlineObject12 | 
 };
 apiInstance.postOrdersBulk(opts).then(() => {
   console.log('API called successfully.');
@@ -522,13 +522,13 @@ Sets an order to be expired. You must have the correct priviledges to perform th
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 apiInstance.postOrdersOrderIdExpire(orderId).then(() => {
   console.log('API called successfully.');
@@ -568,15 +568,15 @@ Processes an order on the API
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let opts = {
-  'inlineObject2': new GetcandyJs.InlineObject2() // InlineObject2 | 
+  'inlineObject2': new @GetcandyJsClient.InlineObject2() // InlineObject2 | 
 };
 apiInstance.postOrdersProcess(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -618,16 +618,16 @@ Add contact details to an order
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'inlineObject14': new GetcandyJs.InlineObject14() // InlineObject14 | 
+  'inlineObject14': new @GetcandyJsClient.InlineObject14() // InlineObject14 | 
 };
 apiInstance.putOrdersIdContact(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -670,16 +670,16 @@ Adds an order line to an order
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'inlineObject15': new GetcandyJs.InlineObject15() // InlineObject15 | 
+  'inlineObject15': new @GetcandyJsClient.InlineObject15() // InlineObject15 | 
 };
 apiInstance.putOrdersIdLines(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -722,16 +722,16 @@ Update an orders shipping address
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'address': new GetcandyJs.Address() // Address | All fields are required when an `address_id` is not present.
+  'address': new @GetcandyJsClient.Address() // Address | All fields are required when an `address_id` is not present.
 };
 apiInstance.putOrdersIdShippingAddress(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -774,16 +774,16 @@ Adds a shipping cost to an Order
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'inlineObject13': new GetcandyJs.InlineObject13() // InlineObject13 | 
+  'inlineObject13': new @GetcandyJsClient.InlineObject13() // InlineObject13 | 
 };
 apiInstance.putOrdersIdShippingCost(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -826,17 +826,17 @@ Update an Order
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
   'include': "include_example", // String | 
-  'inlineObject1': new GetcandyJs.InlineObject1() // InlineObject1 | 
+  'inlineObject1': new @GetcandyJsClient.InlineObject1() // InlineObject1 | 
 };
 apiInstance.putOrdersOrderId(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -880,16 +880,16 @@ Update an orders billing address
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.OrdersApi();
+let apiInstance = new @GetcandyJsClient.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'address': new GetcandyJs.Address() // Address | All fields are required when an `address_id` is not present.
+  'address': new @GetcandyJsClient.Address() // Address | All fields are required when an `address_id` is not present.
 };
 apiInstance.putOrdersOrderIdBillingAddress(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

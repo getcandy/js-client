@@ -1,4 +1,4 @@
-# GetcandyJs.CollectionsApi
+# @GetcandyJsClient.CollectionsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -25,13 +25,13 @@ Delete a Collection by its ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 apiInstance.deleteCollectionsCollectionId(collectionId).then(() => {
   console.log('API called successfully.');
@@ -73,16 +73,19 @@ Get a paginated response of collections.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let opts = {
   'include': "include_example", // String | 
-  'perPage': "'25'" // String | 
+  'perPage': "'25'", // String | 
+  'fullResponse': "fullResponse_example", // String | 
+  'sort': "sort_example", // String | 
+  'page': "page_example" // String | 
 };
 apiInstance.getCollections(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -99,6 +102,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **include** | **String**|  | [optional] 
  **perPage** | **String**|  | [optional] [default to &#39;25&#39;]
+ **fullResponse** | **String**|  | [optional] 
+ **sort** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
 
 ### Return type
 
@@ -125,13 +131,13 @@ Get a single Collection by its ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
   'include': "include_example" // String | 
@@ -177,15 +183,15 @@ Create a new collection.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let opts = {
-  'inlineObject7': new GetcandyJs.InlineObject7() // InlineObject7 | 
+  'inlineObject7': new @GetcandyJsClient.InlineObject7() // InlineObject7 | 
 };
 apiInstance.postCollections(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -227,16 +233,16 @@ Syncs products with a collection.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
-  'inlineObject6': new GetcandyJs.InlineObject6() // InlineObject6 | 
+  'inlineObject6': new @GetcandyJsClient.InlineObject6() // InlineObject6 | 
 };
 apiInstance.postCollectionsCollectionIdProducts(collectionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -279,16 +285,16 @@ This request will allow you to attach routes to a collection
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
-  'inlineObject5': new GetcandyJs.InlineObject5() // InlineObject5 | 
+  'inlineObject5': new @GetcandyJsClient.InlineObject5() // InlineObject5 | 
 };
 apiInstance.postCollectionsCollectionRoutes(collectionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -331,16 +337,16 @@ Update a Collection by its ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CollectionsApi();
+let apiInstance = new @GetcandyJsClient.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
-  'inlineObject8': new GetcandyJs.InlineObject8() // InlineObject8 | 
+  'inlineObject8': new @GetcandyJsClient.InlineObject8() // InlineObject8 | 
 };
 apiInstance.putCollectionsCollectionId(collectionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

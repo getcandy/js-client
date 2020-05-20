@@ -1,9 +1,11 @@
-# GetcandyJs.InlineResponse42212
+# @GetcandyJsClient.InlineResponse42212
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **[String]** |  | [optional] 
+**rate** | **[String]** |  | [optional] 
+**zoneId** | **[String]** |  | [optional] 
+**currencyId** | **[String]** |  | [optional] 
 
 

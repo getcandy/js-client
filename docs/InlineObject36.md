@@ -1,10 +1,9 @@
-# GetcandyJs.InlineObject36
+# @GetcandyJsClient.InlineObject36
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | [**ProductsName**](ProductsName.md) |  | 
-**type** | **String** |  | 
+**name** | **String** |  | 
 
 

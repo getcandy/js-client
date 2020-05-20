@@ -1,4 +1,4 @@
-# GetcandyJs.DiscountsApi
+# @GetcandyJsClient.DiscountsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -23,13 +23,13 @@ Deletes a Discount
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.DiscountsApi();
+let apiInstance = new @GetcandyJsClient.DiscountsApi();
 let discountId = "discountId_example"; // String | 
 apiInstance.deleteDiscountsDiscountId(discountId).then(() => {
   console.log('API called successfully.');
@@ -71,13 +71,13 @@ Returns a paginated list of Discounts
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.DiscountsApi();
+let apiInstance = new @GetcandyJsClient.DiscountsApi();
 apiInstance.getDiscounts().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -115,13 +115,13 @@ Returns a Discount by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.DiscountsApi();
+let apiInstance = new @GetcandyJsClient.DiscountsApi();
 let discountId = "discountId_example"; // String | 
 let opts = {
   'include': "include_example" // String | 
@@ -167,15 +167,15 @@ Create a new Discount.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.DiscountsApi();
+let apiInstance = new @GetcandyJsClient.DiscountsApi();
 let opts = {
-  'inlineObject9': new GetcandyJs.InlineObject9() // InlineObject9 | 
+  'inlineObject9': new @GetcandyJsClient.InlineObject9() // InlineObject9 | 
 };
 apiInstance.postDiscounts(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -217,16 +217,16 @@ Updates a Discount
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.DiscountsApi();
+let apiInstance = new @GetcandyJsClient.DiscountsApi();
 let discountId = "discountId_example"; // String | 
 let opts = {
-  'inlineObject10': new GetcandyJs.InlineObject10() // InlineObject10 | 
+  'inlineObject10': new @GetcandyJsClient.InlineObject10() // InlineObject10 | 
 };
 apiInstance.putDiscountsDiscountId(discountId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

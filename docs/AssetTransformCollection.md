@@ -1,4 +1,4 @@
-# GetcandyJs.AssetTransformCollection
+# @GetcandyJsClient.AssetTransformCollection
 
 ## Properties
 

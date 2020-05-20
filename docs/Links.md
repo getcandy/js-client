@@ -1,4 +1,4 @@
-# GetcandyJs.Links
+# @GetcandyJsClient.Links
 
 ## Properties
 
@@ -8,6 +8,5 @@ Name | Type | Description | Notes
 **last** | **String** |  | [optional] 
 **prev** | **String** |  | [optional] 
 **next** | **String** |  | [optional] 
-**** | **String** |  | [optional] 
 
 

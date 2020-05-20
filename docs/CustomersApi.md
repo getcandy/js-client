@@ -1,4 +1,4 @@
-# GetcandyJs.CustomersApi
+# @GetcandyJsClient.CustomersApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -20,13 +20,13 @@ Return a paginated CustomerGroup response
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.CustomersApi();
+let apiInstance = new @GetcandyJsClient.CustomersApi();
 let opts = {
   'include': "include_example" // String | 
 };
@@ -70,9 +70,9 @@ This endpoint returns any available user fields which have been defined in the g
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import @GetcandyJsClient from '@getcandy/js-client';
 
-let apiInstance = new GetcandyJs.CustomersApi();
+let apiInstance = new @GetcandyJsClient.CustomersApi();
 apiInstance.getUsersFields().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

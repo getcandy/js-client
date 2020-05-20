@@ -1,4 +1,4 @@
-# GetcandyJs.BasketResponse
+# @GetcandyJsClient.BasketResponse
 
 ## Properties
 

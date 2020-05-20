@@ -1,4 +1,4 @@
-# GetcandyJs.BasketLineUpdateBody
+# @GetcandyJsClient.BasketLineUpdateBody
 
 ## Properties
 

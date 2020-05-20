@@ -1,4 +1,4 @@
-# GetcandyJs.AttachCategoryRoutesBody
+# @GetcandyJsClient.AttachCategoryRoutesBody
 
 ## Properties
 

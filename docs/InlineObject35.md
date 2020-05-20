@@ -1,23 +1,10 @@
-# GetcandyJs.InlineObject35
+# @GetcandyJsClient.InlineObject35
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**name** | [**ProductsName**](ProductsName.md) |  | 
 **type** | **String** |  | 
-**name** | [**CollectionsName**](CollectionsName.md) |  | [optional] 
-
-
-
-## Enum: TypeEnum
-
-
-* `standard` (value: `"standard"`)
-
-* `dhl` (value: `"dhl"`)
-
-* `regional` (value: `"regional"`)
-
-
 
 

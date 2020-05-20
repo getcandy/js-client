@@ -1,9 +1,9 @@
-# GetcandyJs.InlineObject23
+# @GetcandyJsClient.InlineObject23
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**collections** | **[String]** | An array of collection IDs to associate | 
+**categories** | **[String]** | Array of category ID&#39;s | 
 
 

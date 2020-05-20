@@ -1,4 +1,4 @@
-# GetcandyJs.ProductFamilyCollectionAllOf
+# @GetcandyJsClient.ProductFamilyCollectionAllOf
 
 ## Properties
 

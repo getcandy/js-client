@@ -1,4 +1,4 @@
-# GetcandyJs.ProductsApi
+# @GetcandyJsClient.ProductsApi
 
 All URIs are relative to *http://localhost:3000/api/v1*
 
@@ -40,13 +40,13 @@ Detaches a category from a product. Does not delete the category.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let categoryId = "categoryId_example"; // String | 
 apiInstance.deleteProductsProductCategoriesCategory(productId, categoryId).then(() => {
@@ -90,13 +90,13 @@ Detaches a collection from a product. Does not delete the collection.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let collectionId = "collectionId_example"; // String | 
 apiInstance.deleteProductsProductCollectionsDetach(productId, collectionId).then(() => {
@@ -140,9 +140,9 @@ Detaches customer groups from a product
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import @GetcandyJsClient from '@getcandy/js-client';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 apiInstance.deleteProductsProductCustomerGroups(productId).then(() => {
   console.log('API called successfully.');
@@ -184,13 +184,13 @@ Deletes a product by it&#39;s ID  &gt; This will only soft delete the product. I
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 apiInstance.deleteProductsProductId(productId).then(() => {
   console.log('API called successfully.');
@@ -232,13 +232,13 @@ Removes product associations
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 apiInstance.deleteProductsProductIdAssociations(productId).then(() => {
   console.log('API called successfully.');
@@ -280,13 +280,13 @@ Gets a paginated list of products.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 apiInstance.getProducts().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -324,13 +324,13 @@ Returns a product by it&#39;s given ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
   'include': "include_example", // String | 
@@ -384,13 +384,13 @@ Create a draft for a product.  If a draft already exists, that current draft wil
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 apiInstance.getProductsProductIdDrafts(productId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -432,13 +432,13 @@ This endpoint will return recommended products based on a basket.  Using product
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let basketId = "basketId_example"; // String | 
 apiInstance.getProductsRecommended(basketId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -480,70 +480,18 @@ Creates and syncs a new product route.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject21': new GetcandyJs.InlineObject21() // InlineObject21 | 
+  'inlineObject20': new @GetcandyJsClient.InlineObject20() // InlineObject20 | 
 };
 apiInstance.postProductRedirects(productId, opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productId** | **String**|  | 
- **inlineObject21** | [**InlineObject21**](InlineObject21.md)|  | [optional] 
-
-### Return type
-
-[**ProductResponse**](ProductResponse.md)
-
-### Authorization
-
-[auth](../README.md#auth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## postProductUrls
-
-> ProductResponse postProductUrls(productId, opts)
-
-Create Product route
-
-Creates and syncs a new product route.
-
-### Example
-
-```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
-// Configure OAuth2 access token for authorization: auth
-let auth = defaultClient.authentications['auth'];
-auth.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new GetcandyJs.ProductsApi();
-let productId = "productId_example"; // String | 
-let opts = {
-  'inlineObject20': new GetcandyJs.InlineObject20() // InlineObject20 | 
-};
-apiInstance.postProductUrls(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -573,6 +521,58 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## postProductUrls
+
+> ProductResponse postProductUrls(productId, opts)
+
+Create Product route
+
+Creates and syncs a new product route.
+
+### Example
+
+```javascript
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
+// Configure OAuth2 access token for authorization: auth
+let auth = defaultClient.authentications['auth'];
+auth.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new @GetcandyJsClient.ProductsApi();
+let productId = "productId_example"; // String | 
+let opts = {
+  'inlineObject19': new @GetcandyJsClient.InlineObject19() // InlineObject19 | 
+};
+apiInstance.postProductUrls(productId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productId** | **String**|  | 
+ **inlineObject19** | [**InlineObject19**](InlineObject19.md)|  | [optional] 
+
+### Return type
+
+[**ProductResponse**](ProductResponse.md)
+
+### Authorization
+
+[auth](../README.md#auth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
 ## postProducts
 
 > ProductResponse postProducts(opts)
@@ -584,16 +584,16 @@ Creates a new product in the system. When creating a new product will also creat
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let opts = {
   'include': "include_example", // String | 
-  'inlineObject28': new GetcandyJs.InlineObject28() // InlineObject28 | 
+  'inlineObject27': new @GetcandyJsClient.InlineObject27() // InlineObject27 | 
 };
 apiInstance.postProducts(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -609,7 +609,7 @@ apiInstance.postProducts(opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **include** | **String**|  | [optional] 
- **inlineObject28** | [**InlineObject28**](InlineObject28.md)|  | [optional] 
+ **inlineObject27** | [**InlineObject27**](InlineObject27.md)|  | [optional] 
 
 ### Return type
 
@@ -636,13 +636,13 @@ Create a draft product from an existing product.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 apiInstance.postProductsIdDrafts(productId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -684,13 +684,13 @@ Publish a draft from a Product
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 apiInstance.postProductsIdPublish(productId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -732,174 +732,18 @@ Updates product associations
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject26': new GetcandyJs.InlineObject26() // InlineObject26 | 
+  'inlineObject25': new @GetcandyJsClient.InlineObject25() // InlineObject25 | 
 };
 apiInstance.postProductsProductAssociations(productId, opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productId** | **String**|  | 
- **inlineObject26** | [**InlineObject26**](InlineObject26.md)|  | [optional] 
-
-### Return type
-
-[**ProductResponse**](ProductResponse.md)
-
-### Authorization
-
-[auth](../README.md#auth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## postProductsProductAttributes
-
-> ProductResponse postProductsProductAttributes(productId, opts)
-
-Update Product attributes
-
-Allows you to sync up the attributes which are directly associated to this product.
-
-### Example
-
-```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
-// Configure OAuth2 access token for authorization: auth
-let auth = defaultClient.authentications['auth'];
-auth.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new GetcandyJs.ProductsApi();
-let productId = "productId_example"; // String | 
-let opts = {
-  'inlineObject22': new GetcandyJs.InlineObject22() // InlineObject22 | 
-};
-apiInstance.postProductsProductAttributes(productId, opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productId** | **String**|  | 
- **inlineObject22** | [**InlineObject22**](InlineObject22.md)|  | [optional] 
-
-### Return type
-
-[**ProductResponse**](ProductResponse.md)
-
-### Authorization
-
-[auth](../README.md#auth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## postProductsProductCategories
-
-> ProductResponse postProductsProductCategories(productId, opts)
-
-Update Product categories
-
-Sync product categories
-
-### Example
-
-```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
-// Configure OAuth2 access token for authorization: auth
-let auth = defaultClient.authentications['auth'];
-auth.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new GetcandyJs.ProductsApi();
-let productId = "productId_example"; // String | 
-let opts = {
-  'inlineObject24': new GetcandyJs.InlineObject24() // InlineObject24 | 
-};
-apiInstance.postProductsProductCategories(productId, opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productId** | **String**|  | 
- **inlineObject24** | [**InlineObject24**](InlineObject24.md)|  | [optional] 
-
-### Return type
-
-[**ProductResponse**](ProductResponse.md)
-
-### Authorization
-
-[auth](../README.md#auth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## postProductsProductChannels
-
-> ProductResponse postProductsProductChannels(productId, opts)
-
-Update Product channels
-
-Sync product Channels
-
-### Example
-
-```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
-// Configure OAuth2 access token for authorization: auth
-let auth = defaultClient.authentications['auth'];
-auth.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new GetcandyJs.ProductsApi();
-let productId = "productId_example"; // String | 
-let opts = {
-  'inlineObject25': new GetcandyJs.InlineObject25() // InlineObject25 | 
-};
-apiInstance.postProductsProductChannels(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -929,29 +773,29 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## postProductsProductCustomerGroups
+## postProductsProductAttributes
 
-> ProductResponse postProductsProductCustomerGroups(productId, opts)
+> ProductResponse postProductsProductAttributes(productId, opts)
 
-Update customer groups
+Update Product attributes
 
-Update a products customer groups
+Allows you to sync up the attributes which are directly associated to this product.
 
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject27': new GetcandyJs.InlineObject27() // InlineObject27 | 
+  'inlineObject21': new @GetcandyJsClient.InlineObject21() // InlineObject21 | 
 };
-apiInstance.postProductsProductCustomerGroups(productId, opts).then((data) => {
+apiInstance.postProductsProductAttributes(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -965,7 +809,7 @@ apiInstance.postProductsProductCustomerGroups(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject27** | [**InlineObject27**](InlineObject27.md)|  | [optional] 
+ **inlineObject21** | [**InlineObject21**](InlineObject21.md)|  | [optional] 
 
 ### Return type
 
@@ -981,29 +825,29 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## postProductsProductIdCollections
+## postProductsProductCategories
 
-> ProductResponse postProductsProductIdCollections(productId, opts)
+> ProductResponse postProductsProductCategories(productId, opts)
 
-Update Product collections
+Update Product categories
 
-Update a products collections.
+Sync product categories
 
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject23': new GetcandyJs.InlineObject23() // InlineObject23 | 
+  'inlineObject23': new @GetcandyJsClient.InlineObject23() // InlineObject23 | 
 };
-apiInstance.postProductsProductIdCollections(productId, opts).then((data) => {
+apiInstance.postProductsProductCategories(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -1033,6 +877,162 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## postProductsProductChannels
+
+> ProductResponse postProductsProductChannels(productId, opts)
+
+Update Product channels
+
+Sync product Channels
+
+### Example
+
+```javascript
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
+// Configure OAuth2 access token for authorization: auth
+let auth = defaultClient.authentications['auth'];
+auth.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new @GetcandyJsClient.ProductsApi();
+let productId = "productId_example"; // String | 
+let opts = {
+  'inlineObject24': new @GetcandyJsClient.InlineObject24() // InlineObject24 | 
+};
+apiInstance.postProductsProductChannels(productId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productId** | **String**|  | 
+ **inlineObject24** | [**InlineObject24**](InlineObject24.md)|  | [optional] 
+
+### Return type
+
+[**ProductResponse**](ProductResponse.md)
+
+### Authorization
+
+[auth](../README.md#auth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## postProductsProductCustomerGroups
+
+> ProductResponse postProductsProductCustomerGroups(productId, opts)
+
+Update customer groups
+
+Update a products customer groups
+
+### Example
+
+```javascript
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
+// Configure OAuth2 access token for authorization: auth
+let auth = defaultClient.authentications['auth'];
+auth.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new @GetcandyJsClient.ProductsApi();
+let productId = "productId_example"; // String | 
+let opts = {
+  'inlineObject26': new @GetcandyJsClient.InlineObject26() // InlineObject26 | 
+};
+apiInstance.postProductsProductCustomerGroups(productId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productId** | **String**|  | 
+ **inlineObject26** | [**InlineObject26**](InlineObject26.md)|  | [optional] 
+
+### Return type
+
+[**ProductResponse**](ProductResponse.md)
+
+### Authorization
+
+[auth](../README.md#auth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## postProductsProductIdCollections
+
+> ProductResponse postProductsProductIdCollections(productId, opts)
+
+Update Product collections
+
+Update a products collections.
+
+### Example
+
+```javascript
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
+// Configure OAuth2 access token for authorization: auth
+let auth = defaultClient.authentications['auth'];
+auth.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new @GetcandyJsClient.ProductsApi();
+let productId = "productId_example"; // String | 
+let opts = {
+  'inlineObject22': new @GetcandyJsClient.InlineObject22() // InlineObject22 | 
+};
+apiInstance.postProductsProductIdCollections(productId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productId** | **String**|  | 
+ **inlineObject22** | [**InlineObject22**](InlineObject22.md)|  | [optional] 
+
+### Return type
+
+[**ProductResponse**](ProductResponse.md)
+
+### Authorization
+
+[auth](../README.md#auth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
 ## postProductsProductIdDuplicate
 
 > ProductResponse postProductsProductIdDuplicate(productId, opts)
@@ -1044,16 +1044,16 @@ Duplicates a product, requires you to specify new slugs and SKU&#39;s.  &gt; Dup
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject19': new GetcandyJs.InlineObject19() // InlineObject19 | 
+  'inlineObject18': new @GetcandyJsClient.InlineObject18() // InlineObject18 | 
 };
 apiInstance.postProductsProductIdDuplicate(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1069,7 +1069,7 @@ apiInstance.postProductsProductIdDuplicate(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject19** | [**InlineObject19**](InlineObject19.md)|  | [optional] 
+ **inlineObject18** | [**InlineObject18**](InlineObject18.md)|  | [optional] 
 
 ### Return type
 
@@ -1096,17 +1096,16 @@ Updates a product by it&#39;s ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
-let defaultClient = GetcandyJs.ApiClient.instance;
+import @GetcandyJsClient from '@getcandy/js-client';
+let defaultClient = @GetcandyJsClient.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new GetcandyJs.ProductsApi();
+let apiInstance = new @GetcandyJsClient.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'familyId': "familyId_example", // String | 
-  'attributeData': null // Object | 
+  'productUpdateBody': new @GetcandyJsClient.ProductUpdateBody() // ProductUpdateBody | 
 };
 apiInstance.putProductsProductId(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1122,8 +1121,7 @@ apiInstance.putProductsProductId(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **familyId** | **String**|  | [optional] 
- **attributeData** | [**Object**](Object.md)|  | [optional] 
+ **productUpdateBody** | [**ProductUpdateBody**](ProductUpdateBody.md)|  | [optional] 
 
 ### Return type
 
@@ -1135,6 +1133,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: multipart/form-data
+- **Content-Type**: application/json
 - **Accept**: application/json
 

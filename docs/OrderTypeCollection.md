@@ -1,4 +1,4 @@
-# GetcandyJs.OrderTypeCollection
+# @GetcandyJsClient.OrderTypeCollection
 
 ## Properties
 

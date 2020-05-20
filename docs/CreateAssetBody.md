@@ -1,4 +1,4 @@
-# GetcandyJs.CreateAssetBody
+# @GetcandyJsClient.CreateAssetBody
 
 ## Properties
 

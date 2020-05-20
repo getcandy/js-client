@@ -1,4 +1,4 @@
-# GetcandyJs.SavedSearchCollection
+# @GetcandyJsClient.SavedSearchCollection
 
 ## Properties
 

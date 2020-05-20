@@ -1,4 +1,4 @@
-# GetcandyJs.SearchMetaPagination
+# @GetcandyJsClient.SearchMetaPagination
 
 ## Properties
 

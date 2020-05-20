@@ -1,4 +1,4 @@
-# GetcandyJs.TransactionCollectionAllOf
+# @GetcandyJsClient.TransactionCollectionAllOf
 
 ## Properties
 
