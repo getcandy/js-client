@@ -20,7 +20,7 @@ To publish the library as a [npm](https://www.npmjs.com/), please follow the pro
 Then install it via:
 
 ```shell
-npm install getcandy-js --save
+npm install @getcandy/js-client --save
 ```
 
 Finally, you need to build the module:
@@ -99,7 +99,7 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var GetcandyJs = require('getcandy-js');
+var GetcandyJs = require('@getcandy/js-client');
 
 var defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
