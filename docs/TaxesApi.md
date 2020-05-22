@@ -23,7 +23,7 @@ Delete a tax record by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -71,7 +71,7 @@ Get a paginated list of taxes
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -115,7 +115,7 @@ Get a tax record by it&#39;s ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -163,7 +163,7 @@ Create a new tax resource.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -213,7 +213,7 @@ Update a tax record by it&#39;s ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];

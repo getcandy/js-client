@@ -30,7 +30,7 @@ Deletes a shipping method.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -78,7 +78,7 @@ Returns a paginated list of shipping methods
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -130,7 +130,7 @@ Returns a shipping method by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -182,7 +182,7 @@ Returns a paginated list of shipping zones.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -232,7 +232,7 @@ Get a shipping zone by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -280,7 +280,7 @@ Create a new shipping method.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -330,7 +330,7 @@ Add a price to a shipping method.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -382,7 +382,7 @@ Create a new shipping zone
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -432,7 +432,7 @@ Update shipping method users
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -484,7 +484,7 @@ Update a shipping price
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -536,7 +536,7 @@ Update shipping method by it&#39;s ID
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -588,7 +588,7 @@ Update a shipping method&#39;s zones.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];

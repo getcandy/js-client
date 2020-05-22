@@ -23,7 +23,7 @@ Deletes a Discount
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -71,7 +71,7 @@ Returns a paginated list of Discounts
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -115,7 +115,7 @@ Returns a Discount by it&#39;s ID.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -167,7 +167,7 @@ Create a new Discount.
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -217,7 +217,7 @@ Updates a Discount
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];

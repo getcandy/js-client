@@ -283,6 +283,7 @@ import Search from './model/Search';
 import SearchMeta from './model/SearchMeta';
 import SearchMetaAggregation from './model/SearchMetaAggregation';
 import SearchMetaPagination from './model/SearchMetaPagination';
+import SearchMetaPaginationData from './model/SearchMetaPaginationData';
 import Setting from './model/Setting';
 import SettingCollection from './model/SettingCollection';
 import SettingResponse from './model/SettingResponse';
@@ -2010,6 +2011,12 @@ export {
      * @property {module:model/SearchMetaPagination}
      */
     SearchMetaPagination,
+
+    /**
+     * The SearchMetaPaginationData model constructor.
+     * @property {module:model/SearchMetaPaginationData}
+     */
+    SearchMetaPaginationData,
 
     /**
      * The Setting model constructor.

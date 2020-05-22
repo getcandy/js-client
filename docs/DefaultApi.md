@@ -19,7 +19,7 @@ Returns information about the API
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];

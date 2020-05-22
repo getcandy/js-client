@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import SearchMetaPaginationData from './SearchMetaPaginationData';
 
 /**
  * The SearchMetaPagination model module.
@@ -47,20 +48,8 @@ class SearchMetaPagination {
         if (data) {
             obj = obj || new SearchMetaPagination();
 
-            if (data.hasOwnProperty('total')) {
-                obj['total'] = ApiClient.convertToType(data['total'], 'Number');
-            }
-            if (data.hasOwnProperty('count')) {
-                obj['count'] = ApiClient.convertToType(data['count'], 'Number');
-            }
-            if (data.hasOwnProperty('per_page')) {
-                obj['per_page'] = ApiClient.convertToType(data['per_page'], 'Number');
-            }
-            if (data.hasOwnProperty('current_page')) {
-                obj['current_page'] = ApiClient.convertToType(data['current_page'], 'Number');
-            }
-            if (data.hasOwnProperty('total_pages')) {
-                obj['total_pages'] = ApiClient.convertToType(data['total_pages'], 'Number');
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = SearchMetaPaginationData.constructFromObject(data['data']);
             }
         }
         return obj;
@@ -70,29 +59,9 @@ class SearchMetaPagination {
 }
 
 /**
- * @member {Number} total
+ * @member {module:model/SearchMetaPaginationData} data
  */
-SearchMetaPagination.prototype['total'] = undefined;
-
-/**
- * @member {Number} count
- */
-SearchMetaPagination.prototype['count'] = undefined;
-
-/**
- * @member {Number} per_page
- */
-SearchMetaPagination.prototype['per_page'] = undefined;
-
-/**
- * @member {Number} current_page
- */
-SearchMetaPagination.prototype['current_page'] = undefined;
-
-/**
- * @member {Number} total_pages
- */
-SearchMetaPagination.prototype['total_pages'] = undefined;
+SearchMetaPagination.prototype['data'] = undefined;
 
 
 

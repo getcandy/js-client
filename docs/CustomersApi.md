@@ -20,7 +20,7 @@ Return a paginated CustomerGroup response
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 let defaultClient = GetcandyJs.ApiClient.instance;
 // Configure OAuth2 access token for authorization: auth
 let auth = defaultClient.authentications['auth'];
@@ -70,7 +70,7 @@ This endpoint returns any available user fields which have been defined in the g
 ### Example
 
 ```javascript
-import GetcandyJs from 'getcandy-js';
+import GetcandyJs from '@getcandy/js-client';
 
 let apiInstance = new GetcandyJs.CustomersApi();
 apiInstance.getUsersFields().then((data) => {

@@ -451,6 +451,7 @@ export default class BasketsApi {
 
 
     /**
+     * Create Basket
      * @param {Object} opts Optional parameters
      * @param {module:model/CreateBasketBody} opts.createBasketBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/BasketResponse} and HTTP response
@@ -480,6 +481,7 @@ export default class BasketsApi {
     }
 
     /**
+     * Create Basket
      * @param {Object} opts Optional parameters
      * @param {module:model/CreateBasketBody} opts.createBasketBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/BasketResponse}
