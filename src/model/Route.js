@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import RouteElement from './RouteElement';
 
 /**
  * The Route model module.
@@ -71,6 +72,9 @@ class Route {
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
             }
+            if (data.hasOwnProperty('element')) {
+                obj['element'] = RouteElement.constructFromObject(data['element']);
+            }
         }
         return obj;
     }
@@ -117,6 +121,11 @@ Route.prototype['description'] = undefined;
  * @member {String} type
  */
 Route.prototype['type'] = undefined;
+
+/**
+ * @member {module:model/RouteElement} element
+ */
+Route.prototype['element'] = undefined;
 
 
 

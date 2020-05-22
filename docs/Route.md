@@ -12,5 +12,6 @@ Name | Type | Description | Notes
 **slug** | **String** |  | [optional] 
 **description** | **String** |  | [optional] 
 **type** | **String** |  | [optional] 
+**element** | [**RouteElement**](RouteElement.md) |  | [optional] 
 
 

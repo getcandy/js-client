@@ -102,6 +102,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property element (base name: "element")', function() {
+      // uncomment below and update the code to test the property element
+      //var instane = new GetcandyJs.Route();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

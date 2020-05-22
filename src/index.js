@@ -270,6 +270,7 @@ import Root from './model/Root';
 import Route from './model/Route';
 import RouteCollection from './model/RouteCollection';
 import RouteCollectionAllOf from './model/RouteCollectionAllOf';
+import RouteElement from './model/RouteElement';
 import RouteResponse from './model/RouteResponse';
 import SaveBasketBody from './model/SaveBasketBody';
 import SavedBasket from './model/SavedBasket';
@@ -1933,6 +1934,12 @@ export {
      * @property {module:model/RouteCollectionAllOf}
      */
     RouteCollectionAllOf,
+
+    /**
+     * The RouteElement model constructor.
+     * @property {module:model/RouteElement}
+     */
+    RouteElement,
 
     /**
      * The RouteResponse model constructor.

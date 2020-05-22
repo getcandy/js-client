@@ -561,6 +561,7 @@ Class | Method | HTTP request | Description
  - [GetcandyJs.Route](docs/Route.md)
  - [GetcandyJs.RouteCollection](docs/RouteCollection.md)
  - [GetcandyJs.RouteCollectionAllOf](docs/RouteCollectionAllOf.md)
+ - [GetcandyJs.RouteElement](docs/RouteElement.md)
  - [GetcandyJs.RouteResponse](docs/RouteResponse.md)
  - [GetcandyJs.SaveBasketBody](docs/SaveBasketBody.md)
  - [GetcandyJs.SavedBasket](docs/SavedBasket.md)
