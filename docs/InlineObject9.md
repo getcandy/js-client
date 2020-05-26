@@ -4,11 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startAt** | **Date** |  | [optional] 
-**endAt** | **Date** |  | [optional] 
-**name** | [**DiscountsName**](DiscountsName.md) |  | 
-**uses** | **Number** |  | [optional] 
+**startAt** | **Date** |  | 
+**endAt** | **String** |  | [optional] 
+**priority** | **Number** |  | [optional] 
+**stopRules** | **Boolean** |  | [optional] 
 **status** | **Boolean** |  | [optional] 
-**channels** | [**[DiscountsChannels]**](DiscountsChannels.md) |  | [optional] 
+**channels** | [**DiscountsDiscountIdChannels**](DiscountsDiscountIdChannels.md) |  | [optional] 
+**rewards** | [**DiscountsDiscountIdRewards**](DiscountsDiscountIdRewards.md) |  | [optional] 
+**sets** | [**DiscountsDiscountIdSets**](DiscountsDiscountIdSets.md) |  | [optional] 
 
 

@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductsName from './ProductsName';
 
 /**
  * The InlineObject27 model module.
@@ -23,16 +22,10 @@ class InlineObject27 {
     /**
      * Constructs a new <code>InlineObject27</code>.
      * @alias module:model/InlineObject27
-     * @param name {module:model/ProductsName} 
-     * @param url {String} 
-     * @param stock {Number} 
-     * @param familyId {String} 
-     * @param price {Number} 
-     * @param sku {String} 
      */
-    constructor(name, url, stock, familyId, price, sku) { 
+    constructor() { 
         
-        InlineObject27.initialize(this, name, url, stock, familyId, price, sku);
+        InlineObject27.initialize(this);
     }
 
     /**
@@ -40,13 +33,7 @@ class InlineObject27 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name, url, stock, familyId, price, sku) { 
-        obj['name'] = name;
-        obj['url'] = url;
-        obj['stock'] = stock;
-        obj['family_id'] = familyId;
-        obj['price'] = price;
-        obj['sku'] = sku;
+    static initialize(obj) { 
     }
 
     /**
@@ -61,22 +48,7 @@ class InlineObject27 {
             obj = obj || new InlineObject27();
 
             if (data.hasOwnProperty('name')) {
-                obj['name'] = ProductsName.constructFromObject(data['name']);
-            }
-            if (data.hasOwnProperty('url')) {
-                obj['url'] = ApiClient.convertToType(data['url'], 'String');
-            }
-            if (data.hasOwnProperty('stock')) {
-                obj['stock'] = ApiClient.convertToType(data['stock'], 'Number');
-            }
-            if (data.hasOwnProperty('family_id')) {
-                obj['family_id'] = ApiClient.convertToType(data['family_id'], 'String');
-            }
-            if (data.hasOwnProperty('price')) {
-                obj['price'] = ApiClient.convertToType(data['price'], 'Number');
-            }
-            if (data.hasOwnProperty('sku')) {
-                obj['sku'] = ApiClient.convertToType(data['sku'], 'String');
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
         }
         return obj;
@@ -86,34 +58,9 @@ class InlineObject27 {
 }
 
 /**
- * @member {module:model/ProductsName} name
+ * @member {String} name
  */
 InlineObject27.prototype['name'] = undefined;
-
-/**
- * @member {String} url
- */
-InlineObject27.prototype['url'] = undefined;
-
-/**
- * @member {Number} stock
- */
-InlineObject27.prototype['stock'] = undefined;
-
-/**
- * @member {String} family_id
- */
-InlineObject27.prototype['family_id'] = undefined;
-
-/**
- * @member {Number} price
- */
-InlineObject27.prototype['price'] = undefined;
-
-/**
- * @member {String} sku
- */
-InlineObject27.prototype['sku'] = undefined;
 
 
 

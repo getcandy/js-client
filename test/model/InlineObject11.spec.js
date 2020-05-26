@@ -54,38 +54,26 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject11);
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
+    it('should have the property orders (base name: "orders")', function() {
+      // uncomment below and update the code to test the property orders
       //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
-    it('should have the property lang (base name: "lang")', function() {
-      // uncomment below and update the code to test the property lang
+    it('should have the property field (base name: "field")', function() {
+      // uncomment below and update the code to test the property field
       //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
-    it('should have the property iso (base name: "iso")', function() {
-      // uncomment below and update the code to test the property iso
+    it('should have the property value (base name: "value")', function() {
+      // uncomment below and update the code to test the property value
       //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });
 
-    it('should have the property enabled (base name: "enabled")', function() {
-      // uncomment below and update the code to test the property enabled
-      //var instane = new GetcandyJs.InlineObject11();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property _default (base name: "default")', function() {
-      // uncomment below and update the code to test the property _default
-      //var instane = new GetcandyJs.InlineObject11();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property current (base name: "current")', function() {
-      // uncomment below and update the code to test the property current
+    it('should have the property sendEmails (base name: "send_emails")', function() {
+      // uncomment below and update the code to test the property sendEmails
       //var instane = new GetcandyJs.InlineObject11();
       //expect(instance).to.be();
     });

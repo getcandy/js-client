@@ -489,7 +489,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject20': new GetcandyJs.InlineObject20() // InlineObject20 | 
+  'inlineObject19': new GetcandyJs.InlineObject19() // InlineObject19 | 
 };
 apiInstance.postProductRedirects(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -505,7 +505,7 @@ apiInstance.postProductRedirects(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject20** | [**InlineObject20**](InlineObject20.md)|  | [optional] 
+ **inlineObject19** | [**InlineObject19**](InlineObject19.md)|  | [optional] 
 
 ### Return type
 
@@ -541,7 +541,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject19': new GetcandyJs.InlineObject19() // InlineObject19 | 
+  'inlineObject18': new GetcandyJs.InlineObject18() // InlineObject18 | 
 };
 apiInstance.postProductUrls(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -557,7 +557,7 @@ apiInstance.postProductUrls(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject19** | [**InlineObject19**](InlineObject19.md)|  | [optional] 
+ **inlineObject18** | [**InlineObject18**](InlineObject18.md)|  | [optional] 
 
 ### Return type
 
@@ -593,7 +593,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let opts = {
   'include': "include_example", // String | 
-  'inlineObject27': new GetcandyJs.InlineObject27() // InlineObject27 | 
+  'inlineObject26': new GetcandyJs.InlineObject26() // InlineObject26 | 
 };
 apiInstance.postProducts(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -609,7 +609,7 @@ apiInstance.postProducts(opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **include** | **String**|  | [optional] 
- **inlineObject27** | [**InlineObject27**](InlineObject27.md)|  | [optional] 
+ **inlineObject26** | [**InlineObject26**](InlineObject26.md)|  | [optional] 
 
 ### Return type
 
@@ -741,7 +741,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject25': new GetcandyJs.InlineObject25() // InlineObject25 | 
+  'inlineObject24': new GetcandyJs.InlineObject24() // InlineObject24 | 
 };
 apiInstance.postProductsProductAssociations(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -757,7 +757,7 @@ apiInstance.postProductsProductAssociations(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject25** | [**InlineObject25**](InlineObject25.md)|  | [optional] 
+ **inlineObject24** | [**InlineObject24**](InlineObject24.md)|  | [optional] 
 
 ### Return type
 
@@ -793,7 +793,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject21': new GetcandyJs.InlineObject21() // InlineObject21 | 
+  'inlineObject20': new GetcandyJs.InlineObject20() // InlineObject20 | 
 };
 apiInstance.postProductsProductAttributes(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -809,7 +809,7 @@ apiInstance.postProductsProductAttributes(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject21** | [**InlineObject21**](InlineObject21.md)|  | [optional] 
+ **inlineObject20** | [**InlineObject20**](InlineObject20.md)|  | [optional] 
 
 ### Return type
 
@@ -845,7 +845,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject23': new GetcandyJs.InlineObject23() // InlineObject23 | 
+  'inlineObject22': new GetcandyJs.InlineObject22() // InlineObject22 | 
 };
 apiInstance.postProductsProductCategories(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -861,7 +861,7 @@ apiInstance.postProductsProductCategories(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject23** | [**InlineObject23**](InlineObject23.md)|  | [optional] 
+ **inlineObject22** | [**InlineObject22**](InlineObject22.md)|  | [optional] 
 
 ### Return type
 
@@ -897,7 +897,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject24': new GetcandyJs.InlineObject24() // InlineObject24 | 
+  'inlineObject23': new GetcandyJs.InlineObject23() // InlineObject23 | 
 };
 apiInstance.postProductsProductChannels(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -913,7 +913,7 @@ apiInstance.postProductsProductChannels(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject24** | [**InlineObject24**](InlineObject24.md)|  | [optional] 
+ **inlineObject23** | [**InlineObject23**](InlineObject23.md)|  | [optional] 
 
 ### Return type
 
@@ -949,7 +949,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject26': new GetcandyJs.InlineObject26() // InlineObject26 | 
+  'inlineObject25': new GetcandyJs.InlineObject25() // InlineObject25 | 
 };
 apiInstance.postProductsProductCustomerGroups(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -965,7 +965,7 @@ apiInstance.postProductsProductCustomerGroups(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject26** | [**InlineObject26**](InlineObject26.md)|  | [optional] 
+ **inlineObject25** | [**InlineObject25**](InlineObject25.md)|  | [optional] 
 
 ### Return type
 
@@ -1001,7 +1001,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject22': new GetcandyJs.InlineObject22() // InlineObject22 | 
+  'inlineObject21': new GetcandyJs.InlineObject21() // InlineObject21 | 
 };
 apiInstance.postProductsProductIdCollections(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1017,7 +1017,7 @@ apiInstance.postProductsProductIdCollections(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject22** | [**InlineObject22**](InlineObject22.md)|  | [optional] 
+ **inlineObject21** | [**InlineObject21**](InlineObject21.md)|  | [optional] 
 
 ### Return type
 
@@ -1053,7 +1053,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductsApi();
 let productId = "productId_example"; // String | 
 let opts = {
-  'inlineObject18': new GetcandyJs.InlineObject18() // InlineObject18 | 
+  'inlineObject17': new GetcandyJs.InlineObject17() // InlineObject17 | 
 };
 apiInstance.postProductsProductIdDuplicate(productId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1069,7 +1069,7 @@ apiInstance.postProductsProductIdDuplicate(productId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **String**|  | 
- **inlineObject18** | [**InlineObject18**](InlineObject18.md)|  | [optional] 
+ **inlineObject17** | [**InlineObject17**](InlineObject17.md)|  | [optional] 
 
 ### Return type
 

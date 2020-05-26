@@ -12,7 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrdersProcessMeta from './OrdersProcessMeta';
+import AttributesLookups from './AttributesLookups';
+import AttributesName from './AttributesName';
 
 /**
  * The InlineObject2 model module.
@@ -23,12 +24,13 @@ class InlineObject2 {
     /**
      * Constructs a new <code>InlineObject2</code>.
      * @alias module:model/InlineObject2
-     * @param orderId {String} 
-     * @param paymentToken {String} 
+     * @param groupId {String} 
+     * @param name {Array.<module:model/AttributesName>} 
+     * @param handle {String} 
      */
-    constructor(orderId, paymentToken) { 
+    constructor(groupId, name, handle) { 
         
-        InlineObject2.initialize(this, orderId, paymentToken);
+        InlineObject2.initialize(this, groupId, name, handle);
     }
 
     /**
@@ -36,9 +38,10 @@ class InlineObject2 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, orderId, paymentToken) { 
-        obj['order_id'] = orderId;
-        obj['payment_token'] = paymentToken;
+    static initialize(obj, groupId, name, handle) { 
+        obj['group_id'] = groupId;
+        obj['name'] = name;
+        obj['handle'] = handle;
     }
 
     /**
@@ -52,32 +55,47 @@ class InlineObject2 {
         if (data) {
             obj = obj || new InlineObject2();
 
-            if (data.hasOwnProperty('payment_type_id')) {
-                obj['payment_type_id'] = ApiClient.convertToType(data['payment_type_id'], 'String');
+            if (data.hasOwnProperty('group_id')) {
+                obj['group_id'] = ApiClient.convertToType(data['group_id'], 'String');
             }
-            if (data.hasOwnProperty('payment_type')) {
-                obj['payment_type'] = ApiClient.convertToType(data['payment_type'], 'String');
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], [AttributesName]);
             }
-            if (data.hasOwnProperty('order_id')) {
-                obj['order_id'] = ApiClient.convertToType(data['order_id'], 'String');
+            if (data.hasOwnProperty('handle')) {
+                obj['handle'] = ApiClient.convertToType(data['handle'], 'String');
             }
-            if (data.hasOwnProperty('payment_token')) {
-                obj['payment_token'] = ApiClient.convertToType(data['payment_token'], 'String');
+            if (data.hasOwnProperty('position')) {
+                obj['position'] = ApiClient.convertToType(data['position'], 'Number');
             }
-            if (data.hasOwnProperty('customer_reference')) {
-                obj['customer_reference'] = ApiClient.convertToType(data['customer_reference'], 'String');
+            if (data.hasOwnProperty('filterable')) {
+                obj['filterable'] = ApiClient.convertToType(data['filterable'], 'Boolean');
             }
-            if (data.hasOwnProperty('meta')) {
-                obj['meta'] = ApiClient.convertToType(data['meta'], [OrdersProcessMeta]);
+            if (data.hasOwnProperty('scopeable')) {
+                obj['scopeable'] = ApiClient.convertToType(data['scopeable'], 'Number');
             }
-            if (data.hasOwnProperty('notes')) {
-                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
+            if (data.hasOwnProperty('translatable')) {
+                obj['translatable'] = ApiClient.convertToType(data['translatable'], 'Boolean');
             }
-            if (data.hasOwnProperty('company_name')) {
-                obj['company_name'] = ApiClient.convertToType(data['company_name'], 'String');
+            if (data.hasOwnProperty('variant')) {
+                obj['variant'] = ApiClient.convertToType(data['variant'], 'Boolean');
             }
-            if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [Object]);
+            if (data.hasOwnProperty('searchable')) {
+                obj['searchable'] = ApiClient.convertToType(data['searchable'], 'Boolean');
+            }
+            if (data.hasOwnProperty('localised')) {
+                obj['localised'] = ApiClient.convertToType(data['localised'], 'Boolean');
+            }
+            if (data.hasOwnProperty('type')) {
+                obj['type'] = ApiClient.convertToType(data['type'], 'String');
+            }
+            if (data.hasOwnProperty('required')) {
+                obj['required'] = ApiClient.convertToType(data['required'], 'Boolean');
+            }
+            if (data.hasOwnProperty('lookups')) {
+                obj['lookups'] = ApiClient.convertToType(data['lookups'], [AttributesLookups]);
+            }
+            if (data.hasOwnProperty('system')) {
+                obj['system'] = ApiClient.convertToType(data['system'], 'Boolean');
             }
         }
         return obj;
@@ -87,49 +105,82 @@ class InlineObject2 {
 }
 
 /**
- * @member {String} payment_type_id
+ * @member {String} group_id
  */
-InlineObject2.prototype['payment_type_id'] = undefined;
+InlineObject2.prototype['group_id'] = undefined;
 
 /**
- * @member {String} payment_type
+ * @member {Array.<module:model/AttributesName>} name
  */
-InlineObject2.prototype['payment_type'] = undefined;
+InlineObject2.prototype['name'] = undefined;
 
 /**
- * @member {String} order_id
+ * @member {String} handle
  */
-InlineObject2.prototype['order_id'] = undefined;
+InlineObject2.prototype['handle'] = undefined;
 
 /**
- * @member {String} payment_token
+ * @member {Number} position
  */
-InlineObject2.prototype['payment_token'] = undefined;
+InlineObject2.prototype['position'] = undefined;
 
 /**
- * @member {String} customer_reference
+ * @member {Boolean} filterable
+ * @default false
  */
-InlineObject2.prototype['customer_reference'] = undefined;
+InlineObject2.prototype['filterable'] = false;
 
 /**
- * @member {Array.<module:model/OrdersProcessMeta>} meta
+ * @member {Number} scopeable
  */
-InlineObject2.prototype['meta'] = undefined;
+InlineObject2.prototype['scopeable'] = undefined;
 
 /**
- * @member {String} notes
+ * @member {Boolean} translatable
+ * @default false
  */
-InlineObject2.prototype['notes'] = undefined;
+InlineObject2.prototype['translatable'] = false;
 
 /**
- * @member {String} company_name
+ * @member {Boolean} variant
+ * @default false
  */
-InlineObject2.prototype['company_name'] = undefined;
+InlineObject2.prototype['variant'] = false;
 
 /**
- * @member {Array.<Object>} data
+ * @member {Boolean} searchable
+ * @default false
  */
-InlineObject2.prototype['data'] = undefined;
+InlineObject2.prototype['searchable'] = false;
+
+/**
+ * @member {Boolean} localised
+ * @default false
+ */
+InlineObject2.prototype['localised'] = false;
+
+/**
+ * @member {String} type
+ * @default 'text'
+ */
+InlineObject2.prototype['type'] = 'text';
+
+/**
+ * @member {Boolean} required
+ * @default false
+ */
+InlineObject2.prototype['required'] = false;
+
+/**
+ * @member {Array.<module:model/AttributesLookups>} lookups
+ */
+InlineObject2.prototype['lookups'] = undefined;
+
+/**
+ * @member {Boolean} system
+ * @default false
+ */
+InlineObject2.prototype['system'] = false;
 
 
 

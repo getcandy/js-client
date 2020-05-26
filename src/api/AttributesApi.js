@@ -23,7 +23,7 @@ import AttributesOrderUnprocessableResponse from '../model/AttributesOrderUnproc
 import AttributesReorderBody from '../model/AttributesReorderBody';
 import CreateAttributeGroupBodyName from '../model/CreateAttributeGroupBodyName';
 import Error from '../model/Error';
-import InlineObject3 from '../model/InlineObject3';
+import InlineObject2 from '../model/InlineObject2';
 import InlineResponse4221 from '../model/InlineResponse4221';
 
 /**
@@ -390,12 +390,12 @@ export default class AttributesApi {
      * Create Attribute
      * Create a new attribute
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject3} opts.inlineObject3 
+     * @param {module:model/InlineObject2} opts.inlineObject2 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AttributeResponse} and HTTP response
      */
     postAttributesWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject3'];
+      let postBody = opts['inlineObject2'];
 
       let pathParams = {
       };
@@ -421,7 +421,7 @@ export default class AttributesApi {
      * Create Attribute
      * Create a new attribute
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject3} opts.inlineObject3 
+     * @param {module:model/InlineObject2} opts.inlineObject2 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AttributeResponse}
      */
     postAttributes(opts) {

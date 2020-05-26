@@ -1,9 +1,10 @@
-# GetcandyJs.OrdersProcessMeta
+# GetcandyJs.CreateOrderBody
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**** | **String** |  | [optional] 
+**basketId** | **String** |  | 
+**include** | **String** |  | [optional] 
 
 

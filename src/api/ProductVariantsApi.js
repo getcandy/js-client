@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
-import InlineObject17 from '../model/InlineObject17';
+import InlineObject16 from '../model/InlineObject16';
 import ProductVariantCollection from '../model/ProductVariantCollection';
 import ProductVariantResponse from '../model/ProductVariantResponse';
 
@@ -138,12 +138,12 @@ export default class ProductVariantsApi {
      * Request to update a product variants inventory.
      * @param {String} productVariantId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject17} opts.inlineObject17 
+     * @param {module:model/InlineObject16} opts.inlineObject16 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductVariantResponse} and HTTP response
      */
     putProductsVariantsProductVariantIdInventoryWithHttpInfo(productVariantId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject17'];
+      let postBody = opts['inlineObject16'];
       // verify the required parameter 'productVariantId' is set
       if (productVariantId === undefined || productVariantId === null) {
         throw new Error("Missing the required parameter 'productVariantId' when calling putProductsVariantsProductVariantIdInventory");
@@ -175,7 +175,7 @@ export default class ProductVariantsApi {
      * Request to update a product variants inventory.
      * @param {String} productVariantId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject17} opts.inlineObject17 
+     * @param {module:model/InlineObject16} opts.inlineObject16 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductVariantResponse}
      */
     putProductsVariantsProductVariantIdInventory(productVariantId, opts) {

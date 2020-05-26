@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
-import InlineObject16 from '../model/InlineObject16';
+import InlineObject15 from '../model/InlineObject15';
 import OrderResponse from '../model/OrderResponse';
 import PaymentProviderResponse from '../model/PaymentProviderResponse';
 import TransactionResponse from '../model/TransactionResponse';
@@ -133,12 +133,12 @@ export default class PaymentsApi {
      * Threed Secure Payment
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject16} opts.inlineObject16 
+     * @param {module:model/InlineObject15} opts.inlineObject15 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     postPayments3dSecureWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject16'];
+      let postBody = opts['inlineObject15'];
 
       let pathParams = {
       };
@@ -164,7 +164,7 @@ export default class PaymentsApi {
      * Threed Secure Payment
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject16} opts.inlineObject16 
+     * @param {module:model/InlineObject15} opts.inlineObject15 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     postPayments3dSecure(opts) {

@@ -54,8 +54,38 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject8);
     });
 
+    it('should have the property startAt (base name: "start_at")', function() {
+      // uncomment below and update the code to test the property startAt
+      //var instane = new GetcandyJs.InlineObject8();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endAt (base name: "end_at")', function() {
+      // uncomment below and update the code to test the property endAt
+      //var instane = new GetcandyJs.InlineObject8();
+      //expect(instance).to.be();
+    });
+
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
+      //var instane = new GetcandyJs.InlineObject8();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property uses (base name: "uses")', function() {
+      // uncomment below and update the code to test the property uses
+      //var instane = new GetcandyJs.InlineObject8();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property status (base name: "status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instane = new GetcandyJs.InlineObject8();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property channels (base name: "channels")', function() {
+      // uncomment below and update the code to test the property channels
       //var instane = new GetcandyJs.InlineObject8();
       //expect(instance).to.be();
     });

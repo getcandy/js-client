@@ -54,14 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject18);
     });
 
-    it('should have the property routes (base name: "routes")', function() {
-      // uncomment below and update the code to test the property routes
-      //var instane = new GetcandyJs.InlineObject18();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property skus (base name: "skus")', function() {
-      // uncomment below and update the code to test the property skus
+    it('should have the property slug (base name: "slug")', function() {
+      // uncomment below and update the code to test the property slug
       //var instane = new GetcandyJs.InlineObject18();
       //expect(instance).to.be();
     });

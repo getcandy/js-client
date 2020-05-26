@@ -4,6 +4,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**users** | **[String]** |  | [optional] 
+**type** | **String** |  | 
+**name** | [**CollectionsName**](CollectionsName.md) |  | [optional] 
+
+
+
+## Enum: TypeEnum
+
+
+* `standard` (value: `"standard"`)
+
+* `dhl` (value: `"dhl"`)
+
+* `regional` (value: `"regional"`)
+
+
 
 

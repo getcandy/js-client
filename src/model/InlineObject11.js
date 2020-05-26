@@ -22,13 +22,12 @@ class InlineObject11 {
     /**
      * Constructs a new <code>InlineObject11</code>.
      * @alias module:model/InlineObject11
-     * @param name {String} 
-     * @param lang {String} 
-     * @param iso {String} Unique
+     * @param orders {Array.<String>} 
+     * @param field {String} 
      */
-    constructor(name, lang, iso) { 
+    constructor(orders, field) { 
         
-        InlineObject11.initialize(this, name, lang, iso);
+        InlineObject11.initialize(this, orders, field);
     }
 
     /**
@@ -36,10 +35,9 @@ class InlineObject11 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name, lang, iso) { 
-        obj['name'] = name;
-        obj['lang'] = lang;
-        obj['iso'] = iso;
+    static initialize(obj, orders, field) { 
+        obj['orders'] = orders;
+        obj['field'] = field;
     }
 
     /**
@@ -53,23 +51,17 @@ class InlineObject11 {
         if (data) {
             obj = obj || new InlineObject11();
 
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            if (data.hasOwnProperty('orders')) {
+                obj['orders'] = ApiClient.convertToType(data['orders'], ['String']);
             }
-            if (data.hasOwnProperty('lang')) {
-                obj['lang'] = ApiClient.convertToType(data['lang'], 'String');
+            if (data.hasOwnProperty('field')) {
+                obj['field'] = ApiClient.convertToType(data['field'], 'String');
             }
-            if (data.hasOwnProperty('iso')) {
-                obj['iso'] = ApiClient.convertToType(data['iso'], 'String');
+            if (data.hasOwnProperty('value')) {
+                obj['value'] = ApiClient.convertToType(data['value'], 'String');
             }
-            if (data.hasOwnProperty('enabled')) {
-                obj['enabled'] = ApiClient.convertToType(data['enabled'], 'Boolean');
-            }
-            if (data.hasOwnProperty('default')) {
-                obj['default'] = ApiClient.convertToType(data['default'], 'Boolean');
-            }
-            if (data.hasOwnProperty('current')) {
-                obj['current'] = ApiClient.convertToType(data['current'], 'Boolean');
+            if (data.hasOwnProperty('send_emails')) {
+                obj['send_emails'] = ApiClient.convertToType(data['send_emails'], 'Boolean');
             }
         }
         return obj;
@@ -79,35 +71,25 @@ class InlineObject11 {
 }
 
 /**
- * @member {String} name
+ * @member {Array.<String>} orders
  */
-InlineObject11.prototype['name'] = undefined;
+InlineObject11.prototype['orders'] = undefined;
 
 /**
- * @member {String} lang
+ * @member {String} field
  */
-InlineObject11.prototype['lang'] = undefined;
+InlineObject11.prototype['field'] = undefined;
 
 /**
- * Unique
- * @member {String} iso
+ * @member {String} value
  */
-InlineObject11.prototype['iso'] = undefined;
+InlineObject11.prototype['value'] = undefined;
 
 /**
- * @member {Boolean} enabled
+ * Whether to send any mailers when changing status
+ * @member {Boolean} send_emails
  */
-InlineObject11.prototype['enabled'] = undefined;
-
-/**
- * @member {Boolean} default
- */
-InlineObject11.prototype['default'] = undefined;
-
-/**
- * @member {Boolean} current
- */
-InlineObject11.prototype['current'] = undefined;
+InlineObject11.prototype['send_emails'] = undefined;
 
 
 

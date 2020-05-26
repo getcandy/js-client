@@ -4,9 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**redirect** | **Boolean** |  | [optional] 
-**description** | **String** |  | [optional] 
-**slug** | **String** |  | [optional] 
-**locale** | **String** |  | [optional] 
+**products** | **[String]** | Pass all products you wish to be associated. | [optional] 
 
 

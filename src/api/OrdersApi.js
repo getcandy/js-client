@@ -14,15 +14,15 @@
 
 import ApiClient from "../ApiClient";
 import Address from '../model/Address';
+import CreateOrderBody from '../model/CreateOrderBody';
 import EmailPreviewResponse from '../model/EmailPreviewResponse';
 import Error from '../model/Error';
 import InlineObject from '../model/InlineObject';
 import InlineObject1 from '../model/InlineObject1';
+import InlineObject11 from '../model/InlineObject11';
 import InlineObject12 from '../model/InlineObject12';
 import InlineObject13 from '../model/InlineObject13';
 import InlineObject14 from '../model/InlineObject14';
-import InlineObject15 from '../model/InlineObject15';
-import InlineObject2 from '../model/InlineObject2';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse4222 from '../model/InlineResponse4222';
 import InlineResponse4224 from '../model/InlineResponse4224';
@@ -449,12 +449,12 @@ export default class OrdersApi {
      * Create Order
      * Create an Order from a Basket instance
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject} opts.inlineObject 
+     * @param {module:model/CreateOrderBody} opts.createOrderBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     postOrdersWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject'];
+      let postBody = opts['createOrderBody'];
 
       let pathParams = {
       };
@@ -480,7 +480,7 @@ export default class OrdersApi {
      * Create Order
      * Create an Order from a Basket instance
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject} opts.inlineObject 
+     * @param {module:model/CreateOrderBody} opts.createOrderBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     postOrders(opts) {
@@ -495,12 +495,12 @@ export default class OrdersApi {
      * Bulk update orders
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject12} opts.inlineObject12 
+     * @param {module:model/InlineObject11} opts.inlineObject11 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     postOrdersBulkWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject12'];
+      let postBody = opts['inlineObject11'];
 
       let pathParams = {
       };
@@ -526,7 +526,7 @@ export default class OrdersApi {
      * Bulk update orders
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject12} opts.inlineObject12 
+     * @param {module:model/InlineObject11} opts.inlineObject11 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     postOrdersBulk(opts) {
@@ -588,12 +588,12 @@ export default class OrdersApi {
     /**
      * Processes an order on the API
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject2} opts.inlineObject2 
+     * @param {module:model/InlineObject1} opts.inlineObject1 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     postOrdersProcessWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject2'];
+      let postBody = opts['inlineObject1'];
 
       let pathParams = {
       };
@@ -618,7 +618,7 @@ export default class OrdersApi {
     /**
      * Processes an order on the API
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject2} opts.inlineObject2 
+     * @param {module:model/InlineObject1} opts.inlineObject1 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     postOrdersProcess(opts) {
@@ -634,12 +634,12 @@ export default class OrdersApi {
      * Add contact details to an order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject14} opts.inlineObject14 
+     * @param {module:model/InlineObject13} opts.inlineObject13 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     putOrdersIdContactWithHttpInfo(orderId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject14'];
+      let postBody = opts['inlineObject13'];
       // verify the required parameter 'orderId' is set
       if (orderId === undefined || orderId === null) {
         throw new Error("Missing the required parameter 'orderId' when calling putOrdersIdContact");
@@ -671,7 +671,7 @@ export default class OrdersApi {
      * Add contact details to an order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject14} opts.inlineObject14 
+     * @param {module:model/InlineObject13} opts.inlineObject13 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     putOrdersIdContact(orderId, opts) {
@@ -687,12 +687,12 @@ export default class OrdersApi {
      * Adds an order line to an order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject15} opts.inlineObject15 
+     * @param {module:model/InlineObject14} opts.inlineObject14 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     putOrdersIdLinesWithHttpInfo(orderId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject15'];
+      let postBody = opts['inlineObject14'];
       // verify the required parameter 'orderId' is set
       if (orderId === undefined || orderId === null) {
         throw new Error("Missing the required parameter 'orderId' when calling putOrdersIdLines");
@@ -724,7 +724,7 @@ export default class OrdersApi {
      * Adds an order line to an order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject15} opts.inlineObject15 
+     * @param {module:model/InlineObject14} opts.inlineObject14 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     putOrdersIdLines(orderId, opts) {
@@ -793,12 +793,12 @@ export default class OrdersApi {
      * Adds a shipping cost to an Order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject13} opts.inlineObject13 
+     * @param {module:model/InlineObject12} opts.inlineObject12 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     putOrdersIdShippingCostWithHttpInfo(orderId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject13'];
+      let postBody = opts['inlineObject12'];
       // verify the required parameter 'orderId' is set
       if (orderId === undefined || orderId === null) {
         throw new Error("Missing the required parameter 'orderId' when calling putOrdersIdShippingCost");
@@ -830,7 +830,7 @@ export default class OrdersApi {
      * Adds a shipping cost to an Order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject13} opts.inlineObject13 
+     * @param {module:model/InlineObject12} opts.inlineObject12 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     putOrdersIdShippingCost(orderId, opts) {
@@ -847,12 +847,12 @@ export default class OrdersApi {
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
      * @param {String} opts.include 
-     * @param {module:model/InlineObject1} opts.inlineObject1 
+     * @param {module:model/InlineObject} opts.inlineObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
     putOrdersOrderIdWithHttpInfo(orderId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject1'];
+      let postBody = opts['inlineObject'];
       // verify the required parameter 'orderId' is set
       if (orderId === undefined || orderId === null) {
         throw new Error("Missing the required parameter 'orderId' when calling putOrdersOrderId");
@@ -886,7 +886,7 @@ export default class OrdersApi {
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
      * @param {String} opts.include 
-     * @param {module:model/InlineObject1} opts.inlineObject1 
+     * @param {module:model/InlineObject} opts.inlineObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */
     putOrdersOrderId(orderId, opts) {

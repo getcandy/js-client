@@ -167,7 +167,7 @@ import GetcandyJs from '@getcandy/js-client';
 
 let apiInstance = new GetcandyJs.TagsApi();
 let opts = {
-  'inlineObject36': new GetcandyJs.InlineObject36() // InlineObject36 | 
+  'inlineObject35': new GetcandyJs.InlineObject35() // InlineObject35 | 
 };
 apiInstance.postTags(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -182,7 +182,7 @@ apiInstance.postTags(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject36** | [**InlineObject36**](InlineObject36.md)|  | [optional] 
+ **inlineObject35** | [**InlineObject35**](InlineObject35.md)|  | [optional] 
 
 ### Return type
 
@@ -218,7 +218,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.TagsApi();
 let tagId = "tagId_example"; // String | 
 let opts = {
-  'inlineObject37': new GetcandyJs.InlineObject37() // InlineObject37 | 
+  'inlineObject36': new GetcandyJs.InlineObject36() // InlineObject36 | 
 };
 apiInstance.putTagsTagId(tagId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -234,7 +234,7 @@ apiInstance.putTagsTagId(tagId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tagId** | **String**|  | 
- **inlineObject37** | [**InlineObject37**](InlineObject37.md)|  | [optional] 
+ **inlineObject36** | [**InlineObject36**](InlineObject36.md)|  | [optional] 
 
 ### Return type
 

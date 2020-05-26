@@ -54,8 +54,14 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject6);
     });
 
-    it('should have the property products (base name: "products")', function() {
-      // uncomment below and update the code to test the property products
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instane = new GetcandyJs.InlineObject6();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property url (base name: "url")', function() {
+      // uncomment below and update the code to test the property url
       //var instane = new GetcandyJs.InlineObject6();
       //expect(instance).to.be();
     });

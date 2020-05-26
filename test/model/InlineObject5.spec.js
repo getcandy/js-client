@@ -54,26 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject5);
     });
 
-    it('should have the property redirect (base name: "redirect")', function() {
-      // uncomment below and update the code to test the property redirect
-      //var instane = new GetcandyJs.InlineObject5();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
-      //var instane = new GetcandyJs.InlineObject5();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property slug (base name: "slug")', function() {
-      // uncomment below and update the code to test the property slug
-      //var instane = new GetcandyJs.InlineObject5();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property locale (base name: "locale")', function() {
-      // uncomment below and update the code to test the property locale
+    it('should have the property products (base name: "products")', function() {
+      // uncomment below and update the code to test the property products
       //var instane = new GetcandyJs.InlineObject5();
       //expect(instance).to.be();
     });

@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**slug** | **String** |  | [optional] 
+**attributes** | **[String]** | An array of attribute IDs | 
 
 

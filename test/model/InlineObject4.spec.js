@@ -54,14 +54,26 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject4);
     });
 
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
+    it('should have the property redirect (base name: "redirect")', function() {
+      // uncomment below and update the code to test the property redirect
       //var instane = new GetcandyJs.InlineObject4();
       //expect(instance).to.be();
     });
 
-    it('should have the property notes (base name: "notes")', function() {
-      // uncomment below and update the code to test the property notes
+    it('should have the property description (base name: "description")', function() {
+      // uncomment below and update the code to test the property description
+      //var instane = new GetcandyJs.InlineObject4();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property slug (base name: "slug")', function() {
+      // uncomment below and update the code to test the property slug
+      //var instane = new GetcandyJs.InlineObject4();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property locale (base name: "locale")', function() {
+      // uncomment below and update the code to test the property locale
       //var instane = new GetcandyJs.InlineObject4();
       //expect(instance).to.be();
     });

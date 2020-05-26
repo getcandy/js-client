@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductsProductIdDuplicateRoutes from './ProductsProductIdDuplicateRoutes';
 
 /**
  * The InlineObject18 model module.
@@ -23,12 +22,10 @@ class InlineObject18 {
     /**
      * Constructs a new <code>InlineObject18</code>.
      * @alias module:model/InlineObject18
-     * @param routes {Array.<module:model/ProductsProductIdDuplicateRoutes>} 
-     * @param skus {Array.<module:model/ProductsProductIdDuplicateRoutes>} 
      */
-    constructor(routes, skus) { 
+    constructor() { 
         
-        InlineObject18.initialize(this, routes, skus);
+        InlineObject18.initialize(this);
     }
 
     /**
@@ -36,9 +33,7 @@ class InlineObject18 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, routes, skus) { 
-        obj['routes'] = routes;
-        obj['skus'] = skus;
+    static initialize(obj) { 
     }
 
     /**
@@ -52,11 +47,8 @@ class InlineObject18 {
         if (data) {
             obj = obj || new InlineObject18();
 
-            if (data.hasOwnProperty('routes')) {
-                obj['routes'] = ApiClient.convertToType(data['routes'], [ProductsProductIdDuplicateRoutes]);
-            }
-            if (data.hasOwnProperty('skus')) {
-                obj['skus'] = ApiClient.convertToType(data['skus'], [ProductsProductIdDuplicateRoutes]);
+            if (data.hasOwnProperty('slug')) {
+                obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
             }
         }
         return obj;
@@ -66,14 +58,9 @@ class InlineObject18 {
 }
 
 /**
- * @member {Array.<module:model/ProductsProductIdDuplicateRoutes>} routes
+ * @member {String} slug
  */
-InlineObject18.prototype['routes'] = undefined;
-
-/**
- * @member {Array.<module:model/ProductsProductIdDuplicateRoutes>} skus
- */
-InlineObject18.prototype['skus'] = undefined;
+InlineObject18.prototype['slug'] = undefined;
 
 
 

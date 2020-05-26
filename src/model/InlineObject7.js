@@ -51,9 +51,6 @@ class InlineObject7 {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = CollectionsName.constructFromObject(data['name']);
             }
-            if (data.hasOwnProperty('url')) {
-                obj['url'] = ApiClient.convertToType(data['url'], 'String');
-            }
         }
         return obj;
     }
@@ -65,11 +62,6 @@ class InlineObject7 {
  * @member {module:model/CollectionsName} name
  */
 InlineObject7.prototype['name'] = undefined;
-
-/**
- * @member {String} url
- */
-InlineObject7.prototype['url'] = undefined;
 
 
 

@@ -123,7 +123,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.PaymentsApi();
 let opts = {
-  'inlineObject16': new GetcandyJs.InlineObject16() // InlineObject16 | 
+  'inlineObject15': new GetcandyJs.InlineObject15() // InlineObject15 | 
 };
 apiInstance.postPayments3dSecure(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -138,7 +138,7 @@ apiInstance.postPayments3dSecure(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject16** | [**InlineObject16**](InlineObject16.md)|  | [optional] 
+ **inlineObject15** | [**InlineObject15**](InlineObject15.md)|  | [optional] 
 
 ### Return type
 

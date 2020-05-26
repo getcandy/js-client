@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new GetcandyJs.OrdersProcessMeta();
+    instance = new GetcandyJs.CreateOrderBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,16 +47,22 @@
       object[property] = value;
   }
 
-  describe('OrdersProcessMeta', function() {
-    it('should create an instance of OrdersProcessMeta', function() {
-      // uncomment below and update the code to test OrdersProcessMeta
-      //var instane = new GetcandyJs.OrdersProcessMeta();
-      //expect(instance).to.be.a(GetcandyJs.OrdersProcessMeta);
+  describe('CreateOrderBody', function() {
+    it('should create an instance of CreateOrderBody', function() {
+      // uncomment below and update the code to test CreateOrderBody
+      //var instane = new GetcandyJs.CreateOrderBody();
+      //expect(instance).to.be.a(GetcandyJs.CreateOrderBody);
     });
 
-    it('should have the property  (base name: "")', function() {
-      // uncomment below and update the code to test the property 
-      //var instane = new GetcandyJs.OrdersProcessMeta();
+    it('should have the property basketId (base name: "basket_id")', function() {
+      // uncomment below and update the code to test the property basketId
+      //var instane = new GetcandyJs.CreateOrderBody();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property include (base name: "include")', function() {
+      // uncomment below and update the code to test the property include
+      //var instane = new GetcandyJs.CreateOrderBody();
       //expect(instance).to.be();
     });
 

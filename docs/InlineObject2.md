@@ -4,14 +4,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**paymentTypeId** | **String** |  | [optional] 
-**paymentType** | **String** |  | [optional] 
-**orderId** | **String** |  | 
-**paymentToken** | **String** |  | 
-**customerReference** | **String** |  | [optional] 
-**meta** | [**[OrdersProcessMeta]**](OrdersProcessMeta.md) |  | [optional] 
-**notes** | **String** |  | [optional] 
-**companyName** | **String** |  | [optional] 
-**data** | **[Object]** |  | [optional] 
+**groupId** | **String** |  | 
+**name** | [**[AttributesName]**](AttributesName.md) |  | 
+**handle** | **String** |  | 
+**position** | **Number** |  | [optional] 
+**filterable** | **Boolean** |  | [optional] [default to false]
+**scopeable** | **Number** |  | [optional] 
+**translatable** | **Boolean** |  | [optional] [default to false]
+**variant** | **Boolean** |  | [optional] [default to false]
+**searchable** | **Boolean** |  | [optional] [default to false]
+**localised** | **Boolean** |  | [optional] [default to false]
+**type** | **String** |  | [optional] [default to &#39;text&#39;]
+**required** | **Boolean** |  | [optional] [default to false]
+**lookups** | [**[AttributesLookups]**](AttributesLookups.md) |  | [optional] 
+**system** | **Boolean** |  | [optional] [default to false]
 
 

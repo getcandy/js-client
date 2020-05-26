@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductsProductIdCustomerGroupsGroups from './ProductsProductIdCustomerGroupsGroups';
+import ProductsName from './ProductsName';
 
 /**
  * The InlineObject26 model module.
@@ -23,11 +23,16 @@ class InlineObject26 {
     /**
      * Constructs a new <code>InlineObject26</code>.
      * @alias module:model/InlineObject26
-     * @param groups {Array.<module:model/ProductsProductIdCustomerGroupsGroups>} 
+     * @param name {module:model/ProductsName} 
+     * @param url {String} 
+     * @param stock {Number} 
+     * @param familyId {String} 
+     * @param price {Number} 
+     * @param sku {String} 
      */
-    constructor(groups) { 
+    constructor(name, url, stock, familyId, price, sku) { 
         
-        InlineObject26.initialize(this, groups);
+        InlineObject26.initialize(this, name, url, stock, familyId, price, sku);
     }
 
     /**
@@ -35,8 +40,13 @@ class InlineObject26 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, groups) { 
-        obj['groups'] = groups;
+    static initialize(obj, name, url, stock, familyId, price, sku) { 
+        obj['name'] = name;
+        obj['url'] = url;
+        obj['stock'] = stock;
+        obj['family_id'] = familyId;
+        obj['price'] = price;
+        obj['sku'] = sku;
     }
 
     /**
@@ -50,8 +60,23 @@ class InlineObject26 {
         if (data) {
             obj = obj || new InlineObject26();
 
-            if (data.hasOwnProperty('groups')) {
-                obj['groups'] = ApiClient.convertToType(data['groups'], [ProductsProductIdCustomerGroupsGroups]);
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ProductsName.constructFromObject(data['name']);
+            }
+            if (data.hasOwnProperty('url')) {
+                obj['url'] = ApiClient.convertToType(data['url'], 'String');
+            }
+            if (data.hasOwnProperty('stock')) {
+                obj['stock'] = ApiClient.convertToType(data['stock'], 'Number');
+            }
+            if (data.hasOwnProperty('family_id')) {
+                obj['family_id'] = ApiClient.convertToType(data['family_id'], 'String');
+            }
+            if (data.hasOwnProperty('price')) {
+                obj['price'] = ApiClient.convertToType(data['price'], 'Number');
+            }
+            if (data.hasOwnProperty('sku')) {
+                obj['sku'] = ApiClient.convertToType(data['sku'], 'String');
             }
         }
         return obj;
@@ -61,9 +86,34 @@ class InlineObject26 {
 }
 
 /**
- * @member {Array.<module:model/ProductsProductIdCustomerGroupsGroups>} groups
+ * @member {module:model/ProductsName} name
  */
-InlineObject26.prototype['groups'] = undefined;
+InlineObject26.prototype['name'] = undefined;
+
+/**
+ * @member {String} url
+ */
+InlineObject26.prototype['url'] = undefined;
+
+/**
+ * @member {Number} stock
+ */
+InlineObject26.prototype['stock'] = undefined;
+
+/**
+ * @member {String} family_id
+ */
+InlineObject26.prototype['family_id'] = undefined;
+
+/**
+ * @member {Number} price
+ */
+InlineObject26.prototype['price'] = undefined;
+
+/**
+ * @member {String} sku
+ */
+InlineObject26.prototype['sku'] = undefined;
 
 
 

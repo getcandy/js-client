@@ -175,7 +175,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.DiscountsApi();
 let opts = {
-  'inlineObject9': new GetcandyJs.InlineObject9() // InlineObject9 | 
+  'inlineObject8': new GetcandyJs.InlineObject8() // InlineObject8 | 
 };
 apiInstance.postDiscounts(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -190,7 +190,7 @@ apiInstance.postDiscounts(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject9** | [**InlineObject9**](InlineObject9.md)|  | [optional] 
+ **inlineObject8** | [**InlineObject8**](InlineObject8.md)|  | [optional] 
 
 ### Return type
 
@@ -226,7 +226,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.DiscountsApi();
 let discountId = "discountId_example"; // String | 
 let opts = {
-  'inlineObject10': new GetcandyJs.InlineObject10() // InlineObject10 | 
+  'inlineObject9': new GetcandyJs.InlineObject9() // InlineObject9 | 
 };
 apiInstance.putDiscountsDiscountId(discountId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -242,7 +242,7 @@ apiInstance.putDiscountsDiscountId(discountId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **discountId** | **String**|  | 
- **inlineObject10** | [**InlineObject10**](InlineObject10.md)|  | [optional] 
+ **inlineObject9** | [**InlineObject9**](InlineObject9.md)|  | [optional] 
 
 ### Return type
 

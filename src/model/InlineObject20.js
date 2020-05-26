@@ -22,10 +22,11 @@ class InlineObject20 {
     /**
      * Constructs a new <code>InlineObject20</code>.
      * @alias module:model/InlineObject20
+     * @param attributes {Array.<String>} An array of attribute IDs
      */
-    constructor() { 
+    constructor(attributes) { 
         
-        InlineObject20.initialize(this);
+        InlineObject20.initialize(this, attributes);
     }
 
     /**
@@ -33,7 +34,8 @@ class InlineObject20 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, attributes) { 
+        obj['attributes'] = attributes;
     }
 
     /**
@@ -47,8 +49,8 @@ class InlineObject20 {
         if (data) {
             obj = obj || new InlineObject20();
 
-            if (data.hasOwnProperty('slug')) {
-                obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
+            if (data.hasOwnProperty('attributes')) {
+                obj['attributes'] = ApiClient.convertToType(data['attributes'], ['String']);
             }
         }
         return obj;
@@ -58,9 +60,10 @@ class InlineObject20 {
 }
 
 /**
- * @member {String} slug
+ * An array of attribute IDs
+ * @member {Array.<String>} attributes
  */
-InlineObject20.prototype['slug'] = undefined;
+InlineObject20.prototype['attributes'] = undefined;
 
 
 

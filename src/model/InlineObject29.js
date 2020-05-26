@@ -22,11 +22,13 @@ class InlineObject29 {
     /**
      * Constructs a new <code>InlineObject29</code>.
      * @alias module:model/InlineObject29
-     * @param name {String} 
+     * @param rate {Number} 
+     * @param zoneId {String} 
+     * @param currencyId {String} 
      */
-    constructor(name) { 
+    constructor(rate, zoneId, currencyId) { 
         
-        InlineObject29.initialize(this, name);
+        InlineObject29.initialize(this, rate, zoneId, currencyId);
     }
 
     /**
@@ -34,8 +36,10 @@ class InlineObject29 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name) { 
-        obj['name'] = name;
+    static initialize(obj, rate, zoneId, currencyId) { 
+        obj['rate'] = rate;
+        obj['zone_id'] = zoneId;
+        obj['currency_id'] = currencyId;
     }
 
     /**
@@ -49,8 +53,14 @@ class InlineObject29 {
         if (data) {
             obj = obj || new InlineObject29();
 
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            if (data.hasOwnProperty('rate')) {
+                obj['rate'] = ApiClient.convertToType(data['rate'], 'Number');
+            }
+            if (data.hasOwnProperty('zone_id')) {
+                obj['zone_id'] = ApiClient.convertToType(data['zone_id'], 'String');
+            }
+            if (data.hasOwnProperty('currency_id')) {
+                obj['currency_id'] = ApiClient.convertToType(data['currency_id'], 'String');
             }
         }
         return obj;
@@ -60,9 +70,19 @@ class InlineObject29 {
 }
 
 /**
- * @member {String} name
+ * @member {Number} rate
  */
-InlineObject29.prototype['name'] = undefined;
+InlineObject29.prototype['rate'] = undefined;
+
+/**
+ * @member {String} zone_id
+ */
+InlineObject29.prototype['zone_id'] = undefined;
+
+/**
+ * @member {String} currency_id
+ */
+InlineObject29.prototype['currency_id'] = undefined;
 
 
 

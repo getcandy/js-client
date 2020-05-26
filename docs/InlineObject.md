@@ -4,6 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**basketId** | **String** |  | 
+**trackingNo** | **String** |  | [optional] 
+**status** | **String** | Corresponds to status set in config | [optional] 
+**sendEmails** | **Boolean** |  | [optional] 
 
 

@@ -14,13 +14,13 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
+import InlineObject28 from '../model/InlineObject28';
 import InlineObject29 from '../model/InlineObject29';
 import InlineObject30 from '../model/InlineObject30';
 import InlineObject31 from '../model/InlineObject31';
 import InlineObject32 from '../model/InlineObject32';
 import InlineObject33 from '../model/InlineObject33';
 import InlineObject34 from '../model/InlineObject34';
-import InlineObject35 from '../model/InlineObject35';
 import InlineResponse2006 from '../model/InlineResponse2006';
 import InlineResponse42212 from '../model/InlineResponse42212';
 import InlineResponse42213 from '../model/InlineResponse42213';
@@ -302,12 +302,12 @@ export default class ShippingApi {
      * Create shipping method
      * Create a new shipping method.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject34} opts.inlineObject34 
+     * @param {module:model/InlineObject33} opts.inlineObject33 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
      */
     postShippingWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject34'];
+      let postBody = opts['inlineObject33'];
 
       let pathParams = {
       };
@@ -333,7 +333,7 @@ export default class ShippingApi {
      * Create shipping method
      * Create a new shipping method.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject34} opts.inlineObject34 
+     * @param {module:model/InlineObject33} opts.inlineObject33 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
      */
     postShipping(opts) {
@@ -349,12 +349,12 @@ export default class ShippingApi {
      * Add a price to a shipping method.
      * @param {String} shippingMethodId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject30} opts.inlineObject30 
+     * @param {module:model/InlineObject29} opts.inlineObject29 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingPriceResponse} and HTTP response
      */
     postShippingIdPricesWithHttpInfo(shippingMethodId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject30'];
+      let postBody = opts['inlineObject29'];
       // verify the required parameter 'shippingMethodId' is set
       if (shippingMethodId === undefined || shippingMethodId === null) {
         throw new Error("Missing the required parameter 'shippingMethodId' when calling postShippingIdPrices");
@@ -386,7 +386,7 @@ export default class ShippingApi {
      * Add a price to a shipping method.
      * @param {String} shippingMethodId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject30} opts.inlineObject30 
+     * @param {module:model/InlineObject29} opts.inlineObject29 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingPriceResponse}
      */
     postShippingIdPrices(shippingMethodId, opts) {
@@ -401,12 +401,12 @@ export default class ShippingApi {
      * Create Shipping Zone
      * Create a new shipping zone
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject29} opts.inlineObject29 
+     * @param {module:model/InlineObject28} opts.inlineObject28 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingZoneResponse} and HTTP response
      */
     postShippingZonesWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject29'];
+      let postBody = opts['inlineObject28'];
 
       let pathParams = {
       };
@@ -432,7 +432,7 @@ export default class ShippingApi {
      * Create Shipping Zone
      * Create a new shipping zone
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject29} opts.inlineObject29 
+     * @param {module:model/InlineObject28} opts.inlineObject28 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingZoneResponse}
      */
     postShippingZones(opts) {
@@ -448,12 +448,12 @@ export default class ShippingApi {
      * Update shipping method users
      * @param {String} id 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject33} opts.inlineObject33 
+     * @param {module:model/InlineObject32} opts.inlineObject32 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingMethodResponse} and HTTP response
      */
     putShippingIdUsersWithHttpInfo(id, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject33'];
+      let postBody = opts['inlineObject32'];
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
         throw new Error("Missing the required parameter 'id' when calling putShippingIdUsers");
@@ -485,7 +485,7 @@ export default class ShippingApi {
      * Update shipping method users
      * @param {String} id 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject33} opts.inlineObject33 
+     * @param {module:model/InlineObject32} opts.inlineObject32 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingMethodResponse}
      */
     putShippingIdUsers(id, opts) {
@@ -501,12 +501,12 @@ export default class ShippingApi {
      * Update a shipping price
      * @param {String} shippingPriceId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject31} opts.inlineObject31 
+     * @param {module:model/InlineObject30} opts.inlineObject30 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingPriceResponse} and HTTP response
      */
     putShippingPricesShippingPriceIdWithHttpInfo(shippingPriceId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject31'];
+      let postBody = opts['inlineObject30'];
       // verify the required parameter 'shippingPriceId' is set
       if (shippingPriceId === undefined || shippingPriceId === null) {
         throw new Error("Missing the required parameter 'shippingPriceId' when calling putShippingPricesShippingPriceId");
@@ -538,7 +538,7 @@ export default class ShippingApi {
      * Update a shipping price
      * @param {String} shippingPriceId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject31} opts.inlineObject31 
+     * @param {module:model/InlineObject30} opts.inlineObject30 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingPriceResponse}
      */
     putShippingPricesShippingPriceId(shippingPriceId, opts) {
@@ -554,12 +554,12 @@ export default class ShippingApi {
      * Update shipping method by it's ID
      * @param {String} shippingMethodId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject35} opts.inlineObject35 
+     * @param {module:model/InlineObject34} opts.inlineObject34 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingMethodResponse} and HTTP response
      */
     putShippingShippingMethodIdWithHttpInfo(shippingMethodId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject35'];
+      let postBody = opts['inlineObject34'];
       // verify the required parameter 'shippingMethodId' is set
       if (shippingMethodId === undefined || shippingMethodId === null) {
         throw new Error("Missing the required parameter 'shippingMethodId' when calling putShippingShippingMethodId");
@@ -591,7 +591,7 @@ export default class ShippingApi {
      * Update shipping method by it's ID
      * @param {String} shippingMethodId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject35} opts.inlineObject35 
+     * @param {module:model/InlineObject34} opts.inlineObject34 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingMethodResponse}
      */
     putShippingShippingMethodId(shippingMethodId, opts) {
@@ -607,12 +607,12 @@ export default class ShippingApi {
      * Update a shipping method's zones.
      * @param {String} shippingMethodId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject32} opts.inlineObject32 
+     * @param {module:model/InlineObject31} opts.inlineObject31 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingMethodResponse} and HTTP response
      */
     putShippingShippingMethodIdZonesWithHttpInfo(shippingMethodId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject32'];
+      let postBody = opts['inlineObject31'];
       // verify the required parameter 'shippingMethodId' is set
       if (shippingMethodId === undefined || shippingMethodId === null) {
         throw new Error("Missing the required parameter 'shippingMethodId' when calling putShippingShippingMethodIdZones");
@@ -644,7 +644,7 @@ export default class ShippingApi {
      * Update a shipping method's zones.
      * @param {String} shippingMethodId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject32} opts.inlineObject32 
+     * @param {module:model/InlineObject31} opts.inlineObject31 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingMethodResponse}
      */
     putShippingShippingMethodIdZones(shippingMethodId, opts) {

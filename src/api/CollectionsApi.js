@@ -17,10 +17,10 @@ import CategoryResponse from '../model/CategoryResponse';
 import CollectionCollection from '../model/CollectionCollection';
 import CollectionResponse from '../model/CollectionResponse';
 import Error from '../model/Error';
+import InlineObject4 from '../model/InlineObject4';
 import InlineObject5 from '../model/InlineObject5';
 import InlineObject6 from '../model/InlineObject6';
 import InlineObject7 from '../model/InlineObject7';
-import InlineObject8 from '../model/InlineObject8';
 
 /**
 * Collections service.
@@ -207,12 +207,12 @@ export default class CollectionsApi {
      * Create Collection
      * Create a new collection.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject7} opts.inlineObject7 
+     * @param {module:model/InlineObject6} opts.inlineObject6 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CollectionResponse} and HTTP response
      */
     postCollectionsWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject7'];
+      let postBody = opts['inlineObject6'];
 
       let pathParams = {
       };
@@ -238,7 +238,7 @@ export default class CollectionsApi {
      * Create Collection
      * Create a new collection.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject7} opts.inlineObject7 
+     * @param {module:model/InlineObject6} opts.inlineObject6 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CollectionResponse}
      */
     postCollections(opts) {
@@ -254,12 +254,12 @@ export default class CollectionsApi {
      * Syncs products with a collection.
      * @param {String} collectionId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject6} opts.inlineObject6 
+     * @param {module:model/InlineObject5} opts.inlineObject5 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CategoryResponse} and HTTP response
      */
     postCollectionsCollectionIdProductsWithHttpInfo(collectionId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject6'];
+      let postBody = opts['inlineObject5'];
       // verify the required parameter 'collectionId' is set
       if (collectionId === undefined || collectionId === null) {
         throw new Error("Missing the required parameter 'collectionId' when calling postCollectionsCollectionIdProducts");
@@ -291,7 +291,7 @@ export default class CollectionsApi {
      * Syncs products with a collection.
      * @param {String} collectionId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject6} opts.inlineObject6 
+     * @param {module:model/InlineObject5} opts.inlineObject5 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CategoryResponse}
      */
     postCollectionsCollectionIdProducts(collectionId, opts) {
@@ -307,12 +307,12 @@ export default class CollectionsApi {
      * This request will allow you to attach routes to a collection
      * @param {String} collectionId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject5} opts.inlineObject5 
+     * @param {module:model/InlineObject4} opts.inlineObject4 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CategoryResponse} and HTTP response
      */
     postCollectionsCollectionRoutesWithHttpInfo(collectionId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject5'];
+      let postBody = opts['inlineObject4'];
       // verify the required parameter 'collectionId' is set
       if (collectionId === undefined || collectionId === null) {
         throw new Error("Missing the required parameter 'collectionId' when calling postCollectionsCollectionRoutes");
@@ -344,7 +344,7 @@ export default class CollectionsApi {
      * This request will allow you to attach routes to a collection
      * @param {String} collectionId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject5} opts.inlineObject5 
+     * @param {module:model/InlineObject4} opts.inlineObject4 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CategoryResponse}
      */
     postCollectionsCollectionRoutes(collectionId, opts) {
@@ -360,12 +360,12 @@ export default class CollectionsApi {
      * Update a Collection by its ID.
      * @param {String} collectionId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject8} opts.inlineObject8 
+     * @param {module:model/InlineObject7} opts.inlineObject7 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CollectionResponse} and HTTP response
      */
     putCollectionsCollectionIdWithHttpInfo(collectionId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject8'];
+      let postBody = opts['inlineObject7'];
       // verify the required parameter 'collectionId' is set
       if (collectionId === undefined || collectionId === null) {
         throw new Error("Missing the required parameter 'collectionId' when calling putCollectionsCollectionId");
@@ -397,7 +397,7 @@ export default class CollectionsApi {
      * Update a Collection by its ID.
      * @param {String} collectionId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject8} opts.inlineObject8 
+     * @param {module:model/InlineObject7} opts.inlineObject7 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CollectionResponse}
      */
     putCollectionsCollectionId(collectionId, opts) {

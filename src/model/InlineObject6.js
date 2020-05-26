@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import CollectionsName from './CollectionsName';
 
 /**
  * The InlineObject6 model module.
@@ -47,8 +48,11 @@ class InlineObject6 {
         if (data) {
             obj = obj || new InlineObject6();
 
-            if (data.hasOwnProperty('products')) {
-                obj['products'] = ApiClient.convertToType(data['products'], ['String']);
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = CollectionsName.constructFromObject(data['name']);
+            }
+            if (data.hasOwnProperty('url')) {
+                obj['url'] = ApiClient.convertToType(data['url'], 'String');
             }
         }
         return obj;
@@ -58,10 +62,14 @@ class InlineObject6 {
 }
 
 /**
- * Pass all products you wish to be associated.
- * @member {Array.<String>} products
+ * @member {module:model/CollectionsName} name
  */
-InlineObject6.prototype['products'] = undefined;
+InlineObject6.prototype['name'] = undefined;
+
+/**
+ * @member {String} url
+ */
+InlineObject6.prototype['url'] = undefined;
 
 
 

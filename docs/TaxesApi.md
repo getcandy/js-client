@@ -171,7 +171,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.TaxesApi();
 let opts = {
-  'inlineObject38': new GetcandyJs.InlineObject38() // InlineObject38 | 
+  'inlineObject37': new GetcandyJs.InlineObject37() // InlineObject37 | 
 };
 apiInstance.postTaxes(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -186,7 +186,7 @@ apiInstance.postTaxes(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject38** | [**InlineObject38**](InlineObject38.md)|  | [optional] 
+ **inlineObject37** | [**InlineObject37**](InlineObject37.md)|  | [optional] 
 
 ### Return type
 
@@ -222,7 +222,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.TaxesApi();
 let taxId = "taxId_example"; // String | 
 let opts = {
-  'inlineObject39': new GetcandyJs.InlineObject39() // InlineObject39 | 
+  'inlineObject38': new GetcandyJs.InlineObject38() // InlineObject38 | 
 };
 apiInstance.putTaxesTaxId(taxId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -238,7 +238,7 @@ apiInstance.putTaxesTaxId(taxId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **taxId** | **String**|  | 
- **inlineObject39** | [**InlineObject39**](InlineObject39.md)|  | [optional] 
+ **inlineObject38** | [**InlineObject38**](InlineObject38.md)|  | [optional] 
 
 ### Return type
 

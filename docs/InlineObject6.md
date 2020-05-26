@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**products** | **[String]** | Pass all products you wish to be associated. | [optional] 
+**name** | [**CollectionsName**](CollectionsName.md) |  | [optional] 
+**url** | **String** |  | [optional] 
 
 

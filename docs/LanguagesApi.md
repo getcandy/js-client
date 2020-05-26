@@ -171,7 +171,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.LanguagesApi();
 let opts = {
-  'inlineObject11': new GetcandyJs.InlineObject11() // InlineObject11 | 
+  'inlineObject10': new GetcandyJs.InlineObject10() // InlineObject10 | 
 };
 apiInstance.postLanguages(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -186,7 +186,7 @@ apiInstance.postLanguages(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject11** | [**InlineObject11**](InlineObject11.md)|  | [optional] 
+ **inlineObject10** | [**InlineObject10**](InlineObject10.md)|  | [optional] 
 
 ### Return type
 

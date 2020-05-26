@@ -60,36 +60,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property url (base name: "url")', function() {
-      // uncomment below and update the code to test the property url
-      //var instane = new GetcandyJs.InlineObject27();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property stock (base name: "stock")', function() {
-      // uncomment below and update the code to test the property stock
-      //var instane = new GetcandyJs.InlineObject27();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property familyId (base name: "family_id")', function() {
-      // uncomment below and update the code to test the property familyId
-      //var instane = new GetcandyJs.InlineObject27();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property price (base name: "price")', function() {
-      // uncomment below and update the code to test the property price
-      //var instane = new GetcandyJs.InlineObject27();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property sku (base name: "sku")', function() {
-      // uncomment below and update the code to test the property sku
-      //var instane = new GetcandyJs.InlineObject27();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

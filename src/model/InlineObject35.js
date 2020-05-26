@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductsName from './ProductsName';
 
 /**
  * The InlineObject35 model module.
@@ -23,12 +22,11 @@ class InlineObject35 {
     /**
      * Constructs a new <code>InlineObject35</code>.
      * @alias module:model/InlineObject35
-     * @param name {module:model/ProductsName} 
-     * @param type {String} 
+     * @param name {String} 
      */
-    constructor(name, type) { 
+    constructor(name) { 
         
-        InlineObject35.initialize(this, name, type);
+        InlineObject35.initialize(this, name);
     }
 
     /**
@@ -36,9 +34,8 @@ class InlineObject35 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name, type) { 
+    static initialize(obj, name) { 
         obj['name'] = name;
-        obj['type'] = type;
     }
 
     /**
@@ -53,10 +50,7 @@ class InlineObject35 {
             obj = obj || new InlineObject35();
 
             if (data.hasOwnProperty('name')) {
-                obj['name'] = ProductsName.constructFromObject(data['name']);
-            }
-            if (data.hasOwnProperty('type')) {
-                obj['type'] = ApiClient.convertToType(data['type'], 'String');
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
         }
         return obj;
@@ -66,14 +60,9 @@ class InlineObject35 {
 }
 
 /**
- * @member {module:model/ProductsName} name
+ * @member {String} name
  */
 InlineObject35.prototype['name'] = undefined;
-
-/**
- * @member {String} type
- */
-InlineObject35.prototype['type'] = undefined;
 
 
 

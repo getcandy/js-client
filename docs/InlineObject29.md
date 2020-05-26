@@ -4,6 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
+**rate** | **Number** |  | 
+**zoneId** | **String** |  | 
+**currencyId** | **String** |  | 
 
 

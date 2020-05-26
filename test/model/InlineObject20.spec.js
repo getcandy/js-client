@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject20);
     });
 
-    it('should have the property slug (base name: "slug")', function() {
-      // uncomment below and update the code to test the property slug
+    it('should have the property attributes (base name: "attributes")', function() {
+      // uncomment below and update the code to test the property attributes
       //var instane = new GetcandyJs.InlineObject20();
       //expect(instance).to.be();
     });

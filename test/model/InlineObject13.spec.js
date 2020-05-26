@@ -54,8 +54,14 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject13);
     });
 
-    it('should have the property priceId (base name: "price_id")', function() {
-      // uncomment below and update the code to test the property priceId
+    it('should have the property email (base name: "email")', function() {
+      // uncomment below and update the code to test the property email
+      //var instane = new GetcandyJs.InlineObject13();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property phone (base name: "phone")', function() {
+      // uncomment below and update the code to test the property phone
       //var instane = new GetcandyJs.InlineObject13();
       //expect(instance).to.be();
     });

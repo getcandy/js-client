@@ -22,12 +22,10 @@ class InlineObject12 {
     /**
      * Constructs a new <code>InlineObject12</code>.
      * @alias module:model/InlineObject12
-     * @param orders {Array.<String>} 
-     * @param field {String} 
      */
-    constructor(orders, field) { 
+    constructor() { 
         
-        InlineObject12.initialize(this, orders, field);
+        InlineObject12.initialize(this);
     }
 
     /**
@@ -35,9 +33,7 @@ class InlineObject12 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, orders, field) { 
-        obj['orders'] = orders;
-        obj['field'] = field;
+    static initialize(obj) { 
     }
 
     /**
@@ -51,17 +47,8 @@ class InlineObject12 {
         if (data) {
             obj = obj || new InlineObject12();
 
-            if (data.hasOwnProperty('orders')) {
-                obj['orders'] = ApiClient.convertToType(data['orders'], ['String']);
-            }
-            if (data.hasOwnProperty('field')) {
-                obj['field'] = ApiClient.convertToType(data['field'], 'String');
-            }
-            if (data.hasOwnProperty('value')) {
-                obj['value'] = ApiClient.convertToType(data['value'], 'String');
-            }
-            if (data.hasOwnProperty('send_emails')) {
-                obj['send_emails'] = ApiClient.convertToType(data['send_emails'], 'Boolean');
+            if (data.hasOwnProperty('price_id')) {
+                obj['price_id'] = ApiClient.convertToType(data['price_id'], 'String');
             }
         }
         return obj;
@@ -71,25 +58,10 @@ class InlineObject12 {
 }
 
 /**
- * @member {Array.<String>} orders
+ * The ShippingPrice id to associate
+ * @member {String} price_id
  */
-InlineObject12.prototype['orders'] = undefined;
-
-/**
- * @member {String} field
- */
-InlineObject12.prototype['field'] = undefined;
-
-/**
- * @member {String} value
- */
-InlineObject12.prototype['value'] = undefined;
-
-/**
- * Whether to send any mailers when changing status
- * @member {Boolean} send_emails
- */
-InlineObject12.prototype['send_emails'] = undefined;
+InlineObject12.prototype['price_id'] = undefined;
 
 
 

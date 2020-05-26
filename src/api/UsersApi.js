@@ -15,8 +15,8 @@
 import ApiClient from "../ApiClient";
 import AccountPasswordResetBody from '../model/AccountPasswordResetBody';
 import Error from '../model/Error';
+import InlineObject39 from '../model/InlineObject39';
 import InlineObject40 from '../model/InlineObject40';
-import InlineObject41 from '../model/InlineObject41';
 import Message from '../model/Message';
 import Unauthenticated from '../model/Unauthenticated';
 import Unauthorized from '../model/Unauthorized';
@@ -269,12 +269,12 @@ export default class UsersApi {
      * Create user
      * Create a new user in the system
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject40} opts.inlineObject40 
+     * @param {module:model/InlineObject39} opts.inlineObject39 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UserResponse} and HTTP response
      */
     postUsersWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject40'];
+      let postBody = opts['inlineObject39'];
 
       let pathParams = {
       };
@@ -300,7 +300,7 @@ export default class UsersApi {
      * Create user
      * Create a new user in the system
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject40} opts.inlineObject40 
+     * @param {module:model/InlineObject39} opts.inlineObject39 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UserResponse}
      */
     postUsers(opts) {
@@ -315,12 +315,12 @@ export default class UsersApi {
      * Updates a user record from their ID.
      * @param {String} userId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject41} opts.inlineObject41 
+     * @param {module:model/InlineObject40} opts.inlineObject40 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UserResponse} and HTTP response
      */
     putUsersUserIdWithHttpInfo(userId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject41'];
+      let postBody = opts['inlineObject40'];
       // verify the required parameter 'userId' is set
       if (userId === undefined || userId === null) {
         throw new Error("Missing the required parameter 'userId' when calling putUsersUserId");
@@ -351,7 +351,7 @@ export default class UsersApi {
      * Updates a user record from their ID.
      * @param {String} userId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject41} opts.inlineObject41 
+     * @param {module:model/InlineObject40} opts.inlineObject40 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UserResponse}
      */
     putUsersUserId(userId, opts) {

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Unique name | 
+**name** | **String** | Must be unique | 
 **percentage** | **Number** |  | 
 
 

@@ -4,6 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**groups** | [**[ProductsProductIdCustomerGroupsGroups]**](ProductsProductIdCustomerGroupsGroups.md) |  | 
+**name** | [**ProductsName**](ProductsName.md) |  | 
+**url** | **String** |  | 
+**stock** | **Number** |  | 
+**familyId** | **String** |  | 
+**price** | **Number** |  | 
+**sku** | **String** |  | 
 
 

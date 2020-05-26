@@ -12,9 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import DiscountsDiscountIdChannels from './DiscountsDiscountIdChannels';
-import DiscountsDiscountIdRewards from './DiscountsDiscountIdRewards';
-import DiscountsDiscountIdSets from './DiscountsDiscountIdSets';
 
 /**
  * The InlineObject10 model module.
@@ -25,11 +22,13 @@ class InlineObject10 {
     /**
      * Constructs a new <code>InlineObject10</code>.
      * @alias module:model/InlineObject10
-     * @param startAt {Date} 
+     * @param name {String} 
+     * @param lang {String} 
+     * @param iso {String} Unique
      */
-    constructor(startAt) { 
+    constructor(name, lang, iso) { 
         
-        InlineObject10.initialize(this, startAt);
+        InlineObject10.initialize(this, name, lang, iso);
     }
 
     /**
@@ -37,8 +36,10 @@ class InlineObject10 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, startAt) { 
-        obj['start_at'] = startAt;
+    static initialize(obj, name, lang, iso) { 
+        obj['name'] = name;
+        obj['lang'] = lang;
+        obj['iso'] = iso;
     }
 
     /**
@@ -52,29 +53,23 @@ class InlineObject10 {
         if (data) {
             obj = obj || new InlineObject10();
 
-            if (data.hasOwnProperty('start_at')) {
-                obj['start_at'] = ApiClient.convertToType(data['start_at'], 'Date');
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
-            if (data.hasOwnProperty('end_at')) {
-                obj['end_at'] = ApiClient.convertToType(data['end_at'], 'String');
+            if (data.hasOwnProperty('lang')) {
+                obj['lang'] = ApiClient.convertToType(data['lang'], 'String');
             }
-            if (data.hasOwnProperty('priority')) {
-                obj['priority'] = ApiClient.convertToType(data['priority'], 'Number');
+            if (data.hasOwnProperty('iso')) {
+                obj['iso'] = ApiClient.convertToType(data['iso'], 'String');
             }
-            if (data.hasOwnProperty('stop_rules')) {
-                obj['stop_rules'] = ApiClient.convertToType(data['stop_rules'], 'Boolean');
+            if (data.hasOwnProperty('enabled')) {
+                obj['enabled'] = ApiClient.convertToType(data['enabled'], 'Boolean');
             }
-            if (data.hasOwnProperty('status')) {
-                obj['status'] = ApiClient.convertToType(data['status'], 'Boolean');
+            if (data.hasOwnProperty('default')) {
+                obj['default'] = ApiClient.convertToType(data['default'], 'Boolean');
             }
-            if (data.hasOwnProperty('channels')) {
-                obj['channels'] = DiscountsDiscountIdChannels.constructFromObject(data['channels']);
-            }
-            if (data.hasOwnProperty('rewards')) {
-                obj['rewards'] = DiscountsDiscountIdRewards.constructFromObject(data['rewards']);
-            }
-            if (data.hasOwnProperty('sets')) {
-                obj['sets'] = DiscountsDiscountIdSets.constructFromObject(data['sets']);
+            if (data.hasOwnProperty('current')) {
+                obj['current'] = ApiClient.convertToType(data['current'], 'Boolean');
             }
         }
         return obj;
@@ -84,44 +79,35 @@ class InlineObject10 {
 }
 
 /**
- * @member {Date} start_at
+ * @member {String} name
  */
-InlineObject10.prototype['start_at'] = undefined;
+InlineObject10.prototype['name'] = undefined;
 
 /**
- * @member {String} end_at
+ * @member {String} lang
  */
-InlineObject10.prototype['end_at'] = undefined;
+InlineObject10.prototype['lang'] = undefined;
 
 /**
- * @member {Number} priority
+ * Unique
+ * @member {String} iso
  */
-InlineObject10.prototype['priority'] = undefined;
+InlineObject10.prototype['iso'] = undefined;
 
 /**
- * @member {Boolean} stop_rules
+ * @member {Boolean} enabled
  */
-InlineObject10.prototype['stop_rules'] = undefined;
+InlineObject10.prototype['enabled'] = undefined;
 
 /**
- * @member {Boolean} status
+ * @member {Boolean} default
  */
-InlineObject10.prototype['status'] = undefined;
+InlineObject10.prototype['default'] = undefined;
 
 /**
- * @member {module:model/DiscountsDiscountIdChannels} channels
+ * @member {Boolean} current
  */
-InlineObject10.prototype['channels'] = undefined;
-
-/**
- * @member {module:model/DiscountsDiscountIdRewards} rewards
- */
-InlineObject10.prototype['rewards'] = undefined;
-
-/**
- * @member {module:model/DiscountsDiscountIdSets} sets
- */
-InlineObject10.prototype['sets'] = undefined;
+InlineObject10.prototype['current'] = undefined;
 
 
 

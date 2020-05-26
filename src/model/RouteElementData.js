@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The OrdersProcessMeta model module.
- * @module model/OrdersProcessMeta
+ * The RouteElementData model module.
+ * @module model/RouteElementData
  * @version 0.9.0
  */
-class OrdersProcessMeta {
+class RouteElementData {
     /**
-     * Constructs a new <code>OrdersProcessMeta</code>.
-     * @alias module:model/OrdersProcessMeta
+     * Constructs a new <code>RouteElementData</code>.
+     * @alias module:model/RouteElementData
      */
     constructor() { 
         
-        OrdersProcessMeta.initialize(this);
+        RouteElementData.initialize(this);
     }
 
     /**
@@ -37,18 +37,18 @@ class OrdersProcessMeta {
     }
 
     /**
-     * Constructs a <code>OrdersProcessMeta</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>RouteElementData</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/OrdersProcessMeta} obj Optional instance to populate.
-     * @return {module:model/OrdersProcessMeta} The populated <code>OrdersProcessMeta</code> instance.
+     * @param {module:model/RouteElementData} obj Optional instance to populate.
+     * @return {module:model/RouteElementData} The populated <code>RouteElementData</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new OrdersProcessMeta();
+            obj = obj || new RouteElementData();
 
-            if (data.hasOwnProperty('')) {
-                obj[''] = ApiClient.convertToType(data[''], 'String');
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'String');
             }
         }
         return obj;
@@ -58,14 +58,14 @@ class OrdersProcessMeta {
 }
 
 /**
- * @member {String} 
+ * @member {String} id
  */
-OrdersProcessMeta.prototype[''] = undefined;
+RouteElementData.prototype['id'] = undefined;
 
 
 
 
 
 
-export default OrdersProcessMeta;
+export default RouteElementData;
 

@@ -22,10 +22,12 @@ class InlineObject1 {
     /**
      * Constructs a new <code>InlineObject1</code>.
      * @alias module:model/InlineObject1
+     * @param orderId {String} 
+     * @param paymentToken {String} 
      */
-    constructor() { 
+    constructor(orderId, paymentToken) { 
         
-        InlineObject1.initialize(this);
+        InlineObject1.initialize(this, orderId, paymentToken);
     }
 
     /**
@@ -33,7 +35,9 @@ class InlineObject1 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, orderId, paymentToken) { 
+        obj['order_id'] = orderId;
+        obj['payment_token'] = paymentToken;
     }
 
     /**
@@ -47,14 +51,29 @@ class InlineObject1 {
         if (data) {
             obj = obj || new InlineObject1();
 
-            if (data.hasOwnProperty('tracking_no')) {
-                obj['tracking_no'] = ApiClient.convertToType(data['tracking_no'], 'String');
+            if (data.hasOwnProperty('payment_type_id')) {
+                obj['payment_type_id'] = ApiClient.convertToType(data['payment_type_id'], 'String');
             }
-            if (data.hasOwnProperty('status')) {
-                obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            if (data.hasOwnProperty('payment_type')) {
+                obj['payment_type'] = ApiClient.convertToType(data['payment_type'], 'String');
             }
-            if (data.hasOwnProperty('send_emails')) {
-                obj['send_emails'] = ApiClient.convertToType(data['send_emails'], 'Boolean');
+            if (data.hasOwnProperty('order_id')) {
+                obj['order_id'] = ApiClient.convertToType(data['order_id'], 'String');
+            }
+            if (data.hasOwnProperty('payment_token')) {
+                obj['payment_token'] = ApiClient.convertToType(data['payment_token'], 'String');
+            }
+            if (data.hasOwnProperty('customer_reference')) {
+                obj['customer_reference'] = ApiClient.convertToType(data['customer_reference'], 'String');
+            }
+            if (data.hasOwnProperty('meta')) {
+                obj['meta'] = ApiClient.convertToType(data['meta'], [Object]);
+            }
+            if (data.hasOwnProperty('notes')) {
+                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
+            }
+            if (data.hasOwnProperty('company_name')) {
+                obj['company_name'] = ApiClient.convertToType(data['company_name'], 'String');
             }
         }
         return obj;
@@ -64,20 +83,44 @@ class InlineObject1 {
 }
 
 /**
- * @member {String} tracking_no
+ * @member {String} payment_type_id
  */
-InlineObject1.prototype['tracking_no'] = undefined;
+InlineObject1.prototype['payment_type_id'] = undefined;
 
 /**
- * Corresponds to status set in config
- * @member {String} status
+ * @member {String} payment_type
  */
-InlineObject1.prototype['status'] = undefined;
+InlineObject1.prototype['payment_type'] = undefined;
 
 /**
- * @member {Boolean} send_emails
+ * @member {String} order_id
  */
-InlineObject1.prototype['send_emails'] = undefined;
+InlineObject1.prototype['order_id'] = undefined;
+
+/**
+ * @member {String} payment_token
+ */
+InlineObject1.prototype['payment_token'] = undefined;
+
+/**
+ * @member {String} customer_reference
+ */
+InlineObject1.prototype['customer_reference'] = undefined;
+
+/**
+ * @member {Array.<Object>} meta
+ */
+InlineObject1.prototype['meta'] = undefined;
+
+/**
+ * @member {String} notes
+ */
+InlineObject1.prototype['notes'] = undefined;
+
+/**
+ * @member {String} company_name
+ */
+InlineObject1.prototype['company_name'] = undefined;
 
 
 

@@ -226,7 +226,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductFamiliesApi();
 let productFamilyId = "productFamilyId_example"; // String | 
 let opts = {
-  'inlineObject28': new GetcandyJs.InlineObject28() // InlineObject28 | 
+  'inlineObject27': new GetcandyJs.InlineObject27() // InlineObject27 | 
 };
 apiInstance.putProductFamiliesProductFamilyId(productFamilyId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -242,7 +242,7 @@ apiInstance.putProductFamiliesProductFamilyId(productFamilyId, opts).then((data)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productFamilyId** | **String**|  | 
- **inlineObject28** | [**InlineObject28**](InlineObject28.md)|  | [optional] 
+ **inlineObject27** | [**InlineObject27**](InlineObject27.md)|  | [optional] 
 
 ### Return type
 

@@ -47,11 +47,17 @@ class InlineObject4 {
         if (data) {
             obj = obj || new InlineObject4();
 
-            if (data.hasOwnProperty('amount')) {
-                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
+            if (data.hasOwnProperty('redirect')) {
+                obj['redirect'] = ApiClient.convertToType(data['redirect'], 'Boolean');
             }
-            if (data.hasOwnProperty('notes')) {
-                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
+            if (data.hasOwnProperty('description')) {
+                obj['description'] = ApiClient.convertToType(data['description'], 'String');
+            }
+            if (data.hasOwnProperty('slug')) {
+                obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
+            }
+            if (data.hasOwnProperty('locale')) {
+                obj['locale'] = ApiClient.convertToType(data['locale'], 'String');
             }
         }
         return obj;
@@ -61,15 +67,24 @@ class InlineObject4 {
 }
 
 /**
- * If left blank, the full amount will be refunded
- * @member {Number} amount
+ * @member {Boolean} redirect
  */
-InlineObject4.prototype['amount'] = undefined;
+InlineObject4.prototype['redirect'] = undefined;
 
 /**
- * @member {String} notes
+ * @member {String} description
  */
-InlineObject4.prototype['notes'] = undefined;
+InlineObject4.prototype['description'] = undefined;
+
+/**
+ * @member {String} slug
+ */
+InlineObject4.prototype['slug'] = undefined;
+
+/**
+ * @member {String} locale
+ */
+InlineObject4.prototype['locale'] = undefined;
 
 
 

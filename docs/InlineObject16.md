@@ -4,8 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**paRes** | **String** |  | 
-**transaction** | **String** |  | 
-**orderId** | **String** |  | 
+**inventory** | **Number** |  | [optional] 
 
 

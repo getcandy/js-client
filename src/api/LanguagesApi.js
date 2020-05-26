@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
-import InlineObject11 from '../model/InlineObject11';
+import InlineObject10 from '../model/InlineObject10';
 import InlineResponse4223 from '../model/InlineResponse4223';
 import Language from '../model/Language';
 import LanguageCollection from '../model/LanguageCollection';
@@ -181,12 +181,12 @@ export default class LanguagesApi {
      * Create Language
      * Create a new language
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject11} opts.inlineObject11 
+     * @param {module:model/InlineObject10} opts.inlineObject10 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/LanguageResponse} and HTTP response
      */
     postLanguagesWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject11'];
+      let postBody = opts['inlineObject10'];
 
       let pathParams = {
       };
@@ -212,7 +212,7 @@ export default class LanguagesApi {
      * Create Language
      * Create a new language
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject11} opts.inlineObject11 
+     * @param {module:model/InlineObject10} opts.inlineObject10 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/LanguageResponse}
      */
     postLanguages(opts) {

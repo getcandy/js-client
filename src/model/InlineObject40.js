@@ -23,14 +23,10 @@ class InlineObject40 {
      * Constructs a new <code>InlineObject40</code>.
      * @alias module:model/InlineObject40
      * @param email {String} 
-     * @param firstname {String} 
-     * @param lastname {String} 
-     * @param password {String} 
-     * @param passwordConfirmation {String} 
      */
-    constructor(email, firstname, lastname, password, passwordConfirmation) { 
+    constructor(email) { 
         
-        InlineObject40.initialize(this, email, firstname, lastname, password, passwordConfirmation);
+        InlineObject40.initialize(this, email);
     }
 
     /**
@@ -38,12 +34,8 @@ class InlineObject40 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, email, firstname, lastname, password, passwordConfirmation) { 
+    static initialize(obj, email) { 
         obj['email'] = email;
-        obj['firstname'] = firstname;
-        obj['lastname'] = lastname;
-        obj['password'] = password;
-        obj['password_confirmation'] = passwordConfirmation;
     }
 
     /**
@@ -59,12 +51,6 @@ class InlineObject40 {
 
             if (data.hasOwnProperty('email')) {
                 obj['email'] = ApiClient.convertToType(data['email'], 'String');
-            }
-            if (data.hasOwnProperty('firstname')) {
-                obj['firstname'] = ApiClient.convertToType(data['firstname'], 'String');
-            }
-            if (data.hasOwnProperty('lastname')) {
-                obj['lastname'] = ApiClient.convertToType(data['lastname'], 'String');
             }
             if (data.hasOwnProperty('password')) {
                 obj['password'] = ApiClient.convertToType(data['password'], 'String');
@@ -83,16 +69,6 @@ class InlineObject40 {
  * @member {String} email
  */
 InlineObject40.prototype['email'] = undefined;
-
-/**
- * @member {String} firstname
- */
-InlineObject40.prototype['firstname'] = undefined;
-
-/**
- * @member {String} lastname
- */
-InlineObject40.prototype['lastname'] = undefined;
 
 /**
  * @member {String} password

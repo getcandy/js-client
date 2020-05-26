@@ -4,7 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Must be unique | 
-**percentage** | **Number** |  | 
+**email** | **String** |  | 
+**firstname** | **String** |  | 
+**lastname** | **String** |  | 
+**password** | **String** |  | 
+**passwordConfirmation** | **String** |  | 
 
 

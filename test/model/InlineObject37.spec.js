@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property percentage (base name: "percentage")', function() {
+      // uncomment below and update the code to test the property percentage
+      //var instane = new GetcandyJs.InlineObject37();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

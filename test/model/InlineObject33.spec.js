@@ -54,8 +54,14 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject33);
     });
 
-    it('should have the property users (base name: "users")', function() {
-      // uncomment below and update the code to test the property users
+    it('should have the property type (base name: "type")', function() {
+      // uncomment below and update the code to test the property type
+      //var instane = new GetcandyJs.InlineObject33();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
       //var instane = new GetcandyJs.InlineObject33();
       //expect(instance).to.be();
     });

@@ -191,7 +191,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.CollectionsApi();
 let opts = {
-  'inlineObject7': new GetcandyJs.InlineObject7() // InlineObject7 | 
+  'inlineObject6': new GetcandyJs.InlineObject6() // InlineObject6 | 
 };
 apiInstance.postCollections(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -206,7 +206,7 @@ apiInstance.postCollections(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject7** | [**InlineObject7**](InlineObject7.md)|  | [optional] 
+ **inlineObject6** | [**InlineObject6**](InlineObject6.md)|  | [optional] 
 
 ### Return type
 
@@ -242,7 +242,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
-  'inlineObject6': new GetcandyJs.InlineObject6() // InlineObject6 | 
+  'inlineObject5': new GetcandyJs.InlineObject5() // InlineObject5 | 
 };
 apiInstance.postCollectionsCollectionIdProducts(collectionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -258,7 +258,7 @@ apiInstance.postCollectionsCollectionIdProducts(collectionId, opts).then((data) 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **collectionId** | **String**|  | 
- **inlineObject6** | [**InlineObject6**](InlineObject6.md)|  | [optional] 
+ **inlineObject5** | [**InlineObject5**](InlineObject5.md)|  | [optional] 
 
 ### Return type
 
@@ -294,7 +294,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
-  'inlineObject5': new GetcandyJs.InlineObject5() // InlineObject5 | 
+  'inlineObject4': new GetcandyJs.InlineObject4() // InlineObject4 | 
 };
 apiInstance.postCollectionsCollectionRoutes(collectionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -310,7 +310,7 @@ apiInstance.postCollectionsCollectionRoutes(collectionId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **collectionId** | **String**|  | 
- **inlineObject5** | [**InlineObject5**](InlineObject5.md)|  | [optional] 
+ **inlineObject4** | [**InlineObject4**](InlineObject4.md)|  | [optional] 
 
 ### Return type
 
@@ -346,7 +346,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.CollectionsApi();
 let collectionId = "collectionId_example"; // String | 
 let opts = {
-  'inlineObject8': new GetcandyJs.InlineObject8() // InlineObject8 | 
+  'inlineObject7': new GetcandyJs.InlineObject7() // InlineObject7 | 
 };
 apiInstance.putCollectionsCollectionId(collectionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -362,7 +362,7 @@ apiInstance.putCollectionsCollectionId(collectionId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **collectionId** | **String**|  | 
- **inlineObject8** | [**InlineObject8**](InlineObject8.md)|  | [optional] 
+ **inlineObject7** | [**InlineObject7**](InlineObject7.md)|  | [optional] 
 
 ### Return type
 

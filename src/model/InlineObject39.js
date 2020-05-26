@@ -22,12 +22,15 @@ class InlineObject39 {
     /**
      * Constructs a new <code>InlineObject39</code>.
      * @alias module:model/InlineObject39
-     * @param name {String} Must be unique
-     * @param percentage {Number} 
+     * @param email {String} 
+     * @param firstname {String} 
+     * @param lastname {String} 
+     * @param password {String} 
+     * @param passwordConfirmation {String} 
      */
-    constructor(name, percentage) { 
+    constructor(email, firstname, lastname, password, passwordConfirmation) { 
         
-        InlineObject39.initialize(this, name, percentage);
+        InlineObject39.initialize(this, email, firstname, lastname, password, passwordConfirmation);
     }
 
     /**
@@ -35,9 +38,12 @@ class InlineObject39 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name, percentage) { 
-        obj['name'] = name;
-        obj['percentage'] = percentage;
+    static initialize(obj, email, firstname, lastname, password, passwordConfirmation) { 
+        obj['email'] = email;
+        obj['firstname'] = firstname;
+        obj['lastname'] = lastname;
+        obj['password'] = password;
+        obj['password_confirmation'] = passwordConfirmation;
     }
 
     /**
@@ -51,11 +57,20 @@ class InlineObject39 {
         if (data) {
             obj = obj || new InlineObject39();
 
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            if (data.hasOwnProperty('email')) {
+                obj['email'] = ApiClient.convertToType(data['email'], 'String');
             }
-            if (data.hasOwnProperty('percentage')) {
-                obj['percentage'] = ApiClient.convertToType(data['percentage'], 'Number');
+            if (data.hasOwnProperty('firstname')) {
+                obj['firstname'] = ApiClient.convertToType(data['firstname'], 'String');
+            }
+            if (data.hasOwnProperty('lastname')) {
+                obj['lastname'] = ApiClient.convertToType(data['lastname'], 'String');
+            }
+            if (data.hasOwnProperty('password')) {
+                obj['password'] = ApiClient.convertToType(data['password'], 'String');
+            }
+            if (data.hasOwnProperty('password_confirmation')) {
+                obj['password_confirmation'] = ApiClient.convertToType(data['password_confirmation'], 'String');
             }
         }
         return obj;
@@ -65,15 +80,29 @@ class InlineObject39 {
 }
 
 /**
- * Must be unique
- * @member {String} name
+ * @member {String} email
  */
-InlineObject39.prototype['name'] = undefined;
+InlineObject39.prototype['email'] = undefined;
 
 /**
- * @member {Number} percentage
+ * @member {String} firstname
  */
-InlineObject39.prototype['percentage'] = undefined;
+InlineObject39.prototype['firstname'] = undefined;
+
+/**
+ * @member {String} lastname
+ */
+InlineObject39.prototype['lastname'] = undefined;
+
+/**
+ * @member {String} password
+ */
+InlineObject39.prototype['password'] = undefined;
+
+/**
+ * @member {String} password_confirmation
+ */
+InlineObject39.prototype['password_confirmation'] = undefined;
 
 
 

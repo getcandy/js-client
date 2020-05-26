@@ -128,7 +128,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ProductVariantsApi();
 let productVariantId = "productVariantId_example"; // String | 
 let opts = {
-  'inlineObject17': new GetcandyJs.InlineObject17() // InlineObject17 | 
+  'inlineObject16': new GetcandyJs.InlineObject16() // InlineObject16 | 
 };
 apiInstance.putProductsVariantsProductVariantIdInventory(productVariantId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -144,7 +144,7 @@ apiInstance.putProductsVariantsProductVariantIdInventory(productVariantId, opts)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productVariantId** | **String**|  | 
- **inlineObject17** | [**InlineObject17**](InlineObject17.md)|  | [optional] 
+ **inlineObject16** | [**InlineObject16**](InlineObject16.md)|  | [optional] 
 
 ### Return type
 

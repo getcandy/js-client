@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**relations** | [**ProductsProductIdAssociationsRelations**](ProductsProductIdAssociationsRelations.md) |  | [optional] 
+**groups** | [**[ProductsProductIdCustomerGroupsGroups]**](ProductsProductIdCustomerGroupsGroups.md) |  | 
 
 

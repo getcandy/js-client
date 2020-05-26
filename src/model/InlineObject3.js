@@ -12,8 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import AttributesLookups from './AttributesLookups';
-import AttributesName from './AttributesName';
 
 /**
  * The InlineObject3 model module.
@@ -24,13 +22,10 @@ class InlineObject3 {
     /**
      * Constructs a new <code>InlineObject3</code>.
      * @alias module:model/InlineObject3
-     * @param groupId {String} 
-     * @param name {Array.<module:model/AttributesName>} 
-     * @param handle {String} 
      */
-    constructor(groupId, name, handle) { 
+    constructor() { 
         
-        InlineObject3.initialize(this, groupId, name, handle);
+        InlineObject3.initialize(this);
     }
 
     /**
@@ -38,10 +33,7 @@ class InlineObject3 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, groupId, name, handle) { 
-        obj['group_id'] = groupId;
-        obj['name'] = name;
-        obj['handle'] = handle;
+    static initialize(obj) { 
     }
 
     /**
@@ -55,47 +47,11 @@ class InlineObject3 {
         if (data) {
             obj = obj || new InlineObject3();
 
-            if (data.hasOwnProperty('group_id')) {
-                obj['group_id'] = ApiClient.convertToType(data['group_id'], 'String');
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], [AttributesName]);
-            }
-            if (data.hasOwnProperty('handle')) {
-                obj['handle'] = ApiClient.convertToType(data['handle'], 'String');
-            }
-            if (data.hasOwnProperty('position')) {
-                obj['position'] = ApiClient.convertToType(data['position'], 'Number');
-            }
-            if (data.hasOwnProperty('filterable')) {
-                obj['filterable'] = ApiClient.convertToType(data['filterable'], 'Boolean');
-            }
-            if (data.hasOwnProperty('scopeable')) {
-                obj['scopeable'] = ApiClient.convertToType(data['scopeable'], 'Number');
-            }
-            if (data.hasOwnProperty('translatable')) {
-                obj['translatable'] = ApiClient.convertToType(data['translatable'], 'Boolean');
-            }
-            if (data.hasOwnProperty('variant')) {
-                obj['variant'] = ApiClient.convertToType(data['variant'], 'Boolean');
-            }
-            if (data.hasOwnProperty('searchable')) {
-                obj['searchable'] = ApiClient.convertToType(data['searchable'], 'Boolean');
-            }
-            if (data.hasOwnProperty('localised')) {
-                obj['localised'] = ApiClient.convertToType(data['localised'], 'Boolean');
-            }
-            if (data.hasOwnProperty('type')) {
-                obj['type'] = ApiClient.convertToType(data['type'], 'String');
-            }
-            if (data.hasOwnProperty('required')) {
-                obj['required'] = ApiClient.convertToType(data['required'], 'Boolean');
-            }
-            if (data.hasOwnProperty('lookups')) {
-                obj['lookups'] = ApiClient.convertToType(data['lookups'], [AttributesLookups]);
-            }
-            if (data.hasOwnProperty('system')) {
-                obj['system'] = ApiClient.convertToType(data['system'], 'Boolean');
+            if (data.hasOwnProperty('notes')) {
+                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
             }
         }
         return obj;
@@ -105,82 +61,15 @@ class InlineObject3 {
 }
 
 /**
- * @member {String} group_id
+ * If left blank, the full amount will be refunded
+ * @member {Number} amount
  */
-InlineObject3.prototype['group_id'] = undefined;
+InlineObject3.prototype['amount'] = undefined;
 
 /**
- * @member {Array.<module:model/AttributesName>} name
+ * @member {String} notes
  */
-InlineObject3.prototype['name'] = undefined;
-
-/**
- * @member {String} handle
- */
-InlineObject3.prototype['handle'] = undefined;
-
-/**
- * @member {Number} position
- */
-InlineObject3.prototype['position'] = undefined;
-
-/**
- * @member {Boolean} filterable
- * @default false
- */
-InlineObject3.prototype['filterable'] = false;
-
-/**
- * @member {Number} scopeable
- */
-InlineObject3.prototype['scopeable'] = undefined;
-
-/**
- * @member {Boolean} translatable
- * @default false
- */
-InlineObject3.prototype['translatable'] = false;
-
-/**
- * @member {Boolean} variant
- * @default false
- */
-InlineObject3.prototype['variant'] = false;
-
-/**
- * @member {Boolean} searchable
- * @default false
- */
-InlineObject3.prototype['searchable'] = false;
-
-/**
- * @member {Boolean} localised
- * @default false
- */
-InlineObject3.prototype['localised'] = false;
-
-/**
- * @member {String} type
- * @default 'text'
- */
-InlineObject3.prototype['type'] = 'text';
-
-/**
- * @member {Boolean} required
- * @default false
- */
-InlineObject3.prototype['required'] = false;
-
-/**
- * @member {Array.<module:model/AttributesLookups>} lookups
- */
-InlineObject3.prototype['lookups'] = undefined;
-
-/**
- * @member {Boolean} system
- * @default false
- */
-InlineObject3.prototype['system'] = false;
+InlineObject3.prototype['notes'] = undefined;
 
 
 

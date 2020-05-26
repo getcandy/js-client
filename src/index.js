@@ -91,6 +91,7 @@ import CreateBasketLinesBody from './model/CreateBasketLinesBody';
 import CreateBasketLinesBodyVariants from './model/CreateBasketLinesBodyVariants';
 import CreateCategoryBody from './model/CreateCategoryBody';
 import CreateChannelBody from './model/CreateChannelBody';
+import CreateOrderBody from './model/CreateOrderBody';
 import CustomerGroup from './model/CustomerGroup';
 import CustomerGroupCollection from './model/CustomerGroupCollection';
 import CustomerGroupCollectionAllOf from './model/CustomerGroupCollectionAllOf';
@@ -153,7 +154,6 @@ import InlineObject38 from './model/InlineObject38';
 import InlineObject39 from './model/InlineObject39';
 import InlineObject4 from './model/InlineObject4';
 import InlineObject40 from './model/InlineObject40';
-import InlineObject41 from './model/InlineObject41';
 import InlineObject5 from './model/InlineObject5';
 import InlineObject6 from './model/InlineObject6';
 import InlineObject7 from './model/InlineObject7';
@@ -215,7 +215,6 @@ import OrderLineResponse from './model/OrderLineResponse';
 import OrderResponse from './model/OrderResponse';
 import OrderType from './model/OrderType';
 import OrderTypeCollection from './model/OrderTypeCollection';
-import OrdersProcessMeta from './model/OrdersProcessMeta';
 import PaginatedResponse from './model/PaginatedResponse';
 import Pagination from './model/Pagination';
 import PaymentProvider from './model/PaymentProvider';
@@ -271,6 +270,7 @@ import Route from './model/Route';
 import RouteCollection from './model/RouteCollection';
 import RouteCollectionAllOf from './model/RouteCollectionAllOf';
 import RouteElement from './model/RouteElement';
+import RouteElementData from './model/RouteElementData';
 import RouteResponse from './model/RouteResponse';
 import SaveBasketBody from './model/SaveBasketBody';
 import SavedBasket from './model/SavedBasket';
@@ -862,6 +862,12 @@ export {
     CreateChannelBody,
 
     /**
+     * The CreateOrderBody model constructor.
+     * @property {module:model/CreateOrderBody}
+     */
+    CreateOrderBody,
+
+    /**
      * The CustomerGroup model constructor.
      * @property {module:model/CustomerGroup}
      */
@@ -1234,12 +1240,6 @@ export {
     InlineObject40,
 
     /**
-     * The InlineObject41 model constructor.
-     * @property {module:model/InlineObject41}
-     */
-    InlineObject41,
-
-    /**
      * The InlineObject5 model constructor.
      * @property {module:model/InlineObject5}
      */
@@ -1606,12 +1606,6 @@ export {
     OrderTypeCollection,
 
     /**
-     * The OrdersProcessMeta model constructor.
-     * @property {module:model/OrdersProcessMeta}
-     */
-    OrdersProcessMeta,
-
-    /**
      * The PaginatedResponse model constructor.
      * @property {module:model/PaginatedResponse}
      */
@@ -1940,6 +1934,12 @@ export {
      * @property {module:model/RouteElement}
      */
     RouteElement,
+
+    /**
+     * The RouteElementData model constructor.
+     * @property {module:model/RouteElementData}
+     */
+    RouteElementData,
 
     /**
      * The RouteResponse model constructor.

@@ -47,8 +47,11 @@ class InlineObject13 {
         if (data) {
             obj = obj || new InlineObject13();
 
-            if (data.hasOwnProperty('price_id')) {
-                obj['price_id'] = ApiClient.convertToType(data['price_id'], 'String');
+            if (data.hasOwnProperty('email')) {
+                obj['email'] = ApiClient.convertToType(data['email'], 'String');
+            }
+            if (data.hasOwnProperty('phone')) {
+                obj['phone'] = ApiClient.convertToType(data['phone'], 'String');
             }
         }
         return obj;
@@ -58,10 +61,14 @@ class InlineObject13 {
 }
 
 /**
- * The ShippingPrice id to associate
- * @member {String} price_id
+ * @member {String} email
  */
-InlineObject13.prototype['price_id'] = undefined;
+InlineObject13.prototype['email'] = undefined;
+
+/**
+ * @member {String} phone
+ */
+InlineObject13.prototype['phone'] = undefined;
 
 
 

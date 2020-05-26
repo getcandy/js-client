@@ -22,13 +22,11 @@ class InlineObject31 {
     /**
      * Constructs a new <code>InlineObject31</code>.
      * @alias module:model/InlineObject31
-     * @param rate {Number} 
-     * @param zoneId {String} 
-     * @param currencyId {String} 
+     * @param zones {Array.<String>} 
      */
-    constructor(rate, zoneId, currencyId) { 
+    constructor(zones) { 
         
-        InlineObject31.initialize(this, rate, zoneId, currencyId);
+        InlineObject31.initialize(this, zones);
     }
 
     /**
@@ -36,10 +34,8 @@ class InlineObject31 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, rate, zoneId, currencyId) { 
-        obj['rate'] = rate;
-        obj['zone_id'] = zoneId;
-        obj['currency_id'] = currencyId;
+    static initialize(obj, zones) { 
+        obj['zones'] = zones;
     }
 
     /**
@@ -53,14 +49,8 @@ class InlineObject31 {
         if (data) {
             obj = obj || new InlineObject31();
 
-            if (data.hasOwnProperty('rate')) {
-                obj['rate'] = ApiClient.convertToType(data['rate'], 'Number');
-            }
-            if (data.hasOwnProperty('zone_id')) {
-                obj['zone_id'] = ApiClient.convertToType(data['zone_id'], 'String');
-            }
-            if (data.hasOwnProperty('currency_id')) {
-                obj['currency_id'] = ApiClient.convertToType(data['currency_id'], 'String');
+            if (data.hasOwnProperty('zones')) {
+                obj['zones'] = ApiClient.convertToType(data['zones'], ['String']);
             }
         }
         return obj;
@@ -70,19 +60,9 @@ class InlineObject31 {
 }
 
 /**
- * @member {Number} rate
+ * @member {Array.<String>} zones
  */
-InlineObject31.prototype['rate'] = undefined;
-
-/**
- * @member {String} zone_id
- */
-InlineObject31.prototype['zone_id'] = undefined;
-
-/**
- * @member {String} currency_id
- */
-InlineObject31.prototype['currency_id'] = undefined;
+InlineObject31.prototype['zones'] = undefined;
 
 
 

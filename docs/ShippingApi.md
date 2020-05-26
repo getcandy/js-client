@@ -288,7 +288,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.ShippingApi();
 let opts = {
-  'inlineObject34': new GetcandyJs.InlineObject34() // InlineObject34 | 
+  'inlineObject33': new GetcandyJs.InlineObject33() // InlineObject33 | 
 };
 apiInstance.postShipping(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -303,7 +303,7 @@ apiInstance.postShipping(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject34** | [**InlineObject34**](InlineObject34.md)|  | [optional] 
+ **inlineObject33** | [**InlineObject33**](InlineObject33.md)|  | [optional] 
 
 ### Return type
 
@@ -339,7 +339,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
-  'inlineObject30': new GetcandyJs.InlineObject30() // InlineObject30 | 
+  'inlineObject29': new GetcandyJs.InlineObject29() // InlineObject29 | 
 };
 apiInstance.postShippingIdPrices(shippingMethodId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -355,7 +355,7 @@ apiInstance.postShippingIdPrices(shippingMethodId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingMethodId** | **String**|  | 
- **inlineObject30** | [**InlineObject30**](InlineObject30.md)|  | [optional] 
+ **inlineObject29** | [**InlineObject29**](InlineObject29.md)|  | [optional] 
 
 ### Return type
 
@@ -390,7 +390,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.ShippingApi();
 let opts = {
-  'inlineObject29': new GetcandyJs.InlineObject29() // InlineObject29 | 
+  'inlineObject28': new GetcandyJs.InlineObject28() // InlineObject28 | 
 };
 apiInstance.postShippingZones(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -405,7 +405,7 @@ apiInstance.postShippingZones(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject29** | [**InlineObject29**](InlineObject29.md)|  | [optional] 
+ **inlineObject28** | [**InlineObject28**](InlineObject28.md)|  | [optional] 
 
 ### Return type
 
@@ -441,7 +441,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ShippingApi();
 let id = "id_example"; // String | 
 let opts = {
-  'inlineObject33': new GetcandyJs.InlineObject33() // InlineObject33 | 
+  'inlineObject32': new GetcandyJs.InlineObject32() // InlineObject32 | 
 };
 apiInstance.putShippingIdUsers(id, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -457,7 +457,7 @@ apiInstance.putShippingIdUsers(id, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
- **inlineObject33** | [**InlineObject33**](InlineObject33.md)|  | [optional] 
+ **inlineObject32** | [**InlineObject32**](InlineObject32.md)|  | [optional] 
 
 ### Return type
 
@@ -493,7 +493,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ShippingApi();
 let shippingPriceId = "shippingPriceId_example"; // String | 
 let opts = {
-  'inlineObject31': new GetcandyJs.InlineObject31() // InlineObject31 | 
+  'inlineObject30': new GetcandyJs.InlineObject30() // InlineObject30 | 
 };
 apiInstance.putShippingPricesShippingPriceId(shippingPriceId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -509,7 +509,7 @@ apiInstance.putShippingPricesShippingPriceId(shippingPriceId, opts).then((data) 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingPriceId** | **String**|  | 
- **inlineObject31** | [**InlineObject31**](InlineObject31.md)|  | [optional] 
+ **inlineObject30** | [**InlineObject30**](InlineObject30.md)|  | [optional] 
 
 ### Return type
 
@@ -545,7 +545,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
-  'inlineObject35': new GetcandyJs.InlineObject35() // InlineObject35 | 
+  'inlineObject34': new GetcandyJs.InlineObject34() // InlineObject34 | 
 };
 apiInstance.putShippingShippingMethodId(shippingMethodId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -561,7 +561,7 @@ apiInstance.putShippingShippingMethodId(shippingMethodId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingMethodId** | **String**|  | 
- **inlineObject35** | [**InlineObject35**](InlineObject35.md)|  | [optional] 
+ **inlineObject34** | [**InlineObject34**](InlineObject34.md)|  | [optional] 
 
 ### Return type
 
@@ -597,7 +597,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.ShippingApi();
 let shippingMethodId = "shippingMethodId_example"; // String | 
 let opts = {
-  'inlineObject32': new GetcandyJs.InlineObject32() // InlineObject32 | 
+  'inlineObject31': new GetcandyJs.InlineObject31() // InlineObject31 | 
 };
 apiInstance.putShippingShippingMethodIdZones(shippingMethodId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -613,7 +613,7 @@ apiInstance.putShippingShippingMethodIdZones(shippingMethodId, opts).then((data)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shippingMethodId** | **String**|  | 
- **inlineObject32** | [**InlineObject32**](InlineObject32.md)|  | [optional] 
+ **inlineObject31** | [**InlineObject31**](InlineObject31.md)|  | [optional] 
 
 ### Return type
 

@@ -54,50 +54,38 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject10);
     });
 
-    it('should have the property startAt (base name: "start_at")', function() {
-      // uncomment below and update the code to test the property startAt
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
       //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
-    it('should have the property endAt (base name: "end_at")', function() {
-      // uncomment below and update the code to test the property endAt
+    it('should have the property lang (base name: "lang")', function() {
+      // uncomment below and update the code to test the property lang
       //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
-    it('should have the property priority (base name: "priority")', function() {
-      // uncomment below and update the code to test the property priority
+    it('should have the property iso (base name: "iso")', function() {
+      // uncomment below and update the code to test the property iso
       //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
-    it('should have the property stopRules (base name: "stop_rules")', function() {
-      // uncomment below and update the code to test the property stopRules
+    it('should have the property enabled (base name: "enabled")', function() {
+      // uncomment below and update the code to test the property enabled
       //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
+    it('should have the property _default (base name: "default")', function() {
+      // uncomment below and update the code to test the property _default
       //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });
 
-    it('should have the property channels (base name: "channels")', function() {
-      // uncomment below and update the code to test the property channels
-      //var instane = new GetcandyJs.InlineObject10();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property rewards (base name: "rewards")', function() {
-      // uncomment below and update the code to test the property rewards
-      //var instane = new GetcandyJs.InlineObject10();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property sets (base name: "sets")', function() {
-      // uncomment below and update the code to test the property sets
+    it('should have the property current (base name: "current")', function() {
+      // uncomment below and update the code to test the property current
       //var instane = new GetcandyJs.InlineObject10();
       //expect(instance).to.be();
     });

@@ -54,20 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject16);
     });
 
-    it('should have the property paRes (base name: "paRes")', function() {
-      // uncomment below and update the code to test the property paRes
-      //var instane = new GetcandyJs.InlineObject16();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property transaction (base name: "transaction")', function() {
-      // uncomment below and update the code to test the property transaction
-      //var instane = new GetcandyJs.InlineObject16();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property orderId (base name: "order_id")', function() {
-      // uncomment below and update the code to test the property orderId
+    it('should have the property inventory (base name: "inventory")', function() {
+      // uncomment below and update the code to test the property inventory
       //var instane = new GetcandyJs.InlineObject16();
       //expect(instance).to.be();
     });

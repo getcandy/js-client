@@ -54,8 +54,20 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject);
     });
 
-    it('should have the property basketId (base name: "basket_id")', function() {
-      // uncomment below and update the code to test the property basketId
+    it('should have the property trackingNo (base name: "tracking_no")', function() {
+      // uncomment below and update the code to test the property trackingNo
+      //var instane = new GetcandyJs.InlineObject();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property status (base name: "status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instane = new GetcandyJs.InlineObject();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sendEmails (base name: "send_emails")', function() {
+      // uncomment below and update the code to test the property sendEmails
       //var instane = new GetcandyJs.InlineObject();
       //expect(instance).to.be();
     });

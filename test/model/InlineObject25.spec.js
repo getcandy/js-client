@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject25);
     });
 
-    it('should have the property relations (base name: "relations")', function() {
-      // uncomment below and update the code to test the property relations
+    it('should have the property groups (base name: "groups")', function() {
+      // uncomment below and update the code to test the property groups
       //var instane = new GetcandyJs.InlineObject25();
       //expect(instance).to.be();
     });

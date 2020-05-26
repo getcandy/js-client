@@ -4,11 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
-**lang** | **String** |  | 
-**iso** | **String** | Unique | 
-**enabled** | **Boolean** |  | [optional] 
-**_default** | **Boolean** |  | [optional] 
-**current** | **Boolean** |  | [optional] 
+**orders** | **[String]** |  | 
+**field** | **String** |  | 
+**value** | **String** |  | [optional] 
+**sendEmails** | **Boolean** | Whether to send any mailers when changing status | [optional] 
 
 

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new GetcandyJs.InlineObject41();
+    instance = new GetcandyJs.RouteElementData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,16 @@
       object[property] = value;
   }
 
-  describe('InlineObject41', function() {
-    it('should create an instance of InlineObject41', function() {
-      // uncomment below and update the code to test InlineObject41
-      //var instane = new GetcandyJs.InlineObject41();
-      //expect(instance).to.be.a(GetcandyJs.InlineObject41);
+  describe('RouteElementData', function() {
+    it('should create an instance of RouteElementData', function() {
+      // uncomment below and update the code to test RouteElementData
+      //var instane = new GetcandyJs.RouteElementData();
+      //expect(instance).to.be.a(GetcandyJs.RouteElementData);
     });
 
-    it('should have the property email (base name: "email")', function() {
-      // uncomment below and update the code to test the property email
-      //var instane = new GetcandyJs.InlineObject41();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property password (base name: "password")', function() {
-      // uncomment below and update the code to test the property password
-      //var instane = new GetcandyJs.InlineObject41();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property passwordConfirmation (base name: "password_confirmation")', function() {
-      // uncomment below and update the code to test the property passwordConfirmation
-      //var instane = new GetcandyJs.InlineObject41();
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new GetcandyJs.RouteElementData();
       //expect(instance).to.be();
     });
 

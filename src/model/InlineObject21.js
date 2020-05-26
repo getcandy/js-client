@@ -22,11 +22,11 @@ class InlineObject21 {
     /**
      * Constructs a new <code>InlineObject21</code>.
      * @alias module:model/InlineObject21
-     * @param attributes {Array.<String>} An array of attribute IDs
+     * @param collections {Array.<String>} An array of collection IDs to associate
      */
-    constructor(attributes) { 
+    constructor(collections) { 
         
-        InlineObject21.initialize(this, attributes);
+        InlineObject21.initialize(this, collections);
     }
 
     /**
@@ -34,8 +34,8 @@ class InlineObject21 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, attributes) { 
-        obj['attributes'] = attributes;
+    static initialize(obj, collections) { 
+        obj['collections'] = collections;
     }
 
     /**
@@ -49,8 +49,8 @@ class InlineObject21 {
         if (data) {
             obj = obj || new InlineObject21();
 
-            if (data.hasOwnProperty('attributes')) {
-                obj['attributes'] = ApiClient.convertToType(data['attributes'], ['String']);
+            if (data.hasOwnProperty('collections')) {
+                obj['collections'] = ApiClient.convertToType(data['collections'], ['String']);
             }
         }
         return obj;
@@ -60,10 +60,10 @@ class InlineObject21 {
 }
 
 /**
- * An array of attribute IDs
- * @member {Array.<String>} attributes
+ * An array of collection IDs to associate
+ * @member {Array.<String>} collections
  */
-InlineObject21.prototype['attributes'] = undefined;
+InlineObject21.prototype['collections'] = undefined;
 
 
 

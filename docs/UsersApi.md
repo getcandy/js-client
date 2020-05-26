@@ -263,7 +263,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.UsersApi();
 let opts = {
-  'inlineObject40': new GetcandyJs.InlineObject40() // InlineObject40 | 
+  'inlineObject39': new GetcandyJs.InlineObject39() // InlineObject39 | 
 };
 apiInstance.postUsers(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -278,7 +278,7 @@ apiInstance.postUsers(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject40** | [**InlineObject40**](InlineObject40.md)|  | [optional] 
+ **inlineObject39** | [**InlineObject39**](InlineObject39.md)|  | [optional] 
 
 ### Return type
 
@@ -310,7 +310,7 @@ import GetcandyJs from '@getcandy/js-client';
 let apiInstance = new GetcandyJs.UsersApi();
 let userId = "userId_example"; // String | 
 let opts = {
-  'inlineObject41': new GetcandyJs.InlineObject41() // InlineObject41 | 
+  'inlineObject40': new GetcandyJs.InlineObject40() // InlineObject40 | 
 };
 apiInstance.putUsersUserId(userId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -326,7 +326,7 @@ apiInstance.putUsersUserId(userId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **String**|  | 
- **inlineObject41** | [**InlineObject41**](InlineObject41.md)|  | [optional] 
+ **inlineObject40** | [**InlineObject40**](InlineObject40.md)|  | [optional] 
 
 ### Return type
 

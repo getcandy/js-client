@@ -12,7 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
-import CollectionsName from './CollectionsName';
+import DiscountsChannels from './DiscountsChannels';
+import DiscountsName from './DiscountsName';
 
 /**
  * The InlineObject8 model module.
@@ -23,10 +24,11 @@ class InlineObject8 {
     /**
      * Constructs a new <code>InlineObject8</code>.
      * @alias module:model/InlineObject8
+     * @param name {module:model/DiscountsName} 
      */
-    constructor() { 
+    constructor(name) { 
         
-        InlineObject8.initialize(this);
+        InlineObject8.initialize(this, name);
     }
 
     /**
@@ -34,7 +36,8 @@ class InlineObject8 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, name) { 
+        obj['name'] = name;
     }
 
     /**
@@ -48,8 +51,23 @@ class InlineObject8 {
         if (data) {
             obj = obj || new InlineObject8();
 
+            if (data.hasOwnProperty('start_at')) {
+                obj['start_at'] = ApiClient.convertToType(data['start_at'], 'Date');
+            }
+            if (data.hasOwnProperty('end_at')) {
+                obj['end_at'] = ApiClient.convertToType(data['end_at'], 'Date');
+            }
             if (data.hasOwnProperty('name')) {
-                obj['name'] = CollectionsName.constructFromObject(data['name']);
+                obj['name'] = DiscountsName.constructFromObject(data['name']);
+            }
+            if (data.hasOwnProperty('uses')) {
+                obj['uses'] = ApiClient.convertToType(data['uses'], 'Number');
+            }
+            if (data.hasOwnProperty('status')) {
+                obj['status'] = ApiClient.convertToType(data['status'], 'Boolean');
+            }
+            if (data.hasOwnProperty('channels')) {
+                obj['channels'] = ApiClient.convertToType(data['channels'], [DiscountsChannels]);
             }
         }
         return obj;
@@ -59,9 +77,34 @@ class InlineObject8 {
 }
 
 /**
- * @member {module:model/CollectionsName} name
+ * @member {Date} start_at
+ */
+InlineObject8.prototype['start_at'] = undefined;
+
+/**
+ * @member {Date} end_at
+ */
+InlineObject8.prototype['end_at'] = undefined;
+
+/**
+ * @member {module:model/DiscountsName} name
  */
 InlineObject8.prototype['name'] = undefined;
+
+/**
+ * @member {Number} uses
+ */
+InlineObject8.prototype['uses'] = undefined;
+
+/**
+ * @member {Boolean} status
+ */
+InlineObject8.prototype['status'] = undefined;
+
+/**
+ * @member {Array.<module:model/DiscountsChannels>} channels
+ */
+InlineObject8.prototype['channels'] = undefined;
 
 
 

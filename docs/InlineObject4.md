@@ -4,7 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **Number** | If left blank, the full amount will be refunded | [optional] 
-**notes** | **String** |  | [optional] 
+**redirect** | **Boolean** |  | [optional] 
+**description** | **String** |  | [optional] 
+**slug** | **String** |  | [optional] 
+**locale** | **String** |  | [optional] 
 
 

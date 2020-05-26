@@ -4,7 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**routes** | [**[ProductsProductIdDuplicateRoutes]**](ProductsProductIdDuplicateRoutes.md) |  | 
-**skus** | [**[ProductsProductIdDuplicateRoutes]**](ProductsProductIdDuplicateRoutes.md) |  | 
+**slug** | **String** |  | [optional] 
 
 

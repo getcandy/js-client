@@ -4,7 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | [**ProductsName**](ProductsName.md) |  | 
-**type** | **String** |  | 
+**name** | **String** |  | 
 
 

@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject24);
     });
 
-    it('should have the property channels (base name: "channels")', function() {
-      // uncomment below and update the code to test the property channels
+    it('should have the property relations (base name: "relations")', function() {
+      // uncomment below and update the code to test the property relations
       //var instane = new GetcandyJs.InlineObject24();
       //expect(instance).to.be();
     });

@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import ProductsProductIdAssociationsRelations from './ProductsProductIdAssociationsRelations';
 
 /**
  * The InlineObject24 model module.
@@ -22,11 +23,10 @@ class InlineObject24 {
     /**
      * Constructs a new <code>InlineObject24</code>.
      * @alias module:model/InlineObject24
-     * @param channels {Array.<String>} Array of channel ID's
      */
-    constructor(channels) { 
+    constructor() { 
         
-        InlineObject24.initialize(this, channels);
+        InlineObject24.initialize(this);
     }
 
     /**
@@ -34,8 +34,7 @@ class InlineObject24 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, channels) { 
-        obj['channels'] = channels;
+    static initialize(obj) { 
     }
 
     /**
@@ -49,8 +48,8 @@ class InlineObject24 {
         if (data) {
             obj = obj || new InlineObject24();
 
-            if (data.hasOwnProperty('channels')) {
-                obj['channels'] = ApiClient.convertToType(data['channels'], ['String']);
+            if (data.hasOwnProperty('relations')) {
+                obj['relations'] = ProductsProductIdAssociationsRelations.constructFromObject(data['relations']);
             }
         }
         return obj;
@@ -60,10 +59,9 @@ class InlineObject24 {
 }
 
 /**
- * Array of channel ID's
- * @member {Array.<String>} channels
+ * @member {module:model/ProductsProductIdAssociationsRelations} relations
  */
-InlineObject24.prototype['channels'] = undefined;
+InlineObject24.prototype['relations'] = undefined;
 
 
 

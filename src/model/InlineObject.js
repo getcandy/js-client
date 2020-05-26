@@ -22,11 +22,10 @@ class InlineObject {
     /**
      * Constructs a new <code>InlineObject</code>.
      * @alias module:model/InlineObject
-     * @param basketId {String} 
      */
-    constructor(basketId) { 
+    constructor() { 
         
-        InlineObject.initialize(this, basketId);
+        InlineObject.initialize(this);
     }
 
     /**
@@ -34,8 +33,7 @@ class InlineObject {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, basketId) { 
-        obj['basket_id'] = basketId;
+    static initialize(obj) { 
     }
 
     /**
@@ -49,8 +47,14 @@ class InlineObject {
         if (data) {
             obj = obj || new InlineObject();
 
-            if (data.hasOwnProperty('basket_id')) {
-                obj['basket_id'] = ApiClient.convertToType(data['basket_id'], 'String');
+            if (data.hasOwnProperty('tracking_no')) {
+                obj['tracking_no'] = ApiClient.convertToType(data['tracking_no'], 'String');
+            }
+            if (data.hasOwnProperty('status')) {
+                obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            }
+            if (data.hasOwnProperty('send_emails')) {
+                obj['send_emails'] = ApiClient.convertToType(data['send_emails'], 'Boolean');
             }
         }
         return obj;
@@ -60,9 +64,20 @@ class InlineObject {
 }
 
 /**
- * @member {String} basket_id
+ * @member {String} tracking_no
  */
-InlineObject.prototype['basket_id'] = undefined;
+InlineObject.prototype['tracking_no'] = undefined;
+
+/**
+ * Corresponds to status set in config
+ * @member {String} status
+ */
+InlineObject.prototype['status'] = undefined;
+
+/**
+ * @member {Boolean} send_emails
+ */
+InlineObject.prototype['send_emails'] = undefined;
 
 
 

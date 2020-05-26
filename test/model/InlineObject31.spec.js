@@ -54,20 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject31);
     });
 
-    it('should have the property rate (base name: "rate")', function() {
-      // uncomment below and update the code to test the property rate
-      //var instane = new GetcandyJs.InlineObject31();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property zoneId (base name: "zone_id")', function() {
-      // uncomment below and update the code to test the property zoneId
-      //var instane = new GetcandyJs.InlineObject31();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property currencyId (base name: "currency_id")', function() {
-      // uncomment below and update the code to test the property currencyId
+    it('should have the property zones (base name: "zones")', function() {
+      // uncomment below and update the code to test the property zones
       //var instane = new GetcandyJs.InlineObject31();
       //expect(instance).to.be();
     });

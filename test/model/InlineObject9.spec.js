@@ -66,14 +66,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
+    it('should have the property priority (base name: "priority")', function() {
+      // uncomment below and update the code to test the property priority
       //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
 
-    it('should have the property uses (base name: "uses")', function() {
-      // uncomment below and update the code to test the property uses
+    it('should have the property stopRules (base name: "stop_rules")', function() {
+      // uncomment below and update the code to test the property stopRules
       //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });
@@ -86,6 +86,18 @@
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
+      //var instane = new GetcandyJs.InlineObject9();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property rewards (base name: "rewards")', function() {
+      // uncomment below and update the code to test the property rewards
+      //var instane = new GetcandyJs.InlineObject9();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sets (base name: "sets")', function() {
+      // uncomment below and update the code to test the property sets
       //var instane = new GetcandyJs.InlineObject9();
       //expect(instance).to.be();
     });

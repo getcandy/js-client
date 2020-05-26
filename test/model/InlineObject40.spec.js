@@ -60,18 +60,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property firstname (base name: "firstname")', function() {
-      // uncomment below and update the code to test the property firstname
-      //var instane = new GetcandyJs.InlineObject40();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property lastname (base name: "lastname")', function() {
-      // uncomment below and update the code to test the property lastname
-      //var instane = new GetcandyJs.InlineObject40();
-      //expect(instance).to.be();
-    });
-
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
       //var instane = new GetcandyJs.InlineObject40();

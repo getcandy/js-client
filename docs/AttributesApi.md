@@ -382,7 +382,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.AttributesApi();
 let opts = {
-  'inlineObject3': new GetcandyJs.InlineObject3() // InlineObject3 | 
+  'inlineObject2': new GetcandyJs.InlineObject2() // InlineObject2 | 
 };
 apiInstance.postAttributes(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -397,7 +397,7 @@ apiInstance.postAttributes(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject3** | [**InlineObject3**](InlineObject3.md)|  | [optional] 
+ **inlineObject2** | [**InlineObject2**](InlineObject2.md)|  | [optional] 
 
 ### Return type
 

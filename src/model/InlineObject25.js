@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductsProductIdAssociationsRelations from './ProductsProductIdAssociationsRelations';
+import ProductsProductIdCustomerGroupsGroups from './ProductsProductIdCustomerGroupsGroups';
 
 /**
  * The InlineObject25 model module.
@@ -23,10 +23,11 @@ class InlineObject25 {
     /**
      * Constructs a new <code>InlineObject25</code>.
      * @alias module:model/InlineObject25
+     * @param groups {Array.<module:model/ProductsProductIdCustomerGroupsGroups>} 
      */
-    constructor() { 
+    constructor(groups) { 
         
-        InlineObject25.initialize(this);
+        InlineObject25.initialize(this, groups);
     }
 
     /**
@@ -34,7 +35,8 @@ class InlineObject25 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, groups) { 
+        obj['groups'] = groups;
     }
 
     /**
@@ -48,8 +50,8 @@ class InlineObject25 {
         if (data) {
             obj = obj || new InlineObject25();
 
-            if (data.hasOwnProperty('relations')) {
-                obj['relations'] = ProductsProductIdAssociationsRelations.constructFromObject(data['relations']);
+            if (data.hasOwnProperty('groups')) {
+                obj['groups'] = ApiClient.convertToType(data['groups'], [ProductsProductIdCustomerGroupsGroups]);
             }
         }
         return obj;
@@ -59,9 +61,9 @@ class InlineObject25 {
 }
 
 /**
- * @member {module:model/ProductsProductIdAssociationsRelations} relations
+ * @member {Array.<module:model/ProductsProductIdCustomerGroupsGroups>} groups
  */
-InlineObject25.prototype['relations'] = undefined;
+InlineObject25.prototype['groups'] = undefined;
 
 
 

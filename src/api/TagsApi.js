@@ -14,8 +14,8 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
+import InlineObject35 from '../model/InlineObject35';
 import InlineObject36 from '../model/InlineObject36';
-import InlineObject37 from '../model/InlineObject37';
 import InlineResponse42211 from '../model/InlineResponse42211';
 import TagCollection from '../model/TagCollection';
 import TagResponse from '../model/TagResponse';
@@ -180,12 +180,12 @@ export default class TagsApi {
     /**
      * Create a new tag
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject36} opts.inlineObject36 
+     * @param {module:model/InlineObject35} opts.inlineObject35 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TagResponse} and HTTP response
      */
     postTagsWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject36'];
+      let postBody = opts['inlineObject35'];
 
       let pathParams = {
       };
@@ -210,7 +210,7 @@ export default class TagsApi {
     /**
      * Create a new tag
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject36} opts.inlineObject36 
+     * @param {module:model/InlineObject35} opts.inlineObject35 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TagResponse}
      */
     postTags(opts) {
@@ -226,12 +226,12 @@ export default class TagsApi {
      * Updates a tag by it's ID
      * @param {String} tagId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject37} opts.inlineObject37 
+     * @param {module:model/InlineObject36} opts.inlineObject36 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TagResponse} and HTTP response
      */
     putTagsTagIdWithHttpInfo(tagId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject37'];
+      let postBody = opts['inlineObject36'];
       // verify the required parameter 'tagId' is set
       if (tagId === undefined || tagId === null) {
         throw new Error("Missing the required parameter 'tagId' when calling putTagsTagId");
@@ -263,7 +263,7 @@ export default class TagsApi {
      * Updates a tag by it's ID
      * @param {String} tagId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject37} opts.inlineObject37 
+     * @param {module:model/InlineObject36} opts.inlineObject36 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TagResponse}
      */
     putTagsTagId(tagId, opts) {

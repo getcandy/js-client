@@ -54,56 +54,86 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject2);
     });
 
-    it('should have the property paymentTypeId (base name: "payment_type_id")', function() {
-      // uncomment below and update the code to test the property paymentTypeId
+    it('should have the property groupId (base name: "group_id")', function() {
+      // uncomment below and update the code to test the property groupId
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property paymentType (base name: "payment_type")', function() {
-      // uncomment below and update the code to test the property paymentType
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property orderId (base name: "order_id")', function() {
-      // uncomment below and update the code to test the property orderId
+    it('should have the property handle (base name: "handle")', function() {
+      // uncomment below and update the code to test the property handle
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property paymentToken (base name: "payment_token")', function() {
-      // uncomment below and update the code to test the property paymentToken
+    it('should have the property position (base name: "position")', function() {
+      // uncomment below and update the code to test the property position
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property customerReference (base name: "customer_reference")', function() {
-      // uncomment below and update the code to test the property customerReference
+    it('should have the property filterable (base name: "filterable")', function() {
+      // uncomment below and update the code to test the property filterable
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property meta (base name: "meta")', function() {
-      // uncomment below and update the code to test the property meta
+    it('should have the property scopeable (base name: "scopeable")', function() {
+      // uncomment below and update the code to test the property scopeable
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property notes (base name: "notes")', function() {
-      // uncomment below and update the code to test the property notes
+    it('should have the property translatable (base name: "translatable")', function() {
+      // uncomment below and update the code to test the property translatable
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property companyName (base name: "company_name")', function() {
-      // uncomment below and update the code to test the property companyName
+    it('should have the property variant (base name: "variant")', function() {
+      // uncomment below and update the code to test the property variant
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
+    it('should have the property searchable (base name: "searchable")', function() {
+      // uncomment below and update the code to test the property searchable
+      //var instane = new GetcandyJs.InlineObject2();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property localised (base name: "localised")', function() {
+      // uncomment below and update the code to test the property localised
+      //var instane = new GetcandyJs.InlineObject2();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property type (base name: "type")', function() {
+      // uncomment below and update the code to test the property type
+      //var instane = new GetcandyJs.InlineObject2();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property required (base name: "required")', function() {
+      // uncomment below and update the code to test the property required
+      //var instane = new GetcandyJs.InlineObject2();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property lookups (base name: "lookups")', function() {
+      // uncomment below and update the code to test the property lookups
+      //var instane = new GetcandyJs.InlineObject2();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property system (base name: "system")', function() {
+      // uncomment below and update the code to test the property system
       //var instane = new GetcandyJs.InlineObject2();
       //expect(instance).to.be();
     });

@@ -22,11 +22,10 @@ class InlineObject32 {
     /**
      * Constructs a new <code>InlineObject32</code>.
      * @alias module:model/InlineObject32
-     * @param zones {Array.<String>} 
      */
-    constructor(zones) { 
+    constructor() { 
         
-        InlineObject32.initialize(this, zones);
+        InlineObject32.initialize(this);
     }
 
     /**
@@ -34,8 +33,7 @@ class InlineObject32 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, zones) { 
-        obj['zones'] = zones;
+    static initialize(obj) { 
     }
 
     /**
@@ -49,8 +47,8 @@ class InlineObject32 {
         if (data) {
             obj = obj || new InlineObject32();
 
-            if (data.hasOwnProperty('zones')) {
-                obj['zones'] = ApiClient.convertToType(data['zones'], ['String']);
+            if (data.hasOwnProperty('users')) {
+                obj['users'] = ApiClient.convertToType(data['users'], ['String']);
             }
         }
         return obj;
@@ -60,9 +58,9 @@ class InlineObject32 {
 }
 
 /**
- * @member {Array.<String>} zones
+ * @member {Array.<String>} users
  */
-InlineObject32.prototype['zones'] = undefined;
+InlineObject32.prototype['users'] = undefined;
 
 
 

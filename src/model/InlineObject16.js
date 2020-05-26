@@ -22,13 +22,10 @@ class InlineObject16 {
     /**
      * Constructs a new <code>InlineObject16</code>.
      * @alias module:model/InlineObject16
-     * @param paRes {String} 
-     * @param transaction {String} 
-     * @param orderId {String} 
      */
-    constructor(paRes, transaction, orderId) { 
+    constructor() { 
         
-        InlineObject16.initialize(this, paRes, transaction, orderId);
+        InlineObject16.initialize(this);
     }
 
     /**
@@ -36,10 +33,7 @@ class InlineObject16 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, paRes, transaction, orderId) { 
-        obj['paRes'] = paRes;
-        obj['transaction'] = transaction;
-        obj['order_id'] = orderId;
+    static initialize(obj) { 
     }
 
     /**
@@ -53,14 +47,8 @@ class InlineObject16 {
         if (data) {
             obj = obj || new InlineObject16();
 
-            if (data.hasOwnProperty('paRes')) {
-                obj['paRes'] = ApiClient.convertToType(data['paRes'], 'String');
-            }
-            if (data.hasOwnProperty('transaction')) {
-                obj['transaction'] = ApiClient.convertToType(data['transaction'], 'String');
-            }
-            if (data.hasOwnProperty('order_id')) {
-                obj['order_id'] = ApiClient.convertToType(data['order_id'], 'String');
+            if (data.hasOwnProperty('inventory')) {
+                obj['inventory'] = ApiClient.convertToType(data['inventory'], 'Number');
             }
         }
         return obj;
@@ -70,19 +58,9 @@ class InlineObject16 {
 }
 
 /**
- * @member {String} paRes
+ * @member {Number} inventory
  */
-InlineObject16.prototype['paRes'] = undefined;
-
-/**
- * @member {String} transaction
- */
-InlineObject16.prototype['transaction'] = undefined;
-
-/**
- * @member {String} order_id
- */
-InlineObject16.prototype['order_id'] = undefined;
+InlineObject16.prototype['inventory'] = undefined;
 
 
 

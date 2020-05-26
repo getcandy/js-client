@@ -54,20 +54,50 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject1);
     });
 
-    it('should have the property trackingNo (base name: "tracking_no")', function() {
-      // uncomment below and update the code to test the property trackingNo
+    it('should have the property paymentTypeId (base name: "payment_type_id")', function() {
+      // uncomment below and update the code to test the property paymentTypeId
       //var instane = new GetcandyJs.InlineObject1();
       //expect(instance).to.be();
     });
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
+    it('should have the property paymentType (base name: "payment_type")', function() {
+      // uncomment below and update the code to test the property paymentType
       //var instane = new GetcandyJs.InlineObject1();
       //expect(instance).to.be();
     });
 
-    it('should have the property sendEmails (base name: "send_emails")', function() {
-      // uncomment below and update the code to test the property sendEmails
+    it('should have the property orderId (base name: "order_id")', function() {
+      // uncomment below and update the code to test the property orderId
+      //var instane = new GetcandyJs.InlineObject1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property paymentToken (base name: "payment_token")', function() {
+      // uncomment below and update the code to test the property paymentToken
+      //var instane = new GetcandyJs.InlineObject1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property customerReference (base name: "customer_reference")', function() {
+      // uncomment below and update the code to test the property customerReference
+      //var instane = new GetcandyJs.InlineObject1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property meta (base name: "meta")', function() {
+      // uncomment below and update the code to test the property meta
+      //var instane = new GetcandyJs.InlineObject1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property notes (base name: "notes")', function() {
+      // uncomment below and update the code to test the property notes
+      //var instane = new GetcandyJs.InlineObject1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property companyName (base name: "company_name")', function() {
+      // uncomment below and update the code to test the property companyName
       //var instane = new GetcandyJs.InlineObject1();
       //expect(instance).to.be();
     });

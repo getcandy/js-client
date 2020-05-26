@@ -14,8 +14,8 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
+import InlineObject37 from '../model/InlineObject37';
 import InlineObject38 from '../model/InlineObject38';
-import InlineObject39 from '../model/InlineObject39';
 import InlineResponse42215 from '../model/InlineResponse42215';
 import TaxCollection from '../model/TaxCollection';
 import TaxResponse from '../model/TaxResponse';
@@ -182,12 +182,12 @@ export default class TaxesApi {
      * Create tax
      * Create a new tax resource.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject38} opts.inlineObject38 
+     * @param {module:model/InlineObject37} opts.inlineObject37 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TaxResponse} and HTTP response
      */
     postTaxesWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject38'];
+      let postBody = opts['inlineObject37'];
 
       let pathParams = {
       };
@@ -213,7 +213,7 @@ export default class TaxesApi {
      * Create tax
      * Create a new tax resource.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject38} opts.inlineObject38 
+     * @param {module:model/InlineObject37} opts.inlineObject37 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TaxResponse}
      */
     postTaxes(opts) {
@@ -229,12 +229,12 @@ export default class TaxesApi {
      * Update a tax record by it's ID
      * @param {String} taxId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject39} opts.inlineObject39 
+     * @param {module:model/InlineObject38} opts.inlineObject38 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TaxResponse} and HTTP response
      */
     putTaxesTaxIdWithHttpInfo(taxId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject39'];
+      let postBody = opts['inlineObject38'];
       // verify the required parameter 'taxId' is set
       if (taxId === undefined || taxId === null) {
         throw new Error("Missing the required parameter 'taxId' when calling putTaxesTaxId");
@@ -266,7 +266,7 @@ export default class TaxesApi {
      * Update a tax record by it's ID
      * @param {String} taxId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject39} opts.inlineObject39 
+     * @param {module:model/InlineObject38} opts.inlineObject38 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TaxResponse}
      */
     putTaxesTaxId(taxId, opts) {

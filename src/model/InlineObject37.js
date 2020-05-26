@@ -22,11 +22,12 @@ class InlineObject37 {
     /**
      * Constructs a new <code>InlineObject37</code>.
      * @alias module:model/InlineObject37
-     * @param name {String} 
+     * @param name {String} Unique name
+     * @param percentage {Number} 
      */
-    constructor(name) { 
+    constructor(name, percentage) { 
         
-        InlineObject37.initialize(this, name);
+        InlineObject37.initialize(this, name, percentage);
     }
 
     /**
@@ -34,8 +35,9 @@ class InlineObject37 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name) { 
+    static initialize(obj, name, percentage) { 
         obj['name'] = name;
+        obj['percentage'] = percentage;
     }
 
     /**
@@ -52,6 +54,9 @@ class InlineObject37 {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
+            if (data.hasOwnProperty('percentage')) {
+                obj['percentage'] = ApiClient.convertToType(data['percentage'], 'Number');
+            }
         }
         return obj;
     }
@@ -60,9 +65,15 @@ class InlineObject37 {
 }
 
 /**
+ * Unique name
  * @member {String} name
  */
 InlineObject37.prototype['name'] = undefined;
+
+/**
+ * @member {Number} percentage
+ */
+InlineObject37.prototype['percentage'] = undefined;
 
 
 

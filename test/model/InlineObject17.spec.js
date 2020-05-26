@@ -54,8 +54,14 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject17);
     });
 
-    it('should have the property inventory (base name: "inventory")', function() {
-      // uncomment below and update the code to test the property inventory
+    it('should have the property routes (base name: "routes")', function() {
+      // uncomment below and update the code to test the property routes
+      //var instane = new GetcandyJs.InlineObject17();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property skus (base name: "skus")', function() {
+      // uncomment below and update the code to test the property skus
       //var instane = new GetcandyJs.InlineObject17();
       //expect(instance).to.be();
     });

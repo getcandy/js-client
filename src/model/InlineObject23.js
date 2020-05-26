@@ -22,11 +22,11 @@ class InlineObject23 {
     /**
      * Constructs a new <code>InlineObject23</code>.
      * @alias module:model/InlineObject23
-     * @param categories {Array.<String>} Array of category ID's
+     * @param channels {Array.<String>} Array of channel ID's
      */
-    constructor(categories) { 
+    constructor(channels) { 
         
-        InlineObject23.initialize(this, categories);
+        InlineObject23.initialize(this, channels);
     }
 
     /**
@@ -34,8 +34,8 @@ class InlineObject23 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, categories) { 
-        obj['categories'] = categories;
+    static initialize(obj, channels) { 
+        obj['channels'] = channels;
     }
 
     /**
@@ -49,8 +49,8 @@ class InlineObject23 {
         if (data) {
             obj = obj || new InlineObject23();
 
-            if (data.hasOwnProperty('categories')) {
-                obj['categories'] = ApiClient.convertToType(data['categories'], ['String']);
+            if (data.hasOwnProperty('channels')) {
+                obj['channels'] = ApiClient.convertToType(data['channels'], ['String']);
             }
         }
         return obj;
@@ -60,10 +60,10 @@ class InlineObject23 {
 }
 
 /**
- * Array of category ID's
- * @member {Array.<String>} categories
+ * Array of channel ID's
+ * @member {Array.<String>} channels
  */
-InlineObject23.prototype['categories'] = undefined;
+InlineObject23.prototype['channels'] = undefined;
 
 
 

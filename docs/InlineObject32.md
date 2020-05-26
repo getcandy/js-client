@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**zones** | **[String]** |  | 
+**users** | **[String]** |  | [optional] 
 
 

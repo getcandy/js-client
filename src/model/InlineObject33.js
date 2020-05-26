@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import CollectionsName from './CollectionsName';
 
 /**
  * The InlineObject33 model module.
@@ -22,10 +23,11 @@ class InlineObject33 {
     /**
      * Constructs a new <code>InlineObject33</code>.
      * @alias module:model/InlineObject33
+     * @param type {module:model/InlineObject33.TypeEnum} 
      */
-    constructor() { 
+    constructor(type) { 
         
-        InlineObject33.initialize(this);
+        InlineObject33.initialize(this, type);
     }
 
     /**
@@ -33,7 +35,8 @@ class InlineObject33 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, type) { 
+        obj['type'] = type;
     }
 
     /**
@@ -47,8 +50,11 @@ class InlineObject33 {
         if (data) {
             obj = obj || new InlineObject33();
 
-            if (data.hasOwnProperty('users')) {
-                obj['users'] = ApiClient.convertToType(data['users'], ['String']);
+            if (data.hasOwnProperty('type')) {
+                obj['type'] = ApiClient.convertToType(data['type'], 'String');
+            }
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = CollectionsName.constructFromObject(data['name']);
             }
         }
         return obj;
@@ -58,12 +64,44 @@ class InlineObject33 {
 }
 
 /**
- * @member {Array.<String>} users
+ * @member {module:model/InlineObject33.TypeEnum} type
  */
-InlineObject33.prototype['users'] = undefined;
+InlineObject33.prototype['type'] = undefined;
+
+/**
+ * @member {module:model/CollectionsName} name
+ */
+InlineObject33.prototype['name'] = undefined;
 
 
 
+
+
+/**
+ * Allowed values for the <code>type</code> property.
+ * @enum {String}
+ * @readonly
+ */
+InlineObject33['TypeEnum'] = {
+
+    /**
+     * value: "standard"
+     * @const
+     */
+    "standard": "standard",
+
+    /**
+     * value: "dhl"
+     * @const
+     */
+    "dhl": "dhl",
+
+    /**
+     * value: "regional"
+     * @const
+     */
+    "regional": "regional"
+};
 
 
 

@@ -16,7 +16,7 @@ import ApiClient from "../ApiClient";
 import DiscountCollection from '../model/DiscountCollection';
 import DiscountResponse from '../model/DiscountResponse';
 import Error from '../model/Error';
-import InlineObject10 from '../model/InlineObject10';
+import InlineObject8 from '../model/InlineObject8';
 import InlineObject9 from '../model/InlineObject9';
 
 /**
@@ -186,12 +186,12 @@ export default class DiscountsApi {
      * Create Discount
      * Create a new Discount.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject9} opts.inlineObject9 
+     * @param {module:model/InlineObject8} opts.inlineObject8 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DiscountResponse} and HTTP response
      */
     postDiscountsWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject9'];
+      let postBody = opts['inlineObject8'];
 
       let pathParams = {
       };
@@ -217,7 +217,7 @@ export default class DiscountsApi {
      * Create Discount
      * Create a new Discount.
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject9} opts.inlineObject9 
+     * @param {module:model/InlineObject8} opts.inlineObject8 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DiscountResponse}
      */
     postDiscounts(opts) {
@@ -233,12 +233,12 @@ export default class DiscountsApi {
      * Updates a Discount
      * @param {String} discountId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject10} opts.inlineObject10 
+     * @param {module:model/InlineObject9} opts.inlineObject9 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DiscountResponse} and HTTP response
      */
     putDiscountsDiscountIdWithHttpInfo(discountId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject10'];
+      let postBody = opts['inlineObject9'];
       // verify the required parameter 'discountId' is set
       if (discountId === undefined || discountId === null) {
         throw new Error("Missing the required parameter 'discountId' when calling putDiscountsDiscountId");
@@ -270,7 +270,7 @@ export default class DiscountsApi {
      * Updates a Discount
      * @param {String} discountId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject10} opts.inlineObject10 
+     * @param {module:model/InlineObject9} opts.inlineObject9 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DiscountResponse}
      */
     putDiscountsDiscountId(discountId, opts) {

@@ -14,6 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
+import InlineObject17 from '../model/InlineObject17';
 import InlineObject18 from '../model/InlineObject18';
 import InlineObject19 from '../model/InlineObject19';
 import InlineObject20 from '../model/InlineObject20';
@@ -23,7 +24,6 @@ import InlineObject23 from '../model/InlineObject23';
 import InlineObject24 from '../model/InlineObject24';
 import InlineObject25 from '../model/InlineObject25';
 import InlineObject26 from '../model/InlineObject26';
-import InlineObject27 from '../model/InlineObject27';
 import InlineResponse42210 from '../model/InlineResponse42210';
 import InlineResponse4227 from '../model/InlineResponse4227';
 import InlineResponse4228 from '../model/InlineResponse4228';
@@ -513,12 +513,12 @@ export default class ProductsApi {
      * Creates and syncs a new product route.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject20} opts.inlineObject20 
+     * @param {module:model/InlineObject19} opts.inlineObject19 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductRedirectsWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject20'];
+      let postBody = opts['inlineObject19'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductRedirects");
@@ -550,7 +550,7 @@ export default class ProductsApi {
      * Creates and syncs a new product route.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject20} opts.inlineObject20 
+     * @param {module:model/InlineObject19} opts.inlineObject19 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductRedirects(productId, opts) {
@@ -566,12 +566,12 @@ export default class ProductsApi {
      * Creates and syncs a new product route.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject19} opts.inlineObject19 
+     * @param {module:model/InlineObject18} opts.inlineObject18 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductUrlsWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject19'];
+      let postBody = opts['inlineObject18'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductUrls");
@@ -603,7 +603,7 @@ export default class ProductsApi {
      * Creates and syncs a new product route.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject19} opts.inlineObject19 
+     * @param {module:model/InlineObject18} opts.inlineObject18 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductUrls(productId, opts) {
@@ -619,12 +619,12 @@ export default class ProductsApi {
      * Creates a new product in the system. When creating a new product will also create 1 variant for that product.
      * @param {Object} opts Optional parameters
      * @param {String} opts.include 
-     * @param {module:model/InlineObject27} opts.inlineObject27 
+     * @param {module:model/InlineObject26} opts.inlineObject26 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsWithHttpInfo(opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject27'];
+      let postBody = opts['inlineObject26'];
 
       let pathParams = {
       };
@@ -652,7 +652,7 @@ export default class ProductsApi {
      * Creates a new product in the system. When creating a new product will also create 1 variant for that product.
      * @param {Object} opts Optional parameters
      * @param {String} opts.include 
-     * @param {module:model/InlineObject27} opts.inlineObject27 
+     * @param {module:model/InlineObject26} opts.inlineObject26 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProducts(opts) {
@@ -764,12 +764,12 @@ export default class ProductsApi {
      * Updates product associations
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject25} opts.inlineObject25 
+     * @param {module:model/InlineObject24} opts.inlineObject24 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductAssociationsWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject25'];
+      let postBody = opts['inlineObject24'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductAssociations");
@@ -801,7 +801,7 @@ export default class ProductsApi {
      * Updates product associations
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject25} opts.inlineObject25 
+     * @param {module:model/InlineObject24} opts.inlineObject24 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductAssociations(productId, opts) {
@@ -817,12 +817,12 @@ export default class ProductsApi {
      * Allows you to sync up the attributes which are directly associated to this product.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject21} opts.inlineObject21 
+     * @param {module:model/InlineObject20} opts.inlineObject20 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductAttributesWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject21'];
+      let postBody = opts['inlineObject20'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductAttributes");
@@ -854,7 +854,7 @@ export default class ProductsApi {
      * Allows you to sync up the attributes which are directly associated to this product.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject21} opts.inlineObject21 
+     * @param {module:model/InlineObject20} opts.inlineObject20 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductAttributes(productId, opts) {
@@ -870,12 +870,12 @@ export default class ProductsApi {
      * Sync product categories
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject23} opts.inlineObject23 
+     * @param {module:model/InlineObject22} opts.inlineObject22 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductCategoriesWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject23'];
+      let postBody = opts['inlineObject22'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductCategories");
@@ -907,7 +907,7 @@ export default class ProductsApi {
      * Sync product categories
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject23} opts.inlineObject23 
+     * @param {module:model/InlineObject22} opts.inlineObject22 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductCategories(productId, opts) {
@@ -923,12 +923,12 @@ export default class ProductsApi {
      * Sync product Channels
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject24} opts.inlineObject24 
+     * @param {module:model/InlineObject23} opts.inlineObject23 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductChannelsWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject24'];
+      let postBody = opts['inlineObject23'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductChannels");
@@ -960,7 +960,7 @@ export default class ProductsApi {
      * Sync product Channels
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject24} opts.inlineObject24 
+     * @param {module:model/InlineObject23} opts.inlineObject23 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductChannels(productId, opts) {
@@ -976,12 +976,12 @@ export default class ProductsApi {
      * Update a products customer groups
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject26} opts.inlineObject26 
+     * @param {module:model/InlineObject25} opts.inlineObject25 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductCustomerGroupsWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject26'];
+      let postBody = opts['inlineObject25'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductCustomerGroups");
@@ -1013,7 +1013,7 @@ export default class ProductsApi {
      * Update a products customer groups
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject26} opts.inlineObject26 
+     * @param {module:model/InlineObject25} opts.inlineObject25 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductCustomerGroups(productId, opts) {
@@ -1029,12 +1029,12 @@ export default class ProductsApi {
      * Update a products collections.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject22} opts.inlineObject22 
+     * @param {module:model/InlineObject21} opts.inlineObject21 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductIdCollectionsWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject22'];
+      let postBody = opts['inlineObject21'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductIdCollections");
@@ -1066,7 +1066,7 @@ export default class ProductsApi {
      * Update a products collections.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject22} opts.inlineObject22 
+     * @param {module:model/InlineObject21} opts.inlineObject21 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductIdCollections(productId, opts) {
@@ -1082,12 +1082,12 @@ export default class ProductsApi {
      * Duplicates a product, requires you to specify new slugs and SKU's.  > Duplicated product will not immediately be active.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject18} opts.inlineObject18 
+     * @param {module:model/InlineObject17} opts.inlineObject17 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductResponse} and HTTP response
      */
     postProductsProductIdDuplicateWithHttpInfo(productId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject18'];
+      let postBody = opts['inlineObject17'];
       // verify the required parameter 'productId' is set
       if (productId === undefined || productId === null) {
         throw new Error("Missing the required parameter 'productId' when calling postProductsProductIdDuplicate");
@@ -1119,7 +1119,7 @@ export default class ProductsApi {
      * Duplicates a product, requires you to specify new slugs and SKU's.  > Duplicated product will not immediately be active.
      * @param {String} productId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject18} opts.inlineObject18 
+     * @param {module:model/InlineObject17} opts.inlineObject17 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductResponse}
      */
     postProductsProductIdDuplicate(productId, opts) {

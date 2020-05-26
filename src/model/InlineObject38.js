@@ -22,7 +22,7 @@ class InlineObject38 {
     /**
      * Constructs a new <code>InlineObject38</code>.
      * @alias module:model/InlineObject38
-     * @param name {String} Unique name
+     * @param name {String} Must be unique
      * @param percentage {Number} 
      */
     constructor(name, percentage) { 
@@ -65,7 +65,7 @@ class InlineObject38 {
 }
 
 /**
- * Unique name
+ * Must be unique
  * @member {String} name
  */
 InlineObject38.prototype['name'] = undefined;

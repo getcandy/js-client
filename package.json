@@ -1,6 +1,6 @@
 {
   "name": "@getcandy/js-client",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "GetCandy Javascript client",
   "license": "MIT",
   "main": "dist/index.js",

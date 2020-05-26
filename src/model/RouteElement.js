@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import OneOfProductCategory from './OneOfProductCategory';
+import RouteElementData from './RouteElementData';
 
 /**
  * The RouteElement model module.
@@ -49,7 +49,7 @@ class RouteElement {
             obj = obj || new RouteElement();
 
             if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], OneOfProductCategory);
+                obj['data'] = RouteElementData.constructFromObject(data['data']);
             }
         }
         return obj;
@@ -59,7 +59,7 @@ class RouteElement {
 }
 
 /**
- * @member {module:model/OneOfProductCategory} data
+ * @member {module:model/RouteElementData} data
  */
 RouteElement.prototype['data'] = undefined;
 

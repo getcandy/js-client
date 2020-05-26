@@ -12,8 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import DiscountsChannels from './DiscountsChannels';
-import DiscountsName from './DiscountsName';
+import DiscountsDiscountIdChannels from './DiscountsDiscountIdChannels';
+import DiscountsDiscountIdRewards from './DiscountsDiscountIdRewards';
+import DiscountsDiscountIdSets from './DiscountsDiscountIdSets';
 
 /**
  * The InlineObject9 model module.
@@ -24,11 +25,11 @@ class InlineObject9 {
     /**
      * Constructs a new <code>InlineObject9</code>.
      * @alias module:model/InlineObject9
-     * @param name {module:model/DiscountsName} 
+     * @param startAt {Date} 
      */
-    constructor(name) { 
+    constructor(startAt) { 
         
-        InlineObject9.initialize(this, name);
+        InlineObject9.initialize(this, startAt);
     }
 
     /**
@@ -36,8 +37,8 @@ class InlineObject9 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name) { 
-        obj['name'] = name;
+    static initialize(obj, startAt) { 
+        obj['start_at'] = startAt;
     }
 
     /**
@@ -55,19 +56,25 @@ class InlineObject9 {
                 obj['start_at'] = ApiClient.convertToType(data['start_at'], 'Date');
             }
             if (data.hasOwnProperty('end_at')) {
-                obj['end_at'] = ApiClient.convertToType(data['end_at'], 'Date');
+                obj['end_at'] = ApiClient.convertToType(data['end_at'], 'String');
             }
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = DiscountsName.constructFromObject(data['name']);
+            if (data.hasOwnProperty('priority')) {
+                obj['priority'] = ApiClient.convertToType(data['priority'], 'Number');
             }
-            if (data.hasOwnProperty('uses')) {
-                obj['uses'] = ApiClient.convertToType(data['uses'], 'Number');
+            if (data.hasOwnProperty('stop_rules')) {
+                obj['stop_rules'] = ApiClient.convertToType(data['stop_rules'], 'Boolean');
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'Boolean');
             }
             if (data.hasOwnProperty('channels')) {
-                obj['channels'] = ApiClient.convertToType(data['channels'], [DiscountsChannels]);
+                obj['channels'] = DiscountsDiscountIdChannels.constructFromObject(data['channels']);
+            }
+            if (data.hasOwnProperty('rewards')) {
+                obj['rewards'] = DiscountsDiscountIdRewards.constructFromObject(data['rewards']);
+            }
+            if (data.hasOwnProperty('sets')) {
+                obj['sets'] = DiscountsDiscountIdSets.constructFromObject(data['sets']);
             }
         }
         return obj;
@@ -82,19 +89,19 @@ class InlineObject9 {
 InlineObject9.prototype['start_at'] = undefined;
 
 /**
- * @member {Date} end_at
+ * @member {String} end_at
  */
 InlineObject9.prototype['end_at'] = undefined;
 
 /**
- * @member {module:model/DiscountsName} name
+ * @member {Number} priority
  */
-InlineObject9.prototype['name'] = undefined;
+InlineObject9.prototype['priority'] = undefined;
 
 /**
- * @member {Number} uses
+ * @member {Boolean} stop_rules
  */
-InlineObject9.prototype['uses'] = undefined;
+InlineObject9.prototype['stop_rules'] = undefined;
 
 /**
  * @member {Boolean} status
@@ -102,9 +109,19 @@ InlineObject9.prototype['uses'] = undefined;
 InlineObject9.prototype['status'] = undefined;
 
 /**
- * @member {Array.<module:model/DiscountsChannels>} channels
+ * @member {module:model/DiscountsDiscountIdChannels} channels
  */
 InlineObject9.prototype['channels'] = undefined;
+
+/**
+ * @member {module:model/DiscountsDiscountIdRewards} rewards
+ */
+InlineObject9.prototype['rewards'] = undefined;
+
+/**
+ * @member {module:model/DiscountsDiscountIdSets} sets
+ */
+InlineObject9.prototype['sets'] = undefined;
 
 
 

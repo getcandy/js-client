@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject32);
     });
 
-    it('should have the property zones (base name: "zones")', function() {
-      // uncomment below and update the code to test the property zones
+    it('should have the property users (base name: "users")', function() {
+      // uncomment below and update the code to test the property users
       //var instane = new GetcandyJs.InlineObject32();
       //expect(instance).to.be();
     });

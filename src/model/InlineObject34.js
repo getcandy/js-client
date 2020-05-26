@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import CollectionsName from './CollectionsName';
+import ProductsName from './ProductsName';
 
 /**
  * The InlineObject34 model module.
@@ -23,11 +23,12 @@ class InlineObject34 {
     /**
      * Constructs a new <code>InlineObject34</code>.
      * @alias module:model/InlineObject34
-     * @param type {module:model/InlineObject34.TypeEnum} 
+     * @param name {module:model/ProductsName} 
+     * @param type {String} 
      */
-    constructor(type) { 
+    constructor(name, type) { 
         
-        InlineObject34.initialize(this, type);
+        InlineObject34.initialize(this, name, type);
     }
 
     /**
@@ -35,7 +36,8 @@ class InlineObject34 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, type) { 
+    static initialize(obj, name, type) { 
+        obj['name'] = name;
         obj['type'] = type;
     }
 
@@ -50,11 +52,11 @@ class InlineObject34 {
         if (data) {
             obj = obj || new InlineObject34();
 
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ProductsName.constructFromObject(data['name']);
+            }
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
-            }
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = CollectionsName.constructFromObject(data['name']);
             }
         }
         return obj;
@@ -64,44 +66,17 @@ class InlineObject34 {
 }
 
 /**
- * @member {module:model/InlineObject34.TypeEnum} type
- */
-InlineObject34.prototype['type'] = undefined;
-
-/**
- * @member {module:model/CollectionsName} name
+ * @member {module:model/ProductsName} name
  */
 InlineObject34.prototype['name'] = undefined;
 
-
-
-
-
 /**
- * Allowed values for the <code>type</code> property.
- * @enum {String}
- * @readonly
+ * @member {String} type
  */
-InlineObject34['TypeEnum'] = {
+InlineObject34.prototype['type'] = undefined;
 
-    /**
-     * value: "standard"
-     * @const
-     */
-    "standard": "standard",
 
-    /**
-     * value: "dhl"
-     * @const
-     */
-    "dhl": "dhl",
 
-    /**
-     * value: "regional"
-     * @const
-     */
-    "regional": "regional"
-};
 
 
 

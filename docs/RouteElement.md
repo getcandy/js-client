@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**OneOfProductCategory**](OneOfProductCategory.md) |  | [optional] 
+**data** | [**RouteElementData**](RouteElementData.md) |  | [optional] 
 
 

@@ -54,14 +54,62 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject14);
     });
 
-    it('should have the property email (base name: "email")', function() {
-      // uncomment below and update the code to test the property email
+    it('should have the property quantity (base name: "quantity")', function() {
+      // uncomment below and update the code to test the property quantity
       //var instane = new GetcandyJs.InlineObject14();
       //expect(instance).to.be();
     });
 
-    it('should have the property phone (base name: "phone")', function() {
-      // uncomment below and update the code to test the property phone
+    it('should have the property lineTotal (base name: "line_total")', function() {
+      // uncomment below and update the code to test the property lineTotal
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property unitPrice (base name: "unit_price")', function() {
+      // uncomment below and update the code to test the property unitPrice
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property taxRate (base name: "tax_rate")', function() {
+      // uncomment below and update the code to test the property taxRate
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property description (base name: "description")', function() {
+      // uncomment below and update the code to test the property description
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isManual (base name: "is_manual")', function() {
+      // uncomment below and update the code to test the property isManual
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isShipping (base name: "is_shipping")', function() {
+      // uncomment below and update the code to test the property isShipping
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property option (base name: "option")', function() {
+      // uncomment below and update the code to test the property option
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sku (base name: "sku")', function() {
+      // uncomment below and update the code to test the property sku
+      //var instane = new GetcandyJs.InlineObject14();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property discountTotal (base name: "discount_total")', function() {
+      // uncomment below and update the code to test the property discountTotal
       //var instane = new GetcandyJs.InlineObject14();
       //expect(instance).to.be();
     });

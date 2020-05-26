@@ -54,26 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject12);
     });
 
-    it('should have the property orders (base name: "orders")', function() {
-      // uncomment below and update the code to test the property orders
-      //var instane = new GetcandyJs.InlineObject12();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property field (base name: "field")', function() {
-      // uncomment below and update the code to test the property field
-      //var instane = new GetcandyJs.InlineObject12();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new GetcandyJs.InlineObject12();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property sendEmails (base name: "send_emails")', function() {
-      // uncomment below and update the code to test the property sendEmails
+    it('should have the property priceId (base name: "price_id")', function() {
+      // uncomment below and update the code to test the property priceId
       //var instane = new GetcandyJs.InlineObject12();
       //expect(instance).to.be();
     });

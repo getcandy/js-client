@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import ProductsProductIdDuplicateRoutes from './ProductsProductIdDuplicateRoutes';
 
 /**
  * The InlineObject17 model module.
@@ -22,10 +23,12 @@ class InlineObject17 {
     /**
      * Constructs a new <code>InlineObject17</code>.
      * @alias module:model/InlineObject17
+     * @param routes {Array.<module:model/ProductsProductIdDuplicateRoutes>} 
+     * @param skus {Array.<module:model/ProductsProductIdDuplicateRoutes>} 
      */
-    constructor() { 
+    constructor(routes, skus) { 
         
-        InlineObject17.initialize(this);
+        InlineObject17.initialize(this, routes, skus);
     }
 
     /**
@@ -33,7 +36,9 @@ class InlineObject17 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, routes, skus) { 
+        obj['routes'] = routes;
+        obj['skus'] = skus;
     }
 
     /**
@@ -47,8 +52,11 @@ class InlineObject17 {
         if (data) {
             obj = obj || new InlineObject17();
 
-            if (data.hasOwnProperty('inventory')) {
-                obj['inventory'] = ApiClient.convertToType(data['inventory'], 'Number');
+            if (data.hasOwnProperty('routes')) {
+                obj['routes'] = ApiClient.convertToType(data['routes'], [ProductsProductIdDuplicateRoutes]);
+            }
+            if (data.hasOwnProperty('skus')) {
+                obj['skus'] = ApiClient.convertToType(data['skus'], [ProductsProductIdDuplicateRoutes]);
             }
         }
         return obj;
@@ -58,9 +66,14 @@ class InlineObject17 {
 }
 
 /**
- * @member {Number} inventory
+ * @member {Array.<module:model/ProductsProductIdDuplicateRoutes>} routes
  */
-InlineObject17.prototype['inventory'] = undefined;
+InlineObject17.prototype['routes'] = undefined;
+
+/**
+ * @member {Array.<module:model/ProductsProductIdDuplicateRoutes>} skus
+ */
+InlineObject17.prototype['skus'] = undefined;
 
 
 

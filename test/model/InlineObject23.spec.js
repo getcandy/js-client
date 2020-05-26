@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject23);
     });
 
-    it('should have the property categories (base name: "categories")', function() {
-      // uncomment below and update the code to test the property categories
+    it('should have the property channels (base name: "channels")', function() {
+      // uncomment below and update the code to test the property channels
       //var instane = new GetcandyJs.InlineObject23();
       //expect(instance).to.be();
     });

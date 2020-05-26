@@ -47,17 +47,8 @@ class InlineObject5 {
         if (data) {
             obj = obj || new InlineObject5();
 
-            if (data.hasOwnProperty('redirect')) {
-                obj['redirect'] = ApiClient.convertToType(data['redirect'], 'Boolean');
-            }
-            if (data.hasOwnProperty('description')) {
-                obj['description'] = ApiClient.convertToType(data['description'], 'String');
-            }
-            if (data.hasOwnProperty('slug')) {
-                obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
-            }
-            if (data.hasOwnProperty('locale')) {
-                obj['locale'] = ApiClient.convertToType(data['locale'], 'String');
+            if (data.hasOwnProperty('products')) {
+                obj['products'] = ApiClient.convertToType(data['products'], ['String']);
             }
         }
         return obj;
@@ -67,24 +58,10 @@ class InlineObject5 {
 }
 
 /**
- * @member {Boolean} redirect
+ * Pass all products you wish to be associated.
+ * @member {Array.<String>} products
  */
-InlineObject5.prototype['redirect'] = undefined;
-
-/**
- * @member {String} description
- */
-InlineObject5.prototype['description'] = undefined;
-
-/**
- * @member {String} slug
- */
-InlineObject5.prototype['slug'] = undefined;
-
-/**
- * @member {String} locale
- */
-InlineObject5.prototype['locale'] = undefined;
+InlineObject5.prototype['products'] = undefined;
 
 
 

@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
-import InlineObject28 from '../model/InlineObject28';
+import InlineObject27 from '../model/InlineObject27';
 import InlineResponse42211 from '../model/InlineResponse42211';
 import ProductFamilyCollection from '../model/ProductFamilyCollection';
 import ProductFamilyResponse from '../model/ProductFamilyResponse';
@@ -234,12 +234,12 @@ export default class ProductFamiliesApi {
      * Update a product family
      * @param {String} productFamilyId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject28} opts.inlineObject28 
+     * @param {module:model/InlineObject27} opts.inlineObject27 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductFamilyResponse} and HTTP response
      */
     putProductFamiliesProductFamilyIdWithHttpInfo(productFamilyId, opts) {
       opts = opts || {};
-      let postBody = opts['inlineObject28'];
+      let postBody = opts['inlineObject27'];
       // verify the required parameter 'productFamilyId' is set
       if (productFamilyId === undefined || productFamilyId === null) {
         throw new Error("Missing the required parameter 'productFamilyId' when calling putProductFamiliesProductFamilyId");
@@ -271,7 +271,7 @@ export default class ProductFamiliesApi {
      * Update a product family
      * @param {String} productFamilyId 
      * @param {Object} opts Optional parameters
-     * @param {module:model/InlineObject28} opts.inlineObject28 
+     * @param {module:model/InlineObject27} opts.inlineObject27 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductFamilyResponse}
      */
     putProductFamiliesProductFamilyId(productFamilyId, opts) {

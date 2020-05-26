@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(GetcandyJs.InlineObject21);
     });
 
-    it('should have the property attributes (base name: "attributes")', function() {
-      // uncomment below and update the code to test the property attributes
+    it('should have the property collections (base name: "collections")', function() {
+      // uncomment below and update the code to test the property collections
       //var instane = new GetcandyJs.InlineObject21();
       //expect(instance).to.be();
     });

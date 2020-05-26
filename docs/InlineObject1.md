@@ -4,8 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**trackingNo** | **String** |  | [optional] 
-**status** | **String** | Corresponds to status set in config | [optional] 
-**sendEmails** | **Boolean** |  | [optional] 
+**paymentTypeId** | **String** |  | [optional] 
+**paymentType** | **String** |  | [optional] 
+**orderId** | **String** |  | 
+**paymentToken** | **String** |  | 
+**customerReference** | **String** |  | [optional] 
+**meta** | **[Object]** |  | [optional] 
+**notes** | **String** |  | [optional] 
+**companyName** | **String** |  | [optional] 
 
 

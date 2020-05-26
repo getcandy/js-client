@@ -430,7 +430,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.OrdersApi();
 let opts = {
-  'inlineObject': new GetcandyJs.InlineObject() // InlineObject | 
+  'createOrderBody': new GetcandyJs.CreateOrderBody() // CreateOrderBody | 
 };
 apiInstance.postOrders(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -445,7 +445,7 @@ apiInstance.postOrders(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject** | [**InlineObject**](InlineObject.md)|  | [optional] 
+ **createOrderBody** | [**CreateOrderBody**](CreateOrderBody.md)|  | [optional] 
 
 ### Return type
 
@@ -480,7 +480,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.OrdersApi();
 let opts = {
-  'inlineObject12': new GetcandyJs.InlineObject12() // InlineObject12 | 
+  'inlineObject11': new GetcandyJs.InlineObject11() // InlineObject11 | 
 };
 apiInstance.postOrdersBulk(opts).then(() => {
   console.log('API called successfully.');
@@ -495,7 +495,7 @@ apiInstance.postOrdersBulk(opts).then(() => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject12** | [**InlineObject12**](InlineObject12.md)|  | [optional] 
+ **inlineObject11** | [**InlineObject11**](InlineObject11.md)|  | [optional] 
 
 ### Return type
 
@@ -576,7 +576,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.OrdersApi();
 let opts = {
-  'inlineObject2': new GetcandyJs.InlineObject2() // InlineObject2 | 
+  'inlineObject1': new GetcandyJs.InlineObject1() // InlineObject1 | 
 };
 apiInstance.postOrdersProcess(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -591,7 +591,7 @@ apiInstance.postOrdersProcess(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject2** | [**InlineObject2**](InlineObject2.md)|  | [optional] 
+ **inlineObject1** | [**InlineObject1**](InlineObject1.md)|  | [optional] 
 
 ### Return type
 
@@ -627,7 +627,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'inlineObject14': new GetcandyJs.InlineObject14() // InlineObject14 | 
+  'inlineObject13': new GetcandyJs.InlineObject13() // InlineObject13 | 
 };
 apiInstance.putOrdersIdContact(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -643,7 +643,7 @@ apiInstance.putOrdersIdContact(orderId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **String**|  | 
- **inlineObject14** | [**InlineObject14**](InlineObject14.md)|  | [optional] 
+ **inlineObject13** | [**InlineObject13**](InlineObject13.md)|  | [optional] 
 
 ### Return type
 
@@ -679,7 +679,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'inlineObject15': new GetcandyJs.InlineObject15() // InlineObject15 | 
+  'inlineObject14': new GetcandyJs.InlineObject14() // InlineObject14 | 
 };
 apiInstance.putOrdersIdLines(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -695,7 +695,7 @@ apiInstance.putOrdersIdLines(orderId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **String**|  | 
- **inlineObject15** | [**InlineObject15**](InlineObject15.md)|  | [optional] 
+ **inlineObject14** | [**InlineObject14**](InlineObject14.md)|  | [optional] 
 
 ### Return type
 
@@ -783,7 +783,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
-  'inlineObject13': new GetcandyJs.InlineObject13() // InlineObject13 | 
+  'inlineObject12': new GetcandyJs.InlineObject12() // InlineObject12 | 
 };
 apiInstance.putOrdersIdShippingCost(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -799,7 +799,7 @@ apiInstance.putOrdersIdShippingCost(orderId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **String**|  | 
- **inlineObject13** | [**InlineObject13**](InlineObject13.md)|  | [optional] 
+ **inlineObject12** | [**InlineObject12**](InlineObject12.md)|  | [optional] 
 
 ### Return type
 
@@ -836,7 +836,7 @@ let apiInstance = new GetcandyJs.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
   'include': "include_example", // String | 
-  'inlineObject1': new GetcandyJs.InlineObject1() // InlineObject1 | 
+  'inlineObject': new GetcandyJs.InlineObject() // InlineObject | 
 };
 apiInstance.putOrdersOrderId(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -853,7 +853,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **String**|  | 
  **include** | **String**|  | [optional] 
- **inlineObject1** | [**InlineObject1**](InlineObject1.md)|  | [optional] 
+ **inlineObject** | [**InlineObject**](InlineObject.md)|  | [optional] 
 
 ### Return type
 
