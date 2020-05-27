@@ -12,6 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
+import ShippingMethodResponse from './ShippingMethodResponse';
+import ShippingZoneResponse from './ShippingZoneResponse';
 
 /**
  * The ShippingPrice model module.
@@ -95,6 +97,12 @@ class ShippingPrice {
             }
             if (data.hasOwnProperty('volume_unit')) {
                 obj['volume_unit'] = ApiClient.convertToType(data['volume_unit'], 'String');
+            }
+            if (data.hasOwnProperty('method')) {
+                obj['method'] = ShippingMethodResponse.constructFromObject(data['method']);
+            }
+            if (data.hasOwnProperty('zone')) {
+                obj['zone'] = ShippingZoneResponse.constructFromObject(data['zone']);
             }
         }
         return obj;
@@ -183,6 +191,16 @@ ShippingPrice.prototype['min_volume'] = undefined;
  * @member {String} volume_unit
  */
 ShippingPrice.prototype['volume_unit'] = undefined;
+
+/**
+ * @member {module:model/ShippingMethodResponse} method
+ */
+ShippingPrice.prototype['method'] = undefined;
+
+/**
+ * @member {module:model/ShippingZoneResponse} zone
+ */
+ShippingPrice.prototype['zone'] = undefined;
 
 
 

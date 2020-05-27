@@ -221,6 +221,7 @@ Class | Method | HTTP request | Description
 *GetcandyJs.OrdersApi* | [**putOrdersOrderIdBillingAddress**](docs/OrdersApi.md#putOrdersOrderIdBillingAddress) | **PUT** /orders/{orderId}/billing/address | Update billing address
 *GetcandyJs.PaymentsApi* | [**deleteUsersPaymentsId**](docs/PaymentsApi.md#deleteUsersPaymentsId) | **DELETE** /users/payments/{id} | Delete reusable payment
 *GetcandyJs.PaymentsApi* | [**getPaymentsProvider**](docs/PaymentsApi.md#getPaymentsProvider) | **GET** /payments/provider | Get Payment Provider
+*GetcandyJs.PaymentsApi* | [**getPaymentsTypes**](docs/PaymentsApi.md#getPaymentsTypes) | **GET** /payments/types | Payment types
 *GetcandyJs.PaymentsApi* | [**postPayments3dSecure**](docs/PaymentsApi.md#postPayments3dSecure) | **POST** /payments/3d-secure | Threed Secure Payment
 *GetcandyJs.PaymentsApi* | [**postPaymentsIdRefund**](docs/PaymentsApi.md#postPaymentsIdRefund) | **POST** /payments/{transactionId}/refund | Refund a payment
 *GetcandyJs.PaymentsApi* | [**postPaymentsTransactionIdVoid**](docs/PaymentsApi.md#postPaymentsTransactionIdVoid) | **POST** /payments/{transactionId}/void | Void a payment
@@ -512,6 +513,10 @@ Class | Method | HTTP request | Description
  - [GetcandyJs.PaymentProviderCollection](docs/PaymentProviderCollection.md)
  - [GetcandyJs.PaymentProviderCollectionAllOf](docs/PaymentProviderCollectionAllOf.md)
  - [GetcandyJs.PaymentProviderResponse](docs/PaymentProviderResponse.md)
+ - [GetcandyJs.PaymentType](docs/PaymentType.md)
+ - [GetcandyJs.PaymentTypeCollection](docs/PaymentTypeCollection.md)
+ - [GetcandyJs.PaymentTypeCollectionAllOf](docs/PaymentTypeCollectionAllOf.md)
+ - [GetcandyJs.PaymentTypeResponse](docs/PaymentTypeResponse.md)
  - [GetcandyJs.Permission](docs/Permission.md)
  - [GetcandyJs.PermissionCollection](docs/PermissionCollection.md)
  - [GetcandyJs.PermissionCollectionAllOf](docs/PermissionCollectionAllOf.md)
@@ -586,7 +591,6 @@ Class | Method | HTTP request | Description
  - [GetcandyJs.ShippingMethodResponse](docs/ShippingMethodResponse.md)
  - [GetcandyJs.ShippingPrice](docs/ShippingPrice.md)
  - [GetcandyJs.ShippingPriceCollection](docs/ShippingPriceCollection.md)
- - [GetcandyJs.ShippingPriceCollectionAllOf](docs/ShippingPriceCollectionAllOf.md)
  - [GetcandyJs.ShippingPriceResponse](docs/ShippingPriceResponse.md)
  - [GetcandyJs.ShippingZone](docs/ShippingZone.md)
  - [GetcandyJs.ShippingZoneCollection](docs/ShippingZoneCollection.md)

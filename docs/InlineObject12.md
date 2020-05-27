@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**priceId** | **String** | The ShippingPrice id to associate | [optional] 
+**priceId** | **String** |  | [optional] 
 
 

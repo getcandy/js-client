@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('getPaymentsTypes', function() {
+      it('should call getPaymentsTypes successfully', function(done) {
+        //uncomment below and update the code to test getPaymentsTypes
+        //instance.getPaymentsTypes(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('postPayments3dSecure', function() {
       it('should call postPayments3dSecure successfully', function(done) {
         //uncomment below and update the code to test postPayments3dSecure

@@ -33,7 +33,7 @@ import OrderCollection from '../model/OrderCollection';
 import OrderExportResponse from '../model/OrderExportResponse';
 import OrderResponse from '../model/OrderResponse';
 import OrderTypeCollection from '../model/OrderTypeCollection';
-import ShippingMethodCollection from '../model/ShippingMethodCollection';
+import ShippingPriceCollection from '../model/ShippingPriceCollection';
 
 /**
 * Orders service.
@@ -312,9 +312,12 @@ export default class OrdersApi {
      * Get Order Shipping Methods
      * This will return a list of all ShippingMethod's that are available for this order.
      * @param {String} orderId 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingMethodCollection} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.include The available resources to include
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ShippingPriceCollection} and HTTP response
      */
-    getOrdersIdShippingMethodsWithHttpInfo(orderId) {
+    getOrdersIdShippingMethodsWithHttpInfo(orderId, opts) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'orderId' is set
       if (orderId === undefined || orderId === null) {
@@ -325,6 +328,7 @@ export default class OrdersApi {
         'orderId': orderId
       };
       let queryParams = {
+        'include': opts['include']
       };
       let headerParams = {
       };
@@ -334,7 +338,7 @@ export default class OrdersApi {
       let authNames = ['auth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ShippingMethodCollection;
+      let returnType = ShippingPriceCollection;
       return this.apiClient.callApi(
         '/orders/{orderId}/shipping/methods', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -346,10 +350,12 @@ export default class OrdersApi {
      * Get Order Shipping Methods
      * This will return a list of all ShippingMethod's that are available for this order.
      * @param {String} orderId 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingMethodCollection}
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.include The available resources to include
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ShippingPriceCollection}
      */
-    getOrdersIdShippingMethods(orderId) {
-      return this.getOrdersIdShippingMethodsWithHttpInfo(orderId)
+    getOrdersIdShippingMethods(orderId, opts) {
+      return this.getOrdersIdShippingMethodsWithHttpInfo(orderId, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -793,6 +799,7 @@ export default class OrdersApi {
      * Adds a shipping cost to an Order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
+     * @param {String} opts.include Related resources to include in response
      * @param {module:model/InlineObject12} opts.inlineObject12 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/OrderResponse} and HTTP response
      */
@@ -808,6 +815,7 @@ export default class OrdersApi {
         'orderId': orderId
       };
       let queryParams = {
+        'include': opts['include']
       };
       let headerParams = {
       };
@@ -830,6 +838,7 @@ export default class OrdersApi {
      * Adds a shipping cost to an Order
      * @param {String} orderId 
      * @param {Object} opts Optional parameters
+     * @param {String} opts.include Related resources to include in response
      * @param {module:model/InlineObject12} opts.inlineObject12 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/OrderResponse}
      */

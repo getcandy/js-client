@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**deleteUsersPaymentsId**](PaymentsApi.md#deleteUsersPaymentsId) | **DELETE** /users/payments/{id} | Delete reusable payment
 [**getPaymentsProvider**](PaymentsApi.md#getPaymentsProvider) | **GET** /payments/provider | Get Payment Provider
+[**getPaymentsTypes**](PaymentsApi.md#getPaymentsTypes) | **GET** /payments/types | Payment types
 [**postPayments3dSecure**](PaymentsApi.md#postPayments3dSecure) | **POST** /payments/3d-secure | Threed Secure Payment
 [**postPaymentsIdRefund**](PaymentsApi.md#postPaymentsIdRefund) | **POST** /payments/{transactionId}/refund | Refund a payment
 [**postPaymentsTransactionIdVoid**](PaymentsApi.md#postPaymentsTransactionIdVoid) | **POST** /payments/{transactionId}/void | Void a payment
@@ -97,6 +98,46 @@ This endpoint does not need any parameter.
 ### Authorization
 
 [auth](../README.md#auth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPaymentsTypes
+
+> PaymentTypeCollection getPaymentsTypes()
+
+Payment types
+
+Returns a list of available Payment Types in the system
+
+### Example
+
+```javascript
+import GetcandyJs from '@getcandy/js-client';
+
+let apiInstance = new GetcandyJs.PaymentsApi();
+apiInstance.getPaymentsTypes().then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**PaymentTypeCollection**](PaymentTypeCollection.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

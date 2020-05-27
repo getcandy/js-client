@@ -17,6 +17,7 @@ import Error from '../model/Error';
 import InlineObject15 from '../model/InlineObject15';
 import OrderResponse from '../model/OrderResponse';
 import PaymentProviderResponse from '../model/PaymentProviderResponse';
+import PaymentTypeCollection from '../model/PaymentTypeCollection';
 import TransactionResponse from '../model/TransactionResponse';
 import Unauthenticated from '../model/Unauthenticated';
 
@@ -123,6 +124,47 @@ export default class PaymentsApi {
      */
     getPaymentsProvider() {
       return this.getPaymentsProviderWithHttpInfo()
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Payment types
+     * Returns a list of available Payment Types in the system
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PaymentTypeCollection} and HTTP response
+     */
+    getPaymentsTypesWithHttpInfo() {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = PaymentTypeCollection;
+      return this.apiClient.callApi(
+        '/payments/types', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Payment types
+     * Returns a list of available Payment Types in the system
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PaymentTypeCollection}
+     */
+    getPaymentsTypes() {
+      return this.getPaymentsTypesWithHttpInfo()
         .then(function(response_and_data) {
           return response_and_data.data;
         });

@@ -271,7 +271,7 @@ null (empty response body)
 
 ## getProducts
 
-> ProductCollection getProducts()
+> ProductCollection getProducts(opts)
 
 Get Products
 
@@ -287,7 +287,13 @@ let auth = defaultClient.authentications['auth'];
 auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.ProductsApi();
-apiInstance.getProducts().then((data) => {
+let opts = {
+  'include': "include_example", // String | 
+  'paginated': true, // Boolean | 
+  'ids': "ids_example", // String | Return only the selected IDs
+  'limit': 56 // Number | 
+};
+apiInstance.getProducts(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -297,7 +303,13 @@ apiInstance.getProducts().then((data) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **include** | **String**|  | [optional] 
+ **paginated** | **Boolean**|  | [optional] [default to true]
+ **ids** | **String**| Return only the selected IDs | [optional] 
+ **limit** | **Number**|  | [optional] 
 
 ### Return type
 

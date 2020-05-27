@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 
 ## getOrdersIdShippingMethods
 
-> ShippingMethodCollection getOrdersIdShippingMethods(orderId)
+> ShippingPriceCollection getOrdersIdShippingMethods(orderId, opts)
 
 Get Order Shipping Methods
 
@@ -290,7 +290,10 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new GetcandyJs.OrdersApi();
 let orderId = "orderId_example"; // String | 
-apiInstance.getOrdersIdShippingMethods(orderId).then((data) => {
+let opts = {
+  'include': "include_example" // String | The available resources to include
+};
+apiInstance.getOrdersIdShippingMethods(orderId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -304,10 +307,11 @@ apiInstance.getOrdersIdShippingMethods(orderId).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **String**|  | 
+ **include** | **String**| The available resources to include | [optional] 
 
 ### Return type
 
-[**ShippingMethodCollection**](ShippingMethodCollection.md)
+[**ShippingPriceCollection**](ShippingPriceCollection.md)
 
 ### Authorization
 
@@ -783,6 +787,7 @@ auth.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new GetcandyJs.OrdersApi();
 let orderId = "orderId_example"; // String | 
 let opts = {
+  'include': "include_example", // String | Related resources to include in response
   'inlineObject12': new GetcandyJs.InlineObject12() // InlineObject12 | 
 };
 apiInstance.putOrdersIdShippingCost(orderId, opts).then((data) => {
@@ -799,6 +804,7 @@ apiInstance.putOrdersIdShippingCost(orderId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **String**|  | 
+ **include** | **String**| Related resources to include in response | [optional] 
  **inlineObject12** | [**InlineObject12**](InlineObject12.md)|  | [optional] 
 
 ### Return type

@@ -58,7 +58,6 @@ class InlineObject12 {
 }
 
 /**
- * The ShippingPrice id to associate
  * @member {String} price_id
  */
 InlineObject12.prototype['price_id'] = undefined;

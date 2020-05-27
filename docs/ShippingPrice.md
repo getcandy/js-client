@@ -20,5 +20,7 @@ Name | Type | Description | Notes
 **depthUnit** | **String** |  | [optional] 
 **minVolume** | **String** |  | [optional] 
 **volumeUnit** | **String** |  | [optional] 
+**method** | [**ShippingMethodResponse**](ShippingMethodResponse.md) |  | [optional] 
+**zone** | [**ShippingZoneResponse**](ShippingZoneResponse.md) |  | [optional] 
 
 

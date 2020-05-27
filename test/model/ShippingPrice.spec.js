@@ -150,6 +150,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property method (base name: "method")', function() {
+      // uncomment below and update the code to test the property method
+      //var instane = new GetcandyJs.ShippingPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property zone (base name: "zone")', function() {
+      // uncomment below and update the code to test the property zone
+      //var instane = new GetcandyJs.ShippingPrice();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

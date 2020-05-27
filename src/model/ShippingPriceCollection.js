@@ -12,11 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Links from './Links';
-import PaginatedResponse from './PaginatedResponse';
-import Pagination from './Pagination';
 import ShippingPrice from './ShippingPrice';
-import ShippingPriceCollectionAllOf from './ShippingPriceCollectionAllOf';
 
 /**
  * The ShippingPriceCollection model module.
@@ -27,12 +23,9 @@ class ShippingPriceCollection {
     /**
      * Constructs a new <code>ShippingPriceCollection</code>.
      * @alias module:model/ShippingPriceCollection
-     * @extends module:model/PaginatedResponse
-     * @implements module:model/ShippingPriceCollectionAllOf
-     * @implements module:model/PaginatedResponse
      */
     constructor() { 
-        ShippingPriceCollectionAllOf.initialize(this);PaginatedResponse.initialize(this);
+        
         ShippingPriceCollection.initialize(this);
     }
 
@@ -54,9 +47,6 @@ class ShippingPriceCollection {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new ShippingPriceCollection();
-            PaginatedResponse.constructFromObject(data, obj);
-            ShippingPriceCollectionAllOf.constructFromObject(data, obj);
-            PaginatedResponse.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('data')) {
                 obj['data'] = ApiClient.convertToType(data['data'], [ShippingPrice]);
@@ -74,20 +64,6 @@ class ShippingPriceCollection {
 ShippingPriceCollection.prototype['data'] = undefined;
 
 
-// Implement ShippingPriceCollectionAllOf interface:
-/**
- * @member {Array.<module:model/ShippingPrice>} data
- */
-ShippingPriceCollectionAllOf.prototype['data'] = undefined;
-// Implement PaginatedResponse interface:
-/**
- * @member {module:model/Pagination} meta
- */
-PaginatedResponse.prototype['meta'] = undefined;
-/**
- * @member {module:model/Links} links
- */
-PaginatedResponse.prototype['links'] = undefined;
 
 
 

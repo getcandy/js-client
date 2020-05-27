@@ -221,6 +221,10 @@ import PaymentProvider from './model/PaymentProvider';
 import PaymentProviderCollection from './model/PaymentProviderCollection';
 import PaymentProviderCollectionAllOf from './model/PaymentProviderCollectionAllOf';
 import PaymentProviderResponse from './model/PaymentProviderResponse';
+import PaymentType from './model/PaymentType';
+import PaymentTypeCollection from './model/PaymentTypeCollection';
+import PaymentTypeCollectionAllOf from './model/PaymentTypeCollectionAllOf';
+import PaymentTypeResponse from './model/PaymentTypeResponse';
 import Permission from './model/Permission';
 import PermissionCollection from './model/PermissionCollection';
 import PermissionCollectionAllOf from './model/PermissionCollectionAllOf';
@@ -295,7 +299,6 @@ import ShippingMethodCollectionAllOf from './model/ShippingMethodCollectionAllOf
 import ShippingMethodResponse from './model/ShippingMethodResponse';
 import ShippingPrice from './model/ShippingPrice';
 import ShippingPriceCollection from './model/ShippingPriceCollection';
-import ShippingPriceCollectionAllOf from './model/ShippingPriceCollectionAllOf';
 import ShippingPriceResponse from './model/ShippingPriceResponse';
 import ShippingZone from './model/ShippingZone';
 import ShippingZoneCollection from './model/ShippingZoneCollection';
@@ -1642,6 +1645,30 @@ export {
     PaymentProviderResponse,
 
     /**
+     * The PaymentType model constructor.
+     * @property {module:model/PaymentType}
+     */
+    PaymentType,
+
+    /**
+     * The PaymentTypeCollection model constructor.
+     * @property {module:model/PaymentTypeCollection}
+     */
+    PaymentTypeCollection,
+
+    /**
+     * The PaymentTypeCollectionAllOf model constructor.
+     * @property {module:model/PaymentTypeCollectionAllOf}
+     */
+    PaymentTypeCollectionAllOf,
+
+    /**
+     * The PaymentTypeResponse model constructor.
+     * @property {module:model/PaymentTypeResponse}
+     */
+    PaymentTypeResponse,
+
+    /**
      * The Permission model constructor.
      * @property {module:model/Permission}
      */
@@ -2084,12 +2111,6 @@ export {
      * @property {module:model/ShippingPriceCollection}
      */
     ShippingPriceCollection,
-
-    /**
-     * The ShippingPriceCollectionAllOf model constructor.
-     * @property {module:model/ShippingPriceCollectionAllOf}
-     */
-    ShippingPriceCollectionAllOf,
 
     /**
      * The ShippingPriceResponse model constructor.

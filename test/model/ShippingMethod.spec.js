@@ -60,6 +60,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property attributeData (base name: "attribute_data")', function() {
+      // uncomment below and update the code to test the property attributeData
+      //var instane = new GetcandyJs.ShippingMethod();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instane = new GetcandyJs.ShippingMethod();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property description (base name: "description")', function() {
+      // uncomment below and update the code to test the property description
+      //var instane = new GetcandyJs.ShippingMethod();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

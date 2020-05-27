@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import AttributeData from './AttributeData';
+import LocalisedAttributeData from './LocalisedAttributeData';
 import ShippingMethodAllOf from './ShippingMethodAllOf';
 
 /**
@@ -24,12 +25,12 @@ class ShippingMethod {
     /**
      * Constructs a new <code>ShippingMethod</code>.
      * @alias module:model/ShippingMethod
-     * @extends module:model/AttributeData
      * @implements module:model/ShippingMethodAllOf
      * @implements module:model/AttributeData
+     * @implements module:model/LocalisedAttributeData
      */
     constructor() { 
-        ShippingMethodAllOf.initialize(this);AttributeData.initialize(this);
+        ShippingMethodAllOf.initialize(this);AttributeData.initialize(this);LocalisedAttributeData.initialize(this);
         ShippingMethod.initialize(this);
     }
 
@@ -51,12 +52,21 @@ class ShippingMethod {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new ShippingMethod();
-            AttributeData.constructFromObject(data, obj);
             ShippingMethodAllOf.constructFromObject(data, obj);
             AttributeData.constructFromObject(data, obj);
+            LocalisedAttributeData.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
+            }
+            if (data.hasOwnProperty('attribute_data')) {
+                obj['attribute_data'] = ApiClient.convertToType(data['attribute_data'], Object);
+            }
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('description')) {
+                obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
         }
         return obj;
@@ -70,6 +80,21 @@ class ShippingMethod {
  */
 ShippingMethod.prototype['type'] = undefined;
 
+/**
+ * @member {Object} attribute_data
+ */
+ShippingMethod.prototype['attribute_data'] = undefined;
+
+/**
+ * @member {String} name
+ */
+ShippingMethod.prototype['name'] = undefined;
+
+/**
+ * @member {String} description
+ */
+ShippingMethod.prototype['description'] = undefined;
+
 
 // Implement ShippingMethodAllOf interface:
 /**
@@ -81,6 +106,15 @@ ShippingMethodAllOf.prototype['type'] = undefined;
  * @member {Object} attribute_data
  */
 AttributeData.prototype['attribute_data'] = undefined;
+// Implement LocalisedAttributeData interface:
+/**
+ * @member {String} name
+ */
+LocalisedAttributeData.prototype['name'] = undefined;
+/**
+ * @member {String} description
+ */
+LocalisedAttributeData.prototype['description'] = undefined;
 
 
 

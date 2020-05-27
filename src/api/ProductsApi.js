@@ -308,14 +308,24 @@ export default class ProductsApi {
     /**
      * Get Products
      * Gets a paginated list of products.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.include 
+     * @param {Boolean} opts.paginated  (default to true)
+     * @param {String} opts.ids Return only the selected IDs
+     * @param {Number} opts.limit 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductCollection} and HTTP response
      */
-    getProductsWithHttpInfo() {
+    getProductsWithHttpInfo(opts) {
+      opts = opts || {};
       let postBody = null;
 
       let pathParams = {
       };
       let queryParams = {
+        'include': opts['include'],
+        'paginated': opts['paginated'],
+        'ids': opts['ids'],
+        'limit': opts['limit']
       };
       let headerParams = {
       };
@@ -336,10 +346,15 @@ export default class ProductsApi {
     /**
      * Get Products
      * Gets a paginated list of products.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.include 
+     * @param {Boolean} opts.paginated  (default to true)
+     * @param {String} opts.ids Return only the selected IDs
+     * @param {Number} opts.limit 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductCollection}
      */
-    getProducts() {
-      return this.getProductsWithHttpInfo()
+    getProducts(opts) {
+      return this.getProductsWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
