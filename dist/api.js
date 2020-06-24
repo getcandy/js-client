@@ -10542,7 +10542,7 @@ exports.SearchApiAxiosParamCreator = function (configuration) {
             };
         },
         /**
-         * Search across products or categories
+         * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
          * @summary Search GetCandy
          * @param {string} [channel]
          * @param {string} [category]
@@ -10553,10 +10553,11 @@ exports.SearchApiAxiosParamCreator = function (configuration) {
          * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include]
          * @param {string} [sort]
+         * @param {boolean} [fullResponse]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options = {}) {
+        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options = {}) {
             const localVarPath = `/search`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -10592,6 +10593,9 @@ exports.SearchApiAxiosParamCreator = function (configuration) {
             }
             if (sort !== undefined) {
                 localVarQueryParameter['sort'] = sort;
+            }
+            if (fullResponse !== undefined) {
+                localVarQueryParameter['full_response'] = fullResponse;
             }
             localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
@@ -10639,7 +10643,7 @@ exports.SearchApiFp = function (configuration) {
             };
         },
         /**
-         * Search across products or categories
+         * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
          * @summary Search GetCandy
          * @param {string} [channel]
          * @param {string} [category]
@@ -10650,11 +10654,12 @@ exports.SearchApiFp = function (configuration) {
          * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include]
          * @param {string} [sort]
+         * @param {boolean} [fullResponse]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options) {
-            const localVarAxiosArgs = exports.SearchApiAxiosParamCreator(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options);
+        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options) {
+            const localVarAxiosArgs = exports.SearchApiAxiosParamCreator(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -10688,7 +10693,7 @@ exports.SearchApiFactory = function (configuration, basePath, axios) {
             return exports.SearchApiFp(configuration).getSavedSearches(options)(axios, basePath);
         },
         /**
-         * Search across products or categories
+         * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
          * @summary Search GetCandy
          * @param {string} [channel]
          * @param {string} [category]
@@ -10699,11 +10704,12 @@ exports.SearchApiFactory = function (configuration, basePath, axios) {
          * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include]
          * @param {string} [sort]
+         * @param {boolean} [fullResponse]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options) {
-            return exports.SearchApiFp(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options)(axios, basePath);
+        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options) {
+            return exports.SearchApiFp(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options)(axios, basePath);
         },
     };
 };
@@ -10736,7 +10742,7 @@ class SearchApi extends base_1.BaseAPI {
         return exports.SearchApiFp(this.configuration).getSavedSearches(options)(this.axios, this.basePath);
     }
     /**
-     * Search across products or categories
+     * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
      * @summary Search GetCandy
      * @param {string} [channel]
      * @param {string} [category]
@@ -10747,12 +10753,13 @@ class SearchApi extends base_1.BaseAPI {
      * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
      * @param {string} [sort]
+     * @param {boolean} [fullResponse]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SearchApi
      */
-    getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options) {
-        return exports.SearchApiFp(this.configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options)(this.axios, this.basePath);
+    getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options) {
+        return exports.SearchApiFp(this.configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options)(this.axios, this.basePath);
     }
 }
 exports.SearchApi = SearchApi;

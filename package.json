@@ -1,6 +1,6 @@
 {
   "name": "@getcandy/js-client",
-  "version": "0.9.18",
+  "version": "0.9.19",
   "description": "OpenAPI client for @getcandy/js-client",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
@@ -10,7 +10,7 @@
     "openapi-generator",
     "@getcandy/js-client"
   ],
-  "license": "MIT",
+  "license": "Unlicense",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {

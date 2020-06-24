@@ -246,6 +246,37 @@ export interface AddressResponse {
 /**
  *
  * @export
+ * @interface Aggregation
+ */
+export interface Aggregation {
+    /**
+     *
+     * @type {string}
+     * @memberof Aggregation
+     */
+    handle?: string;
+    /**
+     *
+     * @type {number}
+     * @memberof Aggregation
+     */
+    doc_count?: number;
+    /**
+     *
+     * @type {object}
+     * @memberof Aggregation
+     */
+    data?: object;
+    /**
+     *
+     * @type {Array<object>}
+     * @memberof Aggregation
+     */
+    buckets?: Array<object>;
+}
+/**
+ *
+ * @export
  * @interface Asset
  */
 export interface Asset {
@@ -6335,123 +6366,34 @@ export interface SavedSearchResponse {
     data?: SavedSearch;
 }
 /**
- *
+ * @type Search
  * @export
- * @interface Search
  */
-export interface Search {
-    /**
-     *
-     * @type {object}
-     * @memberof Search
-     */
-    suggestions?: object;
-    /**
-     *
-     * @type {SearchMeta}
-     * @memberof Search
-     */
-    meta?: SearchMeta;
-    /**
-     *
-     * @type {Array<object>}
-     * @memberof Search
-     */
-    data?: Array<object>;
-}
+export declare type Search = Category | Product;
 /**
  *
  * @export
- * @interface SearchMeta
+ * @interface SearchResponse
  */
-export interface SearchMeta {
+export interface SearchResponse {
     /**
      *
-     * @type {string}
-     * @memberof SearchMeta
+     * @type {Array<Search>}
+     * @memberof SearchResponse
      */
-    sort?: string;
+    data?: Array<Search>;
     /**
      *
-     * @type {boolean}
-     * @memberof SearchMeta
+     * @type {Pagination & object}
+     * @memberof SearchResponse
      */
-    category_page?: boolean;
+    meta?: Pagination & object;
     /**
      *
-     * @type {SearchMetaPagination}
-     * @memberof SearchMeta
+     * @type {Links}
+     * @memberof SearchResponse
      */
-    pagination?: SearchMetaPagination;
-    /**
-     *
-     * @type {SearchMetaAggregation}
-     * @memberof SearchMeta
-     */
-    aggregation?: SearchMetaAggregation;
-}
-/**
- *
- * @export
- * @interface SearchMetaAggregation
- */
-export interface SearchMetaAggregation {
-    /**
-     *
-     * @type {object}
-     * @memberof SearchMetaAggregation
-     */
-    data?: object;
-}
-/**
- *
- * @export
- * @interface SearchMetaPagination
- */
-export interface SearchMetaPagination {
-    /**
-     *
-     * @type {SearchMetaPaginationData}
-     * @memberof SearchMetaPagination
-     */
-    data?: SearchMetaPaginationData;
-}
-/**
- *
- * @export
- * @interface SearchMetaPaginationData
- */
-export interface SearchMetaPaginationData {
-    /**
-     *
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    total?: number;
-    /**
-     *
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    count?: number;
-    /**
-     *
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    per_page?: number;
-    /**
-     *
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    current_page?: number;
-    /**
-     *
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    total_pages?: number;
+    links?: Links;
 }
 /**
  *
@@ -12684,7 +12626,7 @@ export declare const SearchApiAxiosParamCreator: (configuration?: Configuration)
      */
     getSavedSearches(options?: any): RequestArgs;
     /**
-     * Search across products or categories
+     * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
      * @summary Search GetCandy
      * @param {string} [channel]
      * @param {string} [category]
@@ -12695,10 +12637,11 @@ export declare const SearchApiAxiosParamCreator: (configuration?: Configuration)
      * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
      * @param {string} [sort]
+     * @param {boolean} [fullResponse]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any): RequestArgs;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any): RequestArgs;
 };
 /**
  * SearchApi - functional programming interface
@@ -12721,7 +12664,7 @@ export declare const SearchApiFp: (configuration?: Configuration) => {
      */
     getSavedSearches(options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<SavedSearchCollection>;
     /**
-     * Search across products or categories
+     * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
      * @summary Search GetCandy
      * @param {string} [channel]
      * @param {string} [category]
@@ -12732,10 +12675,11 @@ export declare const SearchApiFp: (configuration?: Configuration) => {
      * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
      * @param {string} [sort]
+     * @param {boolean} [fullResponse]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<Search>;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<SearchResponse>;
 };
 /**
  * SearchApi - factory interface
@@ -12758,7 +12702,7 @@ export declare const SearchApiFactory: (configuration?: Configuration, basePath?
      */
     getSavedSearches(options?: any): AxiosPromise<SavedSearchCollection>;
     /**
-     * Search across products or categories
+     * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
      * @summary Search GetCandy
      * @param {string} [channel]
      * @param {string} [category]
@@ -12769,10 +12713,11 @@ export declare const SearchApiFactory: (configuration?: Configuration, basePath?
      * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
      * @param {string} [sort]
+     * @param {boolean} [fullResponse]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any): AxiosPromise<Search>;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any): AxiosPromise<SearchResponse>;
 };
 /**
  * SearchApi - object-oriented interface
@@ -12799,7 +12744,7 @@ export declare class SearchApi extends BaseAPI {
      */
     getSavedSearches(options?: any): AxiosPromise<SavedSearchCollection>;
     /**
-     * Search across products or categories
+     * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
      * @summary Search GetCandy
      * @param {string} [channel]
      * @param {string} [category]
@@ -12810,11 +12755,12 @@ export declare class SearchApi extends BaseAPI {
      * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
      * @param {string} [sort]
+     * @param {boolean} [fullResponse]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SearchApi
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any): AxiosPromise<Search>;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any): AxiosPromise<SearchResponse>;
 }
 /**
  * SettingsApi - axios parameter creator

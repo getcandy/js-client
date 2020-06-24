@@ -253,6 +253,37 @@ export interface AddressResponse {
 /**
  * 
  * @export
+ * @interface Aggregation
+ */
+export interface Aggregation {
+    /**
+     * 
+     * @type {string}
+     * @memberof Aggregation
+     */
+    handle?: string;
+    /**
+     * 
+     * @type {number}
+     * @memberof Aggregation
+     */
+    doc_count?: number;
+    /**
+     * 
+     * @type {object}
+     * @memberof Aggregation
+     */
+    data?: object;
+    /**
+     * 
+     * @type {Array<object>}
+     * @memberof Aggregation
+     */
+    buckets?: Array<object>;
+}
+/**
+ * 
+ * @export
  * @interface Asset
  */
 export interface Asset {
@@ -3622,7 +3653,7 @@ export interface InlineResponse4041 {
     message ?: Error;
 }
 /**
- * 
+ *
  * @export
  * @interface InlineResponse422
  */
@@ -6344,123 +6375,35 @@ export interface SavedSearchResponse {
     data?: SavedSearch;
 }
 /**
- * 
+ * @type Search
  * @export
- * @interface Search
  */
-export interface Search {
-    /**
-     * 
-     * @type {object}
-     * @memberof Search
-     */
-    suggestions?: object;
-    /**
-     * 
-     * @type {SearchMeta}
-     * @memberof Search
-     */
-    meta?: SearchMeta;
-    /**
-     * 
-     * @type {Array<object>}
-     * @memberof Search
-     */
-    data?: Array<object>;
-}
+export type Search = Category | Product;
+
 /**
  * 
  * @export
- * @interface SearchMeta
+ * @interface SearchResponse
  */
-export interface SearchMeta {
+export interface SearchResponse {
     /**
      * 
-     * @type {string}
-     * @memberof SearchMeta
+     * @type {Array<Search>}
+     * @memberof SearchResponse
      */
-    sort?: string;
+    data?: Array<Search>;
     /**
      * 
-     * @type {boolean}
-     * @memberof SearchMeta
+     * @type {Pagination & object}
+     * @memberof SearchResponse
      */
-    category_page?: boolean;
+    meta?: Pagination & object;
     /**
      * 
-     * @type {SearchMetaPagination}
-     * @memberof SearchMeta
+     * @type {Links}
+     * @memberof SearchResponse
      */
-    pagination?: SearchMetaPagination;
-    /**
-     * 
-     * @type {SearchMetaAggregation}
-     * @memberof SearchMeta
-     */
-    aggregation?: SearchMetaAggregation;
-}
-/**
- * 
- * @export
- * @interface SearchMetaAggregation
- */
-export interface SearchMetaAggregation {
-    /**
-     * 
-     * @type {object}
-     * @memberof SearchMetaAggregation
-     */
-    data?: object;
-}
-/**
- * 
- * @export
- * @interface SearchMetaPagination
- */
-export interface SearchMetaPagination {
-    /**
-     * 
-     * @type {SearchMetaPaginationData}
-     * @memberof SearchMetaPagination
-     */
-    data?: SearchMetaPaginationData;
-}
-/**
- * 
- * @export
- * @interface SearchMetaPaginationData
- */
-export interface SearchMetaPaginationData {
-    /**
-     * 
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    total?: number;
-    /**
-     * 
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    count?: number;
-    /**
-     * 
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    per_page?: number;
-    /**
-     * 
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    current_page?: number;
-    /**
-     * 
-     * @type {number}
-     * @memberof SearchMetaPaginationData
-     */
-    total_pages?: number;
+    links?: Links;
 }
 /**
  * 
@@ -18691,7 +18634,7 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
             };
         },
         /**
-         * Search across products or categories
+         * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
          * @summary Search GetCandy
          * @param {string} [channel] 
          * @param {string} [category] 
@@ -18702,10 +18645,11 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include] 
          * @param {string} [sort] 
+         * @param {boolean} [fullResponse] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options: any = {}): RequestArgs {
+        getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options: any = {}): RequestArgs {
             const localVarPath = `/search`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -18750,6 +18694,10 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
 
             if (sort !== undefined) {
                 localVarQueryParameter['sort'] = sort;
+            }
+
+            if (fullResponse !== undefined) {
+                localVarQueryParameter['full_response'] = fullResponse;
             }
 
 
@@ -18802,7 +18750,7 @@ export const SearchApiFp = function(configuration?: Configuration) {
             };
         },
         /**
-         * Search across products or categories
+         * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
          * @summary Search GetCandy
          * @param {string} [channel] 
          * @param {string} [category] 
@@ -18813,11 +18761,12 @@ export const SearchApiFp = function(configuration?: Configuration) {
          * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include] 
          * @param {string} [sort] 
+         * @param {boolean} [fullResponse] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<Search> {
-            const localVarAxiosArgs = SearchApiAxiosParamCreator(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options);
+        getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<SearchResponse> {
+            const localVarAxiosArgs = SearchApiAxiosParamCreator(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
                 return axios.request(axiosRequestArgs);
@@ -18852,7 +18801,7 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
             return SearchApiFp(configuration).getSavedSearches(options)(axios, basePath);
         },
         /**
-         * Search across products or categories
+         * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
          * @summary Search GetCandy
          * @param {string} [channel] 
          * @param {string} [category] 
@@ -18863,11 +18812,12 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
          * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include] 
          * @param {string} [sort] 
+         * @param {boolean} [fullResponse] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any): AxiosPromise<Search> {
-            return SearchApiFp(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options)(axios, basePath);
+        getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any): AxiosPromise<SearchResponse> {
+            return SearchApiFp(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options)(axios, basePath);
         },
     };
 };
@@ -18903,7 +18853,7 @@ export class SearchApi extends BaseAPI {
     }
 
     /**
-     * Search across products or categories
+     * Search across products or categories  You can filter across attributes by adding key=value to the search query, for filtering multiple values use key=value1:value2
      * @summary Search GetCandy
      * @param {string} [channel] 
      * @param {string} [category] 
@@ -18914,12 +18864,13 @@ export class SearchApi extends BaseAPI {
      * @param {string} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include] 
      * @param {string} [sort] 
+     * @param {boolean} [fullResponse] 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SearchApi
      */
-    public getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, options?: any) {
-        return SearchApiFp(this.configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, options)(this.axios, this.basePath);
+    public getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: string, include?: string, sort?: string, fullResponse?: boolean, options?: any) {
+        return SearchApiFp(this.configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options)(this.axios, this.basePath);
     }
 
 }
