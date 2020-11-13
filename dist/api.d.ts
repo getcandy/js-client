@@ -2328,6 +2328,32 @@ export interface CustomerCollectionAllOf {
 /**
  *
  * @export
+ * @interface CustomerFields
+ */
+export interface CustomerFields {
+    /**
+     *
+     * @type {object}
+     * @memberof CustomerFields
+     */
+    fields?: object;
+}
+/**
+ *
+ * @export
+ * @interface CustomerFieldsResponse
+ */
+export interface CustomerFieldsResponse {
+    /**
+     *
+     * @type {CustomerFields}
+     * @memberof CustomerFieldsResponse
+     */
+    data?: CustomerFields;
+}
+/**
+ *
+ * @export
  * @interface CustomerGroup
  */
 export interface CustomerGroup {
@@ -10043,6 +10069,13 @@ export declare const CustomersApiAxiosParamCreator: (configuration?: Configurati
      */
     deleteCustomersCustomerId: (customerId: string, options?: any) => Promise<RequestArgs>;
     /**
+     * This endpoint returns any available customer fields which have been defined in the getcandy config.
+     * @summary Get custom customer fields
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getCustomerFields: (options?: any) => Promise<RequestArgs>;
+    /**
      * Gets a paginated list of all customers
      * @summary Get all customers
      * @param {string} [include] Comma separated include for the resource
@@ -10095,26 +10128,20 @@ export declare const CustomersApiAxiosParamCreator: (configuration?: Configurati
      *
      * @summary Attach customer groups to a customer
      * @param {string} customerId
-     * @param {Array<string>} [customerGroupIds]
+     * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCustomersCustomerIdCustomerGroups: (customerId: string, customerGroupIds?: Array<string>, options?: any) => Promise<RequestArgs>;
+    postCustomersCustomerIdCustomerGroups: (customerId: string, attachCustomerToGroupBody?: AttachCustomerToGroupBody, options?: any) => Promise<RequestArgs>;
     /**
      *
      * @summary Update the customer resource
      * @param {string} customerId
-     * @param {string} [firstname]
-     * @param {string} [lastname]
-     * @param {number} [contactNumber]
-     * @param {number} [altContactNumber]
-     * @param {string} [companyName]
-     * @param {string} [vatNo]
-     * @param {object} [fields]
+     * @param {UpdateCustomerBody} [updateCustomerBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putCustomersCustomerId: (customerId: string, firstname?: string, lastname?: string, contactNumber?: number, altContactNumber?: number, companyName?: string, vatNo?: string, fields?: object, options?: any) => Promise<RequestArgs>;
+    putCustomersCustomerId: (customerId: string, updateCustomerBody?: UpdateCustomerBody, options?: any) => Promise<RequestArgs>;
 };
 /**
  * CustomersApi - functional programming interface
@@ -10129,6 +10156,13 @@ export declare const CustomersApiFp: (configuration?: Configuration) => {
      * @throws {RequiredError}
      */
     deleteCustomersCustomerId(customerId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>>;
+    /**
+     * This endpoint returns any available customer fields which have been defined in the getcandy config.
+     * @summary Get custom customer fields
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getCustomerFields(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CustomerFieldsResponse>>;
     /**
      * Gets a paginated list of all customers
      * @summary Get all customers
@@ -10182,26 +10216,20 @@ export declare const CustomersApiFp: (configuration?: Configuration) => {
      *
      * @summary Attach customer groups to a customer
      * @param {string} customerId
-     * @param {Array<string>} [customerGroupIds]
+     * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCustomersCustomerIdCustomerGroups(customerId: string, customerGroupIds?: Array<string>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CustomerResponse>>;
+    postCustomersCustomerIdCustomerGroups(customerId: string, attachCustomerToGroupBody?: AttachCustomerToGroupBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CustomerResponse>>;
     /**
      *
      * @summary Update the customer resource
      * @param {string} customerId
-     * @param {string} [firstname]
-     * @param {string} [lastname]
-     * @param {number} [contactNumber]
-     * @param {number} [altContactNumber]
-     * @param {string} [companyName]
-     * @param {string} [vatNo]
-     * @param {object} [fields]
+     * @param {UpdateCustomerBody} [updateCustomerBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putCustomersCustomerId(customerId: string, firstname?: string, lastname?: string, contactNumber?: number, altContactNumber?: number, companyName?: string, vatNo?: string, fields?: object, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CustomerResponse>>;
+    putCustomersCustomerId(customerId: string, updateCustomerBody?: UpdateCustomerBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CustomerResponse>>;
 };
 /**
  * CustomersApi - factory interface
@@ -10216,6 +10244,13 @@ export declare const CustomersApiFactory: (configuration?: Configuration, basePa
      * @throws {RequiredError}
      */
     deleteCustomersCustomerId(customerId: string, options?: any): AxiosPromise<void>;
+    /**
+     * This endpoint returns any available customer fields which have been defined in the getcandy config.
+     * @summary Get custom customer fields
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getCustomerFields(options?: any): AxiosPromise<CustomerFieldsResponse>;
     /**
      * Gets a paginated list of all customers
      * @summary Get all customers
@@ -10269,26 +10304,20 @@ export declare const CustomersApiFactory: (configuration?: Configuration, basePa
      *
      * @summary Attach customer groups to a customer
      * @param {string} customerId
-     * @param {Array<string>} [customerGroupIds]
+     * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCustomersCustomerIdCustomerGroups(customerId: string, customerGroupIds?: Array<string>, options?: any): AxiosPromise<CustomerResponse>;
+    postCustomersCustomerIdCustomerGroups(customerId: string, attachCustomerToGroupBody?: AttachCustomerToGroupBody, options?: any): AxiosPromise<CustomerResponse>;
     /**
      *
      * @summary Update the customer resource
      * @param {string} customerId
-     * @param {string} [firstname]
-     * @param {string} [lastname]
-     * @param {number} [contactNumber]
-     * @param {number} [altContactNumber]
-     * @param {string} [companyName]
-     * @param {string} [vatNo]
-     * @param {object} [fields]
+     * @param {UpdateCustomerBody} [updateCustomerBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putCustomersCustomerId(customerId: string, firstname?: string, lastname?: string, contactNumber?: number, altContactNumber?: number, companyName?: string, vatNo?: string, fields?: object, options?: any): AxiosPromise<CustomerResponse>;
+    putCustomersCustomerId(customerId: string, updateCustomerBody?: UpdateCustomerBody, options?: any): AxiosPromise<CustomerResponse>;
 };
 /**
  * CustomersApi - object-oriented interface
@@ -10306,6 +10335,14 @@ export declare class CustomersApi extends BaseAPI {
      * @memberof CustomersApi
      */
     deleteCustomersCustomerId(customerId: string, options?: any): Promise<import("axios").AxiosResponse<void>>;
+    /**
+     * This endpoint returns any available customer fields which have been defined in the getcandy config.
+     * @summary Get custom customer fields
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof CustomersApi
+     */
+    getCustomerFields(options?: any): Promise<import("axios").AxiosResponse<CustomerFieldsResponse>>;
     /**
      * Gets a paginated list of all customers
      * @summary Get all customers
@@ -10364,28 +10401,22 @@ export declare class CustomersApi extends BaseAPI {
      *
      * @summary Attach customer groups to a customer
      * @param {string} customerId
-     * @param {Array<string>} [customerGroupIds]
+     * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomersApi
      */
-    postCustomersCustomerIdCustomerGroups(customerId: string, customerGroupIds?: Array<string>, options?: any): Promise<import("axios").AxiosResponse<CustomerResponse>>;
+    postCustomersCustomerIdCustomerGroups(customerId: string, attachCustomerToGroupBody?: AttachCustomerToGroupBody, options?: any): Promise<import("axios").AxiosResponse<CustomerResponse>>;
     /**
      *
      * @summary Update the customer resource
      * @param {string} customerId
-     * @param {string} [firstname]
-     * @param {string} [lastname]
-     * @param {number} [contactNumber]
-     * @param {number} [altContactNumber]
-     * @param {string} [companyName]
-     * @param {string} [vatNo]
-     * @param {object} [fields]
+     * @param {UpdateCustomerBody} [updateCustomerBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomersApi
      */
-    putCustomersCustomerId(customerId: string, firstname?: string, lastname?: string, contactNumber?: number, altContactNumber?: number, companyName?: string, vatNo?: string, fields?: object, options?: any): Promise<import("axios").AxiosResponse<CustomerResponse>>;
+    putCustomersCustomerId(customerId: string, updateCustomerBody?: UpdateCustomerBody, options?: any): Promise<import("axios").AxiosResponse<CustomerResponse>>;
 }
 /**
  * DiscountsApi - axios parameter creator
@@ -13520,8 +13551,8 @@ export declare const SearchApiAxiosParamCreator: (configuration?: Configuration)
      * @param {string} [channel]
      * @param {string} [category]
      * @param {number} [page]
-     * @param {'category' | 'product'} [searchType]
-     * @param {string} [keywords]
+     * @param {'categories' | 'products'} [searchType]
+     * @param {string} [term]
      * @param {boolean} [rank] Whether to rank results based on config
      * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
@@ -13530,7 +13561,7 @@ export declare const SearchApiAxiosParamCreator: (configuration?: Configuration)
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getSearch: (channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any) => Promise<RequestArgs>;
+    getSearch: (channel?: string, category?: string, page?: number, searchType?: 'categories' | 'products', term?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any) => Promise<RequestArgs>;
     /**
      *
      * @summary Get saved search
@@ -13566,8 +13597,8 @@ export declare const SearchApiFp: (configuration?: Configuration) => {
      * @param {string} [channel]
      * @param {string} [category]
      * @param {number} [page]
-     * @param {'category' | 'product'} [searchType]
-     * @param {string} [keywords]
+     * @param {'categories' | 'products'} [searchType]
+     * @param {string} [term]
      * @param {boolean} [rank] Whether to rank results based on config
      * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
@@ -13576,7 +13607,7 @@ export declare const SearchApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SearchResponse>>;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'categories' | 'products', term?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SearchResponse>>;
     /**
      *
      * @summary Get saved search
@@ -13612,8 +13643,8 @@ export declare const SearchApiFactory: (configuration?: Configuration, basePath?
      * @param {string} [channel]
      * @param {string} [category]
      * @param {number} [page]
-     * @param {'category' | 'product'} [searchType]
-     * @param {string} [keywords]
+     * @param {'categories' | 'products'} [searchType]
+     * @param {string} [term]
      * @param {boolean} [rank] Whether to rank results based on config
      * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
@@ -13622,7 +13653,7 @@ export declare const SearchApiFactory: (configuration?: Configuration, basePath?
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any): AxiosPromise<SearchResponse>;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'categories' | 'products', term?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any): AxiosPromise<SearchResponse>;
     /**
      *
      * @summary Get saved search
@@ -13662,8 +13693,8 @@ export declare class SearchApi extends BaseAPI {
      * @param {string} [channel]
      * @param {string} [category]
      * @param {number} [page]
-     * @param {'category' | 'product'} [searchType]
-     * @param {string} [keywords]
+     * @param {'categories' | 'products'} [searchType]
+     * @param {string} [term]
      * @param {boolean} [rank] Whether to rank results based on config
      * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
@@ -13673,7 +13704,7 @@ export declare class SearchApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SearchApi
      */
-    getSearch(channel?: string, category?: string, page?: number, searchType?: 'category' | 'product', keywords?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any): Promise<import("axios").AxiosResponse<SearchResponse>>;
+    getSearch(channel?: string, category?: string, page?: number, searchType?: 'categories' | 'products', term?: string, rank?: boolean, idsOnly?: boolean, include?: string, sort?: string, fullResponse?: boolean, options?: any): Promise<import("axios").AxiosResponse<SearchResponse>>;
     /**
      *
      * @summary Get saved search

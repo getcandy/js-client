@@ -5576,6 +5576,32 @@ exports.CustomersApiAxiosParamCreator = function (configuration) {
             };
         }),
         /**
+         * This endpoint returns any available customer fields which have been defined in the getcandy config.
+         * @summary Get custom customer fields
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getCustomerFields: (options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/customers/fields`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'GET' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
          * Gets a paginated list of all customers
          * @summary Get all customers
          * @param {string} [include] Comma separated include for the resource
@@ -5772,11 +5798,11 @@ exports.CustomersApiAxiosParamCreator = function (configuration) {
          *
          * @summary Attach customer groups to a customer
          * @param {string} customerId
-         * @param {Array<string>} [customerGroupIds]
+         * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCustomersCustomerIdCustomerGroups: (customerId, customerGroupIds, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postCustomersCustomerIdCustomerGroups: (customerId, attachCustomerToGroupBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'customerId' is not null or undefined
             if (customerId === null || customerId === undefined) {
                 throw new base_1.RequiredError('customerId', 'Required parameter customerId was null or undefined when calling postCustomersCustomerIdCustomerGroups.');
@@ -5788,20 +5814,17 @@ exports.CustomersApiAxiosParamCreator = function (configuration) {
             if (configuration) {
                 baseOptions = configuration.baseOptions;
             }
-            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'PUT' }, baseOptions), options);
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            const localVarFormParams = new FormData();
-            if (customerGroupIds) {
-                localVarFormParams.append('customer_group_ids', customerGroupIds.join(base_1.COLLECTION_FORMATS.csv));
-            }
-            localVarHeaderParameter['Content-Type'] = 'multipart/form-data';
+            localVarHeaderParameter['Content-Type'] = 'application/json';
             localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            localVarRequestOptions.data = localVarFormParams;
+            const needsSerialization = (typeof attachCustomerToGroupBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(attachCustomerToGroupBody !== undefined ? attachCustomerToGroupBody : {}) : (attachCustomerToGroupBody || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -5811,17 +5834,11 @@ exports.CustomersApiAxiosParamCreator = function (configuration) {
          *
          * @summary Update the customer resource
          * @param {string} customerId
-         * @param {string} [firstname]
-         * @param {string} [lastname]
-         * @param {number} [contactNumber]
-         * @param {number} [altContactNumber]
-         * @param {string} [companyName]
-         * @param {string} [vatNo]
-         * @param {object} [fields]
+         * @param {UpdateCustomerBody} [updateCustomerBody]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putCustomersCustomerId: (customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putCustomersCustomerId: (customerId, updateCustomerBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'customerId' is not null or undefined
             if (customerId === null || customerId === undefined) {
                 throw new base_1.RequiredError('customerId', 'Required parameter customerId was null or undefined when calling putCustomersCustomerId.');
@@ -5836,35 +5853,14 @@ exports.CustomersApiAxiosParamCreator = function (configuration) {
             const localVarRequestOptions = Object.assign(Object.assign({ method: 'PUT' }, baseOptions), options);
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            const localVarFormParams = new FormData();
-            if (firstname !== undefined) {
-                localVarFormParams.append('firstname', firstname);
-            }
-            if (lastname !== undefined) {
-                localVarFormParams.append('lastname', lastname);
-            }
-            if (contactNumber !== undefined) {
-                localVarFormParams.append('contact_number', contactNumber);
-            }
-            if (altContactNumber !== undefined) {
-                localVarFormParams.append('alt_contact_number', altContactNumber);
-            }
-            if (companyName !== undefined) {
-                localVarFormParams.append('company_name', companyName);
-            }
-            if (vatNo !== undefined) {
-                localVarFormParams.append('vat_no', vatNo);
-            }
-            if (fields !== undefined) {
-                localVarFormParams.append('fields', fields);
-            }
-            localVarHeaderParameter['Content-Type'] = 'multipart/form-data';
+            localVarHeaderParameter['Content-Type'] = 'application/json';
             localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            localVarRequestOptions.data = localVarFormParams;
+            const needsSerialization = (typeof updateCustomerBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(updateCustomerBody !== undefined ? updateCustomerBody : {}) : (updateCustomerBody || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -5888,6 +5884,21 @@ exports.CustomersApiFp = function (configuration) {
         deleteCustomersCustomerId(customerId, options) {
             return __awaiter(this, void 0, void 0, function* () {
                 const localVarAxiosArgs = yield exports.CustomersApiAxiosParamCreator(configuration).deleteCustomersCustomerId(customerId, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+        /**
+         * This endpoint returns any available customer fields which have been defined in the getcandy config.
+         * @summary Get custom customer fields
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getCustomerFields(options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.CustomersApiAxiosParamCreator(configuration).getCustomerFields(options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -5987,13 +5998,13 @@ exports.CustomersApiFp = function (configuration) {
          *
          * @summary Attach customer groups to a customer
          * @param {string} customerId
-         * @param {Array<string>} [customerGroupIds]
+         * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCustomersCustomerIdCustomerGroups(customerId, customerGroupIds, options) {
+        postCustomersCustomerIdCustomerGroups(customerId, attachCustomerToGroupBody, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.CustomersApiAxiosParamCreator(configuration).postCustomersCustomerIdCustomerGroups(customerId, customerGroupIds, options);
+                const localVarAxiosArgs = yield exports.CustomersApiAxiosParamCreator(configuration).postCustomersCustomerIdCustomerGroups(customerId, attachCustomerToGroupBody, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -6004,19 +6015,13 @@ exports.CustomersApiFp = function (configuration) {
          *
          * @summary Update the customer resource
          * @param {string} customerId
-         * @param {string} [firstname]
-         * @param {string} [lastname]
-         * @param {number} [contactNumber]
-         * @param {number} [altContactNumber]
-         * @param {string} [companyName]
-         * @param {string} [vatNo]
-         * @param {object} [fields]
+         * @param {UpdateCustomerBody} [updateCustomerBody]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putCustomersCustomerId(customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options) {
+        putCustomersCustomerId(customerId, updateCustomerBody, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.CustomersApiAxiosParamCreator(configuration).putCustomersCustomerId(customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options);
+                const localVarAxiosArgs = yield exports.CustomersApiAxiosParamCreator(configuration).putCustomersCustomerId(customerId, updateCustomerBody, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -6040,6 +6045,15 @@ exports.CustomersApiFactory = function (configuration, basePath, axios) {
          */
         deleteCustomersCustomerId(customerId, options) {
             return exports.CustomersApiFp(configuration).deleteCustomersCustomerId(customerId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * This endpoint returns any available customer fields which have been defined in the getcandy config.
+         * @summary Get custom customer fields
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getCustomerFields(options) {
+            return exports.CustomersApiFp(configuration).getCustomerFields(options).then((request) => request(axios, basePath));
         },
         /**
          * Gets a paginated list of all customers
@@ -6104,29 +6118,23 @@ exports.CustomersApiFactory = function (configuration, basePath, axios) {
          *
          * @summary Attach customer groups to a customer
          * @param {string} customerId
-         * @param {Array<string>} [customerGroupIds]
+         * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCustomersCustomerIdCustomerGroups(customerId, customerGroupIds, options) {
-            return exports.CustomersApiFp(configuration).postCustomersCustomerIdCustomerGroups(customerId, customerGroupIds, options).then((request) => request(axios, basePath));
+        postCustomersCustomerIdCustomerGroups(customerId, attachCustomerToGroupBody, options) {
+            return exports.CustomersApiFp(configuration).postCustomersCustomerIdCustomerGroups(customerId, attachCustomerToGroupBody, options).then((request) => request(axios, basePath));
         },
         /**
          *
          * @summary Update the customer resource
          * @param {string} customerId
-         * @param {string} [firstname]
-         * @param {string} [lastname]
-         * @param {number} [contactNumber]
-         * @param {number} [altContactNumber]
-         * @param {string} [companyName]
-         * @param {string} [vatNo]
-         * @param {object} [fields]
+         * @param {UpdateCustomerBody} [updateCustomerBody]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putCustomersCustomerId(customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options) {
-            return exports.CustomersApiFp(configuration).putCustomersCustomerId(customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options).then((request) => request(axios, basePath));
+        putCustomersCustomerId(customerId, updateCustomerBody, options) {
+            return exports.CustomersApiFp(configuration).putCustomersCustomerId(customerId, updateCustomerBody, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -6147,6 +6155,16 @@ class CustomersApi extends base_1.BaseAPI {
      */
     deleteCustomersCustomerId(customerId, options) {
         return exports.CustomersApiFp(this.configuration).deleteCustomersCustomerId(customerId, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     * This endpoint returns any available customer fields which have been defined in the getcandy config.
+     * @summary Get custom customer fields
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof CustomersApi
+     */
+    getCustomerFields(options) {
+        return exports.CustomersApiFp(this.configuration).getCustomerFields(options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Gets a paginated list of all customers
@@ -6216,31 +6234,25 @@ class CustomersApi extends base_1.BaseAPI {
      *
      * @summary Attach customer groups to a customer
      * @param {string} customerId
-     * @param {Array<string>} [customerGroupIds]
+     * @param {AttachCustomerToGroupBody} [attachCustomerToGroupBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomersApi
      */
-    postCustomersCustomerIdCustomerGroups(customerId, customerGroupIds, options) {
-        return exports.CustomersApiFp(this.configuration).postCustomersCustomerIdCustomerGroups(customerId, customerGroupIds, options).then((request) => request(this.axios, this.basePath));
+    postCustomersCustomerIdCustomerGroups(customerId, attachCustomerToGroupBody, options) {
+        return exports.CustomersApiFp(this.configuration).postCustomersCustomerIdCustomerGroups(customerId, attachCustomerToGroupBody, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      *
      * @summary Update the customer resource
      * @param {string} customerId
-     * @param {string} [firstname]
-     * @param {string} [lastname]
-     * @param {number} [contactNumber]
-     * @param {number} [altContactNumber]
-     * @param {string} [companyName]
-     * @param {string} [vatNo]
-     * @param {object} [fields]
+     * @param {UpdateCustomerBody} [updateCustomerBody]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomersApi
      */
-    putCustomersCustomerId(customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options) {
-        return exports.CustomersApiFp(this.configuration).putCustomersCustomerId(customerId, firstname, lastname, contactNumber, altContactNumber, companyName, vatNo, fields, options).then((request) => request(this.axios, this.basePath));
+    putCustomersCustomerId(customerId, updateCustomerBody, options) {
+        return exports.CustomersApiFp(this.configuration).putCustomersCustomerId(customerId, updateCustomerBody, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.CustomersApi = CustomersApi;
@@ -12501,8 +12513,8 @@ exports.SearchApiAxiosParamCreator = function (configuration) {
          * @param {string} [channel]
          * @param {string} [category]
          * @param {number} [page]
-         * @param {'category' | 'product'} [searchType]
-         * @param {string} [keywords]
+         * @param {'categories' | 'products'} [searchType]
+         * @param {string} [term]
          * @param {boolean} [rank] Whether to rank results based on config
          * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include]
@@ -12511,7 +12523,7 @@ exports.SearchApiAxiosParamCreator = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch: (channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        getSearch: (channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/search`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -12533,8 +12545,8 @@ exports.SearchApiAxiosParamCreator = function (configuration) {
             if (searchType !== undefined) {
                 localVarQueryParameter['search_type'] = searchType;
             }
-            if (keywords !== undefined) {
-                localVarQueryParameter['keywords'] = keywords;
+            if (term !== undefined) {
+                localVarQueryParameter['term'] = term;
             }
             if (rank !== undefined) {
                 localVarQueryParameter['rank'] = rank;
@@ -12638,8 +12650,8 @@ exports.SearchApiFp = function (configuration) {
          * @param {string} [channel]
          * @param {string} [category]
          * @param {number} [page]
-         * @param {'category' | 'product'} [searchType]
-         * @param {string} [keywords]
+         * @param {'categories' | 'products'} [searchType]
+         * @param {string} [term]
          * @param {boolean} [rank] Whether to rank results based on config
          * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include]
@@ -12648,9 +12660,9 @@ exports.SearchApiFp = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options) {
+        getSearch(channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.SearchApiAxiosParamCreator(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options);
+                const localVarAxiosArgs = yield exports.SearchApiAxiosParamCreator(configuration).getSearch(channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -12706,8 +12718,8 @@ exports.SearchApiFactory = function (configuration, basePath, axios) {
          * @param {string} [channel]
          * @param {string} [category]
          * @param {number} [page]
-         * @param {'category' | 'product'} [searchType]
-         * @param {string} [keywords]
+         * @param {'categories' | 'products'} [searchType]
+         * @param {string} [term]
          * @param {boolean} [rank] Whether to rank results based on config
          * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
          * @param {string} [include]
@@ -12716,8 +12728,8 @@ exports.SearchApiFactory = function (configuration, basePath, axios) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options) {
-            return exports.SearchApiFp(configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options).then((request) => request(axios, basePath));
+        getSearch(channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options) {
+            return exports.SearchApiFp(configuration).getSearch(channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options).then((request) => request(axios, basePath));
         },
         /**
          *
@@ -12765,8 +12777,8 @@ class SearchApi extends base_1.BaseAPI {
      * @param {string} [channel]
      * @param {string} [category]
      * @param {number} [page]
-     * @param {'category' | 'product'} [searchType]
-     * @param {string} [keywords]
+     * @param {'categories' | 'products'} [searchType]
+     * @param {string} [term]
      * @param {boolean} [rank] Whether to rank results based on config
      * @param {boolean} [idsOnly] Will only return result ID\&#39;s, good for performance
      * @param {string} [include]
@@ -12776,8 +12788,8 @@ class SearchApi extends base_1.BaseAPI {
      * @throws {RequiredError}
      * @memberof SearchApi
      */
-    getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options) {
-        return exports.SearchApiFp(this.configuration).getSearch(channel, category, page, searchType, keywords, rank, idsOnly, include, sort, fullResponse, options).then((request) => request(this.axios, this.basePath));
+    getSearch(channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options) {
+        return exports.SearchApiFp(this.configuration).getSearch(channel, category, page, searchType, term, rank, idsOnly, include, sort, fullResponse, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      *
@@ -14789,8 +14801,6 @@ exports.UsersApiAxiosParamCreator = function (configuration) {
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
             const needsSerialization = (typeof createUserBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
             localVarRequestOptions.data = needsSerialization ? JSON.stringify(createUserBody !== undefined ? createUserBody : {}) : (createUserBody || "");
-            console.log(localVarRequestOptions)
-
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
