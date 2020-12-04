@@ -618,6 +618,19 @@ export interface AssociationGroupCollectionAllOf {
 /**
  *
  * @export
+ * @interface AssociationGroupCollectionAllOf1
+ */
+export interface AssociationGroupCollectionAllOf1 {
+    /**
+     *
+     * @type {Pagination}
+     * @memberof AssociationGroupCollectionAllOf1
+     */
+    meta?: Pagination;
+}
+/**
+ *
+ * @export
  * @interface AttachCategoryChannelsBody
  */
 export interface AttachCategoryChannelsBody {
@@ -1520,19 +1533,6 @@ export interface ChannelCollectionAllOf {
 /**
  *
  * @export
- * @interface ChannelCollectionAllOf1
- */
-export interface ChannelCollectionAllOf1 {
-    /**
-     *
-     * @type {Pagination}
-     * @memberof ChannelCollectionAllOf1
-     */
-    meta?: Pagination;
-}
-/**
- *
- * @export
  * @interface ChannelResponse
  */
 export interface ChannelResponse {
@@ -1858,6 +1858,12 @@ export interface CreateAddressBody {
      * @memberof CreateAddressBody
      */
     user_id?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof CreateAddressBody
+     */
+    customer_id?: string;
     /**
      *
      * @type {boolean}
@@ -2206,37 +2212,130 @@ export interface CreateUserBody {
      * @type {string}
      * @memberof CreateUserBody
      */
-    email?: string;
+    email: string;
     /**
      *
      * @type {string}
      * @memberof CreateUserBody
      */
-    firstname?: string;
+    firstname: string;
     /**
      *
      * @type {string}
      * @memberof CreateUserBody
      */
-    lastname?: string;
+    lastname: string;
     /**
      *
      * @type {string}
      * @memberof CreateUserBody
      */
-    password?: string;
+    password: string;
     /**
      *
      * @type {string}
      * @memberof CreateUserBody
      */
-    password_confirmation?: string;
+    password_confirmation: string;
     /**
      *
      * @type {string}
      * @memberof CreateUserBody
      */
     customer_id?: string;
+}
+/**
+ *
+ * @export
+ * @interface Currency
+ */
+export interface Currency {
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    id?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    code?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    name?: string;
+    /**
+     *
+     * @type {boolean}
+     * @memberof Currency
+     */
+    enabled?: boolean;
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    format?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    exchange_rate?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    decimal_point?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof Currency
+     */
+    thousand_point?: string;
+    /**
+     *
+     * @type {boolean}
+     * @memberof Currency
+     */
+    _default?: boolean;
+}
+/**
+ *
+ * @export
+ * @interface CurrencyCollection
+ */
+export interface CurrencyCollection {
+    /**
+     *
+     * @type {Array<Currency>}
+     * @memberof CurrencyCollection
+     */
+    data?: Array<Currency>;
+    /**
+     *
+     * @type {Pagination}
+     * @memberof CurrencyCollection
+     */
+    meta?: Pagination;
+}
+/**
+ *
+ * @export
+ * @interface CurrencyCollectionAllOf
+ */
+export interface CurrencyCollectionAllOf {
+    /**
+     *
+     * @type {Array<Currency>}
+     * @memberof CurrencyCollectionAllOf
+     */
+    data?: Array<Currency>;
 }
 /**
  *
@@ -2793,7 +2892,85 @@ export interface InlineObject {
      * @type {string}
      * @memberof InlineObject
      */
-    name?: string;
+    group_id: string;
+    /**
+     *
+     * @type {Array<AttributesName>}
+     * @memberof InlineObject
+     */
+    name: Array<AttributesName>;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject
+     */
+    handle: string;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject
+     */
+    position?: number;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    filterable?: boolean;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    scopeable?: boolean;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    translatable?: boolean;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    variant?: boolean;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    searchable?: boolean;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    localised?: boolean;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject
+     */
+    type?: string;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    required?: boolean;
+    /**
+     *
+     * @type {Array<AttributesLookups>}
+     * @memberof InlineObject
+     */
+    lookups?: Array<AttributesLookups>;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject
+     */
+    system?: boolean;
 }
 /**
  *
@@ -2803,22 +2980,28 @@ export interface InlineObject {
 export interface InlineObject1 {
     /**
      *
-     * @type {string}
-     * @memberof InlineObject1
-     */
-    tracking_no?: string;
-    /**
-     * Corresponds to status set in config
-     * @type {string}
-     * @memberof InlineObject1
-     */
-    status?: string;
-    /**
-     *
      * @type {boolean}
      * @memberof InlineObject1
      */
-    send_emails?: boolean;
+    redirect?: boolean;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject1
+     */
+    description?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject1
+     */
+    slug?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject1
+     */
+    locale?: string;
 }
 /**
  *
@@ -2831,7 +3014,7 @@ export interface InlineObject10 {
      * @type {string}
      * @memberof InlineObject10
      */
-    slug?: string;
+    price_id?: string;
 }
 /**
  *
@@ -2840,11 +3023,17 @@ export interface InlineObject10 {
  */
 export interface InlineObject11 {
     /**
-     * An array of attribute IDs
-     * @type {Array<string>}
+     *
+     * @type {string}
      * @memberof InlineObject11
      */
-    attributes: Array<string>;
+    email?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject11
+     */
+    phone?: string;
 }
 /**
  *
@@ -2853,11 +3042,65 @@ export interface InlineObject11 {
  */
 export interface InlineObject12 {
     /**
-     * An array of collection IDs to associate
-     * @type {Array<string>}
+     *
+     * @type {number}
      * @memberof InlineObject12
      */
-    collections: Array<string>;
+    quantity: number;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject12
+     */
+    line_total: number;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject12
+     */
+    unit_price: number;
+    /**
+     * The tax rate as a percentage
+     * @type {number}
+     * @memberof InlineObject12
+     */
+    tax_rate: number;
+    /**
+     * Shows publicly on the order line
+     * @type {string}
+     * @memberof InlineObject12
+     */
+    description: string;
+    /**
+     * Should this line be treated as a manual one
+     * @type {boolean}
+     * @memberof InlineObject12
+     */
+    is_manual?: boolean;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject12
+     */
+    is_shipping?: boolean;
+    /**
+     * If this is a variant, list the option name here
+     * @type {string}
+     * @memberof InlineObject12
+     */
+    option?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject12
+     */
+    sku: string;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject12
+     */
+    discount_total?: number;
 }
 /**
  *
@@ -2866,11 +3109,17 @@ export interface InlineObject12 {
  */
 export interface InlineObject13 {
     /**
-     * Array of category ID\'s
-     * @type {Array<string>}
+     * If left blank, the full amount will be refunded
+     * @type {number}
      * @memberof InlineObject13
      */
-    categories: Array<string>;
+    amount?: number;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject13
+     */
+    notes?: string;
 }
 /**
  *
@@ -2879,11 +3128,23 @@ export interface InlineObject13 {
  */
 export interface InlineObject14 {
     /**
-     * Array of channel ID\'s
-     * @type {Array<string>}
+     *
+     * @type {string}
      * @memberof InlineObject14
      */
-    channels: Array<string>;
+    paRes: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject14
+     */
+    transaction: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject14
+     */
+    order_id: string;
 }
 /**
  *
@@ -2893,10 +3154,10 @@ export interface InlineObject14 {
 export interface InlineObject15 {
     /**
      *
-     * @type {ProductsProductIdAssociationsRelations}
+     * @type {string}
      * @memberof InlineObject15
      */
-    relations?: ProductsProductIdAssociationsRelations;
+    name?: string;
 }
 /**
  *
@@ -2906,10 +3167,10 @@ export interface InlineObject15 {
 export interface InlineObject16 {
     /**
      *
-     * @type {Array<ProductsProductIdCustomerGroupsGroups>}
+     * @type {number}
      * @memberof InlineObject16
      */
-    groups: Array<ProductsProductIdCustomerGroupsGroups>;
+    inventory?: number;
 }
 /**
  *
@@ -2919,88 +3180,16 @@ export interface InlineObject16 {
 export interface InlineObject17 {
     /**
      *
-     * @type {string}
+     * @type {Array<ProductsProductIdDuplicateRoutes>}
      * @memberof InlineObject17
      */
-    group_id: string;
+    routes: Array<ProductsProductIdDuplicateRoutes>;
     /**
      *
-     * @type {Array<AttributesName>}
+     * @type {Array<ProductsProductIdDuplicateRoutes>}
      * @memberof InlineObject17
      */
-    name: Array<AttributesName>;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject17
-     */
-    handle: string;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject17
-     */
-    position?: number;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    filterable?: boolean;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    scopeable?: boolean;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    translatable?: boolean;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    variant?: boolean;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    searchable?: boolean;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    localised?: boolean;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject17
-     */
-    type?: string;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    required?: boolean;
-    /**
-     *
-     * @type {Array<AttributesLookups>}
-     * @memberof InlineObject17
-     */
-    lookups?: Array<AttributesLookups>;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject17
-     */
-    system?: boolean;
+    skus: Array<ProductsProductIdDuplicateRoutes>;
 }
 /**
  *
@@ -3009,17 +3198,11 @@ export interface InlineObject17 {
  */
 export interface InlineObject18 {
     /**
-     * Unique name
+     *
      * @type {string}
      * @memberof InlineObject18
      */
-    name: string;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject18
-     */
-    percentage: number;
+    slug?: string;
 }
 /**
  *
@@ -3028,17 +3211,11 @@ export interface InlineObject18 {
  */
 export interface InlineObject19 {
     /**
-     * Must be unique
+     *
      * @type {string}
      * @memberof InlineObject19
      */
-    name: string;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject19
-     */
-    percentage: number;
+    slug?: string;
 }
 /**
  *
@@ -3047,53 +3224,11 @@ export interface InlineObject19 {
  */
 export interface InlineObject2 {
     /**
-     *
-     * @type {string}
+     * Pass all products you wish to be associated.
+     * @type {Array<string>}
      * @memberof InlineObject2
      */
-    payment_type_id?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject2
-     */
-    payment_type?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject2
-     */
-    order_id: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject2
-     */
-    payment_token: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject2
-     */
-    customer_reference?: string;
-    /**
-     *
-     * @type {Array<object>}
-     * @memberof InlineObject2
-     */
-    meta?: Array<object>;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject2
-     */
-    notes?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject2
-     */
-    company_name?: string;
+    products?: Array<string>;
 }
 /**
  *
@@ -3102,29 +3237,11 @@ export interface InlineObject2 {
  */
 export interface InlineObject20 {
     /**
-     *
-     * @type {boolean}
+     * An array of attribute IDs
+     * @type {Array<string>}
      * @memberof InlineObject20
      */
-    redirect?: boolean;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject20
-     */
-    description?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject20
-     */
-    slug?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject20
-     */
-    locale?: string;
+    attributes: Array<string>;
 }
 /**
  *
@@ -3133,11 +3250,11 @@ export interface InlineObject20 {
  */
 export interface InlineObject21 {
     /**
-     * Pass all products you wish to be associated.
+     * An array of collection IDs to associate
      * @type {Array<string>}
      * @memberof InlineObject21
      */
-    products?: Array<string>;
+    collections: Array<string>;
 }
 /**
  *
@@ -3146,17 +3263,11 @@ export interface InlineObject21 {
  */
 export interface InlineObject22 {
     /**
-     *
-     * @type {CollectionsName}
+     * Array of category ID\'s
+     * @type {Array<string>}
      * @memberof InlineObject22
      */
-    name?: CollectionsName;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject22
-     */
-    url?: string;
+    categories: Array<string>;
 }
 /**
  *
@@ -3165,11 +3276,11 @@ export interface InlineObject22 {
  */
 export interface InlineObject23 {
     /**
-     *
-     * @type {CollectionsName}
+     * Array of channel ID\'s
+     * @type {Array<string>}
      * @memberof InlineObject23
      */
-    name?: CollectionsName;
+    channels: Array<string>;
 }
 /**
  *
@@ -3179,40 +3290,10 @@ export interface InlineObject23 {
 export interface InlineObject24 {
     /**
      *
-     * @type {string}
+     * @type {ProductsProductIdAssociationsRelations}
      * @memberof InlineObject24
      */
-    start_at?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject24
-     */
-    end_at?: string;
-    /**
-     *
-     * @type {DiscountsName}
-     * @memberof InlineObject24
-     */
-    name: DiscountsName;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject24
-     */
-    uses?: number;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject24
-     */
-    status?: boolean;
-    /**
-     *
-     * @type {Array<DiscountsChannels>}
-     * @memberof InlineObject24
-     */
-    channels?: Array<DiscountsChannels>;
+    relations?: ProductsProductIdAssociationsRelations;
 }
 /**
  *
@@ -3222,52 +3303,10 @@ export interface InlineObject24 {
 export interface InlineObject25 {
     /**
      *
-     * @type {string}
+     * @type {Array<ProductsProductIdCustomerGroupsGroups>}
      * @memberof InlineObject25
      */
-    start_at: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject25
-     */
-    end_at?: string;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject25
-     */
-    priority?: number;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject25
-     */
-    stop_rules?: boolean;
-    /**
-     *
-     * @type {boolean}
-     * @memberof InlineObject25
-     */
-    status?: boolean;
-    /**
-     *
-     * @type {DiscountsDiscountIdChannels}
-     * @memberof InlineObject25
-     */
-    channels?: DiscountsDiscountIdChannels;
-    /**
-     *
-     * @type {DiscountsDiscountIdRewards}
-     * @memberof InlineObject25
-     */
-    rewards?: DiscountsDiscountIdRewards;
-    /**
-     *
-     * @type {DiscountsDiscountIdSets}
-     * @memberof InlineObject25
-     */
-    sets?: DiscountsDiscountIdSets;
+    groups: Array<ProductsProductIdCustomerGroupsGroups>;
 }
 /**
  *
@@ -3280,19 +3319,22 @@ export interface InlineObject26 {
      * @type {string}
      * @memberof InlineObject26
      */
-    email: string;
+    type: InlineObject26TypeEnum;
     /**
      *
-     * @type {string}
+     * @type {CollectionsName}
      * @memberof InlineObject26
      */
-    password?: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject26
-     */
-    password_confirmation?: string;
+    name?: CollectionsName;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject26TypeEnum {
+    Standard = "standard",
+    Dhl = "dhl",
+    Regional = "regional"
 }
 /**
  *
@@ -3301,17 +3343,17 @@ export interface InlineObject26 {
  */
 export interface InlineObject27 {
     /**
-     * If left blank, the full amount will be refunded
-     * @type {number}
+     *
+     * @type {ShippingShippingMethodIdName}
      * @memberof InlineObject27
      */
-    amount?: number;
+    name: ShippingShippingMethodIdName;
     /**
      *
      * @type {string}
      * @memberof InlineObject27
      */
-    notes?: string;
+    type: string;
 }
 /**
  *
@@ -3324,19 +3366,7 @@ export interface InlineObject28 {
      * @type {string}
      * @memberof InlineObject28
      */
-    paRes: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject28
-     */
-    transaction: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject28
-     */
-    order_id: string;
+    name: string;
 }
 /**
  *
@@ -3346,25 +3376,22 @@ export interface InlineObject28 {
 export interface InlineObject29 {
     /**
      *
+     * @type {number}
+     * @memberof InlineObject29
+     */
+    rate: number;
+    /**
+     *
      * @type {string}
      * @memberof InlineObject29
      */
-    type: InlineObject29TypeEnum;
+    zone_id: string;
     /**
      *
-     * @type {CollectionsName}
+     * @type {string}
      * @memberof InlineObject29
      */
-    name?: CollectionsName;
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum InlineObject29TypeEnum {
-    Standard = "standard",
-    Dhl = "dhl",
-    Regional = "regional"
+    currency_id: string;
 }
 /**
  *
@@ -3374,28 +3401,16 @@ export declare enum InlineObject29TypeEnum {
 export interface InlineObject3 {
     /**
      *
-     * @type {Array<string>}
+     * @type {CollectionsName}
      * @memberof InlineObject3
      */
-    orders: Array<string>;
+    name?: CollectionsName;
     /**
      *
      * @type {string}
      * @memberof InlineObject3
      */
-    field: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject3
-     */
-    value?: string;
-    /**
-     * Whether to send any mailers when changing status
-     * @type {boolean}
-     * @memberof InlineObject3
-     */
-    send_emails?: boolean;
+    url?: string;
 }
 /**
  *
@@ -3405,16 +3420,22 @@ export interface InlineObject3 {
 export interface InlineObject30 {
     /**
      *
-     * @type {ShippingShippingMethodIdName}
+     * @type {number}
      * @memberof InlineObject30
      */
-    name: ShippingShippingMethodIdName;
+    rate: number;
     /**
      *
      * @type {string}
      * @memberof InlineObject30
      */
-    type: string;
+    zone_id: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject30
+     */
+    currency_id: string;
 }
 /**
  *
@@ -3424,10 +3445,10 @@ export interface InlineObject30 {
 export interface InlineObject31 {
     /**
      *
-     * @type {string}
+     * @type {Array<string>}
      * @memberof InlineObject31
      */
-    name: string;
+    zones: Array<string>;
 }
 /**
  *
@@ -3437,22 +3458,10 @@ export interface InlineObject31 {
 export interface InlineObject32 {
     /**
      *
-     * @type {number}
+     * @type {Array<string>}
      * @memberof InlineObject32
      */
-    rate: number;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject32
-     */
-    zone_id: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject32
-     */
-    currency_id: string;
+    users?: Array<string>;
 }
 /**
  *
@@ -3462,22 +3471,10 @@ export interface InlineObject32 {
 export interface InlineObject33 {
     /**
      *
-     * @type {number}
-     * @memberof InlineObject33
-     */
-    rate: number;
-    /**
-     *
      * @type {string}
      * @memberof InlineObject33
      */
-    zone_id: string;
-    /**
-     *
-     * @type {string}
-     * @memberof InlineObject33
-     */
-    currency_id: string;
+    name: string;
 }
 /**
  *
@@ -3487,10 +3484,10 @@ export interface InlineObject33 {
 export interface InlineObject34 {
     /**
      *
-     * @type {Array<string>}
+     * @type {string}
      * @memberof InlineObject34
      */
-    zones: Array<string>;
+    name: string;
 }
 /**
  *
@@ -3499,11 +3496,17 @@ export interface InlineObject34 {
  */
 export interface InlineObject35 {
     /**
-     *
-     * @type {Array<string>}
+     * Unique name
+     * @type {string}
      * @memberof InlineObject35
      */
-    users?: Array<string>;
+    name: string;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject35
+     */
+    percentage: number;
 }
 /**
  *
@@ -3512,11 +3515,17 @@ export interface InlineObject35 {
  */
 export interface InlineObject36 {
     /**
-     *
+     * Must be unique
      * @type {string}
      * @memberof InlineObject36
      */
     name: string;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject36
+     */
+    percentage: number;
 }
 /**
  *
@@ -3529,7 +3538,19 @@ export interface InlineObject37 {
      * @type {string}
      * @memberof InlineObject37
      */
-    name: string;
+    email: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject37
+     */
+    password?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject37
+     */
+    password_confirmation?: string;
 }
 /**
  *
@@ -3539,10 +3560,10 @@ export interface InlineObject37 {
 export interface InlineObject4 {
     /**
      *
-     * @type {string}
+     * @type {CollectionsName}
      * @memberof InlineObject4
      */
-    price_id?: string;
+    name?: CollectionsName;
 }
 /**
  *
@@ -3555,13 +3576,37 @@ export interface InlineObject5 {
      * @type {string}
      * @memberof InlineObject5
      */
-    email?: string;
+    start_at?: string;
     /**
      *
      * @type {string}
      * @memberof InlineObject5
      */
-    phone?: string;
+    end_at?: string;
+    /**
+     *
+     * @type {DiscountsName}
+     * @memberof InlineObject5
+     */
+    name: DiscountsName;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject5
+     */
+    uses?: number;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject5
+     */
+    status?: boolean;
+    /**
+     *
+     * @type {Array<DiscountsChannels>}
+     * @memberof InlineObject5
+     */
+    channels?: Array<DiscountsChannels>;
 }
 /**
  *
@@ -3571,64 +3616,52 @@ export interface InlineObject5 {
 export interface InlineObject6 {
     /**
      *
-     * @type {number}
-     * @memberof InlineObject6
-     */
-    quantity: number;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject6
-     */
-    line_total: number;
-    /**
-     *
-     * @type {number}
-     * @memberof InlineObject6
-     */
-    unit_price: number;
-    /**
-     * The tax rate as a percentage
-     * @type {number}
-     * @memberof InlineObject6
-     */
-    tax_rate: number;
-    /**
-     * Shows publicly on the order line
      * @type {string}
      * @memberof InlineObject6
      */
-    description: string;
+    start_at: string;
     /**
-     * Should this line be treated as a manual one
-     * @type {boolean}
+     *
+     * @type {string}
      * @memberof InlineObject6
      */
-    is_manual?: boolean;
+    end_at?: string;
+    /**
+     *
+     * @type {number}
+     * @memberof InlineObject6
+     */
+    priority?: number;
     /**
      *
      * @type {boolean}
      * @memberof InlineObject6
      */
-    is_shipping?: boolean;
-    /**
-     * If this is a variant, list the option name here
-     * @type {string}
-     * @memberof InlineObject6
-     */
-    option?: string;
+    stop_rules?: boolean;
     /**
      *
-     * @type {string}
+     * @type {boolean}
      * @memberof InlineObject6
      */
-    sku: string;
+    status?: boolean;
     /**
      *
-     * @type {number}
+     * @type {DiscountsDiscountIdChannels}
      * @memberof InlineObject6
      */
-    discount_total?: number;
+    channels?: DiscountsDiscountIdChannels;
+    /**
+     *
+     * @type {DiscountsDiscountIdRewards}
+     * @memberof InlineObject6
+     */
+    rewards?: DiscountsDiscountIdRewards;
+    /**
+     *
+     * @type {DiscountsDiscountIdSets}
+     * @memberof InlineObject6
+     */
+    sets?: DiscountsDiscountIdSets;
 }
 /**
  *
@@ -3638,10 +3671,22 @@ export interface InlineObject6 {
 export interface InlineObject7 {
     /**
      *
-     * @type {number}
+     * @type {string}
      * @memberof InlineObject7
      */
-    inventory?: number;
+    tracking_no?: string;
+    /**
+     * Corresponds to status set in config
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    status?: string;
+    /**
+     *
+     * @type {boolean}
+     * @memberof InlineObject7
+     */
+    send_emails?: boolean;
 }
 /**
  *
@@ -3651,16 +3696,52 @@ export interface InlineObject7 {
 export interface InlineObject8 {
     /**
      *
-     * @type {Array<ProductsProductIdDuplicateRoutes>}
+     * @type {string}
      * @memberof InlineObject8
      */
-    routes: Array<ProductsProductIdDuplicateRoutes>;
+    payment_type_id?: string;
     /**
      *
-     * @type {Array<ProductsProductIdDuplicateRoutes>}
+     * @type {string}
      * @memberof InlineObject8
      */
-    skus: Array<ProductsProductIdDuplicateRoutes>;
+    payment_type?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    order_id: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    payment_token: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    customer_reference?: string;
+    /**
+     *
+     * @type {Array<object>}
+     * @memberof InlineObject8
+     */
+    meta?: Array<object>;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    notes?: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    company_name?: string;
 }
 /**
  *
@@ -3670,10 +3751,28 @@ export interface InlineObject8 {
 export interface InlineObject9 {
     /**
      *
+     * @type {Array<string>}
+     * @memberof InlineObject9
+     */
+    orders: Array<string>;
+    /**
+     *
      * @type {string}
      * @memberof InlineObject9
      */
-    slug?: string;
+    field: string;
+    /**
+     *
+     * @type {string}
+     * @memberof InlineObject9
+     */
+    value?: string;
+    /**
+     * Whether to send any mailers when changing status
+     * @type {boolean}
+     * @memberof InlineObject9
+     */
+    send_emails?: boolean;
 }
 /**
  *
@@ -3996,13 +4095,13 @@ export interface InlineResponse2007 {
 /**
  *
  * @export
- * @interface InlineResponse404
+ * @interface InlineResponse4041
  */
-export interface InlineResponse404 {
+export interface InlineResponse4041 {
     /**
      *
      * @type {Order}
-     * @memberof InlineResponse404
+     * @memberof InlineResponse4041
      */
     data?: Order;
 }
@@ -4017,7 +4116,19 @@ export interface InlineResponse422 {
      * @type {Array<string>}
      * @memberof InlineResponse422
      */
-    id?: Array<string>;
+    group_id?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse422
+     */
+    name?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse422
+     */
+    handle?: Array<string>;
 }
 /**
  *
@@ -4030,19 +4141,7 @@ export interface InlineResponse4221 {
      * @type {Array<string>}
      * @memberof InlineResponse4221
      */
-    orders?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4221
-     */
-    field?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4221
-     */
-    value?: Array<string>;
+    name?: Array<string>;
 }
 /**
  *
@@ -4055,13 +4154,19 @@ export interface InlineResponse42210 {
      * @type {Array<string>}
      * @memberof InlineResponse42210
      */
-    name?: Array<string>;
+    rate?: Array<string>;
     /**
      *
      * @type {Array<string>}
      * @memberof InlineResponse42210
      */
-    type?: Array<string>;
+    zone_id?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse42210
+     */
+    currency_id?: Array<string>;
 }
 /**
  *
@@ -4074,19 +4179,7 @@ export interface InlineResponse42211 {
      * @type {Array<string>}
      * @memberof InlineResponse42211
      */
-    rate?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse42211
-     */
-    zone_id?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse42211
-     */
-    currency_id?: Array<string>;
+    users?: Array<string>;
 }
 /**
  *
@@ -4099,7 +4192,13 @@ export interface InlineResponse42212 {
      * @type {Array<string>}
      * @memberof InlineResponse42212
      */
-    users?: Array<string>;
+    name?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse42212
+     */
+    percentage?: Array<string>;
 }
 /**
  *
@@ -4112,7 +4211,7 @@ export interface InlineResponse4222 {
      * @type {Array<string>}
      * @memberof InlineResponse4222
      */
-    price_id?: Array<string>;
+    id?: Array<string>;
 }
 /**
  *
@@ -4125,31 +4224,19 @@ export interface InlineResponse4223 {
      * @type {Array<string>}
      * @memberof InlineResponse4223
      */
-    quantity?: Array<string>;
+    orders?: Array<string>;
     /**
      *
      * @type {Array<string>}
      * @memberof InlineResponse4223
      */
-    line_total?: Array<string>;
+    field?: Array<string>;
     /**
      *
      * @type {Array<string>}
      * @memberof InlineResponse4223
      */
-    unit_price?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4223
-     */
-    tax_rate?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4223
-     */
-    description?: Array<string>;
+    value?: Array<string>;
 }
 /**
  *
@@ -4162,7 +4249,7 @@ export interface InlineResponse4224 {
      * @type {Array<string>}
      * @memberof InlineResponse4224
      */
-    attributes?: Array<string>;
+    price_id?: Array<string>;
 }
 /**
  *
@@ -4175,7 +4262,31 @@ export interface InlineResponse4225 {
      * @type {Array<string>}
      * @memberof InlineResponse4225
      */
-    collections?: Array<string>;
+    quantity?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse4225
+     */
+    line_total?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse4225
+     */
+    unit_price?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse4225
+     */
+    tax_rate?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse4225
+     */
+    description?: Array<string>;
 }
 /**
  *
@@ -4188,19 +4299,7 @@ export interface InlineResponse4226 {
      * @type {Array<string>}
      * @memberof InlineResponse4226
      */
-    group_id?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4226
-     */
-    name?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4226
-     */
-    handle?: Array<string>;
+    attributes?: Array<string>;
 }
 /**
  *
@@ -4213,7 +4312,7 @@ export interface InlineResponse4227 {
      * @type {Array<string>}
      * @memberof InlineResponse4227
      */
-    name?: Array<string>;
+    collections?: Array<string>;
 }
 /**
  *
@@ -4223,16 +4322,35 @@ export interface InlineResponse4227 {
 export interface InlineResponse4228 {
     /**
      *
-     * @type {Array<string>}
+     * @type {string}
      * @memberof InlineResponse4228
      */
-    name?: Array<string>;
+    message?: string;
+    /**
+     *
+     * @type {Array<InlineResponse4228Errors>}
+     * @memberof InlineResponse4228
+     */
+    errors?: Array<InlineResponse4228Errors>;
+}
+/**
+ *
+ * @export
+ * @interface InlineResponse4228Errors
+ */
+export interface InlineResponse4228Errors {
     /**
      *
      * @type {Array<string>}
-     * @memberof InlineResponse4228
+     * @memberof InlineResponse4228Errors
      */
-    percentage?: Array<string>;
+    from?: Array<string>;
+    /**
+     *
+     * @type {Array<string>}
+     * @memberof InlineResponse4228Errors
+     */
+    to?: Array<string>;
 }
 /**
  *
@@ -4242,35 +4360,16 @@ export interface InlineResponse4228 {
 export interface InlineResponse4229 {
     /**
      *
-     * @type {string}
+     * @type {Array<string>}
      * @memberof InlineResponse4229
      */
-    message?: string;
-    /**
-     *
-     * @type {Array<InlineResponse4229Errors>}
-     * @memberof InlineResponse4229
-     */
-    errors?: Array<InlineResponse4229Errors>;
-}
-/**
- *
- * @export
- * @interface InlineResponse4229Errors
- */
-export interface InlineResponse4229Errors {
+    name?: Array<string>;
     /**
      *
      * @type {Array<string>}
-     * @memberof InlineResponse4229Errors
+     * @memberof InlineResponse4229
      */
-    from?: Array<string>;
-    /**
-     *
-     * @type {Array<string>}
-     * @memberof InlineResponse4229Errors
-     */
-    to?: Array<string>;
+    type?: Array<string>;
 }
 /**
  *
@@ -7284,6 +7383,65 @@ export interface UserResponse {
     data?: User;
 }
 /**
+ * AccountApi - axios parameter creator
+ * @export
+ */
+export declare const AccountApiAxiosParamCreator: (configuration?: Configuration) => {
+    /**
+     * Allows the current user to update their password.
+     * @summary Reset password
+     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postAccountPassword: (accountPasswordResetBody?: AccountPasswordResetBody, options?: any) => Promise<RequestArgs>;
+};
+/**
+ * AccountApi - functional programming interface
+ * @export
+ */
+export declare const AccountApiFp: (configuration?: Configuration) => {
+    /**
+     * Allows the current user to update their password.
+     * @summary Reset password
+     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postAccountPassword(accountPasswordResetBody?: AccountPasswordResetBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Message>>;
+};
+/**
+ * AccountApi - factory interface
+ * @export
+ */
+export declare const AccountApiFactory: (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) => {
+    /**
+     * Allows the current user to update their password.
+     * @summary Reset password
+     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postAccountPassword(accountPasswordResetBody?: AccountPasswordResetBody, options?: any): AxiosPromise<Message>;
+};
+/**
+ * AccountApi - object-oriented interface
+ * @export
+ * @class AccountApi
+ * @extends {BaseAPI}
+ */
+export declare class AccountApi extends BaseAPI {
+    /**
+     * Allows the current user to update their password.
+     * @summary Reset password
+     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AccountApi
+     */
+    postAccountPassword(accountPasswordResetBody?: AccountPasswordResetBody, options?: any): Promise<import("axios").AxiosResponse<Message>>;
+}
+/**
  * AddressesApi - axios parameter creator
  * @export
  */
@@ -7314,6 +7472,7 @@ export declare const AddressesApiAxiosParamCreator: (configuration?: Configurati
      * @param {string} [addressThree]
      * @param {boolean} [shipping]
      * @param {string} [userId]
+     * @param {string} [customerId]
      * @param {boolean} [billing]
      * @param {boolean} [_default]
      * @param {string} [lastUsedAt]
@@ -7322,7 +7481,7 @@ export declare const AddressesApiAxiosParamCreator: (configuration?: Configurati
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postAddresses: (firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any) => Promise<RequestArgs>;
+    postAddresses: (firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, customerId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any) => Promise<RequestArgs>;
     /**
      * This endpoint allows you to update an existing address
      * @summary Update existing address
@@ -7364,6 +7523,7 @@ export declare const AddressesApiFp: (configuration?: Configuration) => {
      * @param {string} [addressThree]
      * @param {boolean} [shipping]
      * @param {string} [userId]
+     * @param {string} [customerId]
      * @param {boolean} [billing]
      * @param {boolean} [_default]
      * @param {string} [lastUsedAt]
@@ -7372,7 +7532,7 @@ export declare const AddressesApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postAddresses(firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AddressResponse>>;
+    postAddresses(firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, customerId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AddressResponse>>;
     /**
      * This endpoint allows you to update an existing address
      * @summary Update existing address
@@ -7414,6 +7574,7 @@ export declare const AddressesApiFactory: (configuration?: Configuration, basePa
      * @param {string} [addressThree]
      * @param {boolean} [shipping]
      * @param {string} [userId]
+     * @param {string} [customerId]
      * @param {boolean} [billing]
      * @param {boolean} [_default]
      * @param {string} [lastUsedAt]
@@ -7422,7 +7583,7 @@ export declare const AddressesApiFactory: (configuration?: Configuration, basePa
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postAddresses(firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any): AxiosPromise<AddressResponse>;
+    postAddresses(firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, customerId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any): AxiosPromise<AddressResponse>;
     /**
      * This endpoint allows you to update an existing address
      * @summary Update existing address
@@ -7467,6 +7628,7 @@ export declare class AddressesApi extends BaseAPI {
      * @param {string} [addressThree]
      * @param {boolean} [shipping]
      * @param {string} [userId]
+     * @param {string} [customerId]
      * @param {boolean} [billing]
      * @param {boolean} [_default]
      * @param {string} [lastUsedAt]
@@ -7476,7 +7638,7 @@ export declare class AddressesApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof AddressesApi
      */
-    postAddresses(firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any): Promise<import("axios").AxiosResponse<AddressResponse>>;
+    postAddresses(firstname: string, lastname: string, address: string, city: string, state: string, postalCode: string, countryId: string, salutation?: string, companyName?: string, email?: string, phone?: string, addressTwo?: string, addressThree?: string, shipping?: boolean, userId?: string, customerId?: string, billing?: boolean, _default?: boolean, lastUsedAt?: string, deliveryInstructions?: string, meta?: Array<object>, options?: any): Promise<import("axios").AxiosResponse<AddressResponse>>;
     /**
      * This endpoint allows you to update an existing address
      * @summary Update existing address
@@ -7783,11 +7945,11 @@ export declare const AttributesApiAxiosParamCreator: (configuration?: Configurat
     /**
      * Create a new attribute
      * @summary Create Attribute
-     * @param {InlineObject17} [inlineObject17]
+     * @param {InlineObject} [inlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postAttributes: (inlineObject17?: InlineObject17, options?: any) => Promise<RequestArgs>;
+    postAttributes: (inlineObject?: InlineObject, options?: any) => Promise<RequestArgs>;
     /**
      * Updates an attribute group.
      * @summary Update an attribute group
@@ -7889,11 +8051,11 @@ export declare const AttributesApiFp: (configuration?: Configuration) => {
     /**
      * Create a new attribute
      * @summary Create Attribute
-     * @param {InlineObject17} [inlineObject17]
+     * @param {InlineObject} [inlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postAttributes(inlineObject17?: InlineObject17, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AttributeResponse>>;
+    postAttributes(inlineObject?: InlineObject, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AttributeResponse>>;
     /**
      * Updates an attribute group.
      * @summary Update an attribute group
@@ -7995,11 +8157,11 @@ export declare const AttributesApiFactory: (configuration?: Configuration, baseP
     /**
      * Create a new attribute
      * @summary Create Attribute
-     * @param {InlineObject17} [inlineObject17]
+     * @param {InlineObject} [inlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postAttributes(inlineObject17?: InlineObject17, options?: any): AxiosPromise<AttributeResponse>;
+    postAttributes(inlineObject?: InlineObject, options?: any): AxiosPromise<AttributeResponse>;
     /**
      * Updates an attribute group.
      * @summary Update an attribute group
@@ -8110,12 +8272,12 @@ export declare class AttributesApi extends BaseAPI {
     /**
      * Create a new attribute
      * @summary Create Attribute
-     * @param {InlineObject17} [inlineObject17]
+     * @param {InlineObject} [inlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AttributesApi
      */
-    postAttributes(inlineObject17?: InlineObject17, options?: any): Promise<import("axios").AxiosResponse<AttributeResponse>>;
+    postAttributes(inlineObject?: InlineObject, options?: any): Promise<import("axios").AxiosResponse<AttributeResponse>>;
     /**
      * Updates an attribute group.
      * @summary Update an attribute group
@@ -9435,38 +9597,38 @@ export declare const CollectionsApiAxiosParamCreator: (configuration?: Configura
     /**
      * Create a new collection.
      * @summary Create Collection
-     * @param {InlineObject22} [inlineObject22]
+     * @param {InlineObject3} [inlineObject3]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollections: (inlineObject22?: InlineObject22, options?: any) => Promise<RequestArgs>;
+    postCollections: (inlineObject3?: InlineObject3, options?: any) => Promise<RequestArgs>;
     /**
      * Syncs products with a collection.
      * @summary Update a collection\'s products
      * @param {string} collectionId
-     * @param {InlineObject21} [inlineObject21]
+     * @param {InlineObject2} [inlineObject2]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollectionsCollectionIdProducts: (collectionId: string, inlineObject21?: InlineObject21, options?: any) => Promise<RequestArgs>;
+    postCollectionsCollectionIdProducts: (collectionId: string, inlineObject2?: InlineObject2, options?: any) => Promise<RequestArgs>;
     /**
      * This request will allow you to attach routes to a collection
      * @summary Update a collection\'s routes
      * @param {string} collectionId
-     * @param {InlineObject20} [inlineObject20]
+     * @param {InlineObject1} [inlineObject1]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollectionsCollectionRoutes: (collectionId: string, inlineObject20?: InlineObject20, options?: any) => Promise<RequestArgs>;
+    postCollectionsCollectionRoutes: (collectionId: string, inlineObject1?: InlineObject1, options?: any) => Promise<RequestArgs>;
     /**
      * Update a Collection by its ID.
      * @summary Update Collection
      * @param {string} collectionId
-     * @param {InlineObject23} [inlineObject23]
+     * @param {InlineObject4} [inlineObject4]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putCollectionsCollectionId: (collectionId: string, inlineObject23?: InlineObject23, options?: any) => Promise<RequestArgs>;
+    putCollectionsCollectionId: (collectionId: string, inlineObject4?: InlineObject4, options?: any) => Promise<RequestArgs>;
 };
 /**
  * CollectionsApi - functional programming interface
@@ -9505,38 +9667,38 @@ export declare const CollectionsApiFp: (configuration?: Configuration) => {
     /**
      * Create a new collection.
      * @summary Create Collection
-     * @param {InlineObject22} [inlineObject22]
+     * @param {InlineObject3} [inlineObject3]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollections(inlineObject22?: InlineObject22, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
+    postCollections(inlineObject3?: InlineObject3, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
     /**
      * Syncs products with a collection.
      * @summary Update a collection\'s products
      * @param {string} collectionId
-     * @param {InlineObject21} [inlineObject21]
+     * @param {InlineObject2} [inlineObject2]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollectionsCollectionIdProducts(collectionId: string, inlineObject21?: InlineObject21, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
+    postCollectionsCollectionIdProducts(collectionId: string, inlineObject2?: InlineObject2, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
     /**
      * This request will allow you to attach routes to a collection
      * @summary Update a collection\'s routes
      * @param {string} collectionId
-     * @param {InlineObject20} [inlineObject20]
+     * @param {InlineObject1} [inlineObject1]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollectionsCollectionRoutes(collectionId: string, inlineObject20?: InlineObject20, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
+    postCollectionsCollectionRoutes(collectionId: string, inlineObject1?: InlineObject1, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
     /**
      * Update a Collection by its ID.
      * @summary Update Collection
      * @param {string} collectionId
-     * @param {InlineObject23} [inlineObject23]
+     * @param {InlineObject4} [inlineObject4]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putCollectionsCollectionId(collectionId: string, inlineObject23?: InlineObject23, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
+    putCollectionsCollectionId(collectionId: string, inlineObject4?: InlineObject4, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionResponse>>;
 };
 /**
  * CollectionsApi - factory interface
@@ -9575,38 +9737,38 @@ export declare const CollectionsApiFactory: (configuration?: Configuration, base
     /**
      * Create a new collection.
      * @summary Create Collection
-     * @param {InlineObject22} [inlineObject22]
+     * @param {InlineObject3} [inlineObject3]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollections(inlineObject22?: InlineObject22, options?: any): AxiosPromise<CollectionResponse>;
+    postCollections(inlineObject3?: InlineObject3, options?: any): AxiosPromise<CollectionResponse>;
     /**
      * Syncs products with a collection.
      * @summary Update a collection\'s products
      * @param {string} collectionId
-     * @param {InlineObject21} [inlineObject21]
+     * @param {InlineObject2} [inlineObject2]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollectionsCollectionIdProducts(collectionId: string, inlineObject21?: InlineObject21, options?: any): AxiosPromise<CollectionResponse>;
+    postCollectionsCollectionIdProducts(collectionId: string, inlineObject2?: InlineObject2, options?: any): AxiosPromise<CollectionResponse>;
     /**
      * This request will allow you to attach routes to a collection
      * @summary Update a collection\'s routes
      * @param {string} collectionId
-     * @param {InlineObject20} [inlineObject20]
+     * @param {InlineObject1} [inlineObject1]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postCollectionsCollectionRoutes(collectionId: string, inlineObject20?: InlineObject20, options?: any): AxiosPromise<CollectionResponse>;
+    postCollectionsCollectionRoutes(collectionId: string, inlineObject1?: InlineObject1, options?: any): AxiosPromise<CollectionResponse>;
     /**
      * Update a Collection by its ID.
      * @summary Update Collection
      * @param {string} collectionId
-     * @param {InlineObject23} [inlineObject23]
+     * @param {InlineObject4} [inlineObject4]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putCollectionsCollectionId(collectionId: string, inlineObject23?: InlineObject23, options?: any): AxiosPromise<CollectionResponse>;
+    putCollectionsCollectionId(collectionId: string, inlineObject4?: InlineObject4, options?: any): AxiosPromise<CollectionResponse>;
 };
 /**
  * CollectionsApi - object-oriented interface
@@ -9650,42 +9812,42 @@ export declare class CollectionsApi extends BaseAPI {
     /**
      * Create a new collection.
      * @summary Create Collection
-     * @param {InlineObject22} [inlineObject22]
+     * @param {InlineObject3} [inlineObject3]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    postCollections(inlineObject22?: InlineObject22, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
+    postCollections(inlineObject3?: InlineObject3, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
     /**
      * Syncs products with a collection.
      * @summary Update a collection\'s products
      * @param {string} collectionId
-     * @param {InlineObject21} [inlineObject21]
+     * @param {InlineObject2} [inlineObject2]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    postCollectionsCollectionIdProducts(collectionId: string, inlineObject21?: InlineObject21, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
+    postCollectionsCollectionIdProducts(collectionId: string, inlineObject2?: InlineObject2, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
     /**
      * This request will allow you to attach routes to a collection
      * @summary Update a collection\'s routes
      * @param {string} collectionId
-     * @param {InlineObject20} [inlineObject20]
+     * @param {InlineObject1} [inlineObject1]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    postCollectionsCollectionRoutes(collectionId: string, inlineObject20?: InlineObject20, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
+    postCollectionsCollectionRoutes(collectionId: string, inlineObject1?: InlineObject1, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
     /**
      * Update a Collection by its ID.
      * @summary Update Collection
      * @param {string} collectionId
-     * @param {InlineObject23} [inlineObject23]
+     * @param {InlineObject4} [inlineObject4]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    putCollectionsCollectionId(collectionId: string, inlineObject23?: InlineObject23, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
+    putCollectionsCollectionId(collectionId: string, inlineObject4?: InlineObject4, options?: any): Promise<import("axios").AxiosResponse<CollectionResponse>>;
 }
 /**
  * CountriesApi - axios parameter creator
@@ -9827,6 +9989,65 @@ export declare class CountriesApi extends BaseAPI {
      * @memberof CountriesApi
      */
     putCountriesCountryId(countryId: string, preferred?: boolean, enabled?: boolean, options?: any): Promise<import("axios").AxiosResponse<CountryResponse>>;
+}
+/**
+ * CurrenciesApi - axios parameter creator
+ * @export
+ */
+export declare const CurrenciesApiAxiosParamCreator: (configuration?: Configuration) => {
+    /**
+     * Gets a paginated list of all currencies
+     * @summary Get all currencies
+     * @param {string} [include] Comma separated includes for the resource
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getCurrencies: (include?: string, options?: any) => Promise<RequestArgs>;
+};
+/**
+ * CurrenciesApi - functional programming interface
+ * @export
+ */
+export declare const CurrenciesApiFp: (configuration?: Configuration) => {
+    /**
+     * Gets a paginated list of all currencies
+     * @summary Get all currencies
+     * @param {string} [include] Comma separated includes for the resource
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getCurrencies(include?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CurrencyCollection>>;
+};
+/**
+ * CurrenciesApi - factory interface
+ * @export
+ */
+export declare const CurrenciesApiFactory: (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) => {
+    /**
+     * Gets a paginated list of all currencies
+     * @summary Get all currencies
+     * @param {string} [include] Comma separated includes for the resource
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getCurrencies(include?: string, options?: any): AxiosPromise<CurrencyCollection>;
+};
+/**
+ * CurrenciesApi - object-oriented interface
+ * @export
+ * @class CurrenciesApi
+ * @extends {BaseAPI}
+ */
+export declare class CurrenciesApi extends BaseAPI {
+    /**
+     * Gets a paginated list of all currencies
+     * @summary Get all currencies
+     * @param {string} [include] Comma separated includes for the resource
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof CurrenciesApi
+     */
+    getCurrencies(include?: string, options?: any): Promise<import("axios").AxiosResponse<CurrencyCollection>>;
 }
 /**
  * CustomerGroupsApi - axios parameter creator
@@ -10450,20 +10671,20 @@ export declare const DiscountsApiAxiosParamCreator: (configuration?: Configurati
     /**
      * Create a new Discount.
      * @summary Create Discount
-     * @param {InlineObject24} [inlineObject24]
+     * @param {InlineObject5} [inlineObject5]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postDiscounts: (inlineObject24?: InlineObject24, options?: any) => Promise<RequestArgs>;
+    postDiscounts: (inlineObject5?: InlineObject5, options?: any) => Promise<RequestArgs>;
     /**
      * Updates a Discount
      * @summary Update Discount
      * @param {string} discountId
-     * @param {InlineObject25} [inlineObject25]
+     * @param {InlineObject6} [inlineObject6]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putDiscountsDiscountId: (discountId: string, inlineObject25?: InlineObject25, options?: any) => Promise<RequestArgs>;
+    putDiscountsDiscountId: (discountId: string, inlineObject6?: InlineObject6, options?: any) => Promise<RequestArgs>;
 };
 /**
  * DiscountsApi - functional programming interface
@@ -10497,20 +10718,20 @@ export declare const DiscountsApiFp: (configuration?: Configuration) => {
     /**
      * Create a new Discount.
      * @summary Create Discount
-     * @param {InlineObject24} [inlineObject24]
+     * @param {InlineObject5} [inlineObject5]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postDiscounts(inlineObject24?: InlineObject24, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DiscountResponse>>;
+    postDiscounts(inlineObject5?: InlineObject5, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DiscountResponse>>;
     /**
      * Updates a Discount
      * @summary Update Discount
      * @param {string} discountId
-     * @param {InlineObject25} [inlineObject25]
+     * @param {InlineObject6} [inlineObject6]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putDiscountsDiscountId(discountId: string, inlineObject25?: InlineObject25, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DiscountResponse>>;
+    putDiscountsDiscountId(discountId: string, inlineObject6?: InlineObject6, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DiscountResponse>>;
 };
 /**
  * DiscountsApi - factory interface
@@ -10544,20 +10765,20 @@ export declare const DiscountsApiFactory: (configuration?: Configuration, basePa
     /**
      * Create a new Discount.
      * @summary Create Discount
-     * @param {InlineObject24} [inlineObject24]
+     * @param {InlineObject5} [inlineObject5]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postDiscounts(inlineObject24?: InlineObject24, options?: any): AxiosPromise<DiscountResponse>;
+    postDiscounts(inlineObject5?: InlineObject5, options?: any): AxiosPromise<DiscountResponse>;
     /**
      * Updates a Discount
      * @summary Update Discount
      * @param {string} discountId
-     * @param {InlineObject25} [inlineObject25]
+     * @param {InlineObject6} [inlineObject6]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putDiscountsDiscountId(discountId: string, inlineObject25?: InlineObject25, options?: any): AxiosPromise<DiscountResponse>;
+    putDiscountsDiscountId(discountId: string, inlineObject6?: InlineObject6, options?: any): AxiosPromise<DiscountResponse>;
 };
 /**
  * DiscountsApi - object-oriented interface
@@ -10596,22 +10817,22 @@ export declare class DiscountsApi extends BaseAPI {
     /**
      * Create a new Discount.
      * @summary Create Discount
-     * @param {InlineObject24} [inlineObject24]
+     * @param {InlineObject5} [inlineObject5]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DiscountsApi
      */
-    postDiscounts(inlineObject24?: InlineObject24, options?: any): Promise<import("axios").AxiosResponse<DiscountResponse>>;
+    postDiscounts(inlineObject5?: InlineObject5, options?: any): Promise<import("axios").AxiosResponse<DiscountResponse>>;
     /**
      * Updates a Discount
      * @summary Update Discount
      * @param {string} discountId
-     * @param {InlineObject25} [inlineObject25]
+     * @param {InlineObject6} [inlineObject6]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DiscountsApi
      */
-    putDiscountsDiscountId(discountId: string, inlineObject25?: InlineObject25, options?: any): Promise<import("axios").AxiosResponse<DiscountResponse>>;
+    putDiscountsDiscountId(discountId: string, inlineObject6?: InlineObject6, options?: any): Promise<import("axios").AxiosResponse<DiscountResponse>>;
 }
 /**
  * LanguagesApi - axios parameter creator
@@ -10961,11 +11182,11 @@ export declare const OrdersApiAxiosParamCreator: (configuration?: Configuration)
     /**
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @summary Bulk update orders
-     * @param {InlineObject3} [inlineObject3]
+     * @param {InlineObject9} [inlineObject9]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postOrdersBulk: (inlineObject3?: InlineObject3, options?: any) => Promise<RequestArgs>;
+    postOrdersBulk: (inlineObject9?: InlineObject9, options?: any) => Promise<RequestArgs>;
     /**
      * Sets an order to be expired. You must have the correct priviledges to perform this action. Once an order is expired, it will no longer appear in results unless performed by an admin or in the hub.
      * @summary Expire an Order
@@ -10977,29 +11198,29 @@ export declare const OrdersApiAxiosParamCreator: (configuration?: Configuration)
     /**
      *
      * @summary Processes an order on the API
-     * @param {InlineObject2} [inlineObject2]
+     * @param {InlineObject8} [inlineObject8]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postOrdersProcess: (inlineObject2?: InlineObject2, options?: any) => Promise<RequestArgs>;
+    postOrdersProcess: (inlineObject8?: InlineObject8, options?: any) => Promise<RequestArgs>;
     /**
      * Add contact details to an order
      * @summary Add contact details
      * @param {string} orderId
-     * @param {InlineObject5} [inlineObject5]
+     * @param {InlineObject11} [inlineObject11]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdContact: (orderId: string, inlineObject5?: InlineObject5, options?: any) => Promise<RequestArgs>;
+    putOrdersIdContact: (orderId: string, inlineObject11?: InlineObject11, options?: any) => Promise<RequestArgs>;
     /**
      * Adds an order line to an order
      * @summary Add order line
      * @param {string} orderId
-     * @param {InlineObject6} [inlineObject6]
+     * @param {InlineObject12} [inlineObject12]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdLines: (orderId: string, inlineObject6?: InlineObject6, options?: any) => Promise<RequestArgs>;
+    putOrdersIdLines: (orderId: string, inlineObject12?: InlineObject12, options?: any) => Promise<RequestArgs>;
     /**
      * Update an orders shipping address
      * @summary Update shipping address
@@ -11014,21 +11235,21 @@ export declare const OrdersApiAxiosParamCreator: (configuration?: Configuration)
      * @summary Add shipping cost
      * @param {string} orderId
      * @param {string} [include] Related resources to include in response
-     * @param {InlineObject4} [inlineObject4]
+     * @param {InlineObject10} [inlineObject10]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdShippingCost: (orderId: string, include?: string, inlineObject4?: InlineObject4, options?: any) => Promise<RequestArgs>;
+    putOrdersIdShippingCost: (orderId: string, include?: string, inlineObject10?: InlineObject10, options?: any) => Promise<RequestArgs>;
     /**
      * Update an Order
      * @summary Update Order
      * @param {string} orderId
      * @param {string} [include]
-     * @param {InlineObject1} [inlineObject1]
+     * @param {InlineObject7} [inlineObject7]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersOrderId: (orderId: string, include?: string, inlineObject1?: InlineObject1, options?: any) => Promise<RequestArgs>;
+    putOrdersOrderId: (orderId: string, include?: string, inlineObject7?: InlineObject7, options?: any) => Promise<RequestArgs>;
     /**
      * Update an orders billing address
      * @summary Update billing address
@@ -11121,11 +11342,11 @@ export declare const OrdersApiFp: (configuration?: Configuration) => {
     /**
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @summary Bulk update orders
-     * @param {InlineObject3} [inlineObject3]
+     * @param {InlineObject9} [inlineObject9]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postOrdersBulk(inlineObject3?: InlineObject3, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>>;
+    postOrdersBulk(inlineObject9?: InlineObject9, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>>;
     /**
      * Sets an order to be expired. You must have the correct priviledges to perform this action. Once an order is expired, it will no longer appear in results unless performed by an admin or in the hub.
      * @summary Expire an Order
@@ -11137,29 +11358,29 @@ export declare const OrdersApiFp: (configuration?: Configuration) => {
     /**
      *
      * @summary Processes an order on the API
-     * @param {InlineObject2} [inlineObject2]
+     * @param {InlineObject8} [inlineObject8]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postOrdersProcess(inlineObject2?: InlineObject2, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
+    postOrdersProcess(inlineObject8?: InlineObject8, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
     /**
      * Add contact details to an order
      * @summary Add contact details
      * @param {string} orderId
-     * @param {InlineObject5} [inlineObject5]
+     * @param {InlineObject11} [inlineObject11]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdContact(orderId: string, inlineObject5?: InlineObject5, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
+    putOrdersIdContact(orderId: string, inlineObject11?: InlineObject11, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
     /**
      * Adds an order line to an order
      * @summary Add order line
      * @param {string} orderId
-     * @param {InlineObject6} [inlineObject6]
+     * @param {InlineObject12} [inlineObject12]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdLines(orderId: string, inlineObject6?: InlineObject6, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
+    putOrdersIdLines(orderId: string, inlineObject12?: InlineObject12, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
     /**
      * Update an orders shipping address
      * @summary Update shipping address
@@ -11174,21 +11395,21 @@ export declare const OrdersApiFp: (configuration?: Configuration) => {
      * @summary Add shipping cost
      * @param {string} orderId
      * @param {string} [include] Related resources to include in response
-     * @param {InlineObject4} [inlineObject4]
+     * @param {InlineObject10} [inlineObject10]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdShippingCost(orderId: string, include?: string, inlineObject4?: InlineObject4, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
+    putOrdersIdShippingCost(orderId: string, include?: string, inlineObject10?: InlineObject10, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
     /**
      * Update an Order
      * @summary Update Order
      * @param {string} orderId
      * @param {string} [include]
-     * @param {InlineObject1} [inlineObject1]
+     * @param {InlineObject7} [inlineObject7]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersOrderId(orderId: string, include?: string, inlineObject1?: InlineObject1, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
+    putOrdersOrderId(orderId: string, include?: string, inlineObject7?: InlineObject7, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
     /**
      * Update an orders billing address
      * @summary Update billing address
@@ -11281,11 +11502,11 @@ export declare const OrdersApiFactory: (configuration?: Configuration, basePath?
     /**
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @summary Bulk update orders
-     * @param {InlineObject3} [inlineObject3]
+     * @param {InlineObject9} [inlineObject9]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postOrdersBulk(inlineObject3?: InlineObject3, options?: any): AxiosPromise<void>;
+    postOrdersBulk(inlineObject9?: InlineObject9, options?: any): AxiosPromise<void>;
     /**
      * Sets an order to be expired. You must have the correct priviledges to perform this action. Once an order is expired, it will no longer appear in results unless performed by an admin or in the hub.
      * @summary Expire an Order
@@ -11297,29 +11518,29 @@ export declare const OrdersApiFactory: (configuration?: Configuration, basePath?
     /**
      *
      * @summary Processes an order on the API
-     * @param {InlineObject2} [inlineObject2]
+     * @param {InlineObject8} [inlineObject8]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postOrdersProcess(inlineObject2?: InlineObject2, options?: any): AxiosPromise<OrderResponse>;
+    postOrdersProcess(inlineObject8?: InlineObject8, options?: any): AxiosPromise<OrderResponse>;
     /**
      * Add contact details to an order
      * @summary Add contact details
      * @param {string} orderId
-     * @param {InlineObject5} [inlineObject5]
+     * @param {InlineObject11} [inlineObject11]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdContact(orderId: string, inlineObject5?: InlineObject5, options?: any): AxiosPromise<OrderResponse>;
+    putOrdersIdContact(orderId: string, inlineObject11?: InlineObject11, options?: any): AxiosPromise<OrderResponse>;
     /**
      * Adds an order line to an order
      * @summary Add order line
      * @param {string} orderId
-     * @param {InlineObject6} [inlineObject6]
+     * @param {InlineObject12} [inlineObject12]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdLines(orderId: string, inlineObject6?: InlineObject6, options?: any): AxiosPromise<OrderResponse>;
+    putOrdersIdLines(orderId: string, inlineObject12?: InlineObject12, options?: any): AxiosPromise<OrderResponse>;
     /**
      * Update an orders shipping address
      * @summary Update shipping address
@@ -11334,21 +11555,21 @@ export declare const OrdersApiFactory: (configuration?: Configuration, basePath?
      * @summary Add shipping cost
      * @param {string} orderId
      * @param {string} [include] Related resources to include in response
-     * @param {InlineObject4} [inlineObject4]
+     * @param {InlineObject10} [inlineObject10]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersIdShippingCost(orderId: string, include?: string, inlineObject4?: InlineObject4, options?: any): AxiosPromise<OrderResponse>;
+    putOrdersIdShippingCost(orderId: string, include?: string, inlineObject10?: InlineObject10, options?: any): AxiosPromise<OrderResponse>;
     /**
      * Update an Order
      * @summary Update Order
      * @param {string} orderId
      * @param {string} [include]
-     * @param {InlineObject1} [inlineObject1]
+     * @param {InlineObject7} [inlineObject7]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putOrdersOrderId(orderId: string, include?: string, inlineObject1?: InlineObject1, options?: any): AxiosPromise<OrderResponse>;
+    putOrdersOrderId(orderId: string, include?: string, inlineObject7?: InlineObject7, options?: any): AxiosPromise<OrderResponse>;
     /**
      * Update an orders billing address
      * @summary Update billing address
@@ -11452,12 +11673,12 @@ export declare class OrdersApi extends BaseAPI {
     /**
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @summary Bulk update orders
-     * @param {InlineObject3} [inlineObject3]
+     * @param {InlineObject9} [inlineObject9]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    postOrdersBulk(inlineObject3?: InlineObject3, options?: any): Promise<import("axios").AxiosResponse<void>>;
+    postOrdersBulk(inlineObject9?: InlineObject9, options?: any): Promise<import("axios").AxiosResponse<void>>;
     /**
      * Sets an order to be expired. You must have the correct priviledges to perform this action. Once an order is expired, it will no longer appear in results unless performed by an admin or in the hub.
      * @summary Expire an Order
@@ -11470,32 +11691,32 @@ export declare class OrdersApi extends BaseAPI {
     /**
      *
      * @summary Processes an order on the API
-     * @param {InlineObject2} [inlineObject2]
+     * @param {InlineObject8} [inlineObject8]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    postOrdersProcess(inlineObject2?: InlineObject2, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
+    postOrdersProcess(inlineObject8?: InlineObject8, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
     /**
      * Add contact details to an order
      * @summary Add contact details
      * @param {string} orderId
-     * @param {InlineObject5} [inlineObject5]
+     * @param {InlineObject11} [inlineObject11]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersIdContact(orderId: string, inlineObject5?: InlineObject5, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
+    putOrdersIdContact(orderId: string, inlineObject11?: InlineObject11, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
     /**
      * Adds an order line to an order
      * @summary Add order line
      * @param {string} orderId
-     * @param {InlineObject6} [inlineObject6]
+     * @param {InlineObject12} [inlineObject12]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersIdLines(orderId: string, inlineObject6?: InlineObject6, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
+    putOrdersIdLines(orderId: string, inlineObject12?: InlineObject12, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
     /**
      * Update an orders shipping address
      * @summary Update shipping address
@@ -11511,23 +11732,23 @@ export declare class OrdersApi extends BaseAPI {
      * @summary Add shipping cost
      * @param {string} orderId
      * @param {string} [include] Related resources to include in response
-     * @param {InlineObject4} [inlineObject4]
+     * @param {InlineObject10} [inlineObject10]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersIdShippingCost(orderId: string, include?: string, inlineObject4?: InlineObject4, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
+    putOrdersIdShippingCost(orderId: string, include?: string, inlineObject10?: InlineObject10, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
     /**
      * Update an Order
      * @summary Update Order
      * @param {string} orderId
      * @param {string} [include]
-     * @param {InlineObject1} [inlineObject1]
+     * @param {InlineObject7} [inlineObject7]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersOrderId(orderId: string, include?: string, inlineObject1?: InlineObject1, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
+    putOrdersOrderId(orderId: string, include?: string, inlineObject7?: InlineObject7, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
     /**
      * Update an orders billing address
      * @summary Update billing address
@@ -11561,11 +11782,11 @@ export declare const PaymentsApiAxiosParamCreator: (configuration?: Configuratio
     /**
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @summary Threed Secure Payment
-     * @param {InlineObject28} [inlineObject28]
+     * @param {InlineObject14} [inlineObject14]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postPayments3dSecure: (inlineObject28?: InlineObject28, options?: any) => Promise<RequestArgs>;
+    postPayments3dSecure: (inlineObject14?: InlineObject14, options?: any) => Promise<RequestArgs>;
     /**
      * Refund a transaction
      * @summary Refund a payment
@@ -11607,11 +11828,11 @@ export declare const PaymentsApiFp: (configuration?: Configuration) => {
     /**
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @summary Threed Secure Payment
-     * @param {InlineObject28} [inlineObject28]
+     * @param {InlineObject14} [inlineObject14]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postPayments3dSecure(inlineObject28?: InlineObject28, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
+    postPayments3dSecure(inlineObject14?: InlineObject14, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OrderResponse>>;
     /**
      * Refund a transaction
      * @summary Refund a payment
@@ -11653,11 +11874,11 @@ export declare const PaymentsApiFactory: (configuration?: Configuration, basePat
     /**
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @summary Threed Secure Payment
-     * @param {InlineObject28} [inlineObject28]
+     * @param {InlineObject14} [inlineObject14]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postPayments3dSecure(inlineObject28?: InlineObject28, options?: any): AxiosPromise<OrderResponse>;
+    postPayments3dSecure(inlineObject14?: InlineObject14, options?: any): AxiosPromise<OrderResponse>;
     /**
      * Refund a transaction
      * @summary Refund a payment
@@ -11703,12 +11924,12 @@ export declare class PaymentsApi extends BaseAPI {
     /**
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @summary Threed Secure Payment
-     * @param {InlineObject28} [inlineObject28]
+     * @param {InlineObject14} [inlineObject14]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PaymentsApi
      */
-    postPayments3dSecure(inlineObject28?: InlineObject28, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
+    postPayments3dSecure(inlineObject14?: InlineObject14, options?: any): Promise<import("axios").AxiosResponse<OrderResponse>>;
     /**
      * Refund a transaction
      * @summary Refund a payment
@@ -11771,11 +11992,11 @@ export declare const ProductFamiliesApiAxiosParamCreator: (configuration?: Confi
      * Update a product family
      * @summary Update product family
      * @param {string} productFamilyId
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject15} [inlineObject15]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putProductFamiliesProductFamilyId: (productFamilyId: string, inlineObject?: InlineObject, options?: any) => Promise<RequestArgs>;
+    putProductFamiliesProductFamilyId: (productFamilyId: string, inlineObject15?: InlineObject15, options?: any) => Promise<RequestArgs>;
 };
 /**
  * ProductFamiliesApi - functional programming interface
@@ -11818,11 +12039,11 @@ export declare const ProductFamiliesApiFp: (configuration?: Configuration) => {
      * Update a product family
      * @summary Update product family
      * @param {string} productFamilyId
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject15} [inlineObject15]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putProductFamiliesProductFamilyId(productFamilyId: string, inlineObject?: InlineObject, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductFamilyResponse>>;
+    putProductFamiliesProductFamilyId(productFamilyId: string, inlineObject15?: InlineObject15, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductFamilyResponse>>;
 };
 /**
  * ProductFamiliesApi - factory interface
@@ -11865,11 +12086,11 @@ export declare const ProductFamiliesApiFactory: (configuration?: Configuration, 
      * Update a product family
      * @summary Update product family
      * @param {string} productFamilyId
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject15} [inlineObject15]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putProductFamiliesProductFamilyId(productFamilyId: string, inlineObject?: InlineObject, options?: any): AxiosPromise<ProductFamilyResponse>;
+    putProductFamiliesProductFamilyId(productFamilyId: string, inlineObject15?: InlineObject15, options?: any): AxiosPromise<ProductFamilyResponse>;
 };
 /**
  * ProductFamiliesApi - object-oriented interface
@@ -11918,12 +12139,12 @@ export declare class ProductFamiliesApi extends BaseAPI {
      * Update a product family
      * @summary Update product family
      * @param {string} productFamilyId
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject15} [inlineObject15]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductFamiliesApi
      */
-    putProductFamiliesProductFamilyId(productFamilyId: string, inlineObject?: InlineObject, options?: any): Promise<import("axios").AxiosResponse<ProductFamilyResponse>>;
+    putProductFamiliesProductFamilyId(productFamilyId: string, inlineObject15?: InlineObject15, options?: any): Promise<import("axios").AxiosResponse<ProductFamilyResponse>>;
 }
 /**
  * ProductVariantsApi - axios parameter creator
@@ -11950,11 +12171,11 @@ export declare const ProductVariantsApiAxiosParamCreator: (configuration?: Confi
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
      * @param {string} productVariantId
-     * @param {InlineObject7} [inlineObject7]
+     * @param {InlineObject16} [inlineObject16]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putProductsVariantsProductVariantIdInventory: (productVariantId: string, inlineObject7?: InlineObject7, options?: any) => Promise<RequestArgs>;
+    putProductsVariantsProductVariantIdInventory: (productVariantId: string, inlineObject16?: InlineObject16, options?: any) => Promise<RequestArgs>;
 };
 /**
  * ProductVariantsApi - functional programming interface
@@ -11981,11 +12202,11 @@ export declare const ProductVariantsApiFp: (configuration?: Configuration) => {
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
      * @param {string} productVariantId
-     * @param {InlineObject7} [inlineObject7]
+     * @param {InlineObject16} [inlineObject16]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putProductsVariantsProductVariantIdInventory(productVariantId: string, inlineObject7?: InlineObject7, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductVariantResponse>>;
+    putProductsVariantsProductVariantIdInventory(productVariantId: string, inlineObject16?: InlineObject16, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductVariantResponse>>;
 };
 /**
  * ProductVariantsApi - factory interface
@@ -12012,11 +12233,11 @@ export declare const ProductVariantsApiFactory: (configuration?: Configuration, 
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
      * @param {string} productVariantId
-     * @param {InlineObject7} [inlineObject7]
+     * @param {InlineObject16} [inlineObject16]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putProductsVariantsProductVariantIdInventory(productVariantId: string, inlineObject7?: InlineObject7, options?: any): AxiosPromise<ProductVariantResponse>;
+    putProductsVariantsProductVariantIdInventory(productVariantId: string, inlineObject16?: InlineObject16, options?: any): AxiosPromise<ProductVariantResponse>;
 };
 /**
  * ProductVariantsApi - object-oriented interface
@@ -12047,12 +12268,12 @@ export declare class ProductVariantsApi extends BaseAPI {
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
      * @param {string} productVariantId
-     * @param {InlineObject7} [inlineObject7]
+     * @param {InlineObject16} [inlineObject16]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductVariantsApi
      */
-    putProductsVariantsProductVariantIdInventory(productVariantId: string, inlineObject7?: InlineObject7, options?: any): Promise<import("axios").AxiosResponse<ProductVariantResponse>>;
+    putProductsVariantsProductVariantIdInventory(productVariantId: string, inlineObject16?: InlineObject16, options?: any): Promise<import("axios").AxiosResponse<ProductVariantResponse>>;
 }
 /**
  * ProductsApi - axios parameter creator
@@ -12145,20 +12366,20 @@ export declare const ProductsApiAxiosParamCreator: (configuration?: Configuratio
      * Creates and syncs a new product route.
      * @summary Create Product redirect
      * @param {string} productId
-     * @param {InlineObject10} [inlineObject10]
+     * @param {InlineObject19} [inlineObject19]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductRedirects: (productId: string, inlineObject10?: InlineObject10, options?: any) => Promise<RequestArgs>;
+    postProductRedirects: (productId: string, inlineObject19?: InlineObject19, options?: any) => Promise<RequestArgs>;
     /**
      * Creates and syncs a new product route.
      * @summary Create Product route
      * @param {string} productId
-     * @param {InlineObject9} [inlineObject9]
+     * @param {InlineObject18} [inlineObject18]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductUrls: (productId: string, inlineObject9?: InlineObject9, options?: any) => Promise<RequestArgs>;
+    postProductUrls: (productId: string, inlineObject18?: InlineObject18, options?: any) => Promise<RequestArgs>;
     /**
      *
      * @summary Create Product
@@ -12193,65 +12414,65 @@ export declare const ProductsApiAxiosParamCreator: (configuration?: Configuratio
      * Updates product associations
      * @summary Update product associations
      * @param {string} productId
-     * @param {InlineObject15} [inlineObject15]
+     * @param {InlineObject24} [inlineObject24]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductAssociations: (productId: string, inlineObject15?: InlineObject15, options?: any) => Promise<RequestArgs>;
+    postProductsProductAssociations: (productId: string, inlineObject24?: InlineObject24, options?: any) => Promise<RequestArgs>;
     /**
      * Allows you to sync up the attributes which are directly associated to this product.
      * @summary Update Product attributes
      * @param {string} productId
-     * @param {InlineObject11} [inlineObject11]
+     * @param {InlineObject20} [inlineObject20]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductAttributes: (productId: string, inlineObject11?: InlineObject11, options?: any) => Promise<RequestArgs>;
+    postProductsProductAttributes: (productId: string, inlineObject20?: InlineObject20, options?: any) => Promise<RequestArgs>;
     /**
      * Sync product categories
      * @summary Update Product categories
      * @param {string} productId
-     * @param {InlineObject13} [inlineObject13]
+     * @param {InlineObject22} [inlineObject22]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductCategories: (productId: string, inlineObject13?: InlineObject13, options?: any) => Promise<RequestArgs>;
+    postProductsProductCategories: (productId: string, inlineObject22?: InlineObject22, options?: any) => Promise<RequestArgs>;
     /**
      * Sync product Channels
      * @summary Update Product channels
      * @param {string} productId
-     * @param {InlineObject14} [inlineObject14]
+     * @param {InlineObject23} [inlineObject23]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductChannels: (productId: string, inlineObject14?: InlineObject14, options?: any) => Promise<RequestArgs>;
+    postProductsProductChannels: (productId: string, inlineObject23?: InlineObject23, options?: any) => Promise<RequestArgs>;
     /**
      * Update a products customer groups
      * @summary Update customer groups
      * @param {string} productId
-     * @param {InlineObject16} [inlineObject16]
+     * @param {InlineObject25} [inlineObject25]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductCustomerGroups: (productId: string, inlineObject16?: InlineObject16, options?: any) => Promise<RequestArgs>;
+    postProductsProductCustomerGroups: (productId: string, inlineObject25?: InlineObject25, options?: any) => Promise<RequestArgs>;
     /**
      * Update a products collections.
      * @summary Update Product collections
      * @param {string} productId
-     * @param {InlineObject12} [inlineObject12]
+     * @param {InlineObject21} [inlineObject21]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductIdCollections: (productId: string, inlineObject12?: InlineObject12, options?: any) => Promise<RequestArgs>;
+    postProductsProductIdCollections: (productId: string, inlineObject21?: InlineObject21, options?: any) => Promise<RequestArgs>;
     /**
      * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
      * @summary Duplicate Product
      * @param {string} productId
-     * @param {InlineObject8} [inlineObject8]
+     * @param {InlineObject17} [inlineObject17]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductIdDuplicate: (productId: string, inlineObject8?: InlineObject8, options?: any) => Promise<RequestArgs>;
+    postProductsProductIdDuplicate: (productId: string, inlineObject17?: InlineObject17, options?: any) => Promise<RequestArgs>;
     /**
      * Updates a product by it\'s ID
      * @summary Update Product
@@ -12353,20 +12574,20 @@ export declare const ProductsApiFp: (configuration?: Configuration) => {
      * Creates and syncs a new product route.
      * @summary Create Product redirect
      * @param {string} productId
-     * @param {InlineObject10} [inlineObject10]
+     * @param {InlineObject19} [inlineObject19]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductRedirects(productId: string, inlineObject10?: InlineObject10, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductRedirects(productId: string, inlineObject19?: InlineObject19, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Creates and syncs a new product route.
      * @summary Create Product route
      * @param {string} productId
-     * @param {InlineObject9} [inlineObject9]
+     * @param {InlineObject18} [inlineObject18]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductUrls(productId: string, inlineObject9?: InlineObject9, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductUrls(productId: string, inlineObject18?: InlineObject18, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      *
      * @summary Create Product
@@ -12401,65 +12622,65 @@ export declare const ProductsApiFp: (configuration?: Configuration) => {
      * Updates product associations
      * @summary Update product associations
      * @param {string} productId
-     * @param {InlineObject15} [inlineObject15]
+     * @param {InlineObject24} [inlineObject24]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductAssociations(productId: string, inlineObject15?: InlineObject15, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductAssociations(productId: string, inlineObject24?: InlineObject24, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Allows you to sync up the attributes which are directly associated to this product.
      * @summary Update Product attributes
      * @param {string} productId
-     * @param {InlineObject11} [inlineObject11]
+     * @param {InlineObject20} [inlineObject20]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductAttributes(productId: string, inlineObject11?: InlineObject11, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductAttributes(productId: string, inlineObject20?: InlineObject20, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Sync product categories
      * @summary Update Product categories
      * @param {string} productId
-     * @param {InlineObject13} [inlineObject13]
+     * @param {InlineObject22} [inlineObject22]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductCategories(productId: string, inlineObject13?: InlineObject13, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductCategories(productId: string, inlineObject22?: InlineObject22, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Sync product Channels
      * @summary Update Product channels
      * @param {string} productId
-     * @param {InlineObject14} [inlineObject14]
+     * @param {InlineObject23} [inlineObject23]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductChannels(productId: string, inlineObject14?: InlineObject14, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductChannels(productId: string, inlineObject23?: InlineObject23, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Update a products customer groups
      * @summary Update customer groups
      * @param {string} productId
-     * @param {InlineObject16} [inlineObject16]
+     * @param {InlineObject25} [inlineObject25]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductCustomerGroups(productId: string, inlineObject16?: InlineObject16, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductCustomerGroups(productId: string, inlineObject25?: InlineObject25, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Update a products collections.
      * @summary Update Product collections
      * @param {string} productId
-     * @param {InlineObject12} [inlineObject12]
+     * @param {InlineObject21} [inlineObject21]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductIdCollections(productId: string, inlineObject12?: InlineObject12, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductIdCollections(productId: string, inlineObject21?: InlineObject21, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
      * @summary Duplicate Product
      * @param {string} productId
-     * @param {InlineObject8} [inlineObject8]
+     * @param {InlineObject17} [inlineObject17]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductIdDuplicate(productId: string, inlineObject8?: InlineObject8, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
+    postProductsProductIdDuplicate(productId: string, inlineObject17?: InlineObject17, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductResponse>>;
     /**
      * Updates a product by it\'s ID
      * @summary Update Product
@@ -12561,20 +12782,20 @@ export declare const ProductsApiFactory: (configuration?: Configuration, basePat
      * Creates and syncs a new product route.
      * @summary Create Product redirect
      * @param {string} productId
-     * @param {InlineObject10} [inlineObject10]
+     * @param {InlineObject19} [inlineObject19]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductRedirects(productId: string, inlineObject10?: InlineObject10, options?: any): AxiosPromise<ProductResponse>;
+    postProductRedirects(productId: string, inlineObject19?: InlineObject19, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Creates and syncs a new product route.
      * @summary Create Product route
      * @param {string} productId
-     * @param {InlineObject9} [inlineObject9]
+     * @param {InlineObject18} [inlineObject18]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductUrls(productId: string, inlineObject9?: InlineObject9, options?: any): AxiosPromise<ProductResponse>;
+    postProductUrls(productId: string, inlineObject18?: InlineObject18, options?: any): AxiosPromise<ProductResponse>;
     /**
      *
      * @summary Create Product
@@ -12609,65 +12830,65 @@ export declare const ProductsApiFactory: (configuration?: Configuration, basePat
      * Updates product associations
      * @summary Update product associations
      * @param {string} productId
-     * @param {InlineObject15} [inlineObject15]
+     * @param {InlineObject24} [inlineObject24]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductAssociations(productId: string, inlineObject15?: InlineObject15, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductAssociations(productId: string, inlineObject24?: InlineObject24, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Allows you to sync up the attributes which are directly associated to this product.
      * @summary Update Product attributes
      * @param {string} productId
-     * @param {InlineObject11} [inlineObject11]
+     * @param {InlineObject20} [inlineObject20]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductAttributes(productId: string, inlineObject11?: InlineObject11, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductAttributes(productId: string, inlineObject20?: InlineObject20, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Sync product categories
      * @summary Update Product categories
      * @param {string} productId
-     * @param {InlineObject13} [inlineObject13]
+     * @param {InlineObject22} [inlineObject22]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductCategories(productId: string, inlineObject13?: InlineObject13, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductCategories(productId: string, inlineObject22?: InlineObject22, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Sync product Channels
      * @summary Update Product channels
      * @param {string} productId
-     * @param {InlineObject14} [inlineObject14]
+     * @param {InlineObject23} [inlineObject23]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductChannels(productId: string, inlineObject14?: InlineObject14, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductChannels(productId: string, inlineObject23?: InlineObject23, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Update a products customer groups
      * @summary Update customer groups
      * @param {string} productId
-     * @param {InlineObject16} [inlineObject16]
+     * @param {InlineObject25} [inlineObject25]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductCustomerGroups(productId: string, inlineObject16?: InlineObject16, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductCustomerGroups(productId: string, inlineObject25?: InlineObject25, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Update a products collections.
      * @summary Update Product collections
      * @param {string} productId
-     * @param {InlineObject12} [inlineObject12]
+     * @param {InlineObject21} [inlineObject21]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductIdCollections(productId: string, inlineObject12?: InlineObject12, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductIdCollections(productId: string, inlineObject21?: InlineObject21, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
      * @summary Duplicate Product
      * @param {string} productId
-     * @param {InlineObject8} [inlineObject8]
+     * @param {InlineObject17} [inlineObject17]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postProductsProductIdDuplicate(productId: string, inlineObject8?: InlineObject8, options?: any): AxiosPromise<ProductResponse>;
+    postProductsProductIdDuplicate(productId: string, inlineObject17?: InlineObject17, options?: any): AxiosPromise<ProductResponse>;
     /**
      * Updates a product by it\'s ID
      * @summary Update Product
@@ -12780,22 +13001,22 @@ export declare class ProductsApi extends BaseAPI {
      * Creates and syncs a new product route.
      * @summary Create Product redirect
      * @param {string} productId
-     * @param {InlineObject10} [inlineObject10]
+     * @param {InlineObject19} [inlineObject19]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductRedirects(productId: string, inlineObject10?: InlineObject10, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductRedirects(productId: string, inlineObject19?: InlineObject19, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Creates and syncs a new product route.
      * @summary Create Product route
      * @param {string} productId
-     * @param {InlineObject9} [inlineObject9]
+     * @param {InlineObject18} [inlineObject18]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductUrls(productId: string, inlineObject9?: InlineObject9, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductUrls(productId: string, inlineObject18?: InlineObject18, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      *
      * @summary Create Product
@@ -12833,72 +13054,72 @@ export declare class ProductsApi extends BaseAPI {
      * Updates product associations
      * @summary Update product associations
      * @param {string} productId
-     * @param {InlineObject15} [inlineObject15]
+     * @param {InlineObject24} [inlineObject24]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductAssociations(productId: string, inlineObject15?: InlineObject15, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductAssociations(productId: string, inlineObject24?: InlineObject24, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Allows you to sync up the attributes which are directly associated to this product.
      * @summary Update Product attributes
      * @param {string} productId
-     * @param {InlineObject11} [inlineObject11]
+     * @param {InlineObject20} [inlineObject20]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductAttributes(productId: string, inlineObject11?: InlineObject11, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductAttributes(productId: string, inlineObject20?: InlineObject20, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Sync product categories
      * @summary Update Product categories
      * @param {string} productId
-     * @param {InlineObject13} [inlineObject13]
+     * @param {InlineObject22} [inlineObject22]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductCategories(productId: string, inlineObject13?: InlineObject13, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductCategories(productId: string, inlineObject22?: InlineObject22, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Sync product Channels
      * @summary Update Product channels
      * @param {string} productId
-     * @param {InlineObject14} [inlineObject14]
+     * @param {InlineObject23} [inlineObject23]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductChannels(productId: string, inlineObject14?: InlineObject14, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductChannels(productId: string, inlineObject23?: InlineObject23, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Update a products customer groups
      * @summary Update customer groups
      * @param {string} productId
-     * @param {InlineObject16} [inlineObject16]
+     * @param {InlineObject25} [inlineObject25]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductCustomerGroups(productId: string, inlineObject16?: InlineObject16, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductCustomerGroups(productId: string, inlineObject25?: InlineObject25, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Update a products collections.
      * @summary Update Product collections
      * @param {string} productId
-     * @param {InlineObject12} [inlineObject12]
+     * @param {InlineObject21} [inlineObject21]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductIdCollections(productId: string, inlineObject12?: InlineObject12, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductIdCollections(productId: string, inlineObject21?: InlineObject21, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
      * @summary Duplicate Product
      * @param {string} productId
-     * @param {InlineObject8} [inlineObject8]
+     * @param {InlineObject17} [inlineObject17]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductIdDuplicate(productId: string, inlineObject8?: InlineObject8, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
+    postProductsProductIdDuplicate(productId: string, inlineObject17?: InlineObject17, options?: any): Promise<import("axios").AxiosResponse<ProductResponse>>;
     /**
      * Updates a product by it\'s ID
      * @summary Update Product
@@ -13853,64 +14074,64 @@ export declare const ShippingApiAxiosParamCreator: (configuration?: Configuratio
     /**
      * Create a new shipping method.
      * @summary Create shipping method
-     * @param {InlineObject29} [inlineObject29]
+     * @param {InlineObject26} [inlineObject26]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShipping: (inlineObject29?: InlineObject29, options?: any) => Promise<RequestArgs>;
+    postShipping: (inlineObject26?: InlineObject26, options?: any) => Promise<RequestArgs>;
     /**
      * Add a price to a shipping method.
      * @summary Add shipping price
      * @param {string} shippingMethodId
-     * @param {InlineObject32} [inlineObject32]
+     * @param {InlineObject29} [inlineObject29]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShippingIdPrices: (shippingMethodId: string, inlineObject32?: InlineObject32, options?: any) => Promise<RequestArgs>;
+    postShippingIdPrices: (shippingMethodId: string, inlineObject29?: InlineObject29, options?: any) => Promise<RequestArgs>;
     /**
      * Create a new shipping zone
      * @summary Create Shipping Zone
-     * @param {InlineObject31} [inlineObject31]
+     * @param {InlineObject28} [inlineObject28]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShippingZones: (inlineObject31?: InlineObject31, options?: any) => Promise<RequestArgs>;
+    postShippingZones: (inlineObject28?: InlineObject28, options?: any) => Promise<RequestArgs>;
     /**
      * Update shipping method users
      * @summary Update shipping method users
      * @param {string} id
-     * @param {InlineObject35} [inlineObject35]
+     * @param {InlineObject32} [inlineObject32]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingIdUsers: (id: string, inlineObject35?: InlineObject35, options?: any) => Promise<RequestArgs>;
+    putShippingIdUsers: (id: string, inlineObject32?: InlineObject32, options?: any) => Promise<RequestArgs>;
     /**
      * Update a shipping price
      * @summary Update shipping price
      * @param {string} shippingPriceId
-     * @param {InlineObject33} [inlineObject33]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    putShippingPricesShippingPriceId: (shippingPriceId: string, inlineObject33?: InlineObject33, options?: any) => Promise<RequestArgs>;
-    /**
-     * Update shipping method by it\'s ID
-     * @summary Update shipping method
-     * @param {string} shippingMethodId
      * @param {InlineObject30} [inlineObject30]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingShippingMethodId: (shippingMethodId: string, inlineObject30?: InlineObject30, options?: any) => Promise<RequestArgs>;
+    putShippingPricesShippingPriceId: (shippingPriceId: string, inlineObject30?: InlineObject30, options?: any) => Promise<RequestArgs>;
+    /**
+     * Update shipping method by it\'s ID
+     * @summary Update shipping method
+     * @param {string} shippingMethodId
+     * @param {InlineObject27} [inlineObject27]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    putShippingShippingMethodId: (shippingMethodId: string, inlineObject27?: InlineObject27, options?: any) => Promise<RequestArgs>;
     /**
      * Update a shipping method\'s zones.
      * @summary Update shipping method zones
      * @param {string} shippingMethodId
-     * @param {InlineObject34} [inlineObject34]
+     * @param {InlineObject31} [inlineObject31]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingShippingMethodIdZones: (shippingMethodId: string, inlineObject34?: InlineObject34, options?: any) => Promise<RequestArgs>;
+    putShippingShippingMethodIdZones: (shippingMethodId: string, inlineObject31?: InlineObject31, options?: any) => Promise<RequestArgs>;
 };
 /**
  * ShippingApi - functional programming interface
@@ -13962,64 +14183,64 @@ export declare const ShippingApiFp: (configuration?: Configuration) => {
     /**
      * Create a new shipping method.
      * @summary Create shipping method
-     * @param {InlineObject29} [inlineObject29]
+     * @param {InlineObject26} [inlineObject26]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShipping(inlineObject29?: InlineObject29, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2007>>;
+    postShipping(inlineObject26?: InlineObject26, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2007>>;
     /**
      * Add a price to a shipping method.
      * @summary Add shipping price
      * @param {string} shippingMethodId
-     * @param {InlineObject32} [inlineObject32]
+     * @param {InlineObject29} [inlineObject29]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShippingIdPrices(shippingMethodId: string, inlineObject32?: InlineObject32, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingPriceResponse>>;
+    postShippingIdPrices(shippingMethodId: string, inlineObject29?: InlineObject29, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingPriceResponse>>;
     /**
      * Create a new shipping zone
      * @summary Create Shipping Zone
-     * @param {InlineObject31} [inlineObject31]
+     * @param {InlineObject28} [inlineObject28]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShippingZones(inlineObject31?: InlineObject31, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingZoneResponse>>;
+    postShippingZones(inlineObject28?: InlineObject28, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingZoneResponse>>;
     /**
      * Update shipping method users
      * @summary Update shipping method users
      * @param {string} id
-     * @param {InlineObject35} [inlineObject35]
+     * @param {InlineObject32} [inlineObject32]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingIdUsers(id: string, inlineObject35?: InlineObject35, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingMethodResponse>>;
+    putShippingIdUsers(id: string, inlineObject32?: InlineObject32, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingMethodResponse>>;
     /**
      * Update a shipping price
      * @summary Update shipping price
      * @param {string} shippingPriceId
-     * @param {InlineObject33} [inlineObject33]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    putShippingPricesShippingPriceId(shippingPriceId: string, inlineObject33?: InlineObject33, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingPriceResponse>>;
-    /**
-     * Update shipping method by it\'s ID
-     * @summary Update shipping method
-     * @param {string} shippingMethodId
      * @param {InlineObject30} [inlineObject30]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingShippingMethodId(shippingMethodId: string, inlineObject30?: InlineObject30, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingMethodResponse>>;
+    putShippingPricesShippingPriceId(shippingPriceId: string, inlineObject30?: InlineObject30, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingPriceResponse>>;
+    /**
+     * Update shipping method by it\'s ID
+     * @summary Update shipping method
+     * @param {string} shippingMethodId
+     * @param {InlineObject27} [inlineObject27]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    putShippingShippingMethodId(shippingMethodId: string, inlineObject27?: InlineObject27, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingMethodResponse>>;
     /**
      * Update a shipping method\'s zones.
      * @summary Update shipping method zones
      * @param {string} shippingMethodId
-     * @param {InlineObject34} [inlineObject34]
+     * @param {InlineObject31} [inlineObject31]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingShippingMethodIdZones(shippingMethodId: string, inlineObject34?: InlineObject34, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingMethodResponse>>;
+    putShippingShippingMethodIdZones(shippingMethodId: string, inlineObject31?: InlineObject31, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ShippingMethodResponse>>;
 };
 /**
  * ShippingApi - factory interface
@@ -14071,64 +14292,64 @@ export declare const ShippingApiFactory: (configuration?: Configuration, basePat
     /**
      * Create a new shipping method.
      * @summary Create shipping method
-     * @param {InlineObject29} [inlineObject29]
+     * @param {InlineObject26} [inlineObject26]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShipping(inlineObject29?: InlineObject29, options?: any): AxiosPromise<InlineResponse2007>;
+    postShipping(inlineObject26?: InlineObject26, options?: any): AxiosPromise<InlineResponse2007>;
     /**
      * Add a price to a shipping method.
      * @summary Add shipping price
      * @param {string} shippingMethodId
-     * @param {InlineObject32} [inlineObject32]
+     * @param {InlineObject29} [inlineObject29]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShippingIdPrices(shippingMethodId: string, inlineObject32?: InlineObject32, options?: any): AxiosPromise<ShippingPriceResponse>;
+    postShippingIdPrices(shippingMethodId: string, inlineObject29?: InlineObject29, options?: any): AxiosPromise<ShippingPriceResponse>;
     /**
      * Create a new shipping zone
      * @summary Create Shipping Zone
-     * @param {InlineObject31} [inlineObject31]
+     * @param {InlineObject28} [inlineObject28]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postShippingZones(inlineObject31?: InlineObject31, options?: any): AxiosPromise<ShippingZoneResponse>;
+    postShippingZones(inlineObject28?: InlineObject28, options?: any): AxiosPromise<ShippingZoneResponse>;
     /**
      * Update shipping method users
      * @summary Update shipping method users
      * @param {string} id
-     * @param {InlineObject35} [inlineObject35]
+     * @param {InlineObject32} [inlineObject32]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingIdUsers(id: string, inlineObject35?: InlineObject35, options?: any): AxiosPromise<ShippingMethodResponse>;
+    putShippingIdUsers(id: string, inlineObject32?: InlineObject32, options?: any): AxiosPromise<ShippingMethodResponse>;
     /**
      * Update a shipping price
      * @summary Update shipping price
      * @param {string} shippingPriceId
-     * @param {InlineObject33} [inlineObject33]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    putShippingPricesShippingPriceId(shippingPriceId: string, inlineObject33?: InlineObject33, options?: any): AxiosPromise<ShippingPriceResponse>;
-    /**
-     * Update shipping method by it\'s ID
-     * @summary Update shipping method
-     * @param {string} shippingMethodId
      * @param {InlineObject30} [inlineObject30]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingShippingMethodId(shippingMethodId: string, inlineObject30?: InlineObject30, options?: any): AxiosPromise<ShippingMethodResponse>;
+    putShippingPricesShippingPriceId(shippingPriceId: string, inlineObject30?: InlineObject30, options?: any): AxiosPromise<ShippingPriceResponse>;
+    /**
+     * Update shipping method by it\'s ID
+     * @summary Update shipping method
+     * @param {string} shippingMethodId
+     * @param {InlineObject27} [inlineObject27]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    putShippingShippingMethodId(shippingMethodId: string, inlineObject27?: InlineObject27, options?: any): AxiosPromise<ShippingMethodResponse>;
     /**
      * Update a shipping method\'s zones.
      * @summary Update shipping method zones
      * @param {string} shippingMethodId
-     * @param {InlineObject34} [inlineObject34]
+     * @param {InlineObject31} [inlineObject31]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putShippingShippingMethodIdZones(shippingMethodId: string, inlineObject34?: InlineObject34, options?: any): AxiosPromise<ShippingMethodResponse>;
+    putShippingShippingMethodIdZones(shippingMethodId: string, inlineObject31?: InlineObject31, options?: any): AxiosPromise<ShippingMethodResponse>;
 };
 /**
  * ShippingApi - object-oriented interface
@@ -14187,71 +14408,71 @@ export declare class ShippingApi extends BaseAPI {
     /**
      * Create a new shipping method.
      * @summary Create shipping method
+     * @param {InlineObject26} [inlineObject26]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ShippingApi
+     */
+    postShipping(inlineObject26?: InlineObject26, options?: any): Promise<import("axios").AxiosResponse<InlineResponse2007>>;
+    /**
+     * Add a price to a shipping method.
+     * @summary Add shipping price
+     * @param {string} shippingMethodId
      * @param {InlineObject29} [inlineObject29]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    postShipping(inlineObject29?: InlineObject29, options?: any): Promise<import("axios").AxiosResponse<InlineResponse2007>>;
+    postShippingIdPrices(shippingMethodId: string, inlineObject29?: InlineObject29, options?: any): Promise<import("axios").AxiosResponse<ShippingPriceResponse>>;
     /**
-     * Add a price to a shipping method.
-     * @summary Add shipping price
-     * @param {string} shippingMethodId
+     * Create a new shipping zone
+     * @summary Create Shipping Zone
+     * @param {InlineObject28} [inlineObject28]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ShippingApi
+     */
+    postShippingZones(inlineObject28?: InlineObject28, options?: any): Promise<import("axios").AxiosResponse<ShippingZoneResponse>>;
+    /**
+     * Update shipping method users
+     * @summary Update shipping method users
+     * @param {string} id
      * @param {InlineObject32} [inlineObject32]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    postShippingIdPrices(shippingMethodId: string, inlineObject32?: InlineObject32, options?: any): Promise<import("axios").AxiosResponse<ShippingPriceResponse>>;
-    /**
-     * Create a new shipping zone
-     * @summary Create Shipping Zone
-     * @param {InlineObject31} [inlineObject31]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof ShippingApi
-     */
-    postShippingZones(inlineObject31?: InlineObject31, options?: any): Promise<import("axios").AxiosResponse<ShippingZoneResponse>>;
-    /**
-     * Update shipping method users
-     * @summary Update shipping method users
-     * @param {string} id
-     * @param {InlineObject35} [inlineObject35]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof ShippingApi
-     */
-    putShippingIdUsers(id: string, inlineObject35?: InlineObject35, options?: any): Promise<import("axios").AxiosResponse<ShippingMethodResponse>>;
+    putShippingIdUsers(id: string, inlineObject32?: InlineObject32, options?: any): Promise<import("axios").AxiosResponse<ShippingMethodResponse>>;
     /**
      * Update a shipping price
      * @summary Update shipping price
      * @param {string} shippingPriceId
-     * @param {InlineObject33} [inlineObject33]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof ShippingApi
-     */
-    putShippingPricesShippingPriceId(shippingPriceId: string, inlineObject33?: InlineObject33, options?: any): Promise<import("axios").AxiosResponse<ShippingPriceResponse>>;
-    /**
-     * Update shipping method by it\'s ID
-     * @summary Update shipping method
-     * @param {string} shippingMethodId
      * @param {InlineObject30} [inlineObject30]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    putShippingShippingMethodId(shippingMethodId: string, inlineObject30?: InlineObject30, options?: any): Promise<import("axios").AxiosResponse<ShippingMethodResponse>>;
+    putShippingPricesShippingPriceId(shippingPriceId: string, inlineObject30?: InlineObject30, options?: any): Promise<import("axios").AxiosResponse<ShippingPriceResponse>>;
     /**
-     * Update a shipping method\'s zones.
-     * @summary Update shipping method zones
+     * Update shipping method by it\'s ID
+     * @summary Update shipping method
      * @param {string} shippingMethodId
-     * @param {InlineObject34} [inlineObject34]
+     * @param {InlineObject27} [inlineObject27]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    putShippingShippingMethodIdZones(shippingMethodId: string, inlineObject34?: InlineObject34, options?: any): Promise<import("axios").AxiosResponse<ShippingMethodResponse>>;
+    putShippingShippingMethodId(shippingMethodId: string, inlineObject27?: InlineObject27, options?: any): Promise<import("axios").AxiosResponse<ShippingMethodResponse>>;
+    /**
+     * Update a shipping method\'s zones.
+     * @summary Update shipping method zones
+     * @param {string} shippingMethodId
+     * @param {InlineObject31} [inlineObject31]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ShippingApi
+     */
+    putShippingShippingMethodIdZones(shippingMethodId: string, inlineObject31?: InlineObject31, options?: any): Promise<import("axios").AxiosResponse<ShippingMethodResponse>>;
 }
 /**
  * TagsApi - axios parameter creator
@@ -14284,20 +14505,20 @@ export declare const TagsApiAxiosParamCreator: (configuration?: Configuration) =
     /**
      * Create a new tag
      * @summary
-     * @param {InlineObject36} [inlineObject36]
+     * @param {InlineObject33} [inlineObject33]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postTags: (inlineObject36?: InlineObject36, options?: any) => Promise<RequestArgs>;
+    postTags: (inlineObject33?: InlineObject33, options?: any) => Promise<RequestArgs>;
     /**
      * Updates a tag by it\'s ID
      * @summary Update a tag
      * @param {string} tagId
-     * @param {InlineObject37} [inlineObject37]
+     * @param {InlineObject34} [inlineObject34]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putTagsTagId: (tagId: string, inlineObject37?: InlineObject37, options?: any) => Promise<RequestArgs>;
+    putTagsTagId: (tagId: string, inlineObject34?: InlineObject34, options?: any) => Promise<RequestArgs>;
 };
 /**
  * TagsApi - functional programming interface
@@ -14330,20 +14551,20 @@ export declare const TagsApiFp: (configuration?: Configuration) => {
     /**
      * Create a new tag
      * @summary
-     * @param {InlineObject36} [inlineObject36]
+     * @param {InlineObject33} [inlineObject33]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postTags(inlineObject36?: InlineObject36, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TagResponse>>;
+    postTags(inlineObject33?: InlineObject33, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TagResponse>>;
     /**
      * Updates a tag by it\'s ID
      * @summary Update a tag
      * @param {string} tagId
-     * @param {InlineObject37} [inlineObject37]
+     * @param {InlineObject34} [inlineObject34]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putTagsTagId(tagId: string, inlineObject37?: InlineObject37, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TagResponse>>;
+    putTagsTagId(tagId: string, inlineObject34?: InlineObject34, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TagResponse>>;
 };
 /**
  * TagsApi - factory interface
@@ -14376,20 +14597,20 @@ export declare const TagsApiFactory: (configuration?: Configuration, basePath?: 
     /**
      * Create a new tag
      * @summary
-     * @param {InlineObject36} [inlineObject36]
+     * @param {InlineObject33} [inlineObject33]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postTags(inlineObject36?: InlineObject36, options?: any): AxiosPromise<TagResponse>;
+    postTags(inlineObject33?: InlineObject33, options?: any): AxiosPromise<TagResponse>;
     /**
      * Updates a tag by it\'s ID
      * @summary Update a tag
      * @param {string} tagId
-     * @param {InlineObject37} [inlineObject37]
+     * @param {InlineObject34} [inlineObject34]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putTagsTagId(tagId: string, inlineObject37?: InlineObject37, options?: any): AxiosPromise<TagResponse>;
+    putTagsTagId(tagId: string, inlineObject34?: InlineObject34, options?: any): AxiosPromise<TagResponse>;
 };
 /**
  * TagsApi - object-oriented interface
@@ -14427,22 +14648,22 @@ export declare class TagsApi extends BaseAPI {
     /**
      * Create a new tag
      * @summary
-     * @param {InlineObject36} [inlineObject36]
+     * @param {InlineObject33} [inlineObject33]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TagsApi
      */
-    postTags(inlineObject36?: InlineObject36, options?: any): Promise<import("axios").AxiosResponse<TagResponse>>;
+    postTags(inlineObject33?: InlineObject33, options?: any): Promise<import("axios").AxiosResponse<TagResponse>>;
     /**
      * Updates a tag by it\'s ID
      * @summary Update a tag
      * @param {string} tagId
-     * @param {InlineObject37} [inlineObject37]
+     * @param {InlineObject34} [inlineObject34]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TagsApi
      */
-    putTagsTagId(tagId: string, inlineObject37?: InlineObject37, options?: any): Promise<import("axios").AxiosResponse<TagResponse>>;
+    putTagsTagId(tagId: string, inlineObject34?: InlineObject34, options?: any): Promise<import("axios").AxiosResponse<TagResponse>>;
 }
 /**
  * TaxesApi - axios parameter creator
@@ -14475,20 +14696,20 @@ export declare const TaxesApiAxiosParamCreator: (configuration?: Configuration) 
     /**
      * Create a new tax resource.
      * @summary Create tax
-     * @param {InlineObject18} [inlineObject18]
+     * @param {InlineObject35} [inlineObject35]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postTaxes: (inlineObject18?: InlineObject18, options?: any) => Promise<RequestArgs>;
+    postTaxes: (inlineObject35?: InlineObject35, options?: any) => Promise<RequestArgs>;
     /**
      * Update a tax record by it\'s ID
      * @summary Update tax record
      * @param {string} taxId
-     * @param {InlineObject19} [inlineObject19]
+     * @param {InlineObject36} [inlineObject36]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putTaxesTaxId: (taxId: string, inlineObject19?: InlineObject19, options?: any) => Promise<RequestArgs>;
+    putTaxesTaxId: (taxId: string, inlineObject36?: InlineObject36, options?: any) => Promise<RequestArgs>;
 };
 /**
  * TaxesApi - functional programming interface
@@ -14521,20 +14742,20 @@ export declare const TaxesApiFp: (configuration?: Configuration) => {
     /**
      * Create a new tax resource.
      * @summary Create tax
-     * @param {InlineObject18} [inlineObject18]
+     * @param {InlineObject35} [inlineObject35]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postTaxes(inlineObject18?: InlineObject18, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TaxResponse>>;
+    postTaxes(inlineObject35?: InlineObject35, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TaxResponse>>;
     /**
      * Update a tax record by it\'s ID
      * @summary Update tax record
      * @param {string} taxId
-     * @param {InlineObject19} [inlineObject19]
+     * @param {InlineObject36} [inlineObject36]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putTaxesTaxId(taxId: string, inlineObject19?: InlineObject19, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TaxResponse>>;
+    putTaxesTaxId(taxId: string, inlineObject36?: InlineObject36, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TaxResponse>>;
 };
 /**
  * TaxesApi - factory interface
@@ -14567,20 +14788,20 @@ export declare const TaxesApiFactory: (configuration?: Configuration, basePath?:
     /**
      * Create a new tax resource.
      * @summary Create tax
-     * @param {InlineObject18} [inlineObject18]
+     * @param {InlineObject35} [inlineObject35]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postTaxes(inlineObject18?: InlineObject18, options?: any): AxiosPromise<TaxResponse>;
+    postTaxes(inlineObject35?: InlineObject35, options?: any): AxiosPromise<TaxResponse>;
     /**
      * Update a tax record by it\'s ID
      * @summary Update tax record
      * @param {string} taxId
-     * @param {InlineObject19} [inlineObject19]
+     * @param {InlineObject36} [inlineObject36]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putTaxesTaxId(taxId: string, inlineObject19?: InlineObject19, options?: any): AxiosPromise<TaxResponse>;
+    putTaxesTaxId(taxId: string, inlineObject36?: InlineObject36, options?: any): AxiosPromise<TaxResponse>;
 };
 /**
  * TaxesApi - object-oriented interface
@@ -14618,22 +14839,22 @@ export declare class TaxesApi extends BaseAPI {
     /**
      * Create a new tax resource.
      * @summary Create tax
-     * @param {InlineObject18} [inlineObject18]
+     * @param {InlineObject35} [inlineObject35]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TaxesApi
      */
-    postTaxes(inlineObject18?: InlineObject18, options?: any): Promise<import("axios").AxiosResponse<TaxResponse>>;
+    postTaxes(inlineObject35?: InlineObject35, options?: any): Promise<import("axios").AxiosResponse<TaxResponse>>;
     /**
      * Update a tax record by it\'s ID
      * @summary Update tax record
      * @param {string} taxId
-     * @param {InlineObject19} [inlineObject19]
+     * @param {InlineObject36} [inlineObject36]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TaxesApi
      */
-    putTaxesTaxId(taxId: string, inlineObject19?: InlineObject19, options?: any): Promise<import("axios").AxiosResponse<TaxResponse>>;
+    putTaxesTaxId(taxId: string, inlineObject36?: InlineObject36, options?: any): Promise<import("axios").AxiosResponse<TaxResponse>>;
 }
 /**
  * UsersApi - axios parameter creator
@@ -14673,14 +14894,6 @@ export declare const UsersApiAxiosParamCreator: (configuration?: Configuration) 
      */
     getUsersUserId: (userId: string, options?: any) => Promise<RequestArgs>;
     /**
-     * Allows the current user to update their password.
-     * @summary Reset  password
-     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    postAccountPassword: (accountPasswordResetBody?: AccountPasswordResetBody, options?: any) => Promise<RequestArgs>;
-    /**
      * Create a new user resource
      * @summary Create a new user
      * @param {CreateUserBody} [createUserBody]
@@ -14692,11 +14905,11 @@ export declare const UsersApiAxiosParamCreator: (configuration?: Configuration) 
      * Updates a user record from their ID.
      * @summary
      * @param {string} userId
-     * @param {InlineObject26} [inlineObject26]
+     * @param {InlineObject37} [inlineObject37]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putUsersUserId: (userId: string, inlineObject26?: InlineObject26, options?: any) => Promise<RequestArgs>;
+    putUsersUserId: (userId: string, inlineObject37?: InlineObject37, options?: any) => Promise<RequestArgs>;
 };
 /**
  * UsersApi - functional programming interface
@@ -14736,14 +14949,6 @@ export declare const UsersApiFp: (configuration?: Configuration) => {
      */
     getUsersUserId(userId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserResponse>>;
     /**
-     * Allows the current user to update their password.
-     * @summary Reset  password
-     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    postAccountPassword(accountPasswordResetBody?: AccountPasswordResetBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Message>>;
-    /**
      * Create a new user resource
      * @summary Create a new user
      * @param {CreateUserBody} [createUserBody]
@@ -14755,11 +14960,11 @@ export declare const UsersApiFp: (configuration?: Configuration) => {
      * Updates a user record from their ID.
      * @summary
      * @param {string} userId
-     * @param {InlineObject26} [inlineObject26]
+     * @param {InlineObject37} [inlineObject37]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putUsersUserId(userId: string, inlineObject26?: InlineObject26, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserResponse>>;
+    putUsersUserId(userId: string, inlineObject37?: InlineObject37, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserResponse>>;
 };
 /**
  * UsersApi - factory interface
@@ -14799,14 +15004,6 @@ export declare const UsersApiFactory: (configuration?: Configuration, basePath?:
      */
     getUsersUserId(userId: string, options?: any): AxiosPromise<UserResponse>;
     /**
-     * Allows the current user to update their password.
-     * @summary Reset  password
-     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    postAccountPassword(accountPasswordResetBody?: AccountPasswordResetBody, options?: any): AxiosPromise<Message>;
-    /**
      * Create a new user resource
      * @summary Create a new user
      * @param {CreateUserBody} [createUserBody]
@@ -14818,11 +15015,11 @@ export declare const UsersApiFactory: (configuration?: Configuration, basePath?:
      * Updates a user record from their ID.
      * @summary
      * @param {string} userId
-     * @param {InlineObject26} [inlineObject26]
+     * @param {InlineObject37} [inlineObject37]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    putUsersUserId(userId: string, inlineObject26?: InlineObject26, options?: any): AxiosPromise<UserResponse>;
+    putUsersUserId(userId: string, inlineObject37?: InlineObject37, options?: any): AxiosPromise<UserResponse>;
 };
 /**
  * UsersApi - object-oriented interface
@@ -14868,15 +15065,6 @@ export declare class UsersApi extends BaseAPI {
      */
     getUsersUserId(userId: string, options?: any): Promise<import("axios").AxiosResponse<UserResponse>>;
     /**
-     * Allows the current user to update their password.
-     * @summary Reset  password
-     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof UsersApi
-     */
-    postAccountPassword(accountPasswordResetBody?: AccountPasswordResetBody, options?: any): Promise<import("axios").AxiosResponse<Message>>;
-    /**
      * Create a new user resource
      * @summary Create a new user
      * @param {CreateUserBody} [createUserBody]
@@ -14889,12 +15077,12 @@ export declare class UsersApi extends BaseAPI {
      * Updates a user record from their ID.
      * @summary
      * @param {string} userId
-     * @param {InlineObject26} [inlineObject26]
+     * @param {InlineObject37} [inlineObject37]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    putUsersUserId(userId: string, inlineObject26?: InlineObject26, options?: any): Promise<import("axios").AxiosResponse<UserResponse>>;
+    putUsersUserId(userId: string, inlineObject37?: InlineObject37, options?: any): Promise<import("axios").AxiosResponse<UserResponse>>;
 }
 /**
  * VersioningApi - axios parameter creator

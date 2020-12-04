@@ -21,7 +21,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VersioningApi = exports.VersioningApiFactory = exports.VersioningApiFp = exports.VersioningApiAxiosParamCreator = exports.UsersApi = exports.UsersApiFactory = exports.UsersApiFp = exports.UsersApiAxiosParamCreator = exports.TaxesApi = exports.TaxesApiFactory = exports.TaxesApiFp = exports.TaxesApiAxiosParamCreator = exports.TagsApi = exports.TagsApiFactory = exports.TagsApiFp = exports.TagsApiAxiosParamCreator = exports.ShippingApi = exports.ShippingApiFactory = exports.ShippingApiFp = exports.ShippingApiAxiosParamCreator = exports.SettingsApi = exports.SettingsApiFactory = exports.SettingsApiFp = exports.SettingsApiAxiosParamCreator = exports.SearchApi = exports.SearchApiFactory = exports.SearchApiFp = exports.SearchApiAxiosParamCreator = exports.RoutesApi = exports.RoutesApiFactory = exports.RoutesApiFp = exports.RoutesApiAxiosParamCreator = exports.RootApi = exports.RootApiFactory = exports.RootApiFp = exports.RootApiAxiosParamCreator = exports.ReportsApi = exports.ReportsApiFactory = exports.ReportsApiFp = exports.ReportsApiAxiosParamCreator = exports.RecycleBinApi = exports.RecycleBinApiFactory = exports.RecycleBinApiFp = exports.RecycleBinApiAxiosParamCreator = exports.ProductsApi = exports.ProductsApiFactory = exports.ProductsApiFp = exports.ProductsApiAxiosParamCreator = exports.ProductVariantsApi = exports.ProductVariantsApiFactory = exports.ProductVariantsApiFp = exports.ProductVariantsApiAxiosParamCreator = exports.ProductFamiliesApi = exports.ProductFamiliesApiFactory = exports.ProductFamiliesApiFp = exports.ProductFamiliesApiAxiosParamCreator = exports.PaymentsApi = exports.PaymentsApiFactory = exports.PaymentsApiFp = exports.PaymentsApiAxiosParamCreator = exports.OrdersApi = exports.OrdersApiFactory = exports.OrdersApiFp = exports.OrdersApiAxiosParamCreator = exports.LayoutsApi = exports.LayoutsApiFactory = exports.LayoutsApiFp = exports.LayoutsApiAxiosParamCreator = exports.LanguagesApi = exports.LanguagesApiFactory = exports.LanguagesApiFp = exports.LanguagesApiAxiosParamCreator = exports.DiscountsApi = exports.DiscountsApiFactory = exports.DiscountsApiFp = exports.DiscountsApiAxiosParamCreator = exports.CustomersApi = exports.CustomersApiFactory = exports.CustomersApiFp = exports.CustomersApiAxiosParamCreator = exports.CustomerGroupsApi = exports.CustomerGroupsApiFactory = exports.CustomerGroupsApiFp = exports.CustomerGroupsApiAxiosParamCreator = exports.CountriesApi = exports.CountriesApiFactory = exports.CountriesApiFp = exports.CountriesApiAxiosParamCreator = exports.CollectionsApi = exports.CollectionsApiFactory = exports.CollectionsApiFp = exports.CollectionsApiAxiosParamCreator = exports.ChannelsApi = exports.ChannelsApiFactory = exports.ChannelsApiFp = exports.ChannelsApiAxiosParamCreator = exports.CategoriesApi = exports.CategoriesApiFactory = exports.CategoriesApiFp = exports.CategoriesApiAxiosParamCreator = exports.BasketsApi = exports.BasketsApiFactory = exports.BasketsApiFp = exports.BasketsApiAxiosParamCreator = exports.AttributesApi = exports.AttributesApiFactory = exports.AttributesApiFp = exports.AttributesApiAxiosParamCreator = exports.AssociationsApi = exports.AssociationsApiFactory = exports.AssociationsApiFp = exports.AssociationsApiAxiosParamCreator = exports.AssetsApi = exports.AssetsApiFactory = exports.AssetsApiFp = exports.AssetsApiAxiosParamCreator = exports.AddressesApi = exports.AddressesApiFactory = exports.AddressesApiFp = exports.AddressesApiAxiosParamCreator = exports.InlineObject29TypeEnum = void 0;
+exports.VersioningApi = exports.VersioningApiFactory = exports.VersioningApiFp = exports.VersioningApiAxiosParamCreator = exports.UsersApi = exports.UsersApiFactory = exports.UsersApiFp = exports.UsersApiAxiosParamCreator = exports.TaxesApi = exports.TaxesApiFactory = exports.TaxesApiFp = exports.TaxesApiAxiosParamCreator = exports.TagsApi = exports.TagsApiFactory = exports.TagsApiFp = exports.TagsApiAxiosParamCreator = exports.ShippingApi = exports.ShippingApiFactory = exports.ShippingApiFp = exports.ShippingApiAxiosParamCreator = exports.SettingsApi = exports.SettingsApiFactory = exports.SettingsApiFp = exports.SettingsApiAxiosParamCreator = exports.SearchApi = exports.SearchApiFactory = exports.SearchApiFp = exports.SearchApiAxiosParamCreator = exports.RoutesApi = exports.RoutesApiFactory = exports.RoutesApiFp = exports.RoutesApiAxiosParamCreator = exports.RootApi = exports.RootApiFactory = exports.RootApiFp = exports.RootApiAxiosParamCreator = exports.ReportsApi = exports.ReportsApiFactory = exports.ReportsApiFp = exports.ReportsApiAxiosParamCreator = exports.RecycleBinApi = exports.RecycleBinApiFactory = exports.RecycleBinApiFp = exports.RecycleBinApiAxiosParamCreator = exports.ProductsApi = exports.ProductsApiFactory = exports.ProductsApiFp = exports.ProductsApiAxiosParamCreator = exports.ProductVariantsApi = exports.ProductVariantsApiFactory = exports.ProductVariantsApiFp = exports.ProductVariantsApiAxiosParamCreator = exports.ProductFamiliesApi = exports.ProductFamiliesApiFactory = exports.ProductFamiliesApiFp = exports.ProductFamiliesApiAxiosParamCreator = exports.PaymentsApi = exports.PaymentsApiFactory = exports.PaymentsApiFp = exports.PaymentsApiAxiosParamCreator = exports.OrdersApi = exports.OrdersApiFactory = exports.OrdersApiFp = exports.OrdersApiAxiosParamCreator = exports.LayoutsApi = exports.LayoutsApiFactory = exports.LayoutsApiFp = exports.LayoutsApiAxiosParamCreator = exports.LanguagesApi = exports.LanguagesApiFactory = exports.LanguagesApiFp = exports.LanguagesApiAxiosParamCreator = exports.DiscountsApi = exports.DiscountsApiFactory = exports.DiscountsApiFp = exports.DiscountsApiAxiosParamCreator = exports.CustomersApi = exports.CustomersApiFactory = exports.CustomersApiFp = exports.CustomersApiAxiosParamCreator = exports.CustomerGroupsApi = exports.CustomerGroupsApiFactory = exports.CustomerGroupsApiFp = exports.CustomerGroupsApiAxiosParamCreator = exports.CurrenciesApi = exports.CurrenciesApiFactory = exports.CurrenciesApiFp = exports.CurrenciesApiAxiosParamCreator = exports.CountriesApi = exports.CountriesApiFactory = exports.CountriesApiFp = exports.CountriesApiAxiosParamCreator = exports.CollectionsApi = exports.CollectionsApiFactory = exports.CollectionsApiFp = exports.CollectionsApiAxiosParamCreator = exports.ChannelsApi = exports.ChannelsApiFactory = exports.ChannelsApiFp = exports.ChannelsApiAxiosParamCreator = exports.CategoriesApi = exports.CategoriesApiFactory = exports.CategoriesApiFp = exports.CategoriesApiAxiosParamCreator = exports.BasketsApi = exports.BasketsApiFactory = exports.BasketsApiFp = exports.BasketsApiAxiosParamCreator = exports.AttributesApi = exports.AttributesApiFactory = exports.AttributesApiFp = exports.AttributesApiAxiosParamCreator = exports.AssociationsApi = exports.AssociationsApiFactory = exports.AssociationsApiFp = exports.AssociationsApiAxiosParamCreator = exports.AssetsApi = exports.AssetsApiFactory = exports.AssetsApiFp = exports.AssetsApiAxiosParamCreator = exports.AddressesApi = exports.AddressesApiFactory = exports.AddressesApiFp = exports.AddressesApiAxiosParamCreator = exports.AccountApi = exports.AccountApiFactory = exports.AccountApiFp = exports.AccountApiAxiosParamCreator = exports.InlineObject26TypeEnum = void 0;
 const globalImportUrl = require("url");
 const axios_1 = require("axios");
 // Some imports not used depending on template conditions
@@ -31,12 +31,112 @@ const base_1 = require("./base");
     * @export
     * @enum {string}
     */
-var InlineObject29TypeEnum;
-(function (InlineObject29TypeEnum) {
-    InlineObject29TypeEnum["Standard"] = "standard";
-    InlineObject29TypeEnum["Dhl"] = "dhl";
-    InlineObject29TypeEnum["Regional"] = "regional";
-})(InlineObject29TypeEnum = exports.InlineObject29TypeEnum || (exports.InlineObject29TypeEnum = {}));
+var InlineObject26TypeEnum;
+(function (InlineObject26TypeEnum) {
+    InlineObject26TypeEnum["Standard"] = "standard";
+    InlineObject26TypeEnum["Dhl"] = "dhl";
+    InlineObject26TypeEnum["Regional"] = "regional";
+})(InlineObject26TypeEnum = exports.InlineObject26TypeEnum || (exports.InlineObject26TypeEnum = {}));
+/**
+ * AccountApi - axios parameter creator
+ * @export
+ */
+exports.AccountApiAxiosParamCreator = function (configuration) {
+    return {
+        /**
+         * Allows the current user to update their password.
+         * @summary Reset password
+         * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postAccountPassword: (accountPasswordResetBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/account/password`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            const needsSerialization = (typeof accountPasswordResetBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(accountPasswordResetBody !== undefined ? accountPasswordResetBody : {}) : (accountPasswordResetBody || "");
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+    };
+};
+/**
+ * AccountApi - functional programming interface
+ * @export
+ */
+exports.AccountApiFp = function (configuration) {
+    return {
+        /**
+         * Allows the current user to update their password.
+         * @summary Reset password
+         * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postAccountPassword(accountPasswordResetBody, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.AccountApiAxiosParamCreator(configuration).postAccountPassword(accountPasswordResetBody, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+    };
+};
+/**
+ * AccountApi - factory interface
+ * @export
+ */
+exports.AccountApiFactory = function (configuration, basePath, axios) {
+    return {
+        /**
+         * Allows the current user to update their password.
+         * @summary Reset password
+         * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postAccountPassword(accountPasswordResetBody, options) {
+            return exports.AccountApiFp(configuration).postAccountPassword(accountPasswordResetBody, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+/**
+ * AccountApi - object-oriented interface
+ * @export
+ * @class AccountApi
+ * @extends {BaseAPI}
+ */
+class AccountApi extends base_1.BaseAPI {
+    /**
+     * Allows the current user to update their password.
+     * @summary Reset password
+     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AccountApi
+     */
+    postAccountPassword(accountPasswordResetBody, options) {
+        return exports.AccountApiFp(this.configuration).postAccountPassword(accountPasswordResetBody, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+exports.AccountApi = AccountApi;
 /**
  * AddressesApi - axios parameter creator
  * @export
@@ -93,6 +193,7 @@ exports.AddressesApiAxiosParamCreator = function (configuration) {
          * @param {string} [addressThree]
          * @param {boolean} [shipping]
          * @param {string} [userId]
+         * @param {string} [customerId]
          * @param {boolean} [billing]
          * @param {boolean} [_default]
          * @param {string} [lastUsedAt]
@@ -101,7 +202,7 @@ exports.AddressesApiAxiosParamCreator = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddresses: (firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postAddresses: (firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'firstname' is not null or undefined
             if (firstname === null || firstname === undefined) {
                 throw new base_1.RequiredError('firstname', 'Required parameter firstname was null or undefined when calling postAddresses.');
@@ -184,6 +285,9 @@ exports.AddressesApiAxiosParamCreator = function (configuration) {
             }
             if (userId !== undefined) {
                 localVarFormParams.append('user_id', userId);
+            }
+            if (customerId !== undefined) {
+                localVarFormParams.append('customer_id', customerId);
             }
             if (billing !== undefined) {
                 localVarFormParams.append('billing', billing);
@@ -290,6 +394,7 @@ exports.AddressesApiFp = function (configuration) {
          * @param {string} [addressThree]
          * @param {boolean} [shipping]
          * @param {string} [userId]
+         * @param {string} [customerId]
          * @param {boolean} [billing]
          * @param {boolean} [_default]
          * @param {string} [lastUsedAt]
@@ -298,9 +403,9 @@ exports.AddressesApiFp = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options) {
+        postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.AddressesApiAxiosParamCreator(configuration).postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options);
+                const localVarAxiosArgs = yield exports.AddressesApiAxiosParamCreator(configuration).postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -360,6 +465,7 @@ exports.AddressesApiFactory = function (configuration, basePath, axios) {
          * @param {string} [addressThree]
          * @param {boolean} [shipping]
          * @param {string} [userId]
+         * @param {string} [customerId]
          * @param {boolean} [billing]
          * @param {boolean} [_default]
          * @param {string} [lastUsedAt]
@@ -368,8 +474,8 @@ exports.AddressesApiFactory = function (configuration, basePath, axios) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options) {
-            return exports.AddressesApiFp(configuration).postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options).then((request) => request(axios, basePath));
+        postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options) {
+            return exports.AddressesApiFp(configuration).postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options).then((request) => request(axios, basePath));
         },
         /**
          * This endpoint allows you to update an existing address
@@ -420,6 +526,7 @@ class AddressesApi extends base_1.BaseAPI {
      * @param {string} [addressThree]
      * @param {boolean} [shipping]
      * @param {string} [userId]
+     * @param {string} [customerId]
      * @param {boolean} [billing]
      * @param {boolean} [_default]
      * @param {string} [lastUsedAt]
@@ -429,8 +536,8 @@ class AddressesApi extends base_1.BaseAPI {
      * @throws {RequiredError}
      * @memberof AddressesApi
      */
-    postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options) {
-        return exports.AddressesApiFp(this.configuration).postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, billing, _default, lastUsedAt, deliveryInstructions, meta, options).then((request) => request(this.axios, this.basePath));
+    postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options) {
+        return exports.AddressesApiFp(this.configuration).postAddresses(firstname, lastname, address, city, state, postalCode, countryId, salutation, companyName, email, phone, addressTwo, addressThree, shipping, userId, customerId, billing, _default, lastUsedAt, deliveryInstructions, meta, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * This endpoint allows you to update an existing address
@@ -1120,11 +1227,11 @@ exports.AttributesApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new attribute
          * @summary Create Attribute
-         * @param {InlineObject17} [inlineObject17]
+         * @param {InlineObject} [inlineObject]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAttributes: (inlineObject17, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postAttributes: (inlineObject, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/attributes`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -1140,8 +1247,8 @@ exports.AttributesApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject17 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject17 !== undefined ? inlineObject17 : {}) : (inlineObject17 || "");
+            const needsSerialization = (typeof inlineObject !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject !== undefined ? inlineObject : {}) : (inlineObject || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -1404,13 +1511,13 @@ exports.AttributesApiFp = function (configuration) {
         /**
          * Create a new attribute
          * @summary Create Attribute
-         * @param {InlineObject17} [inlineObject17]
+         * @param {InlineObject} [inlineObject]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAttributes(inlineObject17, options) {
+        postAttributes(inlineObject, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.AttributesApiAxiosParamCreator(configuration).postAttributes(inlineObject17, options);
+                const localVarAxiosArgs = yield exports.AttributesApiAxiosParamCreator(configuration).postAttributes(inlineObject, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -1566,12 +1673,12 @@ exports.AttributesApiFactory = function (configuration, basePath, axios) {
         /**
          * Create a new attribute
          * @summary Create Attribute
-         * @param {InlineObject17} [inlineObject17]
+         * @param {InlineObject} [inlineObject]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAttributes(inlineObject17, options) {
-            return exports.AttributesApiFp(configuration).postAttributes(inlineObject17, options).then((request) => request(axios, basePath));
+        postAttributes(inlineObject, options) {
+            return exports.AttributesApiFp(configuration).postAttributes(inlineObject, options).then((request) => request(axios, basePath));
         },
         /**
          * Updates an attribute group.
@@ -1706,13 +1813,13 @@ class AttributesApi extends base_1.BaseAPI {
     /**
      * Create a new attribute
      * @summary Create Attribute
-     * @param {InlineObject17} [inlineObject17]
+     * @param {InlineObject} [inlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AttributesApi
      */
-    postAttributes(inlineObject17, options) {
-        return exports.AttributesApiFp(this.configuration).postAttributes(inlineObject17, options).then((request) => request(this.axios, this.basePath));
+    postAttributes(inlineObject, options) {
+        return exports.AttributesApiFp(this.configuration).postAttributes(inlineObject, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Updates an attribute group.
@@ -4380,11 +4487,11 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new collection.
          * @summary Create Collection
-         * @param {InlineObject22} [inlineObject22]
+         * @param {InlineObject3} [inlineObject3]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollections: (inlineObject22, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postCollections: (inlineObject3, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/collections`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -4400,8 +4507,8 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject22 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject22 !== undefined ? inlineObject22 : {}) : (inlineObject22 || "");
+            const needsSerialization = (typeof inlineObject3 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject3 !== undefined ? inlineObject3 : {}) : (inlineObject3 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -4411,11 +4518,11 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
          * Syncs products with a collection.
          * @summary Update a collection\'s products
          * @param {string} collectionId
-         * @param {InlineObject21} [inlineObject21]
+         * @param {InlineObject2} [inlineObject2]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollectionsCollectionIdProducts: (collectionId, inlineObject21, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postCollectionsCollectionIdProducts: (collectionId, inlineObject2, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'collectionId' is not null or undefined
             if (collectionId === null || collectionId === undefined) {
                 throw new base_1.RequiredError('collectionId', 'Required parameter collectionId was null or undefined when calling postCollectionsCollectionIdProducts.');
@@ -4436,8 +4543,8 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject21 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject21 !== undefined ? inlineObject21 : {}) : (inlineObject21 || "");
+            const needsSerialization = (typeof inlineObject2 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject2 !== undefined ? inlineObject2 : {}) : (inlineObject2 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -4447,11 +4554,11 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
          * This request will allow you to attach routes to a collection
          * @summary Update a collection\'s routes
          * @param {string} collectionId
-         * @param {InlineObject20} [inlineObject20]
+         * @param {InlineObject1} [inlineObject1]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollectionsCollectionRoutes: (collectionId, inlineObject20, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postCollectionsCollectionRoutes: (collectionId, inlineObject1, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'collectionId' is not null or undefined
             if (collectionId === null || collectionId === undefined) {
                 throw new base_1.RequiredError('collectionId', 'Required parameter collectionId was null or undefined when calling postCollectionsCollectionRoutes.');
@@ -4472,8 +4579,8 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject20 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject20 !== undefined ? inlineObject20 : {}) : (inlineObject20 || "");
+            const needsSerialization = (typeof inlineObject1 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject1 !== undefined ? inlineObject1 : {}) : (inlineObject1 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -4483,11 +4590,11 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
          * Update a Collection by its ID.
          * @summary Update Collection
          * @param {string} collectionId
-         * @param {InlineObject23} [inlineObject23]
+         * @param {InlineObject4} [inlineObject4]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putCollectionsCollectionId: (collectionId, inlineObject23, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putCollectionsCollectionId: (collectionId, inlineObject4, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'collectionId' is not null or undefined
             if (collectionId === null || collectionId === undefined) {
                 throw new base_1.RequiredError('collectionId', 'Required parameter collectionId was null or undefined when calling putCollectionsCollectionId.');
@@ -4508,8 +4615,8 @@ exports.CollectionsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject23 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject23 !== undefined ? inlineObject23 : {}) : (inlineObject23 || "");
+            const needsSerialization = (typeof inlineObject4 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject4 !== undefined ? inlineObject4 : {}) : (inlineObject4 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -4579,13 +4686,13 @@ exports.CollectionsApiFp = function (configuration) {
         /**
          * Create a new collection.
          * @summary Create Collection
-         * @param {InlineObject22} [inlineObject22]
+         * @param {InlineObject3} [inlineObject3]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollections(inlineObject22, options) {
+        postCollections(inlineObject3, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).postCollections(inlineObject22, options);
+                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).postCollections(inlineObject3, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -4596,13 +4703,13 @@ exports.CollectionsApiFp = function (configuration) {
          * Syncs products with a collection.
          * @summary Update a collection\'s products
          * @param {string} collectionId
-         * @param {InlineObject21} [inlineObject21]
+         * @param {InlineObject2} [inlineObject2]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollectionsCollectionIdProducts(collectionId, inlineObject21, options) {
+        postCollectionsCollectionIdProducts(collectionId, inlineObject2, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).postCollectionsCollectionIdProducts(collectionId, inlineObject21, options);
+                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).postCollectionsCollectionIdProducts(collectionId, inlineObject2, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -4613,13 +4720,13 @@ exports.CollectionsApiFp = function (configuration) {
          * This request will allow you to attach routes to a collection
          * @summary Update a collection\'s routes
          * @param {string} collectionId
-         * @param {InlineObject20} [inlineObject20]
+         * @param {InlineObject1} [inlineObject1]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollectionsCollectionRoutes(collectionId, inlineObject20, options) {
+        postCollectionsCollectionRoutes(collectionId, inlineObject1, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).postCollectionsCollectionRoutes(collectionId, inlineObject20, options);
+                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).postCollectionsCollectionRoutes(collectionId, inlineObject1, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -4630,13 +4737,13 @@ exports.CollectionsApiFp = function (configuration) {
          * Update a Collection by its ID.
          * @summary Update Collection
          * @param {string} collectionId
-         * @param {InlineObject23} [inlineObject23]
+         * @param {InlineObject4} [inlineObject4]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putCollectionsCollectionId(collectionId, inlineObject23, options) {
+        putCollectionsCollectionId(collectionId, inlineObject4, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).putCollectionsCollectionId(collectionId, inlineObject23, options);
+                const localVarAxiosArgs = yield exports.CollectionsApiAxiosParamCreator(configuration).putCollectionsCollectionId(collectionId, inlineObject4, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -4689,45 +4796,45 @@ exports.CollectionsApiFactory = function (configuration, basePath, axios) {
         /**
          * Create a new collection.
          * @summary Create Collection
-         * @param {InlineObject22} [inlineObject22]
+         * @param {InlineObject3} [inlineObject3]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollections(inlineObject22, options) {
-            return exports.CollectionsApiFp(configuration).postCollections(inlineObject22, options).then((request) => request(axios, basePath));
+        postCollections(inlineObject3, options) {
+            return exports.CollectionsApiFp(configuration).postCollections(inlineObject3, options).then((request) => request(axios, basePath));
         },
         /**
          * Syncs products with a collection.
          * @summary Update a collection\'s products
          * @param {string} collectionId
-         * @param {InlineObject21} [inlineObject21]
+         * @param {InlineObject2} [inlineObject2]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollectionsCollectionIdProducts(collectionId, inlineObject21, options) {
-            return exports.CollectionsApiFp(configuration).postCollectionsCollectionIdProducts(collectionId, inlineObject21, options).then((request) => request(axios, basePath));
+        postCollectionsCollectionIdProducts(collectionId, inlineObject2, options) {
+            return exports.CollectionsApiFp(configuration).postCollectionsCollectionIdProducts(collectionId, inlineObject2, options).then((request) => request(axios, basePath));
         },
         /**
          * This request will allow you to attach routes to a collection
          * @summary Update a collection\'s routes
          * @param {string} collectionId
-         * @param {InlineObject20} [inlineObject20]
+         * @param {InlineObject1} [inlineObject1]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCollectionsCollectionRoutes(collectionId, inlineObject20, options) {
-            return exports.CollectionsApiFp(configuration).postCollectionsCollectionRoutes(collectionId, inlineObject20, options).then((request) => request(axios, basePath));
+        postCollectionsCollectionRoutes(collectionId, inlineObject1, options) {
+            return exports.CollectionsApiFp(configuration).postCollectionsCollectionRoutes(collectionId, inlineObject1, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a Collection by its ID.
          * @summary Update Collection
          * @param {string} collectionId
-         * @param {InlineObject23} [inlineObject23]
+         * @param {InlineObject4} [inlineObject4]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putCollectionsCollectionId(collectionId, inlineObject23, options) {
-            return exports.CollectionsApiFp(configuration).putCollectionsCollectionId(collectionId, inlineObject23, options).then((request) => request(axios, basePath));
+        putCollectionsCollectionId(collectionId, inlineObject4, options) {
+            return exports.CollectionsApiFp(configuration).putCollectionsCollectionId(collectionId, inlineObject4, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -4779,49 +4886,49 @@ class CollectionsApi extends base_1.BaseAPI {
     /**
      * Create a new collection.
      * @summary Create Collection
-     * @param {InlineObject22} [inlineObject22]
+     * @param {InlineObject3} [inlineObject3]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    postCollections(inlineObject22, options) {
-        return exports.CollectionsApiFp(this.configuration).postCollections(inlineObject22, options).then((request) => request(this.axios, this.basePath));
+    postCollections(inlineObject3, options) {
+        return exports.CollectionsApiFp(this.configuration).postCollections(inlineObject3, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Syncs products with a collection.
      * @summary Update a collection\'s products
      * @param {string} collectionId
-     * @param {InlineObject21} [inlineObject21]
+     * @param {InlineObject2} [inlineObject2]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    postCollectionsCollectionIdProducts(collectionId, inlineObject21, options) {
-        return exports.CollectionsApiFp(this.configuration).postCollectionsCollectionIdProducts(collectionId, inlineObject21, options).then((request) => request(this.axios, this.basePath));
+    postCollectionsCollectionIdProducts(collectionId, inlineObject2, options) {
+        return exports.CollectionsApiFp(this.configuration).postCollectionsCollectionIdProducts(collectionId, inlineObject2, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * This request will allow you to attach routes to a collection
      * @summary Update a collection\'s routes
      * @param {string} collectionId
-     * @param {InlineObject20} [inlineObject20]
+     * @param {InlineObject1} [inlineObject1]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    postCollectionsCollectionRoutes(collectionId, inlineObject20, options) {
-        return exports.CollectionsApiFp(this.configuration).postCollectionsCollectionRoutes(collectionId, inlineObject20, options).then((request) => request(this.axios, this.basePath));
+    postCollectionsCollectionRoutes(collectionId, inlineObject1, options) {
+        return exports.CollectionsApiFp(this.configuration).postCollectionsCollectionRoutes(collectionId, inlineObject1, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update a Collection by its ID.
      * @summary Update Collection
      * @param {string} collectionId
-     * @param {InlineObject23} [inlineObject23]
+     * @param {InlineObject4} [inlineObject4]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CollectionsApi
      */
-    putCollectionsCollectionId(collectionId, inlineObject23, options) {
-        return exports.CollectionsApiFp(this.configuration).putCollectionsCollectionId(collectionId, inlineObject23, options).then((request) => request(this.axios, this.basePath));
+    putCollectionsCollectionId(collectionId, inlineObject4, options) {
+        return exports.CollectionsApiFp(this.configuration).putCollectionsCollectionId(collectionId, inlineObject4, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.CollectionsApi = CollectionsApi;
@@ -5094,6 +5201,106 @@ class CountriesApi extends base_1.BaseAPI {
     }
 }
 exports.CountriesApi = CountriesApi;
+/**
+ * CurrenciesApi - axios parameter creator
+ * @export
+ */
+exports.CurrenciesApiAxiosParamCreator = function (configuration) {
+    return {
+        /**
+         * Gets a paginated list of all currencies
+         * @summary Get all currencies
+         * @param {string} [include] Comma separated includes for the resource
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getCurrencies: (include, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/currencies`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'GET' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            if (include !== undefined) {
+                localVarQueryParameter['include'] = include;
+            }
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+    };
+};
+/**
+ * CurrenciesApi - functional programming interface
+ * @export
+ */
+exports.CurrenciesApiFp = function (configuration) {
+    return {
+        /**
+         * Gets a paginated list of all currencies
+         * @summary Get all currencies
+         * @param {string} [include] Comma separated includes for the resource
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getCurrencies(include, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.CurrenciesApiAxiosParamCreator(configuration).getCurrencies(include, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+    };
+};
+/**
+ * CurrenciesApi - factory interface
+ * @export
+ */
+exports.CurrenciesApiFactory = function (configuration, basePath, axios) {
+    return {
+        /**
+         * Gets a paginated list of all currencies
+         * @summary Get all currencies
+         * @param {string} [include] Comma separated includes for the resource
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getCurrencies(include, options) {
+            return exports.CurrenciesApiFp(configuration).getCurrencies(include, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+/**
+ * CurrenciesApi - object-oriented interface
+ * @export
+ * @class CurrenciesApi
+ * @extends {BaseAPI}
+ */
+class CurrenciesApi extends base_1.BaseAPI {
+    /**
+     * Gets a paginated list of all currencies
+     * @summary Get all currencies
+     * @param {string} [include] Comma separated includes for the resource
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof CurrenciesApi
+     */
+    getCurrencies(include, options) {
+        return exports.CurrenciesApiFp(this.configuration).getCurrencies(include, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+exports.CurrenciesApi = CurrenciesApi;
 /**
  * CustomerGroupsApi - axios parameter creator
  * @export
@@ -6359,11 +6566,11 @@ exports.DiscountsApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new Discount.
          * @summary Create Discount
-         * @param {InlineObject24} [inlineObject24]
+         * @param {InlineObject5} [inlineObject5]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postDiscounts: (inlineObject24, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postDiscounts: (inlineObject5, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/discounts`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -6379,8 +6586,8 @@ exports.DiscountsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject24 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject24 !== undefined ? inlineObject24 : {}) : (inlineObject24 || "");
+            const needsSerialization = (typeof inlineObject5 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject5 !== undefined ? inlineObject5 : {}) : (inlineObject5 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -6390,11 +6597,11 @@ exports.DiscountsApiAxiosParamCreator = function (configuration) {
          * Updates a Discount
          * @summary Update Discount
          * @param {string} discountId
-         * @param {InlineObject25} [inlineObject25]
+         * @param {InlineObject6} [inlineObject6]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putDiscountsDiscountId: (discountId, inlineObject25, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putDiscountsDiscountId: (discountId, inlineObject6, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'discountId' is not null or undefined
             if (discountId === null || discountId === undefined) {
                 throw new base_1.RequiredError('discountId', 'Required parameter discountId was null or undefined when calling putDiscountsDiscountId.');
@@ -6415,8 +6622,8 @@ exports.DiscountsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject25 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject25 !== undefined ? inlineObject25 : {}) : (inlineObject25 || "");
+            const needsSerialization = (typeof inlineObject6 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject6 !== undefined ? inlineObject6 : {}) : (inlineObject6 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -6481,13 +6688,13 @@ exports.DiscountsApiFp = function (configuration) {
         /**
          * Create a new Discount.
          * @summary Create Discount
-         * @param {InlineObject24} [inlineObject24]
+         * @param {InlineObject5} [inlineObject5]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postDiscounts(inlineObject24, options) {
+        postDiscounts(inlineObject5, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.DiscountsApiAxiosParamCreator(configuration).postDiscounts(inlineObject24, options);
+                const localVarAxiosArgs = yield exports.DiscountsApiAxiosParamCreator(configuration).postDiscounts(inlineObject5, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -6498,13 +6705,13 @@ exports.DiscountsApiFp = function (configuration) {
          * Updates a Discount
          * @summary Update Discount
          * @param {string} discountId
-         * @param {InlineObject25} [inlineObject25]
+         * @param {InlineObject6} [inlineObject6]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putDiscountsDiscountId(discountId, inlineObject25, options) {
+        putDiscountsDiscountId(discountId, inlineObject6, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.DiscountsApiAxiosParamCreator(configuration).putDiscountsDiscountId(discountId, inlineObject25, options);
+                const localVarAxiosArgs = yield exports.DiscountsApiAxiosParamCreator(configuration).putDiscountsDiscountId(discountId, inlineObject6, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -6552,23 +6759,23 @@ exports.DiscountsApiFactory = function (configuration, basePath, axios) {
         /**
          * Create a new Discount.
          * @summary Create Discount
-         * @param {InlineObject24} [inlineObject24]
+         * @param {InlineObject5} [inlineObject5]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postDiscounts(inlineObject24, options) {
-            return exports.DiscountsApiFp(configuration).postDiscounts(inlineObject24, options).then((request) => request(axios, basePath));
+        postDiscounts(inlineObject5, options) {
+            return exports.DiscountsApiFp(configuration).postDiscounts(inlineObject5, options).then((request) => request(axios, basePath));
         },
         /**
          * Updates a Discount
          * @summary Update Discount
          * @param {string} discountId
-         * @param {InlineObject25} [inlineObject25]
+         * @param {InlineObject6} [inlineObject6]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putDiscountsDiscountId(discountId, inlineObject25, options) {
-            return exports.DiscountsApiFp(configuration).putDiscountsDiscountId(discountId, inlineObject25, options).then((request) => request(axios, basePath));
+        putDiscountsDiscountId(discountId, inlineObject6, options) {
+            return exports.DiscountsApiFp(configuration).putDiscountsDiscountId(discountId, inlineObject6, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -6615,25 +6822,25 @@ class DiscountsApi extends base_1.BaseAPI {
     /**
      * Create a new Discount.
      * @summary Create Discount
-     * @param {InlineObject24} [inlineObject24]
+     * @param {InlineObject5} [inlineObject5]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DiscountsApi
      */
-    postDiscounts(inlineObject24, options) {
-        return exports.DiscountsApiFp(this.configuration).postDiscounts(inlineObject24, options).then((request) => request(this.axios, this.basePath));
+    postDiscounts(inlineObject5, options) {
+        return exports.DiscountsApiFp(this.configuration).postDiscounts(inlineObject5, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Updates a Discount
      * @summary Update Discount
      * @param {string} discountId
-     * @param {InlineObject25} [inlineObject25]
+     * @param {InlineObject6} [inlineObject6]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DiscountsApi
      */
-    putDiscountsDiscountId(discountId, inlineObject25, options) {
-        return exports.DiscountsApiFp(this.configuration).putDiscountsDiscountId(discountId, inlineObject25, options).then((request) => request(this.axios, this.basePath));
+    putDiscountsDiscountId(discountId, inlineObject6, options) {
+        return exports.DiscountsApiFp(this.configuration).putDiscountsDiscountId(discountId, inlineObject6, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.DiscountsApi = DiscountsApi;
@@ -7463,11 +7670,11 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
         /**
          * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
          * @summary Bulk update orders
-         * @param {InlineObject3} [inlineObject3]
+         * @param {InlineObject9} [inlineObject9]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postOrdersBulk: (inlineObject3, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postOrdersBulk: (inlineObject9, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/orders/bulk`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -7483,8 +7690,8 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject3 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject3 !== undefined ? inlineObject3 : {}) : (inlineObject3 || "");
+            const needsSerialization = (typeof inlineObject9 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject9 !== undefined ? inlineObject9 : {}) : (inlineObject9 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -7525,11 +7732,11 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary Processes an order on the API
-         * @param {InlineObject2} [inlineObject2]
+         * @param {InlineObject8} [inlineObject8]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postOrdersProcess: (inlineObject2, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postOrdersProcess: (inlineObject8, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/orders/process`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -7545,8 +7752,8 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject2 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject2 !== undefined ? inlineObject2 : {}) : (inlineObject2 || "");
+            const needsSerialization = (typeof inlineObject8 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject8 !== undefined ? inlineObject8 : {}) : (inlineObject8 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -7556,11 +7763,11 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
          * Add contact details to an order
          * @summary Add contact details
          * @param {string} orderId
-         * @param {InlineObject5} [inlineObject5]
+         * @param {InlineObject11} [inlineObject11]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdContact: (orderId, inlineObject5, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putOrdersIdContact: (orderId, inlineObject11, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'orderId' is not null or undefined
             if (orderId === null || orderId === undefined) {
                 throw new base_1.RequiredError('orderId', 'Required parameter orderId was null or undefined when calling putOrdersIdContact.');
@@ -7581,8 +7788,8 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject5 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject5 !== undefined ? inlineObject5 : {}) : (inlineObject5 || "");
+            const needsSerialization = (typeof inlineObject11 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject11 !== undefined ? inlineObject11 : {}) : (inlineObject11 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -7592,11 +7799,11 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
          * Adds an order line to an order
          * @summary Add order line
          * @param {string} orderId
-         * @param {InlineObject6} [inlineObject6]
+         * @param {InlineObject12} [inlineObject12]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdLines: (orderId, inlineObject6, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putOrdersIdLines: (orderId, inlineObject12, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'orderId' is not null or undefined
             if (orderId === null || orderId === undefined) {
                 throw new base_1.RequiredError('orderId', 'Required parameter orderId was null or undefined when calling putOrdersIdLines.');
@@ -7617,8 +7824,8 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject6 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject6 !== undefined ? inlineObject6 : {}) : (inlineObject6 || "");
+            const needsSerialization = (typeof inlineObject12 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject12 !== undefined ? inlineObject12 : {}) : (inlineObject12 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -7665,11 +7872,11 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
          * @summary Add shipping cost
          * @param {string} orderId
          * @param {string} [include] Related resources to include in response
-         * @param {InlineObject4} [inlineObject4]
+         * @param {InlineObject10} [inlineObject10]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdShippingCost: (orderId, include, inlineObject4, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putOrdersIdShippingCost: (orderId, include, inlineObject10, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'orderId' is not null or undefined
             if (orderId === null || orderId === undefined) {
                 throw new base_1.RequiredError('orderId', 'Required parameter orderId was null or undefined when calling putOrdersIdShippingCost.');
@@ -7693,8 +7900,8 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject4 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject4 !== undefined ? inlineObject4 : {}) : (inlineObject4 || "");
+            const needsSerialization = (typeof inlineObject10 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject10 !== undefined ? inlineObject10 : {}) : (inlineObject10 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -7705,11 +7912,11 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
          * @summary Update Order
          * @param {string} orderId
          * @param {string} [include]
-         * @param {InlineObject1} [inlineObject1]
+         * @param {InlineObject7} [inlineObject7]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersOrderId: (orderId, include, inlineObject1, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putOrdersOrderId: (orderId, include, inlineObject7, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'orderId' is not null or undefined
             if (orderId === null || orderId === undefined) {
                 throw new base_1.RequiredError('orderId', 'Required parameter orderId was null or undefined when calling putOrdersOrderId.');
@@ -7733,8 +7940,8 @@ exports.OrdersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject1 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject1 !== undefined ? inlineObject1 : {}) : (inlineObject1 || "");
+            const needsSerialization = (typeof inlineObject7 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject7 !== undefined ? inlineObject7 : {}) : (inlineObject7 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -7933,13 +8140,13 @@ exports.OrdersApiFp = function (configuration) {
         /**
          * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
          * @summary Bulk update orders
-         * @param {InlineObject3} [inlineObject3]
+         * @param {InlineObject9} [inlineObject9]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postOrdersBulk(inlineObject3, options) {
+        postOrdersBulk(inlineObject9, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).postOrdersBulk(inlineObject3, options);
+                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).postOrdersBulk(inlineObject9, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -7965,13 +8172,13 @@ exports.OrdersApiFp = function (configuration) {
         /**
          *
          * @summary Processes an order on the API
-         * @param {InlineObject2} [inlineObject2]
+         * @param {InlineObject8} [inlineObject8]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postOrdersProcess(inlineObject2, options) {
+        postOrdersProcess(inlineObject8, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).postOrdersProcess(inlineObject2, options);
+                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).postOrdersProcess(inlineObject8, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -7982,13 +8189,13 @@ exports.OrdersApiFp = function (configuration) {
          * Add contact details to an order
          * @summary Add contact details
          * @param {string} orderId
-         * @param {InlineObject5} [inlineObject5]
+         * @param {InlineObject11} [inlineObject11]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdContact(orderId, inlineObject5, options) {
+        putOrdersIdContact(orderId, inlineObject11, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersIdContact(orderId, inlineObject5, options);
+                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersIdContact(orderId, inlineObject11, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -7999,13 +8206,13 @@ exports.OrdersApiFp = function (configuration) {
          * Adds an order line to an order
          * @summary Add order line
          * @param {string} orderId
-         * @param {InlineObject6} [inlineObject6]
+         * @param {InlineObject12} [inlineObject12]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdLines(orderId, inlineObject6, options) {
+        putOrdersIdLines(orderId, inlineObject12, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersIdLines(orderId, inlineObject6, options);
+                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersIdLines(orderId, inlineObject12, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -8034,13 +8241,13 @@ exports.OrdersApiFp = function (configuration) {
          * @summary Add shipping cost
          * @param {string} orderId
          * @param {string} [include] Related resources to include in response
-         * @param {InlineObject4} [inlineObject4]
+         * @param {InlineObject10} [inlineObject10]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdShippingCost(orderId, include, inlineObject4, options) {
+        putOrdersIdShippingCost(orderId, include, inlineObject10, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersIdShippingCost(orderId, include, inlineObject4, options);
+                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersIdShippingCost(orderId, include, inlineObject10, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -8052,13 +8259,13 @@ exports.OrdersApiFp = function (configuration) {
          * @summary Update Order
          * @param {string} orderId
          * @param {string} [include]
-         * @param {InlineObject1} [inlineObject1]
+         * @param {InlineObject7} [inlineObject7]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersOrderId(orderId, include, inlineObject1, options) {
+        putOrdersOrderId(orderId, include, inlineObject7, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersOrderId(orderId, include, inlineObject1, options);
+                const localVarAxiosArgs = yield exports.OrdersApiAxiosParamCreator(configuration).putOrdersOrderId(orderId, include, inlineObject7, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -8185,12 +8392,12 @@ exports.OrdersApiFactory = function (configuration, basePath, axios) {
         /**
          * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
          * @summary Bulk update orders
-         * @param {InlineObject3} [inlineObject3]
+         * @param {InlineObject9} [inlineObject9]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postOrdersBulk(inlineObject3, options) {
-            return exports.OrdersApiFp(configuration).postOrdersBulk(inlineObject3, options).then((request) => request(axios, basePath));
+        postOrdersBulk(inlineObject9, options) {
+            return exports.OrdersApiFp(configuration).postOrdersBulk(inlineObject9, options).then((request) => request(axios, basePath));
         },
         /**
          * Sets an order to be expired. You must have the correct priviledges to perform this action. Once an order is expired, it will no longer appear in results unless performed by an admin or in the hub.
@@ -8205,34 +8412,34 @@ exports.OrdersApiFactory = function (configuration, basePath, axios) {
         /**
          *
          * @summary Processes an order on the API
-         * @param {InlineObject2} [inlineObject2]
+         * @param {InlineObject8} [inlineObject8]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postOrdersProcess(inlineObject2, options) {
-            return exports.OrdersApiFp(configuration).postOrdersProcess(inlineObject2, options).then((request) => request(axios, basePath));
+        postOrdersProcess(inlineObject8, options) {
+            return exports.OrdersApiFp(configuration).postOrdersProcess(inlineObject8, options).then((request) => request(axios, basePath));
         },
         /**
          * Add contact details to an order
          * @summary Add contact details
          * @param {string} orderId
-         * @param {InlineObject5} [inlineObject5]
+         * @param {InlineObject11} [inlineObject11]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdContact(orderId, inlineObject5, options) {
-            return exports.OrdersApiFp(configuration).putOrdersIdContact(orderId, inlineObject5, options).then((request) => request(axios, basePath));
+        putOrdersIdContact(orderId, inlineObject11, options) {
+            return exports.OrdersApiFp(configuration).putOrdersIdContact(orderId, inlineObject11, options).then((request) => request(axios, basePath));
         },
         /**
          * Adds an order line to an order
          * @summary Add order line
          * @param {string} orderId
-         * @param {InlineObject6} [inlineObject6]
+         * @param {InlineObject12} [inlineObject12]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdLines(orderId, inlineObject6, options) {
-            return exports.OrdersApiFp(configuration).putOrdersIdLines(orderId, inlineObject6, options).then((request) => request(axios, basePath));
+        putOrdersIdLines(orderId, inlineObject12, options) {
+            return exports.OrdersApiFp(configuration).putOrdersIdLines(orderId, inlineObject12, options).then((request) => request(axios, basePath));
         },
         /**
          * Update an orders shipping address
@@ -8250,24 +8457,24 @@ exports.OrdersApiFactory = function (configuration, basePath, axios) {
          * @summary Add shipping cost
          * @param {string} orderId
          * @param {string} [include] Related resources to include in response
-         * @param {InlineObject4} [inlineObject4]
+         * @param {InlineObject10} [inlineObject10]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersIdShippingCost(orderId, include, inlineObject4, options) {
-            return exports.OrdersApiFp(configuration).putOrdersIdShippingCost(orderId, include, inlineObject4, options).then((request) => request(axios, basePath));
+        putOrdersIdShippingCost(orderId, include, inlineObject10, options) {
+            return exports.OrdersApiFp(configuration).putOrdersIdShippingCost(orderId, include, inlineObject10, options).then((request) => request(axios, basePath));
         },
         /**
          * Update an Order
          * @summary Update Order
          * @param {string} orderId
          * @param {string} [include]
-         * @param {InlineObject1} [inlineObject1]
+         * @param {InlineObject7} [inlineObject7]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putOrdersOrderId(orderId, include, inlineObject1, options) {
-            return exports.OrdersApiFp(configuration).putOrdersOrderId(orderId, include, inlineObject1, options).then((request) => request(axios, basePath));
+        putOrdersOrderId(orderId, include, inlineObject7, options) {
+            return exports.OrdersApiFp(configuration).putOrdersOrderId(orderId, include, inlineObject7, options).then((request) => request(axios, basePath));
         },
         /**
          * Update an orders billing address
@@ -8393,13 +8600,13 @@ class OrdersApi extends base_1.BaseAPI {
     /**
      * Allows you to bulk update a field across multiple Orders.  You must have the correct priviledges to perform this action.
      * @summary Bulk update orders
-     * @param {InlineObject3} [inlineObject3]
+     * @param {InlineObject9} [inlineObject9]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    postOrdersBulk(inlineObject3, options) {
-        return exports.OrdersApiFp(this.configuration).postOrdersBulk(inlineObject3, options).then((request) => request(this.axios, this.basePath));
+    postOrdersBulk(inlineObject9, options) {
+        return exports.OrdersApiFp(this.configuration).postOrdersBulk(inlineObject9, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Sets an order to be expired. You must have the correct priviledges to perform this action. Once an order is expired, it will no longer appear in results unless performed by an admin or in the hub.
@@ -8415,37 +8622,37 @@ class OrdersApi extends base_1.BaseAPI {
     /**
      *
      * @summary Processes an order on the API
-     * @param {InlineObject2} [inlineObject2]
+     * @param {InlineObject8} [inlineObject8]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    postOrdersProcess(inlineObject2, options) {
-        return exports.OrdersApiFp(this.configuration).postOrdersProcess(inlineObject2, options).then((request) => request(this.axios, this.basePath));
+    postOrdersProcess(inlineObject8, options) {
+        return exports.OrdersApiFp(this.configuration).postOrdersProcess(inlineObject8, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Add contact details to an order
      * @summary Add contact details
      * @param {string} orderId
-     * @param {InlineObject5} [inlineObject5]
+     * @param {InlineObject11} [inlineObject11]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersIdContact(orderId, inlineObject5, options) {
-        return exports.OrdersApiFp(this.configuration).putOrdersIdContact(orderId, inlineObject5, options).then((request) => request(this.axios, this.basePath));
+    putOrdersIdContact(orderId, inlineObject11, options) {
+        return exports.OrdersApiFp(this.configuration).putOrdersIdContact(orderId, inlineObject11, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Adds an order line to an order
      * @summary Add order line
      * @param {string} orderId
-     * @param {InlineObject6} [inlineObject6]
+     * @param {InlineObject12} [inlineObject12]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersIdLines(orderId, inlineObject6, options) {
-        return exports.OrdersApiFp(this.configuration).putOrdersIdLines(orderId, inlineObject6, options).then((request) => request(this.axios, this.basePath));
+    putOrdersIdLines(orderId, inlineObject12, options) {
+        return exports.OrdersApiFp(this.configuration).putOrdersIdLines(orderId, inlineObject12, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update an orders shipping address
@@ -8464,26 +8671,26 @@ class OrdersApi extends base_1.BaseAPI {
      * @summary Add shipping cost
      * @param {string} orderId
      * @param {string} [include] Related resources to include in response
-     * @param {InlineObject4} [inlineObject4]
+     * @param {InlineObject10} [inlineObject10]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersIdShippingCost(orderId, include, inlineObject4, options) {
-        return exports.OrdersApiFp(this.configuration).putOrdersIdShippingCost(orderId, include, inlineObject4, options).then((request) => request(this.axios, this.basePath));
+    putOrdersIdShippingCost(orderId, include, inlineObject10, options) {
+        return exports.OrdersApiFp(this.configuration).putOrdersIdShippingCost(orderId, include, inlineObject10, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update an Order
      * @summary Update Order
      * @param {string} orderId
      * @param {string} [include]
-     * @param {InlineObject1} [inlineObject1]
+     * @param {InlineObject7} [inlineObject7]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrdersApi
      */
-    putOrdersOrderId(orderId, include, inlineObject1, options) {
-        return exports.OrdersApiFp(this.configuration).putOrdersOrderId(orderId, include, inlineObject1, options).then((request) => request(this.axios, this.basePath));
+    putOrdersOrderId(orderId, include, inlineObject7, options) {
+        return exports.OrdersApiFp(this.configuration).putOrdersOrderId(orderId, include, inlineObject7, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update an orders billing address
@@ -8560,11 +8767,11 @@ exports.PaymentsApiAxiosParamCreator = function (configuration) {
         /**
          * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
          * @summary Threed Secure Payment
-         * @param {InlineObject28} [inlineObject28]
+         * @param {InlineObject14} [inlineObject14]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postPayments3dSecure: (inlineObject28, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postPayments3dSecure: (inlineObject14, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/payments/3d-secure`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -8580,8 +8787,8 @@ exports.PaymentsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject28 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject28 !== undefined ? inlineObject28 : {}) : (inlineObject28 || "");
+            const needsSerialization = (typeof inlineObject14 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject14 !== undefined ? inlineObject14 : {}) : (inlineObject14 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -8703,13 +8910,13 @@ exports.PaymentsApiFp = function (configuration) {
         /**
          * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
          * @summary Threed Secure Payment
-         * @param {InlineObject28} [inlineObject28]
+         * @param {InlineObject14} [inlineObject14]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postPayments3dSecure(inlineObject28, options) {
+        postPayments3dSecure(inlineObject14, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.PaymentsApiAxiosParamCreator(configuration).postPayments3dSecure(inlineObject28, options);
+                const localVarAxiosArgs = yield exports.PaymentsApiAxiosParamCreator(configuration).postPayments3dSecure(inlineObject14, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -8779,12 +8986,12 @@ exports.PaymentsApiFactory = function (configuration, basePath, axios) {
         /**
          * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
          * @summary Threed Secure Payment
-         * @param {InlineObject28} [inlineObject28]
+         * @param {InlineObject14} [inlineObject14]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postPayments3dSecure(inlineObject28, options) {
-            return exports.PaymentsApiFp(configuration).postPayments3dSecure(inlineObject28, options).then((request) => request(axios, basePath));
+        postPayments3dSecure(inlineObject14, options) {
+            return exports.PaymentsApiFp(configuration).postPayments3dSecure(inlineObject14, options).then((request) => request(axios, basePath));
         },
         /**
          * Refund a transaction
@@ -8840,13 +9047,13 @@ class PaymentsApi extends base_1.BaseAPI {
     /**
      * Validate a ThreeD secure request and process the transaaction, if your payment provider supports it.
      * @summary Threed Secure Payment
-     * @param {InlineObject28} [inlineObject28]
+     * @param {InlineObject14} [inlineObject14]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PaymentsApi
      */
-    postPayments3dSecure(inlineObject28, options) {
-        return exports.PaymentsApiFp(this.configuration).postPayments3dSecure(inlineObject28, options).then((request) => request(this.axios, this.basePath));
+    postPayments3dSecure(inlineObject14, options) {
+        return exports.PaymentsApiFp(this.configuration).postPayments3dSecure(inlineObject14, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Refund a transaction
@@ -9008,11 +9215,11 @@ exports.ProductFamiliesApiAxiosParamCreator = function (configuration) {
          * Update a product family
          * @summary Update product family
          * @param {string} productFamilyId
-         * @param {InlineObject} [inlineObject]
+         * @param {InlineObject15} [inlineObject15]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putProductFamiliesProductFamilyId: (productFamilyId, inlineObject, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putProductFamiliesProductFamilyId: (productFamilyId, inlineObject15, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productFamilyId' is not null or undefined
             if (productFamilyId === null || productFamilyId === undefined) {
                 throw new base_1.RequiredError('productFamilyId', 'Required parameter productFamilyId was null or undefined when calling putProductFamiliesProductFamilyId.');
@@ -9033,8 +9240,8 @@ exports.ProductFamiliesApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject !== undefined ? inlineObject : {}) : (inlineObject || "");
+            const needsSerialization = (typeof inlineObject15 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject15 !== undefined ? inlineObject15 : {}) : (inlineObject15 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -9116,13 +9323,13 @@ exports.ProductFamiliesApiFp = function (configuration) {
          * Update a product family
          * @summary Update product family
          * @param {string} productFamilyId
-         * @param {InlineObject} [inlineObject]
+         * @param {InlineObject15} [inlineObject15]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putProductFamiliesProductFamilyId(productFamilyId, inlineObject, options) {
+        putProductFamiliesProductFamilyId(productFamilyId, inlineObject15, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductFamiliesApiAxiosParamCreator(configuration).putProductFamiliesProductFamilyId(productFamilyId, inlineObject, options);
+                const localVarAxiosArgs = yield exports.ProductFamiliesApiAxiosParamCreator(configuration).putProductFamiliesProductFamilyId(productFamilyId, inlineObject15, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -9181,12 +9388,12 @@ exports.ProductFamiliesApiFactory = function (configuration, basePath, axios) {
          * Update a product family
          * @summary Update product family
          * @param {string} productFamilyId
-         * @param {InlineObject} [inlineObject]
+         * @param {InlineObject15} [inlineObject15]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putProductFamiliesProductFamilyId(productFamilyId, inlineObject, options) {
-            return exports.ProductFamiliesApiFp(configuration).putProductFamiliesProductFamilyId(productFamilyId, inlineObject, options).then((request) => request(axios, basePath));
+        putProductFamiliesProductFamilyId(productFamilyId, inlineObject15, options) {
+            return exports.ProductFamiliesApiFp(configuration).putProductFamiliesProductFamilyId(productFamilyId, inlineObject15, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -9245,13 +9452,13 @@ class ProductFamiliesApi extends base_1.BaseAPI {
      * Update a product family
      * @summary Update product family
      * @param {string} productFamilyId
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject15} [inlineObject15]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductFamiliesApi
      */
-    putProductFamiliesProductFamilyId(productFamilyId, inlineObject, options) {
-        return exports.ProductFamiliesApiFp(this.configuration).putProductFamiliesProductFamilyId(productFamilyId, inlineObject, options).then((request) => request(this.axios, this.basePath));
+    putProductFamiliesProductFamilyId(productFamilyId, inlineObject15, options) {
+        return exports.ProductFamiliesApiFp(this.configuration).putProductFamiliesProductFamilyId(productFamilyId, inlineObject15, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.ProductFamiliesApi = ProductFamiliesApi;
@@ -9327,11 +9534,11 @@ exports.ProductVariantsApiAxiosParamCreator = function (configuration) {
          * Request to update a product variants inventory.
          * @summary Update ProductVariant Inventory
          * @param {string} productVariantId
-         * @param {InlineObject7} [inlineObject7]
+         * @param {InlineObject16} [inlineObject16]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putProductsVariantsProductVariantIdInventory: (productVariantId, inlineObject7, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putProductsVariantsProductVariantIdInventory: (productVariantId, inlineObject16, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productVariantId' is not null or undefined
             if (productVariantId === null || productVariantId === undefined) {
                 throw new base_1.RequiredError('productVariantId', 'Required parameter productVariantId was null or undefined when calling putProductsVariantsProductVariantIdInventory.');
@@ -9352,8 +9559,8 @@ exports.ProductVariantsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject7 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject7 !== undefined ? inlineObject7 : {}) : (inlineObject7 || "");
+            const needsSerialization = (typeof inlineObject16 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject16 !== undefined ? inlineObject16 : {}) : (inlineObject16 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -9403,13 +9610,13 @@ exports.ProductVariantsApiFp = function (configuration) {
          * Request to update a product variants inventory.
          * @summary Update ProductVariant Inventory
          * @param {string} productVariantId
-         * @param {InlineObject7} [inlineObject7]
+         * @param {InlineObject16} [inlineObject16]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject7, options) {
+        putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject16, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductVariantsApiAxiosParamCreator(configuration).putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject7, options);
+                const localVarAxiosArgs = yield exports.ProductVariantsApiAxiosParamCreator(configuration).putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject16, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -9448,12 +9655,12 @@ exports.ProductVariantsApiFactory = function (configuration, basePath, axios) {
          * Request to update a product variants inventory.
          * @summary Update ProductVariant Inventory
          * @param {string} productVariantId
-         * @param {InlineObject7} [inlineObject7]
+         * @param {InlineObject16} [inlineObject16]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject7, options) {
-            return exports.ProductVariantsApiFp(configuration).putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject7, options).then((request) => request(axios, basePath));
+        putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject16, options) {
+            return exports.ProductVariantsApiFp(configuration).putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject16, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -9490,13 +9697,13 @@ class ProductVariantsApi extends base_1.BaseAPI {
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
      * @param {string} productVariantId
-     * @param {InlineObject7} [inlineObject7]
+     * @param {InlineObject16} [inlineObject16]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductVariantsApi
      */
-    putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject7, options) {
-        return exports.ProductVariantsApiFp(this.configuration).putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject7, options).then((request) => request(this.axios, this.basePath));
+    putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject16, options) {
+        return exports.ProductVariantsApiFp(this.configuration).putProductsVariantsProductVariantIdInventory(productVariantId, inlineObject16, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.ProductVariantsApi = ProductVariantsApi;
@@ -9842,11 +10049,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Creates and syncs a new product route.
          * @summary Create Product redirect
          * @param {string} productId
-         * @param {InlineObject10} [inlineObject10]
+         * @param {InlineObject19} [inlineObject19]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductRedirects: (productId, inlineObject10, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductRedirects: (productId, inlineObject19, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductRedirects.');
@@ -9867,8 +10074,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject10 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject10 !== undefined ? inlineObject10 : {}) : (inlineObject10 || "");
+            const needsSerialization = (typeof inlineObject19 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject19 !== undefined ? inlineObject19 : {}) : (inlineObject19 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -9878,11 +10085,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Creates and syncs a new product route.
          * @summary Create Product route
          * @param {string} productId
-         * @param {InlineObject9} [inlineObject9]
+         * @param {InlineObject18} [inlineObject18]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductUrls: (productId, inlineObject9, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductUrls: (productId, inlineObject18, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductUrls.');
@@ -9903,8 +10110,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject9 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject9 !== undefined ? inlineObject9 : {}) : (inlineObject9 || "");
+            const needsSerialization = (typeof inlineObject18 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject18 !== undefined ? inlineObject18 : {}) : (inlineObject18 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10059,11 +10266,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Updates product associations
          * @summary Update product associations
          * @param {string} productId
-         * @param {InlineObject15} [inlineObject15]
+         * @param {InlineObject24} [inlineObject24]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductAssociations: (productId, inlineObject15, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductAssociations: (productId, inlineObject24, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductAssociations.');
@@ -10084,8 +10291,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject15 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject15 !== undefined ? inlineObject15 : {}) : (inlineObject15 || "");
+            const needsSerialization = (typeof inlineObject24 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject24 !== undefined ? inlineObject24 : {}) : (inlineObject24 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10095,11 +10302,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Allows you to sync up the attributes which are directly associated to this product.
          * @summary Update Product attributes
          * @param {string} productId
-         * @param {InlineObject11} [inlineObject11]
+         * @param {InlineObject20} [inlineObject20]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductAttributes: (productId, inlineObject11, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductAttributes: (productId, inlineObject20, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductAttributes.');
@@ -10120,8 +10327,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject11 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject11 !== undefined ? inlineObject11 : {}) : (inlineObject11 || "");
+            const needsSerialization = (typeof inlineObject20 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject20 !== undefined ? inlineObject20 : {}) : (inlineObject20 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10131,11 +10338,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Sync product categories
          * @summary Update Product categories
          * @param {string} productId
-         * @param {InlineObject13} [inlineObject13]
+         * @param {InlineObject22} [inlineObject22]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductCategories: (productId, inlineObject13, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductCategories: (productId, inlineObject22, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductCategories.');
@@ -10156,8 +10363,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject13 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject13 !== undefined ? inlineObject13 : {}) : (inlineObject13 || "");
+            const needsSerialization = (typeof inlineObject22 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject22 !== undefined ? inlineObject22 : {}) : (inlineObject22 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10167,11 +10374,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Sync product Channels
          * @summary Update Product channels
          * @param {string} productId
-         * @param {InlineObject14} [inlineObject14]
+         * @param {InlineObject23} [inlineObject23]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductChannels: (productId, inlineObject14, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductChannels: (productId, inlineObject23, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductChannels.');
@@ -10192,8 +10399,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject14 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject14 !== undefined ? inlineObject14 : {}) : (inlineObject14 || "");
+            const needsSerialization = (typeof inlineObject23 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject23 !== undefined ? inlineObject23 : {}) : (inlineObject23 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10203,11 +10410,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Update a products customer groups
          * @summary Update customer groups
          * @param {string} productId
-         * @param {InlineObject16} [inlineObject16]
+         * @param {InlineObject25} [inlineObject25]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductCustomerGroups: (productId, inlineObject16, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductCustomerGroups: (productId, inlineObject25, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductCustomerGroups.');
@@ -10228,8 +10435,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject16 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject16 !== undefined ? inlineObject16 : {}) : (inlineObject16 || "");
+            const needsSerialization = (typeof inlineObject25 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject25 !== undefined ? inlineObject25 : {}) : (inlineObject25 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10239,11 +10446,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Update a products collections.
          * @summary Update Product collections
          * @param {string} productId
-         * @param {InlineObject12} [inlineObject12]
+         * @param {InlineObject21} [inlineObject21]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductIdCollections: (productId, inlineObject12, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductIdCollections: (productId, inlineObject21, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductIdCollections.');
@@ -10264,8 +10471,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject12 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject12 !== undefined ? inlineObject12 : {}) : (inlineObject12 || "");
+            const needsSerialization = (typeof inlineObject21 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject21 !== undefined ? inlineObject21 : {}) : (inlineObject21 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10275,11 +10482,11 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
          * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
          * @summary Duplicate Product
          * @param {string} productId
-         * @param {InlineObject8} [inlineObject8]
+         * @param {InlineObject17} [inlineObject17]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductIdDuplicate: (productId, inlineObject8, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postProductsProductIdDuplicate: (productId, inlineObject17, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'productId' is not null or undefined
             if (productId === null || productId === undefined) {
                 throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductsProductIdDuplicate.');
@@ -10300,8 +10507,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject8 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject8 !== undefined ? inlineObject8 : {}) : (inlineObject8 || "");
+            const needsSerialization = (typeof inlineObject17 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject17 !== undefined ? inlineObject17 : {}) : (inlineObject17 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -10509,13 +10716,13 @@ exports.ProductsApiFp = function (configuration) {
          * Creates and syncs a new product route.
          * @summary Create Product redirect
          * @param {string} productId
-         * @param {InlineObject10} [inlineObject10]
+         * @param {InlineObject19} [inlineObject19]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductRedirects(productId, inlineObject10, options) {
+        postProductRedirects(productId, inlineObject19, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductRedirects(productId, inlineObject10, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductRedirects(productId, inlineObject19, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10526,13 +10733,13 @@ exports.ProductsApiFp = function (configuration) {
          * Creates and syncs a new product route.
          * @summary Create Product route
          * @param {string} productId
-         * @param {InlineObject9} [inlineObject9]
+         * @param {InlineObject18} [inlineObject18]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductUrls(productId, inlineObject9, options) {
+        postProductUrls(productId, inlineObject18, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductUrls(productId, inlineObject9, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductUrls(productId, inlineObject18, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10597,13 +10804,13 @@ exports.ProductsApiFp = function (configuration) {
          * Updates product associations
          * @summary Update product associations
          * @param {string} productId
-         * @param {InlineObject15} [inlineObject15]
+         * @param {InlineObject24} [inlineObject24]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductAssociations(productId, inlineObject15, options) {
+        postProductsProductAssociations(productId, inlineObject24, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductAssociations(productId, inlineObject15, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductAssociations(productId, inlineObject24, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10614,13 +10821,13 @@ exports.ProductsApiFp = function (configuration) {
          * Allows you to sync up the attributes which are directly associated to this product.
          * @summary Update Product attributes
          * @param {string} productId
-         * @param {InlineObject11} [inlineObject11]
+         * @param {InlineObject20} [inlineObject20]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductAttributes(productId, inlineObject11, options) {
+        postProductsProductAttributes(productId, inlineObject20, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductAttributes(productId, inlineObject11, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductAttributes(productId, inlineObject20, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10631,13 +10838,13 @@ exports.ProductsApiFp = function (configuration) {
          * Sync product categories
          * @summary Update Product categories
          * @param {string} productId
-         * @param {InlineObject13} [inlineObject13]
+         * @param {InlineObject22} [inlineObject22]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductCategories(productId, inlineObject13, options) {
+        postProductsProductCategories(productId, inlineObject22, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductCategories(productId, inlineObject13, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductCategories(productId, inlineObject22, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10648,13 +10855,13 @@ exports.ProductsApiFp = function (configuration) {
          * Sync product Channels
          * @summary Update Product channels
          * @param {string} productId
-         * @param {InlineObject14} [inlineObject14]
+         * @param {InlineObject23} [inlineObject23]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductChannels(productId, inlineObject14, options) {
+        postProductsProductChannels(productId, inlineObject23, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductChannels(productId, inlineObject14, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductChannels(productId, inlineObject23, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10665,13 +10872,13 @@ exports.ProductsApiFp = function (configuration) {
          * Update a products customer groups
          * @summary Update customer groups
          * @param {string} productId
-         * @param {InlineObject16} [inlineObject16]
+         * @param {InlineObject25} [inlineObject25]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductCustomerGroups(productId, inlineObject16, options) {
+        postProductsProductCustomerGroups(productId, inlineObject25, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductCustomerGroups(productId, inlineObject16, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductCustomerGroups(productId, inlineObject25, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10682,13 +10889,13 @@ exports.ProductsApiFp = function (configuration) {
          * Update a products collections.
          * @summary Update Product collections
          * @param {string} productId
-         * @param {InlineObject12} [inlineObject12]
+         * @param {InlineObject21} [inlineObject21]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductIdCollections(productId, inlineObject12, options) {
+        postProductsProductIdCollections(productId, inlineObject21, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductIdCollections(productId, inlineObject12, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductIdCollections(productId, inlineObject21, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10699,13 +10906,13 @@ exports.ProductsApiFp = function (configuration) {
          * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
          * @summary Duplicate Product
          * @param {string} productId
-         * @param {InlineObject8} [inlineObject8]
+         * @param {InlineObject17} [inlineObject17]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductIdDuplicate(productId, inlineObject8, options) {
+        postProductsProductIdDuplicate(productId, inlineObject17, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductIdDuplicate(productId, inlineObject8, options);
+                const localVarAxiosArgs = yield exports.ProductsApiAxiosParamCreator(configuration).postProductsProductIdDuplicate(productId, inlineObject17, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -10841,23 +11048,23 @@ exports.ProductsApiFactory = function (configuration, basePath, axios) {
          * Creates and syncs a new product route.
          * @summary Create Product redirect
          * @param {string} productId
-         * @param {InlineObject10} [inlineObject10]
+         * @param {InlineObject19} [inlineObject19]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductRedirects(productId, inlineObject10, options) {
-            return exports.ProductsApiFp(configuration).postProductRedirects(productId, inlineObject10, options).then((request) => request(axios, basePath));
+        postProductRedirects(productId, inlineObject19, options) {
+            return exports.ProductsApiFp(configuration).postProductRedirects(productId, inlineObject19, options).then((request) => request(axios, basePath));
         },
         /**
          * Creates and syncs a new product route.
          * @summary Create Product route
          * @param {string} productId
-         * @param {InlineObject9} [inlineObject9]
+         * @param {InlineObject18} [inlineObject18]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductUrls(productId, inlineObject9, options) {
-            return exports.ProductsApiFp(configuration).postProductUrls(productId, inlineObject9, options).then((request) => request(axios, basePath));
+        postProductUrls(productId, inlineObject18, options) {
+            return exports.ProductsApiFp(configuration).postProductUrls(productId, inlineObject18, options).then((request) => request(axios, basePath));
         },
         /**
          *
@@ -10899,78 +11106,78 @@ exports.ProductsApiFactory = function (configuration, basePath, axios) {
          * Updates product associations
          * @summary Update product associations
          * @param {string} productId
-         * @param {InlineObject15} [inlineObject15]
+         * @param {InlineObject24} [inlineObject24]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductAssociations(productId, inlineObject15, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductAssociations(productId, inlineObject15, options).then((request) => request(axios, basePath));
+        postProductsProductAssociations(productId, inlineObject24, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductAssociations(productId, inlineObject24, options).then((request) => request(axios, basePath));
         },
         /**
          * Allows you to sync up the attributes which are directly associated to this product.
          * @summary Update Product attributes
          * @param {string} productId
-         * @param {InlineObject11} [inlineObject11]
+         * @param {InlineObject20} [inlineObject20]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductAttributes(productId, inlineObject11, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductAttributes(productId, inlineObject11, options).then((request) => request(axios, basePath));
+        postProductsProductAttributes(productId, inlineObject20, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductAttributes(productId, inlineObject20, options).then((request) => request(axios, basePath));
         },
         /**
          * Sync product categories
          * @summary Update Product categories
          * @param {string} productId
-         * @param {InlineObject13} [inlineObject13]
+         * @param {InlineObject22} [inlineObject22]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductCategories(productId, inlineObject13, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductCategories(productId, inlineObject13, options).then((request) => request(axios, basePath));
+        postProductsProductCategories(productId, inlineObject22, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductCategories(productId, inlineObject22, options).then((request) => request(axios, basePath));
         },
         /**
          * Sync product Channels
          * @summary Update Product channels
          * @param {string} productId
-         * @param {InlineObject14} [inlineObject14]
+         * @param {InlineObject23} [inlineObject23]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductChannels(productId, inlineObject14, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductChannels(productId, inlineObject14, options).then((request) => request(axios, basePath));
+        postProductsProductChannels(productId, inlineObject23, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductChannels(productId, inlineObject23, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a products customer groups
          * @summary Update customer groups
          * @param {string} productId
-         * @param {InlineObject16} [inlineObject16]
+         * @param {InlineObject25} [inlineObject25]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductCustomerGroups(productId, inlineObject16, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductCustomerGroups(productId, inlineObject16, options).then((request) => request(axios, basePath));
+        postProductsProductCustomerGroups(productId, inlineObject25, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductCustomerGroups(productId, inlineObject25, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a products collections.
          * @summary Update Product collections
          * @param {string} productId
-         * @param {InlineObject12} [inlineObject12]
+         * @param {InlineObject21} [inlineObject21]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductIdCollections(productId, inlineObject12, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductIdCollections(productId, inlineObject12, options).then((request) => request(axios, basePath));
+        postProductsProductIdCollections(productId, inlineObject21, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductIdCollections(productId, inlineObject21, options).then((request) => request(axios, basePath));
         },
         /**
          * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
          * @summary Duplicate Product
          * @param {string} productId
-         * @param {InlineObject8} [inlineObject8]
+         * @param {InlineObject17} [inlineObject17]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postProductsProductIdDuplicate(productId, inlineObject8, options) {
-            return exports.ProductsApiFp(configuration).postProductsProductIdDuplicate(productId, inlineObject8, options).then((request) => request(axios, basePath));
+        postProductsProductIdDuplicate(productId, inlineObject17, options) {
+            return exports.ProductsApiFp(configuration).postProductsProductIdDuplicate(productId, inlineObject17, options).then((request) => request(axios, basePath));
         },
         /**
          * Updates a product by it\'s ID
@@ -11105,25 +11312,25 @@ class ProductsApi extends base_1.BaseAPI {
      * Creates and syncs a new product route.
      * @summary Create Product redirect
      * @param {string} productId
-     * @param {InlineObject10} [inlineObject10]
+     * @param {InlineObject19} [inlineObject19]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductRedirects(productId, inlineObject10, options) {
-        return exports.ProductsApiFp(this.configuration).postProductRedirects(productId, inlineObject10, options).then((request) => request(this.axios, this.basePath));
+    postProductRedirects(productId, inlineObject19, options) {
+        return exports.ProductsApiFp(this.configuration).postProductRedirects(productId, inlineObject19, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Creates and syncs a new product route.
      * @summary Create Product route
      * @param {string} productId
-     * @param {InlineObject9} [inlineObject9]
+     * @param {InlineObject18} [inlineObject18]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductUrls(productId, inlineObject9, options) {
-        return exports.ProductsApiFp(this.configuration).postProductUrls(productId, inlineObject9, options).then((request) => request(this.axios, this.basePath));
+    postProductUrls(productId, inlineObject18, options) {
+        return exports.ProductsApiFp(this.configuration).postProductUrls(productId, inlineObject18, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      *
@@ -11168,85 +11375,85 @@ class ProductsApi extends base_1.BaseAPI {
      * Updates product associations
      * @summary Update product associations
      * @param {string} productId
-     * @param {InlineObject15} [inlineObject15]
+     * @param {InlineObject24} [inlineObject24]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductAssociations(productId, inlineObject15, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductAssociations(productId, inlineObject15, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductAssociations(productId, inlineObject24, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductAssociations(productId, inlineObject24, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Allows you to sync up the attributes which are directly associated to this product.
      * @summary Update Product attributes
      * @param {string} productId
-     * @param {InlineObject11} [inlineObject11]
+     * @param {InlineObject20} [inlineObject20]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductAttributes(productId, inlineObject11, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductAttributes(productId, inlineObject11, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductAttributes(productId, inlineObject20, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductAttributes(productId, inlineObject20, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Sync product categories
      * @summary Update Product categories
      * @param {string} productId
-     * @param {InlineObject13} [inlineObject13]
+     * @param {InlineObject22} [inlineObject22]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductCategories(productId, inlineObject13, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductCategories(productId, inlineObject13, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductCategories(productId, inlineObject22, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductCategories(productId, inlineObject22, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Sync product Channels
      * @summary Update Product channels
      * @param {string} productId
-     * @param {InlineObject14} [inlineObject14]
+     * @param {InlineObject23} [inlineObject23]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductChannels(productId, inlineObject14, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductChannels(productId, inlineObject14, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductChannels(productId, inlineObject23, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductChannels(productId, inlineObject23, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update a products customer groups
      * @summary Update customer groups
      * @param {string} productId
-     * @param {InlineObject16} [inlineObject16]
+     * @param {InlineObject25} [inlineObject25]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductCustomerGroups(productId, inlineObject16, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductCustomerGroups(productId, inlineObject16, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductCustomerGroups(productId, inlineObject25, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductCustomerGroups(productId, inlineObject25, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update a products collections.
      * @summary Update Product collections
      * @param {string} productId
-     * @param {InlineObject12} [inlineObject12]
+     * @param {InlineObject21} [inlineObject21]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductIdCollections(productId, inlineObject12, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductIdCollections(productId, inlineObject12, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductIdCollections(productId, inlineObject21, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductIdCollections(productId, inlineObject21, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Duplicates a product, requires you to specify new slugs and SKU\'s.  > Duplicated product will not immediately be active.
      * @summary Duplicate Product
      * @param {string} productId
-     * @param {InlineObject8} [inlineObject8]
+     * @param {InlineObject17} [inlineObject17]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductsApi
      */
-    postProductsProductIdDuplicate(productId, inlineObject8, options) {
-        return exports.ProductsApiFp(this.configuration).postProductsProductIdDuplicate(productId, inlineObject8, options).then((request) => request(this.axios, this.basePath));
+    postProductsProductIdDuplicate(productId, inlineObject17, options) {
+        return exports.ProductsApiFp(this.configuration).postProductsProductIdDuplicate(productId, inlineObject17, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Updates a product by it\'s ID
@@ -13139,12 +13346,48 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new shipping method.
          * @summary Create shipping method
+         * @param {InlineObject26} [inlineObject26]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postShipping: (inlineObject26, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/shipping`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            const needsSerialization = (typeof inlineObject26 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject26 !== undefined ? inlineObject26 : {}) : (inlineObject26 || "");
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
+         * Add a price to a shipping method.
+         * @summary Add shipping price
+         * @param {string} shippingMethodId
          * @param {InlineObject29} [inlineObject29]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShipping: (inlineObject29, options = {}) => __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = `/shipping`;
+        postShippingIdPrices: (shippingMethodId, inlineObject29, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            // verify required parameter 'shippingMethodId' is not null or undefined
+            if (shippingMethodId === null || shippingMethodId === undefined) {
+                throw new base_1.RequiredError('shippingMethodId', 'Required parameter shippingMethodId was null or undefined when calling postShippingIdPrices.');
+            }
+            const localVarPath = `/shipping/{shippingMethodId}/prices`
+                .replace(`{${"shippingMethodId"}}`, encodeURIComponent(String(shippingMethodId)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -13167,49 +13410,13 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
             };
         }),
         /**
-         * Add a price to a shipping method.
-         * @summary Add shipping price
-         * @param {string} shippingMethodId
-         * @param {InlineObject32} [inlineObject32]
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        postShippingIdPrices: (shippingMethodId, inlineObject32, options = {}) => __awaiter(this, void 0, void 0, function* () {
-            // verify required parameter 'shippingMethodId' is not null or undefined
-            if (shippingMethodId === null || shippingMethodId === undefined) {
-                throw new base_1.RequiredError('shippingMethodId', 'Required parameter shippingMethodId was null or undefined when calling postShippingIdPrices.');
-            }
-            const localVarPath = `/shipping/{shippingMethodId}/prices`
-                .replace(`{${"shippingMethodId"}}`, encodeURIComponent(String(shippingMethodId)));
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject32 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject32 !== undefined ? inlineObject32 : {}) : (inlineObject32 || "");
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        }),
-        /**
          * Create a new shipping zone
          * @summary Create Shipping Zone
-         * @param {InlineObject31} [inlineObject31]
+         * @param {InlineObject28} [inlineObject28]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShippingZones: (inlineObject31, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postShippingZones: (inlineObject28, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/shipping/zones`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -13225,8 +13432,8 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject31 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject31 !== undefined ? inlineObject31 : {}) : (inlineObject31 || "");
+            const needsSerialization = (typeof inlineObject28 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject28 !== undefined ? inlineObject28 : {}) : (inlineObject28 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -13236,11 +13443,11 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
          * Update shipping method users
          * @summary Update shipping method users
          * @param {string} id
-         * @param {InlineObject35} [inlineObject35]
+         * @param {InlineObject32} [inlineObject32]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingIdUsers: (id, inlineObject35, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putShippingIdUsers: (id, inlineObject32, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'id' is not null or undefined
             if (id === null || id === undefined) {
                 throw new base_1.RequiredError('id', 'Required parameter id was null or undefined when calling putShippingIdUsers.');
@@ -13261,8 +13468,8 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject35 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject35 !== undefined ? inlineObject35 : {}) : (inlineObject35 || "");
+            const needsSerialization = (typeof inlineObject32 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject32 !== undefined ? inlineObject32 : {}) : (inlineObject32 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -13272,53 +13479,17 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
          * Update a shipping price
          * @summary Update shipping price
          * @param {string} shippingPriceId
-         * @param {InlineObject33} [inlineObject33]
+         * @param {InlineObject30} [inlineObject30]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingPricesShippingPriceId: (shippingPriceId, inlineObject33, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putShippingPricesShippingPriceId: (shippingPriceId, inlineObject30, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'shippingPriceId' is not null or undefined
             if (shippingPriceId === null || shippingPriceId === undefined) {
                 throw new base_1.RequiredError('shippingPriceId', 'Required parameter shippingPriceId was null or undefined when calling putShippingPricesShippingPriceId.');
             }
             const localVarPath = `/shipping/prices/{shippingPriceId}`
                 .replace(`{${"shippingPriceId"}}`, encodeURIComponent(String(shippingPriceId)));
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign(Object.assign({ method: 'PUT' }, baseOptions), options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject33 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject33 !== undefined ? inlineObject33 : {}) : (inlineObject33 || "");
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        }),
-        /**
-         * Update shipping method by it\'s ID
-         * @summary Update shipping method
-         * @param {string} shippingMethodId
-         * @param {InlineObject30} [inlineObject30]
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        putShippingShippingMethodId: (shippingMethodId, inlineObject30, options = {}) => __awaiter(this, void 0, void 0, function* () {
-            // verify required parameter 'shippingMethodId' is not null or undefined
-            if (shippingMethodId === null || shippingMethodId === undefined) {
-                throw new base_1.RequiredError('shippingMethodId', 'Required parameter shippingMethodId was null or undefined when calling putShippingShippingMethodId.');
-            }
-            const localVarPath = `/shipping/{shippingMethodId}`
-                .replace(`{${"shippingMethodId"}}`, encodeURIComponent(String(shippingMethodId)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -13341,14 +13512,50 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
             };
         }),
         /**
-         * Update a shipping method\'s zones.
-         * @summary Update shipping method zones
+         * Update shipping method by it\'s ID
+         * @summary Update shipping method
          * @param {string} shippingMethodId
-         * @param {InlineObject34} [inlineObject34]
+         * @param {InlineObject27} [inlineObject27]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingShippingMethodIdZones: (shippingMethodId, inlineObject34, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putShippingShippingMethodId: (shippingMethodId, inlineObject27, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            // verify required parameter 'shippingMethodId' is not null or undefined
+            if (shippingMethodId === null || shippingMethodId === undefined) {
+                throw new base_1.RequiredError('shippingMethodId', 'Required parameter shippingMethodId was null or undefined when calling putShippingShippingMethodId.');
+            }
+            const localVarPath = `/shipping/{shippingMethodId}`
+                .replace(`{${"shippingMethodId"}}`, encodeURIComponent(String(shippingMethodId)));
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'PUT' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            const needsSerialization = (typeof inlineObject27 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject27 !== undefined ? inlineObject27 : {}) : (inlineObject27 || "");
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
+         * Update a shipping method\'s zones.
+         * @summary Update shipping method zones
+         * @param {string} shippingMethodId
+         * @param {InlineObject31} [inlineObject31]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        putShippingShippingMethodIdZones: (shippingMethodId, inlineObject31, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'shippingMethodId' is not null or undefined
             if (shippingMethodId === null || shippingMethodId === undefined) {
                 throw new base_1.RequiredError('shippingMethodId', 'Required parameter shippingMethodId was null or undefined when calling putShippingShippingMethodIdZones.');
@@ -13369,8 +13576,8 @@ exports.ShippingApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject34 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject34 !== undefined ? inlineObject34 : {}) : (inlineObject34 || "");
+            const needsSerialization = (typeof inlineObject31 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject31 !== undefined ? inlineObject31 : {}) : (inlineObject31 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -13469,13 +13676,13 @@ exports.ShippingApiFp = function (configuration) {
         /**
          * Create a new shipping method.
          * @summary Create shipping method
-         * @param {InlineObject29} [inlineObject29]
+         * @param {InlineObject26} [inlineObject26]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShipping(inlineObject29, options) {
+        postShipping(inlineObject26, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).postShipping(inlineObject29, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).postShipping(inlineObject26, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13486,13 +13693,13 @@ exports.ShippingApiFp = function (configuration) {
          * Add a price to a shipping method.
          * @summary Add shipping price
          * @param {string} shippingMethodId
-         * @param {InlineObject32} [inlineObject32]
+         * @param {InlineObject29} [inlineObject29]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShippingIdPrices(shippingMethodId, inlineObject32, options) {
+        postShippingIdPrices(shippingMethodId, inlineObject29, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).postShippingIdPrices(shippingMethodId, inlineObject32, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).postShippingIdPrices(shippingMethodId, inlineObject29, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13502,13 +13709,13 @@ exports.ShippingApiFp = function (configuration) {
         /**
          * Create a new shipping zone
          * @summary Create Shipping Zone
-         * @param {InlineObject31} [inlineObject31]
+         * @param {InlineObject28} [inlineObject28]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShippingZones(inlineObject31, options) {
+        postShippingZones(inlineObject28, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).postShippingZones(inlineObject31, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).postShippingZones(inlineObject28, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13519,13 +13726,13 @@ exports.ShippingApiFp = function (configuration) {
          * Update shipping method users
          * @summary Update shipping method users
          * @param {string} id
-         * @param {InlineObject35} [inlineObject35]
+         * @param {InlineObject32} [inlineObject32]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingIdUsers(id, inlineObject35, options) {
+        putShippingIdUsers(id, inlineObject32, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingIdUsers(id, inlineObject35, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingIdUsers(id, inlineObject32, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13536,13 +13743,13 @@ exports.ShippingApiFp = function (configuration) {
          * Update a shipping price
          * @summary Update shipping price
          * @param {string} shippingPriceId
-         * @param {InlineObject33} [inlineObject33]
+         * @param {InlineObject30} [inlineObject30]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingPricesShippingPriceId(shippingPriceId, inlineObject33, options) {
+        putShippingPricesShippingPriceId(shippingPriceId, inlineObject30, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingPricesShippingPriceId(shippingPriceId, inlineObject33, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingPricesShippingPriceId(shippingPriceId, inlineObject30, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13553,13 +13760,13 @@ exports.ShippingApiFp = function (configuration) {
          * Update shipping method by it\'s ID
          * @summary Update shipping method
          * @param {string} shippingMethodId
-         * @param {InlineObject30} [inlineObject30]
+         * @param {InlineObject27} [inlineObject27]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingShippingMethodId(shippingMethodId, inlineObject30, options) {
+        putShippingShippingMethodId(shippingMethodId, inlineObject27, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingShippingMethodId(shippingMethodId, inlineObject30, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingShippingMethodId(shippingMethodId, inlineObject27, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13570,13 +13777,13 @@ exports.ShippingApiFp = function (configuration) {
          * Update a shipping method\'s zones.
          * @summary Update shipping method zones
          * @param {string} shippingMethodId
-         * @param {InlineObject34} [inlineObject34]
+         * @param {InlineObject31} [inlineObject31]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingShippingMethodIdZones(shippingMethodId, inlineObject34, options) {
+        putShippingShippingMethodIdZones(shippingMethodId, inlineObject31, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingShippingMethodIdZones(shippingMethodId, inlineObject34, options);
+                const localVarAxiosArgs = yield exports.ShippingApiAxiosParamCreator(configuration).putShippingShippingMethodIdZones(shippingMethodId, inlineObject31, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -13646,77 +13853,77 @@ exports.ShippingApiFactory = function (configuration, basePath, axios) {
         /**
          * Create a new shipping method.
          * @summary Create shipping method
-         * @param {InlineObject29} [inlineObject29]
+         * @param {InlineObject26} [inlineObject26]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShipping(inlineObject29, options) {
-            return exports.ShippingApiFp(configuration).postShipping(inlineObject29, options).then((request) => request(axios, basePath));
+        postShipping(inlineObject26, options) {
+            return exports.ShippingApiFp(configuration).postShipping(inlineObject26, options).then((request) => request(axios, basePath));
         },
         /**
          * Add a price to a shipping method.
          * @summary Add shipping price
          * @param {string} shippingMethodId
-         * @param {InlineObject32} [inlineObject32]
+         * @param {InlineObject29} [inlineObject29]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShippingIdPrices(shippingMethodId, inlineObject32, options) {
-            return exports.ShippingApiFp(configuration).postShippingIdPrices(shippingMethodId, inlineObject32, options).then((request) => request(axios, basePath));
+        postShippingIdPrices(shippingMethodId, inlineObject29, options) {
+            return exports.ShippingApiFp(configuration).postShippingIdPrices(shippingMethodId, inlineObject29, options).then((request) => request(axios, basePath));
         },
         /**
          * Create a new shipping zone
          * @summary Create Shipping Zone
-         * @param {InlineObject31} [inlineObject31]
+         * @param {InlineObject28} [inlineObject28]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postShippingZones(inlineObject31, options) {
-            return exports.ShippingApiFp(configuration).postShippingZones(inlineObject31, options).then((request) => request(axios, basePath));
+        postShippingZones(inlineObject28, options) {
+            return exports.ShippingApiFp(configuration).postShippingZones(inlineObject28, options).then((request) => request(axios, basePath));
         },
         /**
          * Update shipping method users
          * @summary Update shipping method users
          * @param {string} id
-         * @param {InlineObject35} [inlineObject35]
+         * @param {InlineObject32} [inlineObject32]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingIdUsers(id, inlineObject35, options) {
-            return exports.ShippingApiFp(configuration).putShippingIdUsers(id, inlineObject35, options).then((request) => request(axios, basePath));
+        putShippingIdUsers(id, inlineObject32, options) {
+            return exports.ShippingApiFp(configuration).putShippingIdUsers(id, inlineObject32, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a shipping price
          * @summary Update shipping price
          * @param {string} shippingPriceId
-         * @param {InlineObject33} [inlineObject33]
+         * @param {InlineObject30} [inlineObject30]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingPricesShippingPriceId(shippingPriceId, inlineObject33, options) {
-            return exports.ShippingApiFp(configuration).putShippingPricesShippingPriceId(shippingPriceId, inlineObject33, options).then((request) => request(axios, basePath));
+        putShippingPricesShippingPriceId(shippingPriceId, inlineObject30, options) {
+            return exports.ShippingApiFp(configuration).putShippingPricesShippingPriceId(shippingPriceId, inlineObject30, options).then((request) => request(axios, basePath));
         },
         /**
          * Update shipping method by it\'s ID
          * @summary Update shipping method
          * @param {string} shippingMethodId
-         * @param {InlineObject30} [inlineObject30]
+         * @param {InlineObject27} [inlineObject27]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingShippingMethodId(shippingMethodId, inlineObject30, options) {
-            return exports.ShippingApiFp(configuration).putShippingShippingMethodId(shippingMethodId, inlineObject30, options).then((request) => request(axios, basePath));
+        putShippingShippingMethodId(shippingMethodId, inlineObject27, options) {
+            return exports.ShippingApiFp(configuration).putShippingShippingMethodId(shippingMethodId, inlineObject27, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a shipping method\'s zones.
          * @summary Update shipping method zones
          * @param {string} shippingMethodId
-         * @param {InlineObject34} [inlineObject34]
+         * @param {InlineObject31} [inlineObject31]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putShippingShippingMethodIdZones(shippingMethodId, inlineObject34, options) {
-            return exports.ShippingApiFp(configuration).putShippingShippingMethodIdZones(shippingMethodId, inlineObject34, options).then((request) => request(axios, basePath));
+        putShippingShippingMethodIdZones(shippingMethodId, inlineObject31, options) {
+            return exports.ShippingApiFp(configuration).putShippingShippingMethodIdZones(shippingMethodId, inlineObject31, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -13787,84 +13994,84 @@ class ShippingApi extends base_1.BaseAPI {
     /**
      * Create a new shipping method.
      * @summary Create shipping method
-     * @param {InlineObject29} [inlineObject29]
+     * @param {InlineObject26} [inlineObject26]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    postShipping(inlineObject29, options) {
-        return exports.ShippingApiFp(this.configuration).postShipping(inlineObject29, options).then((request) => request(this.axios, this.basePath));
+    postShipping(inlineObject26, options) {
+        return exports.ShippingApiFp(this.configuration).postShipping(inlineObject26, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Add a price to a shipping method.
      * @summary Add shipping price
      * @param {string} shippingMethodId
-     * @param {InlineObject32} [inlineObject32]
+     * @param {InlineObject29} [inlineObject29]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    postShippingIdPrices(shippingMethodId, inlineObject32, options) {
-        return exports.ShippingApiFp(this.configuration).postShippingIdPrices(shippingMethodId, inlineObject32, options).then((request) => request(this.axios, this.basePath));
+    postShippingIdPrices(shippingMethodId, inlineObject29, options) {
+        return exports.ShippingApiFp(this.configuration).postShippingIdPrices(shippingMethodId, inlineObject29, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Create a new shipping zone
      * @summary Create Shipping Zone
-     * @param {InlineObject31} [inlineObject31]
+     * @param {InlineObject28} [inlineObject28]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    postShippingZones(inlineObject31, options) {
-        return exports.ShippingApiFp(this.configuration).postShippingZones(inlineObject31, options).then((request) => request(this.axios, this.basePath));
+    postShippingZones(inlineObject28, options) {
+        return exports.ShippingApiFp(this.configuration).postShippingZones(inlineObject28, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update shipping method users
      * @summary Update shipping method users
      * @param {string} id
-     * @param {InlineObject35} [inlineObject35]
+     * @param {InlineObject32} [inlineObject32]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    putShippingIdUsers(id, inlineObject35, options) {
-        return exports.ShippingApiFp(this.configuration).putShippingIdUsers(id, inlineObject35, options).then((request) => request(this.axios, this.basePath));
+    putShippingIdUsers(id, inlineObject32, options) {
+        return exports.ShippingApiFp(this.configuration).putShippingIdUsers(id, inlineObject32, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update a shipping price
      * @summary Update shipping price
      * @param {string} shippingPriceId
-     * @param {InlineObject33} [inlineObject33]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof ShippingApi
-     */
-    putShippingPricesShippingPriceId(shippingPriceId, inlineObject33, options) {
-        return exports.ShippingApiFp(this.configuration).putShippingPricesShippingPriceId(shippingPriceId, inlineObject33, options).then((request) => request(this.axios, this.basePath));
-    }
-    /**
-     * Update shipping method by it\'s ID
-     * @summary Update shipping method
-     * @param {string} shippingMethodId
      * @param {InlineObject30} [inlineObject30]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    putShippingShippingMethodId(shippingMethodId, inlineObject30, options) {
-        return exports.ShippingApiFp(this.configuration).putShippingShippingMethodId(shippingMethodId, inlineObject30, options).then((request) => request(this.axios, this.basePath));
+    putShippingPricesShippingPriceId(shippingPriceId, inlineObject30, options) {
+        return exports.ShippingApiFp(this.configuration).putShippingPricesShippingPriceId(shippingPriceId, inlineObject30, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     * Update shipping method by it\'s ID
+     * @summary Update shipping method
+     * @param {string} shippingMethodId
+     * @param {InlineObject27} [inlineObject27]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ShippingApi
+     */
+    putShippingShippingMethodId(shippingMethodId, inlineObject27, options) {
+        return exports.ShippingApiFp(this.configuration).putShippingShippingMethodId(shippingMethodId, inlineObject27, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update a shipping method\'s zones.
      * @summary Update shipping method zones
      * @param {string} shippingMethodId
-     * @param {InlineObject34} [inlineObject34]
+     * @param {InlineObject31} [inlineObject31]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ShippingApi
      */
-    putShippingShippingMethodIdZones(shippingMethodId, inlineObject34, options) {
-        return exports.ShippingApiFp(this.configuration).putShippingShippingMethodIdZones(shippingMethodId, inlineObject34, options).then((request) => request(this.axios, this.basePath));
+    putShippingShippingMethodIdZones(shippingMethodId, inlineObject31, options) {
+        return exports.ShippingApiFp(this.configuration).putShippingShippingMethodIdZones(shippingMethodId, inlineObject31, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.ShippingApi = ShippingApi;
@@ -13967,11 +14174,11 @@ exports.TagsApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new tag
          * @summary
-         * @param {InlineObject36} [inlineObject36]
+         * @param {InlineObject33} [inlineObject33]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postTags: (inlineObject36, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postTags: (inlineObject33, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/tags`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -13987,8 +14194,8 @@ exports.TagsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject36 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject36 !== undefined ? inlineObject36 : {}) : (inlineObject36 || "");
+            const needsSerialization = (typeof inlineObject33 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject33 !== undefined ? inlineObject33 : {}) : (inlineObject33 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -13998,11 +14205,11 @@ exports.TagsApiAxiosParamCreator = function (configuration) {
          * Updates a tag by it\'s ID
          * @summary Update a tag
          * @param {string} tagId
-         * @param {InlineObject37} [inlineObject37]
+         * @param {InlineObject34} [inlineObject34]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putTagsTagId: (tagId, inlineObject37, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putTagsTagId: (tagId, inlineObject34, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'tagId' is not null or undefined
             if (tagId === null || tagId === undefined) {
                 throw new base_1.RequiredError('tagId', 'Required parameter tagId was null or undefined when calling putTagsTagId.');
@@ -14023,8 +14230,8 @@ exports.TagsApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject37 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject37 !== undefined ? inlineObject37 : {}) : (inlineObject37 || "");
+            const needsSerialization = (typeof inlineObject34 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject34 !== undefined ? inlineObject34 : {}) : (inlineObject34 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -14088,13 +14295,13 @@ exports.TagsApiFp = function (configuration) {
         /**
          * Create a new tag
          * @summary
-         * @param {InlineObject36} [inlineObject36]
+         * @param {InlineObject33} [inlineObject33]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postTags(inlineObject36, options) {
+        postTags(inlineObject33, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.TagsApiAxiosParamCreator(configuration).postTags(inlineObject36, options);
+                const localVarAxiosArgs = yield exports.TagsApiAxiosParamCreator(configuration).postTags(inlineObject33, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -14105,13 +14312,13 @@ exports.TagsApiFp = function (configuration) {
          * Updates a tag by it\'s ID
          * @summary Update a tag
          * @param {string} tagId
-         * @param {InlineObject37} [inlineObject37]
+         * @param {InlineObject34} [inlineObject34]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putTagsTagId(tagId, inlineObject37, options) {
+        putTagsTagId(tagId, inlineObject34, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.TagsApiAxiosParamCreator(configuration).putTagsTagId(tagId, inlineObject37, options);
+                const localVarAxiosArgs = yield exports.TagsApiAxiosParamCreator(configuration).putTagsTagId(tagId, inlineObject34, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -14158,23 +14365,23 @@ exports.TagsApiFactory = function (configuration, basePath, axios) {
         /**
          * Create a new tag
          * @summary
-         * @param {InlineObject36} [inlineObject36]
+         * @param {InlineObject33} [inlineObject33]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postTags(inlineObject36, options) {
-            return exports.TagsApiFp(configuration).postTags(inlineObject36, options).then((request) => request(axios, basePath));
+        postTags(inlineObject33, options) {
+            return exports.TagsApiFp(configuration).postTags(inlineObject33, options).then((request) => request(axios, basePath));
         },
         /**
          * Updates a tag by it\'s ID
          * @summary Update a tag
          * @param {string} tagId
-         * @param {InlineObject37} [inlineObject37]
+         * @param {InlineObject34} [inlineObject34]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putTagsTagId(tagId, inlineObject37, options) {
-            return exports.TagsApiFp(configuration).putTagsTagId(tagId, inlineObject37, options).then((request) => request(axios, basePath));
+        putTagsTagId(tagId, inlineObject34, options) {
+            return exports.TagsApiFp(configuration).putTagsTagId(tagId, inlineObject34, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -14220,25 +14427,25 @@ class TagsApi extends base_1.BaseAPI {
     /**
      * Create a new tag
      * @summary
-     * @param {InlineObject36} [inlineObject36]
+     * @param {InlineObject33} [inlineObject33]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TagsApi
      */
-    postTags(inlineObject36, options) {
-        return exports.TagsApiFp(this.configuration).postTags(inlineObject36, options).then((request) => request(this.axios, this.basePath));
+    postTags(inlineObject33, options) {
+        return exports.TagsApiFp(this.configuration).postTags(inlineObject33, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Updates a tag by it\'s ID
      * @summary Update a tag
      * @param {string} tagId
-     * @param {InlineObject37} [inlineObject37]
+     * @param {InlineObject34} [inlineObject34]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TagsApi
      */
-    putTagsTagId(tagId, inlineObject37, options) {
-        return exports.TagsApiFp(this.configuration).putTagsTagId(tagId, inlineObject37, options).then((request) => request(this.axios, this.basePath));
+    putTagsTagId(tagId, inlineObject34, options) {
+        return exports.TagsApiFp(this.configuration).putTagsTagId(tagId, inlineObject34, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.TagsApi = TagsApi;
@@ -14341,11 +14548,11 @@ exports.TaxesApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new tax resource.
          * @summary Create tax
-         * @param {InlineObject18} [inlineObject18]
+         * @param {InlineObject35} [inlineObject35]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postTaxes: (inlineObject18, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        postTaxes: (inlineObject35, options = {}) => __awaiter(this, void 0, void 0, function* () {
             const localVarPath = `/taxes`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -14361,8 +14568,8 @@ exports.TaxesApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject18 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject18 !== undefined ? inlineObject18 : {}) : (inlineObject18 || "");
+            const needsSerialization = (typeof inlineObject35 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject35 !== undefined ? inlineObject35 : {}) : (inlineObject35 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -14372,11 +14579,11 @@ exports.TaxesApiAxiosParamCreator = function (configuration) {
          * Update a tax record by it\'s ID
          * @summary Update tax record
          * @param {string} taxId
-         * @param {InlineObject19} [inlineObject19]
+         * @param {InlineObject36} [inlineObject36]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putTaxesTaxId: (taxId, inlineObject19, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putTaxesTaxId: (taxId, inlineObject36, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'taxId' is not null or undefined
             if (taxId === null || taxId === undefined) {
                 throw new base_1.RequiredError('taxId', 'Required parameter taxId was null or undefined when calling putTaxesTaxId.');
@@ -14397,8 +14604,8 @@ exports.TaxesApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject19 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject19 !== undefined ? inlineObject19 : {}) : (inlineObject19 || "");
+            const needsSerialization = (typeof inlineObject36 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject36 !== undefined ? inlineObject36 : {}) : (inlineObject36 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -14462,13 +14669,13 @@ exports.TaxesApiFp = function (configuration) {
         /**
          * Create a new tax resource.
          * @summary Create tax
-         * @param {InlineObject18} [inlineObject18]
+         * @param {InlineObject35} [inlineObject35]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postTaxes(inlineObject18, options) {
+        postTaxes(inlineObject35, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.TaxesApiAxiosParamCreator(configuration).postTaxes(inlineObject18, options);
+                const localVarAxiosArgs = yield exports.TaxesApiAxiosParamCreator(configuration).postTaxes(inlineObject35, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -14479,13 +14686,13 @@ exports.TaxesApiFp = function (configuration) {
          * Update a tax record by it\'s ID
          * @summary Update tax record
          * @param {string} taxId
-         * @param {InlineObject19} [inlineObject19]
+         * @param {InlineObject36} [inlineObject36]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putTaxesTaxId(taxId, inlineObject19, options) {
+        putTaxesTaxId(taxId, inlineObject36, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.TaxesApiAxiosParamCreator(configuration).putTaxesTaxId(taxId, inlineObject19, options);
+                const localVarAxiosArgs = yield exports.TaxesApiAxiosParamCreator(configuration).putTaxesTaxId(taxId, inlineObject36, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -14532,23 +14739,23 @@ exports.TaxesApiFactory = function (configuration, basePath, axios) {
         /**
          * Create a new tax resource.
          * @summary Create tax
-         * @param {InlineObject18} [inlineObject18]
+         * @param {InlineObject35} [inlineObject35]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postTaxes(inlineObject18, options) {
-            return exports.TaxesApiFp(configuration).postTaxes(inlineObject18, options).then((request) => request(axios, basePath));
+        postTaxes(inlineObject35, options) {
+            return exports.TaxesApiFp(configuration).postTaxes(inlineObject35, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a tax record by it\'s ID
          * @summary Update tax record
          * @param {string} taxId
-         * @param {InlineObject19} [inlineObject19]
+         * @param {InlineObject36} [inlineObject36]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putTaxesTaxId(taxId, inlineObject19, options) {
-            return exports.TaxesApiFp(configuration).putTaxesTaxId(taxId, inlineObject19, options).then((request) => request(axios, basePath));
+        putTaxesTaxId(taxId, inlineObject36, options) {
+            return exports.TaxesApiFp(configuration).putTaxesTaxId(taxId, inlineObject36, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -14594,25 +14801,25 @@ class TaxesApi extends base_1.BaseAPI {
     /**
      * Create a new tax resource.
      * @summary Create tax
-     * @param {InlineObject18} [inlineObject18]
+     * @param {InlineObject35} [inlineObject35]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TaxesApi
      */
-    postTaxes(inlineObject18, options) {
-        return exports.TaxesApiFp(this.configuration).postTaxes(inlineObject18, options).then((request) => request(this.axios, this.basePath));
+    postTaxes(inlineObject35, options) {
+        return exports.TaxesApiFp(this.configuration).postTaxes(inlineObject35, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Update a tax record by it\'s ID
      * @summary Update tax record
      * @param {string} taxId
-     * @param {InlineObject19} [inlineObject19]
+     * @param {InlineObject36} [inlineObject36]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TaxesApi
      */
-    putTaxesTaxId(taxId, inlineObject19, options) {
-        return exports.TaxesApiFp(this.configuration).putTaxesTaxId(taxId, inlineObject19, options).then((request) => request(this.axios, this.basePath));
+    putTaxesTaxId(taxId, inlineObject36, options) {
+        return exports.TaxesApiFp(this.configuration).putTaxesTaxId(taxId, inlineObject36, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.TaxesApi = TaxesApi;
@@ -14747,36 +14954,6 @@ exports.UsersApiAxiosParamCreator = function (configuration) {
             };
         }),
         /**
-         * Allows the current user to update their password.
-         * @summary Reset  password
-         * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        postAccountPassword: (accountPasswordResetBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
-            const localVarPath = `/account/password`;
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof accountPasswordResetBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(accountPasswordResetBody !== undefined ? accountPasswordResetBody : {}) : (accountPasswordResetBody || "");
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        }),
-        /**
          * Create a new user resource
          * @summary Create a new user
          * @param {CreateUserBody} [createUserBody]
@@ -14810,11 +14987,11 @@ exports.UsersApiAxiosParamCreator = function (configuration) {
          * Updates a user record from their ID.
          * @summary
          * @param {string} userId
-         * @param {InlineObject26} [inlineObject26]
+         * @param {InlineObject37} [inlineObject37]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putUsersUserId: (userId, inlineObject26, options = {}) => __awaiter(this, void 0, void 0, function* () {
+        putUsersUserId: (userId, inlineObject37, options = {}) => __awaiter(this, void 0, void 0, function* () {
             // verify required parameter 'userId' is not null or undefined
             if (userId === null || userId === undefined) {
                 throw new base_1.RequiredError('userId', 'Required parameter userId was null or undefined when calling putUsersUserId.');
@@ -14835,8 +15012,8 @@ exports.UsersApiAxiosParamCreator = function (configuration) {
             delete localVarUrlObj.search;
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
-            const needsSerialization = (typeof inlineObject26 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject26 !== undefined ? inlineObject26 : {}) : (inlineObject26 || "");
+            const needsSerialization = (typeof inlineObject37 !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject37 !== undefined ? inlineObject37 : {}) : (inlineObject37 || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -14915,22 +15092,6 @@ exports.UsersApiFp = function (configuration) {
             });
         },
         /**
-         * Allows the current user to update their password.
-         * @summary Reset  password
-         * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        postAccountPassword(accountPasswordResetBody, options) {
-            return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.UsersApiAxiosParamCreator(configuration).postAccountPassword(accountPasswordResetBody, options);
-                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
-                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
-                    return axios.request(axiosRequestArgs);
-                };
-            });
-        },
-        /**
          * Create a new user resource
          * @summary Create a new user
          * @param {CreateUserBody} [createUserBody]
@@ -14950,13 +15111,13 @@ exports.UsersApiFp = function (configuration) {
          * Updates a user record from their ID.
          * @summary
          * @param {string} userId
-         * @param {InlineObject26} [inlineObject26]
+         * @param {InlineObject37} [inlineObject37]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putUsersUserId(userId, inlineObject26, options) {
+        putUsersUserId(userId, inlineObject37, options) {
             return __awaiter(this, void 0, void 0, function* () {
-                const localVarAxiosArgs = yield exports.UsersApiAxiosParamCreator(configuration).putUsersUserId(userId, inlineObject26, options);
+                const localVarAxiosArgs = yield exports.UsersApiAxiosParamCreator(configuration).putUsersUserId(userId, inlineObject37, options);
                 return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                     const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
                     return axios.request(axiosRequestArgs);
@@ -15012,16 +15173,6 @@ exports.UsersApiFactory = function (configuration, basePath, axios) {
             return exports.UsersApiFp(configuration).getUsersUserId(userId, options).then((request) => request(axios, basePath));
         },
         /**
-         * Allows the current user to update their password.
-         * @summary Reset  password
-         * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        postAccountPassword(accountPasswordResetBody, options) {
-            return exports.UsersApiFp(configuration).postAccountPassword(accountPasswordResetBody, options).then((request) => request(axios, basePath));
-        },
-        /**
          * Create a new user resource
          * @summary Create a new user
          * @param {CreateUserBody} [createUserBody]
@@ -15035,12 +15186,12 @@ exports.UsersApiFactory = function (configuration, basePath, axios) {
          * Updates a user record from their ID.
          * @summary
          * @param {string} userId
-         * @param {InlineObject26} [inlineObject26]
+         * @param {InlineObject37} [inlineObject37]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putUsersUserId(userId, inlineObject26, options) {
-            return exports.UsersApiFp(configuration).putUsersUserId(userId, inlineObject26, options).then((request) => request(axios, basePath));
+        putUsersUserId(userId, inlineObject37, options) {
+            return exports.UsersApiFp(configuration).putUsersUserId(userId, inlineObject37, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -15096,17 +15247,6 @@ class UsersApi extends base_1.BaseAPI {
         return exports.UsersApiFp(this.configuration).getUsersUserId(userId, options).then((request) => request(this.axios, this.basePath));
     }
     /**
-     * Allows the current user to update their password.
-     * @summary Reset  password
-     * @param {AccountPasswordResetBody} [accountPasswordResetBody]
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof UsersApi
-     */
-    postAccountPassword(accountPasswordResetBody, options) {
-        return exports.UsersApiFp(this.configuration).postAccountPassword(accountPasswordResetBody, options).then((request) => request(this.axios, this.basePath));
-    }
-    /**
      * Create a new user resource
      * @summary Create a new user
      * @param {CreateUserBody} [createUserBody]
@@ -15121,13 +15261,13 @@ class UsersApi extends base_1.BaseAPI {
      * Updates a user record from their ID.
      * @summary
      * @param {string} userId
-     * @param {InlineObject26} [inlineObject26]
+     * @param {InlineObject37} [inlineObject37]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    putUsersUserId(userId, inlineObject26, options) {
-        return exports.UsersApiFp(this.configuration).putUsersUserId(userId, inlineObject26, options).then((request) => request(this.axios, this.basePath));
+    putUsersUserId(userId, inlineObject37, options) {
+        return exports.UsersApiFp(this.configuration).putUsersUserId(userId, inlineObject37, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.UsersApi = UsersApi;
