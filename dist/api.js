@@ -2106,6 +2106,36 @@ exports.BasketsApiAxiosParamCreator = function (configuration) {
             };
         }),
         /**
+         *
+         * @summary Create Basket
+         * @param {CreateBasketBody} [createBasketBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postBaskets: (createBasketBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/baskets`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            const needsSerialization = (typeof createBasketBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(createBasketBody !== undefined ? createBasketBody : {}) : (createBasketBody || "");
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
          * A user is able to \"claim\" a guest basket.
          * @summary Allow a user to claim a basket
          * @param {string} basketId
@@ -2548,6 +2578,22 @@ exports.BasketsApiFp = function (configuration) {
             });
         },
         /**
+         *
+         * @summary Create Basket
+         * @param {CreateBasketBody} [createBasketBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postBaskets(createBasketBody, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.BasketsApiAxiosParamCreator(configuration).postBaskets(createBasketBody, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+        /**
          * A user is able to \"claim\" a guest basket.
          * @summary Allow a user to claim a basket
          * @param {string} basketId
@@ -2782,6 +2828,16 @@ exports.BasketsApiFactory = function (configuration, basePath, axios) {
             return exports.BasketsApiFp(configuration).postBasketLines(createBasketLinesBody, options).then((request) => request(axios, basePath));
         },
         /**
+         *
+         * @summary Create Basket
+         * @param {CreateBasketBody} [createBasketBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postBaskets(createBasketBody, options) {
+            return exports.BasketsApiFp(configuration).postBaskets(createBasketBody, options).then((request) => request(axios, basePath));
+        },
+        /**
          * A user is able to \"claim\" a guest basket.
          * @summary Allow a user to claim a basket
          * @param {string} basketId
@@ -2969,6 +3025,17 @@ class BasketsApi extends base_1.BaseAPI {
      */
     postBasketLines(createBasketLinesBody, options) {
         return exports.BasketsApiFp(this.configuration).postBasketLines(createBasketLinesBody, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     *
+     * @summary Create Basket
+     * @param {CreateBasketBody} [createBasketBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof BasketsApi
+     */
+    postBaskets(createBasketBody, options) {
+        return exports.BasketsApiFp(this.configuration).postBaskets(createBasketBody, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * A user is able to \"claim\" a guest basket.

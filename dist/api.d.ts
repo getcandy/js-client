@@ -1962,6 +1962,44 @@ export interface CreateAttributeGroupBodyNameEn {
 /**
  *
  * @export
+ * @interface CreateBasketBody
+ */
+export interface CreateBasketBody {
+    /**
+     *
+     * @type {Array<CreateBasketBodyVariants>}
+     * @memberof CreateBasketBody
+     */
+    variants?: Array<CreateBasketBodyVariants>;
+    /**
+     *
+     * @type {string}
+     * @memberof CreateBasketBody
+     */
+    basket_id?: string;
+}
+/**
+ *
+ * @export
+ * @interface CreateBasketBodyVariants
+ */
+export interface CreateBasketBodyVariants {
+    /**
+     *
+     * @type {string}
+     * @memberof CreateBasketBodyVariants
+     */
+    id: string;
+    /**
+     *
+     * @type {number}
+     * @memberof CreateBasketBodyVariants
+     */
+    quantity: number;
+}
+/**
+ *
+ * @export
  * @interface CreateBasketLinesBody
  */
 export interface CreateBasketLinesBody {
@@ -8383,6 +8421,14 @@ export declare const BasketsApiAxiosParamCreator: (configuration?: Configuration
      */
     postBasketLines: (createBasketLinesBody?: CreateBasketLinesBody, options?: any) => Promise<RequestArgs>;
     /**
+     *
+     * @summary Create Basket
+     * @param {CreateBasketBody} [createBasketBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postBaskets: (createBasketBody?: CreateBasketBody, options?: any) => Promise<RequestArgs>;
+    /**
      * A user is able to \"claim\" a guest basket.
      * @summary Allow a user to claim a basket
      * @param {string} basketId
@@ -8527,6 +8573,14 @@ export declare const BasketsApiFp: (configuration?: Configuration) => {
      */
     postBasketLines(createBasketLinesBody?: CreateBasketLinesBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BasketResponse>>;
     /**
+     *
+     * @summary Create Basket
+     * @param {CreateBasketBody} [createBasketBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postBaskets(createBasketBody?: CreateBasketBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BasketResponse>>;
+    /**
      * A user is able to \"claim\" a guest basket.
      * @summary Allow a user to claim a basket
      * @param {string} basketId
@@ -8670,6 +8724,14 @@ export declare const BasketsApiFactory: (configuration?: Configuration, basePath
      * @throws {RequiredError}
      */
     postBasketLines(createBasketLinesBody?: CreateBasketLinesBody, options?: any): AxiosPromise<BasketResponse>;
+    /**
+     *
+     * @summary Create Basket
+     * @param {CreateBasketBody} [createBasketBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postBaskets(createBasketBody?: CreateBasketBody, options?: any): AxiosPromise<BasketResponse>;
     /**
      * A user is able to \"claim\" a guest basket.
      * @summary Allow a user to claim a basket
@@ -8824,6 +8886,15 @@ export declare class BasketsApi extends BaseAPI {
      * @memberof BasketsApi
      */
     postBasketLines(createBasketLinesBody?: CreateBasketLinesBody, options?: any): Promise<import("axios").AxiosResponse<BasketResponse>>;
+    /**
+     *
+     * @summary Create Basket
+     * @param {CreateBasketBody} [createBasketBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof BasketsApi
+     */
+    postBaskets(createBasketBody?: CreateBasketBody, options?: any): Promise<import("axios").AxiosResponse<BasketResponse>>;
     /**
      * A user is able to \"claim\" a guest basket.
      * @summary Allow a user to claim a basket
