@@ -2,7 +2,7 @@ name: npm-publish
 on:
   push:
     branches:
-      - main # Change this to your default branch
+      - master # Change this to your default branch
 jobs:
   npm-publish:
     name: npm-publish
@@ -15,10 +15,9 @@ jobs:
       with: # All of theses inputs are optional
         tag_name: "v%s"
         tag_message: "v%s"
-        create_tag: "true"
         commit_pattern: "^Release (\\S+)"
         workspace: "."
-        publish_command: "yarn"
+        publish_command: "npm run build"
         publish_args: "--non-interactive"
       env: # More info about the environment variables in the README
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
