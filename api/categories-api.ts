@@ -399,6 +399,47 @@ export const CategoriesApiAxiosParamCreator = function (configuration?: Configur
             };
         },
         /**
+         * Publishes a category draft
+         * @summary Publishes a category draft
+         * @param {string} categoryId 
+         * @param {string} [include] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        publishCategoryDraft: async (categoryId: string, include?: string, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'categoryId' is not null or undefined
+            if (categoryId === null || categoryId === undefined) {
+                throw new RequiredError('categoryId','Required parameter categoryId was null or undefined when calling publishCategoryDraft.');
+            }
+            const localVarPath = `/categories/{categoryId}/publish`
+                .replace(`{${"categoryId"}}`, encodeURIComponent(String(categoryId)));
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            if (include !== undefined) {
+                localVarQueryParameter['include'] = include;
+            }
+
+
+    
+            localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
          * Update a category using a given ID.
          * @summary Update a category
          * @param {string} categoryId 
@@ -622,6 +663,21 @@ export const CategoriesApiFp = function(configuration?: Configuration) {
             };
         },
         /**
+         * Publishes a category draft
+         * @summary Publishes a category draft
+         * @param {string} categoryId 
+         * @param {string} [include] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async publishCategoryDraft(categoryId: string, include?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CategoryResponse>> {
+            const localVarAxiosArgs = await CategoriesApiAxiosParamCreator(configuration).publishCategoryDraft(categoryId, include, options);
+            return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
+                const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
+                return axios.request(axiosRequestArgs);
+            };
+        },
+        /**
          * Update a category using a given ID.
          * @summary Update a category
          * @param {string} categoryId 
@@ -755,6 +811,17 @@ export const CategoriesApiFactory = function (configuration?: Configuration, bas
          */
         postCategoriesReorder(reorderCategoryBody?: ReorderCategoryBody, options?: any): AxiosPromise<Message> {
             return CategoriesApiFp(configuration).postCategoriesReorder(reorderCategoryBody, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Publishes a category draft
+         * @summary Publishes a category draft
+         * @param {string} categoryId 
+         * @param {string} [include] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        publishCategoryDraft(categoryId: string, include?: string, options?: any): AxiosPromise<CategoryResponse> {
+            return CategoriesApiFp(configuration).publishCategoryDraft(categoryId, include, options).then((request) => request(axios, basePath));
         },
         /**
          * Update a category using a given ID.
@@ -900,6 +967,19 @@ export class CategoriesApi extends BaseAPI {
      */
     public postCategoriesReorder(reorderCategoryBody?: ReorderCategoryBody, options?: any) {
         return CategoriesApiFp(this.configuration).postCategoriesReorder(reorderCategoryBody, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Publishes a category draft
+     * @summary Publishes a category draft
+     * @param {string} categoryId 
+     * @param {string} [include] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof CategoriesApi
+     */
+    public publishCategoryDraft(categoryId: string, include?: string, options?: any) {
+        return CategoriesApiFp(this.configuration).publishCategoryDraft(categoryId, include, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
