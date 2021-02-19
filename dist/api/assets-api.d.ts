@@ -15,6 +15,7 @@ import { RequestArgs, BaseAPI } from '../base';
 import { AssetDetachBody } from '../models';
 import { AssetResponse } from '../models';
 import { AssetSimple } from '../models';
+import { ReorderAssetsBody } from '../models';
 import { UpdateAssetBody } from '../models';
 /**
  * AssetsApi - axios parameter creator
@@ -57,6 +58,14 @@ export declare const AssetsApiAxiosParamCreator: (configuration?: Configuration)
      * @throws {RequiredError}
      */
     putAssets: (updateAssetBody?: UpdateAssetBody, options?: any) => Promise<RequestArgs>;
+    /**
+     * Reorder assets for a model
+     * @summary Reorder Assets
+     * @param {ReorderAssetsBody} [reorderAssetsBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    reorderAssets: (reorderAssetsBody?: ReorderAssetsBody, options?: any) => Promise<RequestArgs>;
 };
 /**
  * AssetsApi - functional programming interface
@@ -99,6 +108,14 @@ export declare const AssetsApiFp: (configuration?: Configuration) => {
      * @throws {RequiredError}
      */
     putAssets(updateAssetBody?: UpdateAssetBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AssetResponse>>;
+    /**
+     * Reorder assets for a model
+     * @summary Reorder Assets
+     * @param {ReorderAssetsBody} [reorderAssetsBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    reorderAssets(reorderAssetsBody?: ReorderAssetsBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>>;
 };
 /**
  * AssetsApi - factory interface
@@ -141,6 +158,14 @@ export declare const AssetsApiFactory: (configuration?: Configuration, basePath?
      * @throws {RequiredError}
      */
     putAssets(updateAssetBody?: UpdateAssetBody, options?: any): AxiosPromise<AssetResponse>;
+    /**
+     * Reorder assets for a model
+     * @summary Reorder Assets
+     * @param {ReorderAssetsBody} [reorderAssetsBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    reorderAssets(reorderAssetsBody?: ReorderAssetsBody, options?: any): AxiosPromise<void>;
 };
 /**
  * AssetsApi - object-oriented interface
@@ -189,4 +214,13 @@ export declare class AssetsApi extends BaseAPI {
      * @memberof AssetsApi
      */
     putAssets(updateAssetBody?: UpdateAssetBody, options?: any): Promise<import("axios").AxiosResponse<AssetResponse>>;
+    /**
+     * Reorder assets for a model
+     * @summary Reorder Assets
+     * @param {ReorderAssetsBody} [reorderAssetsBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AssetsApi
+     */
+    reorderAssets(reorderAssetsBody?: ReorderAssetsBody, options?: any): Promise<import("axios").AxiosResponse<void>>;
 }

@@ -183,6 +183,36 @@ exports.AssetsApiAxiosParamCreator = function (configuration) {
                 options: localVarRequestOptions,
             };
         }),
+        /**
+         * Reorder assets for a model
+         * @summary Reorder Assets
+         * @param {ReorderAssetsBody} [reorderAssetsBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reorderAssets: (reorderAssetsBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/assets/reorder`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            const needsSerialization = (typeof reorderAssetsBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(reorderAssetsBody !== undefined ? reorderAssetsBody : {}) : (reorderAssetsBody || "");
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
     };
 };
 /**
@@ -259,6 +289,22 @@ exports.AssetsApiFp = function (configuration) {
                 };
             });
         },
+        /**
+         * Reorder assets for a model
+         * @summary Reorder Assets
+         * @param {ReorderAssetsBody} [reorderAssetsBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reorderAssets(reorderAssetsBody, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.AssetsApiAxiosParamCreator(configuration).reorderAssets(reorderAssetsBody, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
     };
 };
 /**
@@ -310,6 +356,16 @@ exports.AssetsApiFactory = function (configuration, basePath, axios) {
          */
         putAssets(updateAssetBody, options) {
             return exports.AssetsApiFp(configuration).putAssets(updateAssetBody, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Reorder assets for a model
+         * @summary Reorder Assets
+         * @param {ReorderAssetsBody} [reorderAssetsBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reorderAssets(reorderAssetsBody, options) {
+            return exports.AssetsApiFp(configuration).reorderAssets(reorderAssetsBody, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -367,6 +423,17 @@ class AssetsApi extends base_1.BaseAPI {
      */
     putAssets(updateAssetBody, options) {
         return exports.AssetsApiFp(this.configuration).putAssets(updateAssetBody, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     * Reorder assets for a model
+     * @summary Reorder Assets
+     * @param {ReorderAssetsBody} [reorderAssetsBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AssetsApi
+     */
+    reorderAssets(reorderAssetsBody, options) {
+        return exports.AssetsApiFp(this.configuration).reorderAssets(reorderAssetsBody, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.AssetsApi = AssetsApi;

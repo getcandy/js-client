@@ -25,6 +25,8 @@ import { AssetResponse } from '../models';
 // @ts-ignore
 import { AssetSimple } from '../models';
 // @ts-ignore
+import { ReorderAssetsBody } from '../models';
+// @ts-ignore
 import { UpdateAssetBody } from '../models';
 /**
  * AssetsApi - axios parameter creator
@@ -206,6 +208,41 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 options: localVarRequestOptions,
             };
         },
+        /**
+         * Reorder assets for a model
+         * @summary Reorder Assets
+         * @param {ReorderAssetsBody} [reorderAssetsBody] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reorderAssets: async (reorderAssetsBody?: ReorderAssetsBody, options: any = {}): Promise<RequestArgs> => {
+            const localVarPath = `/assets/reorder`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            const needsSerialization = (typeof reorderAssetsBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data =  needsSerialization ? JSON.stringify(reorderAssetsBody !== undefined ? reorderAssetsBody : {}) : (reorderAssetsBody || "");
+
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
     }
 };
 
@@ -275,6 +312,20 @@ export const AssetsApiFp = function(configuration?: Configuration) {
                 return axios.request(axiosRequestArgs);
             };
         },
+        /**
+         * Reorder assets for a model
+         * @summary Reorder Assets
+         * @param {ReorderAssetsBody} [reorderAssetsBody] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reorderAssets(reorderAssetsBody?: ReorderAssetsBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await AssetsApiAxiosParamCreator(configuration).reorderAssets(reorderAssetsBody, options);
+            return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
+                const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
+                return axios.request(axiosRequestArgs);
+            };
+        },
     }
 };
 
@@ -327,6 +378,16 @@ export const AssetsApiFactory = function (configuration?: Configuration, basePat
          */
         putAssets(updateAssetBody?: UpdateAssetBody, options?: any): AxiosPromise<AssetResponse> {
             return AssetsApiFp(configuration).putAssets(updateAssetBody, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Reorder assets for a model
+         * @summary Reorder Assets
+         * @param {ReorderAssetsBody} [reorderAssetsBody] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reorderAssets(reorderAssetsBody?: ReorderAssetsBody, options?: any): AxiosPromise<void> {
+            return AssetsApiFp(configuration).reorderAssets(reorderAssetsBody, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -388,6 +449,18 @@ export class AssetsApi extends BaseAPI {
      */
     public putAssets(updateAssetBody?: UpdateAssetBody, options?: any) {
         return AssetsApiFp(this.configuration).putAssets(updateAssetBody, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Reorder assets for a model
+     * @summary Reorder Assets
+     * @param {ReorderAssetsBody} [reorderAssetsBody] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AssetsApi
+     */
+    public reorderAssets(reorderAssetsBody?: ReorderAssetsBody, options?: any) {
+        return AssetsApiFp(this.configuration).reorderAssets(reorderAssetsBody, options).then((request) => request(this.axios, this.basePath));
     }
 
 }

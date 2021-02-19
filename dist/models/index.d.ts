@@ -239,6 +239,8 @@ export * from './recycle-bin';
 export * from './recycle-bin-collection';
 export * from './recycle-bin-collection-all-of';
 export * from './recycle-bin-response';
+export * from './reorder-assets-body';
+export * from './reorder-assets-body-assets';
 export * from './reorder-category-body';
 export * from './root-response';
 export * from './route';

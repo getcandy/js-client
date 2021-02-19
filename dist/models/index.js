@@ -251,6 +251,8 @@ __exportStar(require("./recycle-bin"), exports);
 __exportStar(require("./recycle-bin-collection"), exports);
 __exportStar(require("./recycle-bin-collection-all-of"), exports);
 __exportStar(require("./recycle-bin-response"), exports);
+__exportStar(require("./reorder-assets-body"), exports);
+__exportStar(require("./reorder-assets-body-assets"), exports);
 __exportStar(require("./reorder-category-body"), exports);
 __exportStar(require("./root-response"), exports);
 __exportStar(require("./route"), exports);
