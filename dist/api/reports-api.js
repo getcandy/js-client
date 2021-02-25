@@ -34,6 +34,74 @@ const base_1 = require("../base");
 exports.ReportsApiAxiosParamCreator = function (configuration) {
     return {
         /**
+         * Get customer group report
+         * @summary Get customer group report
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        customerGroupReport: (from, to, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/reports/customer-groups`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'GET' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            if (from !== undefined) {
+                localVarQueryParameter['from'] = from;
+            }
+            if (to !== undefined) {
+                localVarQueryParameter['to'] = to;
+            }
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
+         * Get customer spending report
+         * @summary Get customer spending report
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        customerSpendingReport: (from, to, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            const localVarPath = `/reports/customers/spending`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'GET' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            if (from !== undefined) {
+                localVarQueryParameter['from'] = from;
+            }
+            if (to !== undefined) {
+                localVarQueryParameter['to'] = to;
+            }
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
          * Gets best selling products grouped by month.
          * @summary Get best selling products
          * @param {string} [from] The from date
@@ -247,6 +315,46 @@ exports.ReportsApiAxiosParamCreator = function (configuration) {
                 options: localVarRequestOptions,
             };
         }),
+        /**
+         * Get user report
+         * @summary Get a report for a user
+         * @param {string} userId
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        userReport: (userId, from, to, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            // verify required parameter 'userId' is not null or undefined
+            if (userId === null || userId === undefined) {
+                throw new base_1.RequiredError('userId', 'Required parameter userId was null or undefined when calling userReport.');
+            }
+            const localVarPath = `/reports/users/{userId}`
+                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'GET' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            if (from !== undefined) {
+                localVarQueryParameter['from'] = from;
+            }
+            if (to !== undefined) {
+                localVarQueryParameter['to'] = to;
+            }
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
     };
 };
 /**
@@ -255,6 +363,40 @@ exports.ReportsApiAxiosParamCreator = function (configuration) {
  */
 exports.ReportsApiFp = function (configuration) {
     return {
+        /**
+         * Get customer group report
+         * @summary Get customer group report
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        customerGroupReport(from, to, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.ReportsApiAxiosParamCreator(configuration).customerGroupReport(from, to, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+        /**
+         * Get customer spending report
+         * @summary Get customer spending report
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        customerSpendingReport(from, to, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.ReportsApiAxiosParamCreator(configuration).customerSpendingReport(from, to, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
         /**
          * Gets best selling products grouped by month.
          * @summary Get best selling products
@@ -358,6 +500,24 @@ exports.ReportsApiFp = function (configuration) {
                 };
             });
         },
+        /**
+         * Get user report
+         * @summary Get a report for a user
+         * @param {string} userId
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        userReport(userId, from, to, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.ReportsApiAxiosParamCreator(configuration).userReport(userId, from, to, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
     };
 };
 /**
@@ -366,6 +526,28 @@ exports.ReportsApiFp = function (configuration) {
  */
 exports.ReportsApiFactory = function (configuration, basePath, axios) {
     return {
+        /**
+         * Get customer group report
+         * @summary Get customer group report
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        customerGroupReport(from, to, options) {
+            return exports.ReportsApiFp(configuration).customerGroupReport(from, to, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Get customer spending report
+         * @summary Get customer spending report
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        customerSpendingReport(from, to, options) {
+            return exports.ReportsApiFp(configuration).customerSpendingReport(from, to, options).then((request) => request(axios, basePath));
+        },
         /**
          * Gets best selling products grouped by month.
          * @summary Get best selling products
@@ -433,6 +615,18 @@ exports.ReportsApiFactory = function (configuration, basePath, axios) {
         getReportsSales(from, to, mode, options) {
             return exports.ReportsApiFp(configuration).getReportsSales(from, to, mode, options).then((request) => request(axios, basePath));
         },
+        /**
+         * Get user report
+         * @summary Get a report for a user
+         * @param {string} userId
+         * @param {string} [from] The from date
+         * @param {string} [to] The to date
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        userReport(userId, from, to, options) {
+            return exports.ReportsApiFp(configuration).userReport(userId, from, to, options).then((request) => request(axios, basePath));
+        },
     };
 };
 /**
@@ -442,6 +636,30 @@ exports.ReportsApiFactory = function (configuration, basePath, axios) {
  * @extends {BaseAPI}
  */
 class ReportsApi extends base_1.BaseAPI {
+    /**
+     * Get customer group report
+     * @summary Get customer group report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ReportsApi
+     */
+    customerGroupReport(from, to, options) {
+        return exports.ReportsApiFp(this.configuration).customerGroupReport(from, to, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     * Get customer spending report
+     * @summary Get customer spending report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ReportsApi
+     */
+    customerSpendingReport(from, to, options) {
+        return exports.ReportsApiFp(this.configuration).customerSpendingReport(from, to, options).then((request) => request(this.axios, this.basePath));
+    }
     /**
      * Gets best selling products grouped by month.
      * @summary Get best selling products
@@ -514,6 +732,19 @@ class ReportsApi extends base_1.BaseAPI {
      */
     getReportsSales(from, to, mode, options) {
         return exports.ReportsApiFp(this.configuration).getReportsSales(from, to, mode, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     * Get user report
+     * @summary Get a report for a user
+     * @param {string} userId
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ReportsApi
+     */
+    userReport(userId, from, to, options) {
+        return exports.ReportsApiFp(this.configuration).userReport(userId, from, to, options).then((request) => request(this.axios, this.basePath));
     }
 }
 exports.ReportsApi = ReportsApi;

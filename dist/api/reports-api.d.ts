@@ -12,6 +12,7 @@
 import { AxiosPromise, AxiosInstance } from 'axios';
 import { Configuration } from '../configuration';
 import { RequestArgs, BaseAPI } from '../base';
+import { CustomerSpendingResponse } from '../models';
 import { InlineResponse2001 } from '../models';
 import { InlineResponse2002 } from '../models';
 import { InlineResponse2003 } from '../models';
@@ -23,6 +24,24 @@ import { InlineResponse2006 } from '../models';
  * @export
  */
 export declare const ReportsApiAxiosParamCreator: (configuration?: Configuration) => {
+    /**
+     * Get customer group report
+     * @summary Get customer group report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    customerGroupReport: (from?: string, to?: string, options?: any) => Promise<RequestArgs>;
+    /**
+     * Get customer spending report
+     * @summary Get customer spending report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    customerSpendingReport: (from?: string, to?: string, options?: any) => Promise<RequestArgs>;
     /**
      * Gets best selling products grouped by month.
      * @summary Get best selling products
@@ -78,12 +97,40 @@ export declare const ReportsApiAxiosParamCreator: (configuration?: Configuration
      * @throws {RequiredError}
      */
     getReportsSales: (from: string, to?: string, mode?: 'weekly' | 'monthly' | 'daily', options?: any) => Promise<RequestArgs>;
+    /**
+     * Get user report
+     * @summary Get a report for a user
+     * @param {string} userId
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    userReport: (userId: string, from?: string, to?: string, options?: any) => Promise<RequestArgs>;
 };
 /**
  * ReportsApi - functional programming interface
  * @export
  */
 export declare const ReportsApiFp: (configuration?: Configuration) => {
+    /**
+     * Get customer group report
+     * @summary Get customer group report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    customerGroupReport(from?: string, to?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<object>>;
+    /**
+     * Get customer spending report
+     * @summary Get customer spending report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    customerSpendingReport(from?: string, to?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CustomerSpendingResponse>>;
     /**
      * Gets best selling products grouped by month.
      * @summary Get best selling products
@@ -139,12 +186,40 @@ export declare const ReportsApiFp: (configuration?: Configuration) => {
      * @throws {RequiredError}
      */
     getReportsSales(from: string, to?: string, mode?: 'weekly' | 'monthly' | 'daily', options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2001>>;
+    /**
+     * Get user report
+     * @summary Get a report for a user
+     * @param {string} userId
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    userReport(userId: string, from?: string, to?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<object>>;
 };
 /**
  * ReportsApi - factory interface
  * @export
  */
 export declare const ReportsApiFactory: (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) => {
+    /**
+     * Get customer group report
+     * @summary Get customer group report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    customerGroupReport(from?: string, to?: string, options?: any): AxiosPromise<object>;
+    /**
+     * Get customer spending report
+     * @summary Get customer spending report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    customerSpendingReport(from?: string, to?: string, options?: any): AxiosPromise<CustomerSpendingResponse>;
     /**
      * Gets best selling products grouped by month.
      * @summary Get best selling products
@@ -200,6 +275,16 @@ export declare const ReportsApiFactory: (configuration?: Configuration, basePath
      * @throws {RequiredError}
      */
     getReportsSales(from: string, to?: string, mode?: 'weekly' | 'monthly' | 'daily', options?: any): AxiosPromise<InlineResponse2001>;
+    /**
+     * Get user report
+     * @summary Get a report for a user
+     * @param {string} userId
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    userReport(userId: string, from?: string, to?: string, options?: any): AxiosPromise<object>;
 };
 /**
  * ReportsApi - object-oriented interface
@@ -208,6 +293,26 @@ export declare const ReportsApiFactory: (configuration?: Configuration, basePath
  * @extends {BaseAPI}
  */
 export declare class ReportsApi extends BaseAPI {
+    /**
+     * Get customer group report
+     * @summary Get customer group report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ReportsApi
+     */
+    customerGroupReport(from?: string, to?: string, options?: any): Promise<import("axios").AxiosResponse<object>>;
+    /**
+     * Get customer spending report
+     * @summary Get customer spending report
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ReportsApi
+     */
+    customerSpendingReport(from?: string, to?: string, options?: any): Promise<import("axios").AxiosResponse<CustomerSpendingResponse>>;
     /**
      * Gets best selling products grouped by month.
      * @summary Get best selling products
@@ -269,4 +374,15 @@ export declare class ReportsApi extends BaseAPI {
      * @memberof ReportsApi
      */
     getReportsSales(from: string, to?: string, mode?: 'weekly' | 'monthly' | 'daily', options?: any): Promise<import("axios").AxiosResponse<InlineResponse2001>>;
+    /**
+     * Get user report
+     * @summary Get a report for a user
+     * @param {string} userId
+     * @param {string} [from] The from date
+     * @param {string} [to] The to date
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ReportsApi
+     */
+    userReport(userId: string, from?: string, to?: string, options?: any): Promise<import("axios").AxiosResponse<object>>;
 }

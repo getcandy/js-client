@@ -96,6 +96,46 @@ exports.ProductVariantsApiAxiosParamCreator = function (configuration) {
             };
         }),
         /**
+         * Create product variants
+         * @summary Post Product Variants
+         * @param {string} productId
+         * @param {string} [include]
+         * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postProductVariants: (productId, include, productVariantsCreateBody, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            // verify required parameter 'productId' is not null or undefined
+            if (productId === null || productId === undefined) {
+                throw new base_1.RequiredError('productId', 'Required parameter productId was null or undefined when calling postProductVariants.');
+            }
+            const localVarPath = `/products/{productId}/variants`
+                .replace(`{${"productId"}}`, encodeURIComponent(String(productId)));
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'POST' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            if (include !== undefined) {
+                localVarQueryParameter['include'] = include;
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            const needsSerialization = (typeof productVariantsCreateBody !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(productVariantsCreateBody !== undefined ? productVariantsCreateBody : {}) : (productVariantsCreateBody || "");
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
          * Request to update a product variants inventory.
          * @summary Update ProductVariant Inventory
          * @param {string} productVariantId
@@ -172,6 +212,24 @@ exports.ProductVariantsApiFp = function (configuration) {
             });
         },
         /**
+         * Create product variants
+         * @summary Post Product Variants
+         * @param {string} productId
+         * @param {string} [include]
+         * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postProductVariants(productId, include, productVariantsCreateBody, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.ProductVariantsApiAxiosParamCreator(configuration).postProductVariants(productId, include, productVariantsCreateBody, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+        /**
          * Request to update a product variants inventory.
          * @summary Update ProductVariant Inventory
          * @param {string} productVariantId
@@ -217,6 +275,18 @@ exports.ProductVariantsApiFactory = function (configuration, basePath, axios) {
             return exports.ProductVariantsApiFp(configuration).getProductsVariantsProductVariantId(productVariantId, options).then((request) => request(axios, basePath));
         },
         /**
+         * Create product variants
+         * @summary Post Product Variants
+         * @param {string} productId
+         * @param {string} [include]
+         * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postProductVariants(productId, include, productVariantsCreateBody, options) {
+            return exports.ProductVariantsApiFp(configuration).postProductVariants(productId, include, productVariantsCreateBody, options).then((request) => request(axios, basePath));
+        },
+        /**
          * Request to update a product variants inventory.
          * @summary Update ProductVariant Inventory
          * @param {string} productVariantId
@@ -257,6 +327,19 @@ class ProductVariantsApi extends base_1.BaseAPI {
      */
     getProductsVariantsProductVariantId(productVariantId, options) {
         return exports.ProductVariantsApiFp(this.configuration).getProductsVariantsProductVariantId(productVariantId, options).then((request) => request(this.axios, this.basePath));
+    }
+    /**
+     * Create product variants
+     * @summary Post Product Variants
+     * @param {string} productId
+     * @param {string} [include]
+     * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ProductVariantsApi
+     */
+    postProductVariants(productId, include, productVariantsCreateBody, options) {
+        return exports.ProductVariantsApiFp(this.configuration).postProductVariants(productId, include, productVariantsCreateBody, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Request to update a product variants inventory.

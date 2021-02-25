@@ -15,6 +15,7 @@ import { RequestArgs, BaseAPI } from '../base';
 import { InlineObject16 } from '../models';
 import { ProductVariantCollection } from '../models';
 import { ProductVariantResponse } from '../models';
+import { ProductVariantsCreateBody } from '../models';
 /**
  * ProductVariantsApi - axios parameter creator
  * @export
@@ -36,6 +37,16 @@ export declare const ProductVariantsApiAxiosParamCreator: (configuration?: Confi
      * @throws {RequiredError}
      */
     getProductsVariantsProductVariantId: (productVariantId: string, options?: any) => Promise<RequestArgs>;
+    /**
+     * Create product variants
+     * @summary Post Product Variants
+     * @param {string} productId
+     * @param {string} [include]
+     * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postProductVariants: (productId: string, include?: string, productVariantsCreateBody?: ProductVariantsCreateBody, options?: any) => Promise<RequestArgs>;
     /**
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
@@ -68,6 +79,16 @@ export declare const ProductVariantsApiFp: (configuration?: Configuration) => {
      */
     getProductsVariantsProductVariantId(productVariantId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductVariantResponse>>;
     /**
+     * Create product variants
+     * @summary Post Product Variants
+     * @param {string} productId
+     * @param {string} [include]
+     * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postProductVariants(productId: string, include?: string, productVariantsCreateBody?: ProductVariantsCreateBody, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ProductVariantCollection>>;
+    /**
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
      * @param {string} productVariantId
@@ -98,6 +119,16 @@ export declare const ProductVariantsApiFactory: (configuration?: Configuration, 
      * @throws {RequiredError}
      */
     getProductsVariantsProductVariantId(productVariantId: string, options?: any): AxiosPromise<ProductVariantResponse>;
+    /**
+     * Create product variants
+     * @summary Post Product Variants
+     * @param {string} productId
+     * @param {string} [include]
+     * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    postProductVariants(productId: string, include?: string, productVariantsCreateBody?: ProductVariantsCreateBody, options?: any): AxiosPromise<ProductVariantCollection>;
     /**
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
@@ -133,6 +164,17 @@ export declare class ProductVariantsApi extends BaseAPI {
      * @memberof ProductVariantsApi
      */
     getProductsVariantsProductVariantId(productVariantId: string, options?: any): Promise<import("axios").AxiosResponse<ProductVariantResponse>>;
+    /**
+     * Create product variants
+     * @summary Post Product Variants
+     * @param {string} productId
+     * @param {string} [include]
+     * @param {ProductVariantsCreateBody} [productVariantsCreateBody]
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ProductVariantsApi
+     */
+    postProductVariants(productId: string, include?: string, productVariantsCreateBody?: ProductVariantsCreateBody, options?: any): Promise<import("axios").AxiosResponse<ProductVariantCollection>>;
     /**
      * Request to update a product variants inventory.
      * @summary Update ProductVariant Inventory
