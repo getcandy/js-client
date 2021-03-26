@@ -22,6 +22,14 @@ import { ProductVariantsCreateBody } from '../models';
  */
 export declare const ProductVariantsApiAxiosParamCreator: (configuration?: Configuration) => {
     /**
+     * Delete a product variant by it\'s ID
+     * @summary Delete a Product Variant
+     * @param {string} productVariantId
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    deleteProductVariant: (productVariantId: string, options?: any) => Promise<RequestArgs>;
+    /**
      * Get a paginated list of all product variants in the system
      * @summary Get Product Variants
      * @param {string} [include]
@@ -63,6 +71,14 @@ export declare const ProductVariantsApiAxiosParamCreator: (configuration?: Confi
  */
 export declare const ProductVariantsApiFp: (configuration?: Configuration) => {
     /**
+     * Delete a product variant by it\'s ID
+     * @summary Delete a Product Variant
+     * @param {string} productVariantId
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    deleteProductVariant(productVariantId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>>;
+    /**
      * Get a paginated list of all product variants in the system
      * @summary Get Product Variants
      * @param {string} [include]
@@ -103,6 +119,14 @@ export declare const ProductVariantsApiFp: (configuration?: Configuration) => {
  * @export
  */
 export declare const ProductVariantsApiFactory: (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) => {
+    /**
+     * Delete a product variant by it\'s ID
+     * @summary Delete a Product Variant
+     * @param {string} productVariantId
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    deleteProductVariant(productVariantId: string, options?: any): AxiosPromise<void>;
     /**
      * Get a paginated list of all product variants in the system
      * @summary Get Product Variants
@@ -146,6 +170,15 @@ export declare const ProductVariantsApiFactory: (configuration?: Configuration, 
  * @extends {BaseAPI}
  */
 export declare class ProductVariantsApi extends BaseAPI {
+    /**
+     * Delete a product variant by it\'s ID
+     * @summary Delete a Product Variant
+     * @param {string} productVariantId
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ProductVariantsApi
+     */
+    deleteProductVariant(productVariantId: string, options?: any): Promise<import("axios").AxiosResponse<void>>;
     /**
      * Get a paginated list of all product variants in the system
      * @summary Get Product Variants

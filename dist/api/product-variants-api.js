@@ -34,6 +34,38 @@ const base_1 = require("../base");
 exports.ProductVariantsApiAxiosParamCreator = function (configuration) {
     return {
         /**
+         * Delete a product variant by it\'s ID
+         * @summary Delete a Product Variant
+         * @param {string} productVariantId
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteProductVariant: (productVariantId, options = {}) => __awaiter(this, void 0, void 0, function* () {
+            // verify required parameter 'productVariantId' is not null or undefined
+            if (productVariantId === null || productVariantId === undefined) {
+                throw new base_1.RequiredError('productVariantId', 'Required parameter productVariantId was null or undefined when calling deleteProductVariant.');
+            }
+            const localVarPath = `/products/variants/{productVariantId}`
+                .replace(`{${"productVariantId"}}`, encodeURIComponent(String(productVariantId)));
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign(Object.assign({ method: 'DELETE' }, baseOptions), options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            localVarUrlObj.query = Object.assign(Object.assign(Object.assign({}, localVarUrlObj.query), localVarQueryParameter), options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = Object.assign(Object.assign(Object.assign({}, localVarHeaderParameter), headersFromBaseOptions), options.headers);
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        }),
+        /**
          * Get a paginated list of all product variants in the system
          * @summary Get Product Variants
          * @param {string} [include]
@@ -180,6 +212,22 @@ exports.ProductVariantsApiAxiosParamCreator = function (configuration) {
 exports.ProductVariantsApiFp = function (configuration) {
     return {
         /**
+         * Delete a product variant by it\'s ID
+         * @summary Delete a Product Variant
+         * @param {string} productVariantId
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteProductVariant(productVariantId, options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                const localVarAxiosArgs = yield exports.ProductVariantsApiAxiosParamCreator(configuration).deleteProductVariant(productVariantId, options);
+                return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
+                    const axiosRequestArgs = Object.assign(Object.assign({}, localVarAxiosArgs.options), { url: basePath + localVarAxiosArgs.url });
+                    return axios.request(axiosRequestArgs);
+                };
+            });
+        },
+        /**
          * Get a paginated list of all product variants in the system
          * @summary Get Product Variants
          * @param {string} [include]
@@ -255,6 +303,16 @@ exports.ProductVariantsApiFp = function (configuration) {
 exports.ProductVariantsApiFactory = function (configuration, basePath, axios) {
     return {
         /**
+         * Delete a product variant by it\'s ID
+         * @summary Delete a Product Variant
+         * @param {string} productVariantId
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteProductVariant(productVariantId, options) {
+            return exports.ProductVariantsApiFp(configuration).deleteProductVariant(productVariantId, options).then((request) => request(axios, basePath));
+        },
+        /**
          * Get a paginated list of all product variants in the system
          * @summary Get Product Variants
          * @param {string} [include]
@@ -306,6 +364,17 @@ exports.ProductVariantsApiFactory = function (configuration, basePath, axios) {
  * @extends {BaseAPI}
  */
 class ProductVariantsApi extends base_1.BaseAPI {
+    /**
+     * Delete a product variant by it\'s ID
+     * @summary Delete a Product Variant
+     * @param {string} productVariantId
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ProductVariantsApi
+     */
+    deleteProductVariant(productVariantId, options) {
+        return exports.ProductVariantsApiFp(this.configuration).deleteProductVariant(productVariantId, options).then((request) => request(this.axios, this.basePath));
+    }
     /**
      * Get a paginated list of all product variants in the system
      * @summary Get Product Variants
