@@ -95,6 +95,7 @@ __exportStar(require("./create-customer-body"), exports);
 __exportStar(require("./create-customer-group-body"), exports);
 __exportStar(require("./create-language-body"), exports);
 __exportStar(require("./create-order-body"), exports);
+__exportStar(require("./create-route-body"), exports);
 __exportStar(require("./create-user-body"), exports);
 __exportStar(require("./currency"), exports);
 __exportStar(require("./currency-collection"), exports);

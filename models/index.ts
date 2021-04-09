@@ -83,6 +83,7 @@ export * from './create-customer-body';
 export * from './create-customer-group-body';
 export * from './create-language-body';
 export * from './create-order-body';
+export * from './create-route-body';
 export * from './create-user-body';
 export * from './currency';
 export * from './currency-collection';
